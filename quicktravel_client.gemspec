@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
-  spec.name          = 'quick_travel'
-  spec.version       = '0.0.3'
+  spec.name          = 'quicktravel_client'
+  spec.version       = '1.0.0'
   spec.authors       = ['Michael Noack', 'Adam Davies', 'Alessandro Berardi']
   spec.email         = 'support@travellink.com.au'
   spec.description   = 'For integrating with QuickTravel API'
