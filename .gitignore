@@ -1,0 +1,25 @@
+pkg
+coverage
+Gemfile.lock
+
+# Temp files
+tmp
+*.swp
+*~
+\#*
+.\#*
+*.orig
+*.DS_Store
+
+# Log files
+/log
+/debug.log
+
+# Ide droppings
+/.idea
+/.eclipse
+/nbproject
+/.redcar
+/tags
+/.tags
+/TAGS

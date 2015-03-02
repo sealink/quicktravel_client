@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://0.0.0.0:8080/api/bookings/1/discount.json?
+    body:
+      encoding: US-ASCII
+      string: access_key=<QT_KEY>
+    headers:
+      content-length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      p3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"2a403d410606562f02412577ffa6eb55"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 7df9edb80489b280e505428e9f9c0903
+      x-runtime:
+      - '0.032943'
+      date:
+      - Thu, 28 Feb 2013 14:10:21 GMT
+      x-rack-cache:
+      - miss
+      server:
+      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      content-length:
+      - '1201'
+      connection:
+      - close
+      set-cookie:
+      - _session_id=5d633d455a32553f1ff76d29f7616e48; path=/; HttpOnly
+    body:
+      encoding: US-ASCII
+      string: ! '{"target":{"type":"Booking","id":1},"original_price_in_cents":64000,"discounted_price_in_cents":38000,"discount_in_cents":-26000,"reason":"Test
+        Discount Hilton and QBE Get Me","reservation_discounts":[{"target":{"type":"Reservation","id":1},"original_price_in_cents":64000,"discounted_price_in_cents":38000,"discount_in_cents":-26000,"reason":"Test
+        Discount Hilton and QBE Get Me","root":{"target":{"type":"Reservation","id":1},"original_price_in_cents":40000,"discounted_price_in_cents":20000,"discount_in_cents":-20000,"reason":"Test
+        Discount Hilton"},"children":[{"target":{"type":"Reservation","id":3},"original_price_in_cents":12000,"discounted_price_in_cents":12000,"discount_in_cents":0,"reason":"","root":{"target":{"type":"Reservation","id":3},"original_price_in_cents":12000,"discounted_price_in_cents":12000,"discount_in_cents":0,"reason":""},"children":[]},{"target":{"type":"Reservation","id":2},"original_price_in_cents":12000,"discounted_price_in_cents":6000,"discount_in_cents":-6000,"reason":"QBE
+        Get Me","root":{"target":{"type":"Reservation","id":2},"original_price_in_cents":12000,"discounted_price_in_cents":6000,"discount_in_cents":-6000,"reason":"QBE
+        Get Me"},"children":[]}]}]}'
+    http_version: '1.1'
+  recorded_at: Thu, 18 Dec 2014 07:27:10 GMT
+recorded_with: VCR 2.9.3

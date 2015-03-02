@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://0.0.0.0:8080/front_office/bookings.json
+    body:
+      encoding: US-ASCII
+      string: booking[referral_code_id]=33&access_key=<QT_KEY>
+    headers:
+      content-length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      p3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"f4a3881c4477a858ad2157aad8887436"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - bf709d73f2c947811bf2ec1153e361ac
+      x-runtime:
+      - '0.410944'
+      date:
+      - Thu, 28 Feb 2013 14:16:26 GMT
+      x-rack-cache:
+      - invalidate, pass
+      server:
+      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      content-length:
+      - '1996'
+      connection:
+      - close
+      set-cookie:
+      - _session_id=c3f5b616d7b0a15b8634d496713152b2; path=/; HttpOnly
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":3,"state":"new","reference":"222226","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"post_code":null,"referral_code_id":1,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":0,"nett_in_cents":0,"gross_in_cents":0,"commission_in_cents":0,"balance_in_cents":0,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":"SeaLink","promo_code":null,"insurance_offered":false,"deposit_due_on":null,"balance_due_on":null,"first_travel_date":{"_type":"Date","_value":"2013-03-01"},"last_travel_date":null,"complete":true,"reason_not_complete":null,"discardable_in":60,"inactivatable_in":10,"notices":{"currency":["Currency
+        has changed to currency AUD. Please set currency as appropriate."]},"deposit_relevant":false,"passenger_ids":[],"vehicle_ids":[],"reservation_ids":[],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[],"vehicles_attributes":[],"reservations_attributes":[],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","payment_method":"credit_card","credit_card_brand":"MasterCard","transaction_fee":"0.0","active":true,"position":2,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true},{"id":4,"name":"visa","description":"visa","payment_method":"credit_card","credit_card_brand":"Visa","transaction_fee":"0.0","active":true,"position":3,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true},{"id":7,"name":"PayPal","description":"Payments
+        made via PayPal account","payment_method":"paypal","credit_card_brand":null,"transaction_fee":"0.0","active":true,"position":6,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true}]}'
+    http_version: '1.1'
+  recorded_at: Thu, 18 Dec 2014 07:33:16 GMT
+recorded_with: VCR 2.9.3
