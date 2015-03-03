@@ -1,6 +1,10 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'quick_travel/version'
+
 Gem::Specification.new do |spec|
   spec.name          = 'quicktravel_client'
-  spec.version       = '1.0.0'
+  spec.version       = QuickTravel::VERSION
   spec.authors       = ['Michael Noack', 'Adam Davies', 'Alessandro Berardi']
   spec.email         = 'support@travellink.com.au'
   spec.description   = 'For integrating with QuickTravel API'
