@@ -23,14 +23,16 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'facets'
   spec.add_dependency 'money', '>= 3.0', '< 6.0' # 6.0 starts to deprecate/split
 
+  spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rspec-its'
   spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'simplecov-rcov'
+  spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'stamp' # Used to send appropriate dates to API's
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'fakeweb'
-  spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'money_extensions'
 end
