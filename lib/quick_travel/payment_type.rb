@@ -24,7 +24,7 @@ module QuickTravel
 
     def code
       if credit_card
-        credit_card_brand.underscore
+        credit_card_brand.underscore.gsub(/\s/, '_')
       else
         payment_method
       end
