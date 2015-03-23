@@ -2,7 +2,7 @@ require 'quick_travel/adapter'
 
 module QuickTravel
   class PassengerType < Adapter
-    attr_accessor :age_range_required, :default_age, :id, :maximum_age, :minimum_age, :name, :position
+    attr_accessor :age_range_required, :default_age, :id, :maximum_age, :minimum_age, :name, :position, :code
 
     self.api_base = '/passenger_types'
     self.lookup = true
