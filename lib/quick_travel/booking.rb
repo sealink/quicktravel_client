@@ -30,7 +30,7 @@ module QuickTravel
     end
 
     def self.find_by_reference(reference)
-      find_all!("#{api_base}/#{reference}.json", reference: 1).first
+      find_all!("#{api_base}/reference/#{reference}.json").first
     end
 
     def documents(regenerate = false)
