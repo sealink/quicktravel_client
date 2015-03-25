@@ -106,7 +106,7 @@ module QuickTravel
     #   - Pax details
     #   - Vehicle details
     def update_with_nested_attributes!(booking_args = {})
-      response = put_and_validate("#{api_base}/update_with_nested_attributes.json",
+      response = put_and_validate("#{api_base}/#{@id}/update_with_nested_attributes.json",
                                   booking: booking_args)
       fail AdapterException.new(response) unless response['id']
       Booking.find(response['id'])

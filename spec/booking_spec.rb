@@ -83,3 +83,25 @@ describe QuickTravel::Booking do
     end
   end
 end
+
+describe QuickTravel::Booking do
+  let(:booking) { QuickTravel::Booking.find(1) }
+  subject(:consumer) { booking.passengers.first }
+  it 'should updated nested attributes' do
+    updated_booking = nil
+    VCR.use_cassette('booking_with_nested_attributes') do
+      expect(booking.customer_contact_name).to be nil
+      expect(consumer.id).to eq 1
+      expect(consumer.title).to be nil
+      expect(consumer.first_name).to be nil
+      updated_booking = booking.update_with_nested_attributes!(
+        customer_contact_name: 'New Name',
+        consumers: [{id: 1, title: 'Mr', first_name: 'New', last_name: 'Name'}]
+      )
+    end
+    updated_consumer = updated_booking.passengers.first
+    expect(updated_booking.customer_contact_name).to eq 'New Name'
+    expect(updated_consumer.title).to eq 'Mr'
+    expect(updated_consumer.first_name).to eq 'New'
+  end
+end
