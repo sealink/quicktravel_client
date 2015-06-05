@@ -13,6 +13,7 @@ module QuickTravel
                   :notes,
                   :surchargeable,
                   :transaction_fee,
+                  :redirect,
                   :credit_card_brand
 
     self.api_base = '/payment_types'

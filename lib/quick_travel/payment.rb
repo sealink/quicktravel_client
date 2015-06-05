@@ -14,6 +14,15 @@ module QuickTravel
       post_and_validate("/front_office/bookings/#{options[:booking_id]}/payments.json", options)
     end
 
+    def self.get_redirect_url(options)
+      response = get_and_validate("/api/checkouts/migs_redirect_url.json", options)
+      response[:redirect_url]
+    end
+
+    def self.handle_redirected_payment(options)
+      get_and_validate('/api/redirected_payments', options)
+    end
+
     def self.charge_account(booking, payment_options = {})
       payment_type = booking.on_account_payment_type
 
