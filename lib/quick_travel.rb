@@ -25,6 +25,7 @@ module QuickTravel
   require 'quick_travel/address'
   require 'quick_travel/bed_configuration'
   require 'quick_travel/booking'
+  require 'quick_travel/checkout'
   require 'quick_travel/client'
   require 'quick_travel/client_type'
   require 'quick_travel/contact'
