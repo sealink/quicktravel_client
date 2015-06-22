@@ -31,8 +31,8 @@ module QuickTravel
       build_checkout_for { get_and_validate("/api/checkouts/#{id}.json") }
     end
 
-    def self.process_redirect(id, data)
-      build_checkout_for { get_and_validate("/api/checkouts/#{id}/process_redirect.json", data) }
+    def self.update(id, data)
+      build_checkout_for { put_and_validate("/api/checkouts/#{id}.json", data) }
     end
 
     def self.build_checkout_for(&block)
