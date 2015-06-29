@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://0.0.0.0:8080/front_office/bookings.json
+    uri: http://0.0.0.0:8080/api/bookings.json
     body:
       encoding: US-ASCII
       string: booking[referral_code_id]=33&access_key=<QT_KEY>

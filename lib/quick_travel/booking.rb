@@ -82,7 +82,7 @@ module QuickTravel
       default_options = { referral_code_id: DEFAULT_REFERRAL_CODE_ID }
       options = { booking: default_options.merge(options) }
 
-      response = post_and_validate("#{front_office_base}.json", options)
+      response = post_and_validate("#{api_base}.json", options)
       fail AdapterException.new(response) unless response['id']
 
       return nil unless response['id']
