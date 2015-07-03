@@ -1,16 +1,16 @@
 module QuickTravel
   module Cache
-    def cache(key, &block)
-      QuickTravel::Cache.cache(key) do
+    def cache(key, cache_options = {}, &block)
+      QuickTravel::Cache.cache(key, cache_options) do
         block.call
       end
     end
 
-    def self.cache(key)
+    def self.cache(key, cache_options = {})
       cached_value = cache_store.read(key)
       return cached_value unless cached_value.nil?
       return nil unless block_given?
-      yield.tap { |value| cache_store.write(key, value) }
+      yield.tap { |value| cache_store.write(key, value, cache_options) }
     end
 
     def self.cache_store
