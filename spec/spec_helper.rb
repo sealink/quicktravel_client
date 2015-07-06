@@ -61,7 +61,7 @@ class HashCache
     @cache[name]
   end
 
-  def write(name, value)
+  def write(name, value, _ = nil)
     @cache[name] = value
   end
 end
