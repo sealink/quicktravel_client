@@ -172,6 +172,7 @@ module QuickTravel
     end
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
+      self.base_uri Adapter.base_uri # update in subclass from parent
       http_params = opts.clone
       return_response_object = http_params.delete(:return_response_object)
       klass = self

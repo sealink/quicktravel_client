@@ -13,11 +13,12 @@ require 'date' # Needed for stamp
 require 'stamp' # Some reasons stamp doesn't load automatically?
 require 'vcr'
 
-qt_key = ENV['QT_KEY'] || 'test_key'
+qt_keys = (ENV['QT_KEYS'].split(',') if ENV['QT_KEYS']) || 'test_key'
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/support/cassettes'
   c.default_cassette_options = { match_requests_on: [:method, :uri, :body] }
-  c.filter_sensitive_data('<QT_KEY>') { qt_key }
+  c.filter_sensitive_data('<QT_KEY>') { qt_keys[0] }
+  c.filter_sensitive_data('<QT_KEY_2>') { qt_keys[1] }
   c.hook_into :fakeweb
 end
 
@@ -45,7 +46,7 @@ end
 require 'quick_travel/config'
 QuickTravel.configure do |c|
   c.url = 'http://0.0.0.0:8080'
-  c.access_key = qt_key
+  c.access_key = qt_keys[0]
 end
 
 require 'quick_travel/connection_error'
