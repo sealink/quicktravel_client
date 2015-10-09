@@ -11,7 +11,6 @@ require 'quick_travel/init_from_hash'
 
 module QuickTravel
   class Adapter
-    include HTTParty
     include QuickTravel::InitFromHash
     include MoneyField
 
@@ -172,77 +171,11 @@ module QuickTravel
     end
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
-      self.base_uri Adapter.base_uri # update in subclass from parent
-      http_params = opts.clone
-      return_response_object = http_params.delete(:return_response_object)
-      klass = self
-
-      # Set default token
-      http_params[:query] ||= query
-      http_params[:headers] ||= {}
-      http_params[:headers]['Content-length'] = '0' if http_params[:body].blank?
-      expect = http_params.delete(:expect)
-
-      # Use :body instead of :query for put/post.
-      #
-      # Causes webrick to give back error - -maybe other servers too.
-      http_params[:body] ||= {}
-      if [:put, :post].include?(http_method.to_sym)
-        http_params[:body].merge!(http_params.delete(:query))
-      end
-      http_params[:body][:access_key] = QuickTravel.config.access_key
-      http_params[:follow_redirects] = false
-
-      begin
-        response = klass.send(http_method, path, http_params)
-      rescue Errno::ECONNREFUSED
-        raise ConnectionError.new('Connection refused')
-      rescue SocketError
-        raise ConnectionError.new('Socket error')
-      rescue Timeout::Error
-        raise ConnectionError.new('Timeout error')
-      end
-
-      if expect && expect == :json && !response.is_a?(Hash)
-        fail AdapterException, <<-FAIL
-          Request expected to be json but failed. Debug information below:
-          http_method: #{http_method.inspect}
-          path: #{path.inspect}
-          http_params: #{http_params.inspect}
-          response object: #{response.inspect}
-          parsed_response: #{response.parsed_response.inspect}
-        FAIL
-      end
-
-      klass.validate!(response)
-
-      if return_response_object
-        response
-      else
-        response.parsed_response
-      end
+      Api.call_and_validate(http_method, path, query, opts)
     end
 
-    # Do standard validations on response
-    #
-    # Firstly, check if a valid HTTP code was returned
-    # Secondly, check for presence of "error" key in returned hash
-    def self.validate!(response)
-      case response.code
-        when 300..399 # redirects
-          fail ConnectionError.new('We were redirected. QT YML configuration appears to be incorrect. Verify your URL and API.')
-        when 400..599 # client and server errors
-          fail AdapterException.new(response)
-      end
-
-      if response_contains_error?(response)
-        fail AdapterException, response
-      end
-    end
-
-    def self.response_contains_error?(response)
-      parsed_response = response.parsed_response
-      parsed_response.is_a?(Hash) && parsed_response.key?('error')
+    def self.base_uri(uri = nil)
+      Api.base_uri uri
     end
   end
 
@@ -279,6 +212,82 @@ module QuickTravel
     def convert(value, conversion_method)
       convertable_value = value.is_a?(Hash) ? value['_value'] : value
       convertable_value.send(conversion_method)
+    end
+  end
+
+  class Api
+    include HTTParty
+
+    def self.call_and_validate(http_method, path, query = {}, opts = {})
+      http_params = opts.clone
+      return_response_object = http_params.delete(:return_response_object)
+
+      # Set default token
+      http_params[:query] ||= query
+      http_params[:headers] ||= {}
+      http_params[:headers]['Content-length'] = '0' if http_params[:body].blank?
+      expect = http_params.delete(:expect)
+
+      # Use :body instead of :query for put/post.
+      #
+      # Causes webrick to give back error - -maybe other servers too.
+      http_params[:body] ||= {}
+      if [:put, :post].include?(http_method.to_sym)
+        http_params[:body].merge!(http_params.delete(:query))
+      end
+      http_params[:body][:access_key] = QuickTravel.config.access_key
+      http_params[:follow_redirects] = false
+
+      begin
+        response = self.send(http_method, path, http_params)
+      rescue Errno::ECONNREFUSED
+        raise ConnectionError.new('Connection refused')
+      rescue SocketError
+        raise ConnectionError.new('Socket error')
+      rescue Timeout::Error
+        raise ConnectionError.new('Timeout error')
+      end
+
+      if expect && expect == :json && !response.is_a?(Hash)
+        fail AdapterException, <<-FAIL
+          Request expected to be json but failed. Debug information below:
+          http_method: #{http_method.inspect}
+          path: #{path.inspect}
+          http_params: #{http_params.inspect}
+          response object: #{response.inspect}
+          parsed_response: #{response.parsed_response.inspect}
+        FAIL
+      end
+
+      validate!(response)
+
+      if return_response_object
+        response
+      else
+        response.parsed_response
+      end
+    end
+
+    # Do standard validations on response
+    #
+    # Firstly, check if a valid HTTP code was returned
+    # Secondly, check for presence of "error" key in returned hash
+    def self.validate!(response)
+      case response.code
+      when 300..399 # redirects
+        fail ConnectionError.new('We were redirected. QT YML configuration appears to be incorrect. Verify your URL and API.')
+      when 400..599 # client and server errors
+        fail AdapterException.new(response)
+      end
+
+      if response_contains_error?(response)
+        fail AdapterException, response
+      end
+    end
+
+    def self.response_contains_error?(response)
+      parsed_response = response.parsed_response
+      parsed_response.is_a?(Hash) && parsed_response.key?('error')
     end
   end
 end
