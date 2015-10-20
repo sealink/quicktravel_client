@@ -1,5 +1,5 @@
 module QuickTravel
-  class ConnectionError < Exception
+  class ConnectionError < StandardError
     attr_reader :original
     def initialize(msg, original = $ERROR_INFO)
       super(msg)
