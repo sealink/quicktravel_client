@@ -6,7 +6,7 @@ require 'money'
 require 'money_extensions/money_field'
 
 require 'quick_travel/config'
-require 'quick_travel/adapter_exception'
+require 'quick_travel/adapter_error'
 require 'quick_travel/init_from_hash'
 
 module QuickTravel
