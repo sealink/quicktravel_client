@@ -13,6 +13,10 @@ module QuickTravel
       yield.tap { |value| cache_store.write(key, value, cache_options) }
     end
 
+    def self.clear
+      cache_store.clear
+    end
+
     def self.cache_store
       @@cache_store
     end
