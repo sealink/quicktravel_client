@@ -21,18 +21,4 @@ module QuickTravel
       @@cache_store = store
     end
   end
-
-  class DefaultCacheStore
-    def initialize
-      @store = {}
-    end
-
-    def write(key, value)
-      @store[key] = value
-    end
-
-    def read(key)
-      @store[key]
-    end
-  end
 end
