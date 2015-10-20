@@ -66,6 +66,10 @@ class HashCache
   def write(name, value, _ = nil)
     @cache[name] = value
   end
+
+  def clear
+    @cache = {}
+  end
 end
 
 QuickTravel::Cache.cache_store = HashCache.new
