@@ -10,6 +10,7 @@ module QuickTravel
   require 'quick_travel/adapter'
   require 'quick_travel/adapter_error'
   require 'quick_travel/connection_error'
+  require 'quick_travel/status'
 
   # Don't include this guy: pull the pieces into the classes that use it, or ref
   require 'quick_travel/constants'
