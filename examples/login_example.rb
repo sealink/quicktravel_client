@@ -14,7 +14,7 @@ password = gets.chomp
 puts "Ok #{login}, just a tick..."
 result = begin
   QuickTravel::Party.login(login: login, password: password)
-rescue QuickTravel::AdapterException
+rescue QuickTravel::AdapterError
   nil
 end
 

@@ -249,7 +249,7 @@ module QuickTravel
       end
 
       if expect && expect == :json && !response.is_a?(Hash)
-        fail AdapterException, <<-FAIL
+        fail AdapterError, <<-FAIL
           Request expected to be json but failed. Debug information below:
           http_method: #{http_method.inspect}
           path: #{path.inspect}
@@ -277,11 +277,11 @@ module QuickTravel
       when 300..399 # redirects
         fail ConnectionError.new('We were redirected. QT YML configuration appears to be incorrect. Verify your URL and API.')
       when 400..599 # client and server errors
-        fail AdapterException.new(response)
+        fail AdapterError.new(response)
       end
 
       if response_contains_error?(response)
-        fail AdapterException, response
+        fail AdapterError, response
       end
     end
 

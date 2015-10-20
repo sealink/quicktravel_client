@@ -83,7 +83,7 @@ module QuickTravel
       options = { booking: default_options.merge(options) }
 
       response = post_and_validate("#{api_base}.json", options)
-      fail AdapterException.new(response) unless response['id']
+      fail AdapterError.new(response) unless response['id']
 
       return nil unless response['id']
       Booking.new(response)
@@ -93,7 +93,7 @@ module QuickTravel
     def update(options = {})
       response = put_and_validate("#{api_base}/#{@id}.json", booking: options)
       # id is returned if other attributes change otherwise success: true
-      fail AdapterException.new(response) unless response['id'] || response['success']
+      fail AdapterError.new(response) unless response['id'] || response['success']
 
       Booking.find(@id)
     end
@@ -108,7 +108,7 @@ module QuickTravel
     def update_with_nested_attributes!(booking_args = {})
       response = put_and_validate("#{api_base}/#{@id}/update_with_nested_attributes.json",
                                   booking: booking_args)
-      fail AdapterException.new(response) unless response['id']
+      fail AdapterError.new(response) unless response['id']
       Booking.find(response['id'])
     end
 
@@ -142,7 +142,7 @@ module QuickTravel
     # }
     def accommodation_reserve(reservations_options = {})
       if reservations_options[:last_travel_date].nil?
-        fail AdapterException.new('No checkout date specified')
+        fail AdapterError.new('No checkout date specified')
       end
 
       last_travel_date = Date.strptime(reservations_options[:last_travel_date], '%d/%m/%Y')
@@ -203,7 +203,7 @@ module QuickTravel
 
     def delete_reservation_by_id(reservation_id)
       if state != 'new'
-        fail AdapterException.new('Reservation cannot be deleted unless the booking is new')
+        fail AdapterError.new('Reservation cannot be deleted unless the booking is new')
       end
 
       delete_and_validate("#{api_base}/#{@id}/reservations/#{reservation_id}.json")
@@ -247,7 +247,7 @@ module QuickTravel
     # It returns booking items for a booking.
     # Array of BookingItem
     def reservations
-      fail AdapterException, 'Reservations have not been set from API' if @reservations_attributes.nil?
+      fail AdapterError, 'Reservations have not been set from API' if @reservations_attributes.nil?
       @_reservations_object_array ||= @reservations_attributes.map { |item| Reservation.new(item) }
     end
 

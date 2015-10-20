@@ -42,7 +42,7 @@ module QuickTravel
 
     def self.set_password_via_token(token, password)
       post_and_validate('/sessions/set_password_via_token', token: token, password: password)
-    rescue QuickTravel::AdapterException => e
+    rescue QuickTravel::AdapterError => e
       { error: e.message }
     end
   end

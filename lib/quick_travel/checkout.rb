@@ -45,7 +45,7 @@ module QuickTravel
       attrs[:completed] = (attrs['progress'] == 'completed')
       attrs[:successful] = attrs[:completed]
       attrs
-    rescue AdapterException => e
+    rescue AdapterError => e
       {
         completed:  true,
         successful: false,
