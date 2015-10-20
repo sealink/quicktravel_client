@@ -21,7 +21,7 @@ describe QuickTravel::Reservation do
           resource_id: '4',
           first_travel_date: '2099-09-10'
         )
-      rescue QuickTravel::AdapterException => e
+      rescue QuickTravel::AdapterError => e
         expect(e.message).to match(/^No services selected for/)
       end
     end

@@ -7,7 +7,7 @@ module QuickTravel
     def self.create(booking_id, vehicle_types = {})
       options = { booking_id: booking_id, vehicle_types: vehicle_types }
       response = post_and_validate("#{Booking.front_office_base}/#{booking_id}/vehicles.json", options)
-      fail AdapterException.new(response) unless response.key?('booking_id')
+      fail AdapterError.new(response) unless response.key?('booking_id')
     end
 
     def vehicle_type

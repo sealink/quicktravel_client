@@ -50,25 +50,25 @@ module QuickTravel
 
     def get_return_route_stop!(forward_stop)
       if forward_stop.blank?
-        fail AdapterException, 'Selected pick up/drop off stops have not been set up for the selected route.'
+        fail AdapterError, 'Selected pick up/drop off stops have not been set up for the selected route.'
       end
 
       reverse_stop = get_reverse_route!.route_stops.detect { |route_stop| route_stop.name == forward_stop.name }
 
       if reverse_stop.blank?
-        fail AdapterException, 'Selected pick up/drop off stops have not been setup on the reverse route.'
+        fail AdapterError, 'Selected pick up/drop off stops have not been setup on the reverse route.'
       end
       reverse_stop
     end
 
     def get_reverse_route!
       if reverse_id.blank?
-        fail AdapterException, 'Reverse has not been setup for the selected route.'
+        fail AdapterError, 'Reverse has not been setup for the selected route.'
       end
 
       reverse_route = Route.find_by_route_id_and_product_type_id(reverse_id, product_type_id)
       if reverse_route.blank?
-        fail AdapterException, 'Reverse does not exist for the selected route.'
+        fail AdapterError, 'Reverse does not exist for the selected route.'
       end
 
       reverse_route

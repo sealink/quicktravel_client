@@ -1,5 +1,5 @@
 module QuickTravel
-  class AdapterException < Exception
+  class AdapterError < StandardError
     attr_reader :response
 
     def initialize(response)
