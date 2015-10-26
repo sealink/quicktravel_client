@@ -32,6 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'stamp' # Used to send appropriate dates to API's
   spec.add_development_dependency 'vcr'
-  spec.add_development_dependency 'fakeweb'
+  spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'rubocop'
 end
