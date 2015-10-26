@@ -23,3 +23,7 @@ tmp
 /tags
 /.tags
 /TAGS
+
+# Gems
+/vendor/ruby
+
