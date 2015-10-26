@@ -2,47 +2,53 @@
 http_interactions:
 - request:
     method: get
-    uri: http://0.0.0.0:8080/passenger_types.json?
+    uri: http://test.qt.sealink.com.au:8080/passenger_types.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
-      content-length:
+      Content-Length:
       - '0'
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
-      p3p:
+      P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
-      content-type:
+      Content-Type:
       - application/json; charset=utf-8
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      etag:
-      - ! '"9a626d0671a91ec1f177c50925f2d74a"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-request-id:
-      - dc992b62dc7de0631c1dd146a6458d2b
-      x-runtime:
-      - '0.021192'
-      date:
-      - Thu, 28 Feb 2013 14:22:17 GMT
-      x-rack-cache:
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-store, must-revalidate, private, max-age=0
+      X-Request-Id:
+      - d0e28004b1b7d2aa30435308831d0026
+      X-Runtime:
+      - '0.149156'
+      Vary:
+      - Origin
+      X-Rack-Cache:
       - miss
-      server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
-      content-length:
+      X-Miniprofiler-Ids:
+      - '["hc2nd9g85pcfaqbxtvgz","3n393d46407xjckipoz4","sbzq3sn22o19v6amh4lx","hnsva789t8cmifp64wx3","wmmnukmwie7vr7vj8xqf","2brmax1rs5fwk4fd7n5","dvsmvrl183r0tifnlw46","5o49qsg88hbcsljo43fu","w0wrmi9s9rgua6owkm3z","lxziuvwk5cnyi9wz6zbf"]'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      Date:
+      - Mon, 26 Oct 2015 00:18:47 GMT
+      Content-Length:
       - '488'
-      connection:
-      - close
-      set-cookie:
-      - _session_id=79bfcc83fe8879e29d3fac1b4d669a9f; path=/; HttpOnly
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      - __profilin=p%3Dt; path=/
+      - __profilin=p%3Dt; path=/
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTU4OTZjYjk4YWRhNDZhYjVhNTk0MThiOWYyMjRkZGIwBjsAVEkiCXVzZXIGOwBGaQY%3D--cbcd1d84f0f511b7d0981571df7c55984f20727b;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad"},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In"},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch"}]'
-    http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:39:06 GMT
+      encoding: UTF-8
+      string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad"},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In"},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch"}]'
+    http_version: 
+  recorded_at: Mon, 26 Oct 2015 00:18:47 GMT
 recorded_with: VCR 2.9.3

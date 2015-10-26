@@ -3,8 +3,8 @@ require 'quick_travel/adapter'
 require 'quick_travel/product_type'
 
 describe QuickTravel::Adapter do
-  let(:tenant1) { 'http://sealink.dev:3000' }
-  let(:tenant2) { 'http://sealinkqld.dev:3000' }
+  let(:tenant1) { 'http://test.qt.sealink.com.au:8080' }
+  let(:tenant2) { 'http://test.qt.other.com.au:8080' }
 
   let(:qt_keys) { ENV['QT_KEYS'].split(',') }
 

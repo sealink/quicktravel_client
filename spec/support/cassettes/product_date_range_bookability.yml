@@ -2,76 +2,50 @@
 http_interactions:
 - request:
     method: get
-    uri: http://0.0.0.0:8080/api/products/date_range_bookability.json?travel_date=2016-03-01&duration=7&default_pax_type_numbers[1]=1&passenger_type_numbers[1]=2&passenger_type_numbers[2]=1&resource_ids[]=3&resource_ids[]=4&resource_ids[]=6
+    uri: http://test.qt.sealink.com.au:8080/api/products/date_range_bookability.json?default_pax_type_numbers%5B%5D=1&duration=7&passenger_type_numbers%5B%5D=1&passenger_type_numbers%5B%5D=2&resource_ids%5B%5D=3&resource_ids%5B%5D=4&resource_ids%5B%5D=6&travel_date=2016-03-01
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
-      content-length:
+      Content-Length:
       - '0'
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
-      p3p:
+      P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
-      content-type:
+      Content-Type:
       - application/json; charset=utf-8
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      etag:
-      - ! '"b62d88353d656ffbd977844c49249cbd"'
-      cache-control:
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - '"363f9713349a90718009de666f659c99"'
+      Cache-Control:
       - max-age=0, private, must-revalidate
-      x-request-id:
-      - 27d67bbdfb4740625ddd39e02668dde7
-      x-runtime:
-      - '1.535397'
-      date:
-      - Thu, 28 Feb 2013 13:48:11 GMT
-      x-rack-cache:
+      X-Request-Id:
+      - fffda633d68528c851791789916ea978
+      X-Runtime:
+      - '2.516408'
+      Vary:
+      - Origin
+      Date:
+      - Mon, 26 Oct 2015 02:17:08 GMT
+      X-Rack-Cache:
       - miss
-      server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
-      content-length:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      Content-Length:
       - '23034'
-      connection:
-      - close
-      set-cookie:
-      - _session_id=7028952a6de9d2e6e96caafc21dad8f7; path=/; HttpOnly
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWVhYmFiOTY3YTBjOTgwODUzODIxYTExYzg1Yzc3NWI4BjsAVEkiCXVzZXIGOwBGaQY%3D--a7104a386507de61530c86e5274a505d005afa5a;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '[{"resource":{"id":6,"name":"Executive Room"},"bookability":{"2016-03-01":{"available":false,"availability_details":{"available":false,"capacity":2,"available_capacity":1,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":30000},"pricing_details":{"minimum_price":{"_type":"Money","_value":30000},"minimum_price_with_adjustments":{"_type":"Money","_value":15000},"adjustments_to_apply":[{"description":"50%
-        Off","gross":{"_type":"Money","_value":-15000},"gross_in_cents":-15000}],"total_adjustments":{"_type":"Money","_value":-15000},"price_per_pax_type":{"":30000},"minimum_price_in_cents":30000,"minimum_price_with_adjustments_in_cents":15000,"total_adjustments_in_cents":-15000,"adjustments_to_apply_in_cents":[-15000],"applied_rules":["Test
-        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
-        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x0000000e847c00\u003E"},"2016-03-02":{"available":false,"availability_details":{"available":false,"capacity":2,"available_capacity":1,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":30000},"pricing_details":{"minimum_price":{"_type":"Money","_value":30000},"minimum_price_with_adjustments":{"_type":"Money","_value":15000},"adjustments_to_apply":[{"description":"50%
-        Off","gross":{"_type":"Money","_value":-15000},"gross_in_cents":-15000}],"total_adjustments":{"_type":"Money","_value":-15000},"price_per_pax_type":{"":30000},"minimum_price_in_cents":30000,"minimum_price_with_adjustments_in_cents":15000,"total_adjustments_in_cents":-15000,"adjustments_to_apply_in_cents":[-15000],"applied_rules":["Test
-        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
-        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x00000007dad570\u003E"},"2016-03-03":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":30000},"pricing_details":{"minimum_price":{"_type":"Money","_value":30000},"minimum_price_with_adjustments":{"_type":"Money","_value":15000},"adjustments_to_apply":[{"description":"50%
-        Off","gross":{"_type":"Money","_value":-15000},"gross_in_cents":-15000}],"total_adjustments":{"_type":"Money","_value":-15000},"price_per_pax_type":{"":30000},"minimum_price_in_cents":30000,"minimum_price_with_adjustments_in_cents":15000,"total_adjustments_in_cents":-15000,"adjustments_to_apply_in_cents":[-15000],"applied_rules":["Test
-        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
-        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x0000000d307b88\u003E"},"2016-03-04":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":30000},"pricing_details":{"minimum_price":{"_type":"Money","_value":30000},"minimum_price_with_adjustments":{"_type":"Money","_value":15000},"adjustments_to_apply":[{"description":"50%
-        Off","gross":{"_type":"Money","_value":-15000},"gross_in_cents":-15000}],"total_adjustments":{"_type":"Money","_value":-15000},"price_per_pax_type":{"":30000},"minimum_price_in_cents":30000,"minimum_price_with_adjustments_in_cents":15000,"total_adjustments_in_cents":-15000,"adjustments_to_apply_in_cents":[-15000],"applied_rules":["Test
-        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
-        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x0000000e0414c0\u003E"},"2016-03-05":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":30000},"pricing_details":{"minimum_price":{"_type":"Money","_value":30000},"minimum_price_with_adjustments":{"_type":"Money","_value":15000},"adjustments_to_apply":[{"description":"50%
-        Off","gross":{"_type":"Money","_value":-15000},"gross_in_cents":-15000}],"total_adjustments":{"_type":"Money","_value":-15000},"price_per_pax_type":{"":30000},"minimum_price_in_cents":30000,"minimum_price_with_adjustments_in_cents":15000,"total_adjustments_in_cents":-15000,"adjustments_to_apply_in_cents":[-15000],"applied_rules":["Test
-        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
-        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x0000000e98f7c0\u003E"},"2016-03-06":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":30000},"pricing_details":{"minimum_price":{"_type":"Money","_value":30000},"minimum_price_with_adjustments":{"_type":"Money","_value":15000},"adjustments_to_apply":[{"description":"50%
-        Off","gross":{"_type":"Money","_value":-15000},"gross_in_cents":-15000}],"total_adjustments":{"_type":"Money","_value":-15000},"price_per_pax_type":{"":30000},"minimum_price_in_cents":30000,"minimum_price_with_adjustments_in_cents":15000,"total_adjustments_in_cents":-15000,"adjustments_to_apply_in_cents":[-15000],"applied_rules":["Test
-        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
-        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x0000000f1ea758\u003E"},"2016-03-07":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":30000},"pricing_details":{"minimum_price":{"_type":"Money","_value":30000},"minimum_price_with_adjustments":{"_type":"Money","_value":15000},"adjustments_to_apply":[{"description":"50%
-        Off","gross":{"_type":"Money","_value":-15000},"gross_in_cents":-15000}],"total_adjustments":{"_type":"Money","_value":-15000},"price_per_pax_type":{"":30000},"minimum_price_in_cents":30000,"minimum_price_with_adjustments_in_cents":15000,"total_adjustments_in_cents":-15000,"adjustments_to_apply_in_cents":[-15000],"applied_rules":["Test
-        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
-        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x0000000e7d23b0\u003E"}}},{"resource":{"id":3,"name":"QBE
-        Travel Insurance - Policy E"},"bookability":{"2016-03-01":{"available":true,"availability_details":{"available":true,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":1,"price":{"_type":"Money","_value":6000},"pricing_details":{"minimum_price":{"_type":"Money","_value":6000},"minimum_price_with_adjustments":{"_type":"Money","_value":3000},"adjustments_to_apply":[{"description":"50%
+      encoding: UTF-8
+      string: '[{"resource":{"id":3,"name":"QBE Travel Insurance - Policy E"},"bookability":{"2016-03-01":{"available":true,"availability_details":{"available":true,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":1,"price":{"_type":"Money","_value":6000},"pricing_details":{"minimum_price":{"_type":"Money","_value":6000},"minimum_price_with_adjustments":{"_type":"Money","_value":3000},"adjustments_to_apply":[{"description":"50%
         Off","gross":{"_type":"Money","_value":-3000},"gross_in_cents":-3000}],"total_adjustments":{"_type":"Money","_value":-3000},"price_per_pax_type":{"1":3000,"2":0},"minimum_price_in_cents":6000,"minimum_price_with_adjustments_in_cents":3000,"total_adjustments_in_cents":-3000,"adjustments_to_apply_in_cents":[-3000],"applied_rules":["QBE
         Get Me"]},"reservation_attributes":{"resource_id":3},"resource_class_name_underscore":"insurance","product_name_underscore":"travel_insurance","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"QBE
         Travel Insurance - Policy E","description":"QBE Travel Insurance - Policy
@@ -112,7 +86,35 @@ http_interactions:
         Insurance - Declined","description":"Travel Insurance - Declined","error_message":"No
         services setup"},"2016-03-07":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":1,"price":{"_type":"Money","_value":6000},"pricing_details":{"minimum_price":{"_type":"Money","_value":6000},"minimum_price_with_adjustments":{"_type":"Money","_value":6000},"adjustments_to_apply":[],"total_adjustments":{"_type":"Money","_value":0},"price_per_pax_type":{"1":3000,"2":0},"minimum_price_in_cents":6000,"minimum_price_with_adjustments_in_cents":6000,"total_adjustments_in_cents":0,"adjustments_to_apply_in_cents":[],"applied_rules":[]},"reservation_attributes":{"resource_id":4},"resource_class_name_underscore":"insurance","product_name_underscore":"travel_insurance","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Travel
         Insurance - Declined","description":"Travel Insurance - Declined","error_message":"No
-        services setup"}}}]'
-    http_version: '1.1'
-  recorded_at: Fri, 19 Dec 2014 00:10:15 GMT
+        services setup"}}},{"resource":{"id":6,"name":"Executive Room"},"bookability":{"2016-03-01":{"available":false,"availability_details":{"available":false,"capacity":2,"available_capacity":1,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":25000},"pricing_details":{"minimum_price":{"_type":"Money","_value":25000},"minimum_price_with_adjustments":{"_type":"Money","_value":12500},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-12500},"gross_in_cents":-12500}],"total_adjustments":{"_type":"Money","_value":-12500},"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"adjustments_to_apply_in_cents":[-12500],"applied_rules":["Test
+        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
+        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
+        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x007f82b02a0938\u003E"},"2016-03-02":{"available":false,"availability_details":{"available":false,"capacity":2,"available_capacity":1,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":25000},"pricing_details":{"minimum_price":{"_type":"Money","_value":25000},"minimum_price_with_adjustments":{"_type":"Money","_value":12500},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-12500},"gross_in_cents":-12500}],"total_adjustments":{"_type":"Money","_value":-12500},"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"adjustments_to_apply_in_cents":[-12500],"applied_rules":["Test
+        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
+        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
+        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x007f82b032bb50\u003E"},"2016-03-03":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":25000},"pricing_details":{"minimum_price":{"_type":"Money","_value":25000},"minimum_price_with_adjustments":{"_type":"Money","_value":12500},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-12500},"gross_in_cents":-12500}],"total_adjustments":{"_type":"Money","_value":-12500},"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"adjustments_to_apply_in_cents":[-12500],"applied_rules":["Test
+        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
+        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
+        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x007f82af4f6058\u003E"},"2016-03-04":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":25000},"pricing_details":{"minimum_price":{"_type":"Money","_value":25000},"minimum_price_with_adjustments":{"_type":"Money","_value":12500},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-12500},"gross_in_cents":-12500}],"total_adjustments":{"_type":"Money","_value":-12500},"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"adjustments_to_apply_in_cents":[-12500],"applied_rules":["Test
+        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
+        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
+        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x007f82c74c0e90\u003E"},"2016-03-05":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":25000},"pricing_details":{"minimum_price":{"_type":"Money","_value":25000},"minimum_price_with_adjustments":{"_type":"Money","_value":12500},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-12500},"gross_in_cents":-12500}],"total_adjustments":{"_type":"Money","_value":-12500},"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"adjustments_to_apply_in_cents":[-12500],"applied_rules":["Test
+        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
+        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
+        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x007f82c628ce68\u003E"},"2016-03-06":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":25000},"pricing_details":{"minimum_price":{"_type":"Money","_value":25000},"minimum_price_with_adjustments":{"_type":"Money","_value":12500},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-12500},"gross_in_cents":-12500}],"total_adjustments":{"_type":"Money","_value":-12500},"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"adjustments_to_apply_in_cents":[-12500],"applied_rules":["Test
+        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
+        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
+        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x007f82c7410f40\u003E"},"2016-03-07":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":25000},"pricing_details":{"minimum_price":{"_type":"Money","_value":25000},"minimum_price_with_adjustments":{"_type":"Money","_value":12500},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-12500},"gross_in_cents":-12500}],"total_adjustments":{"_type":"Money","_value":-12500},"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"adjustments_to_apply_in_cents":[-12500],"applied_rules":["Test
+        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
+        Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
+        reserve more than 2 passengers in #\u003CResourceService::ConsumerRestrictionChecker:0x007f82c63baee8\u003E"}}}]'
+    http_version: 
+  recorded_at: Mon, 26 Oct 2015 02:17:08 GMT
 recorded_with: VCR 2.9.3
