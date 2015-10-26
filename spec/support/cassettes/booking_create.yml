@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://0.0.0.0:8080/api/bookings.json
+    uri: http://test.qt.sealink.com.au:8080/api/bookings.json
     body:
       encoding: UTF-8
       string: booking[referral_code_id]=33&access_key=<QT_KEY>

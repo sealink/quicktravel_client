@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://0.0.0.0:8080/api/bookings/1/discount.json?
+    uri: http://test.qt.sealink.com.au:8080/api/bookings/1/discount.json
     body:
       encoding: UTF-8
       string: access_key=<QT_KEY>

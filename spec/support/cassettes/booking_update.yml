@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://0.0.0.0:8080/api/bookings/3.json
+    uri: http://test.qt.sealink.com.au:8080/api/bookings/11.json
     body:
       encoding: UTF-8
       string: booking[customer_contact_name]=John&access_key=<QT_KEY>

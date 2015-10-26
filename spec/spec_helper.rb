@@ -46,7 +46,7 @@ end
 
 require 'quick_travel/config'
 QuickTravel.configure do |c|
-  c.url = 'http://0.0.0.0:8080'
+  c.url = 'http://test.qt.sealink.com.au:8080'
   c.access_key = qt_keys[0]
 end
 

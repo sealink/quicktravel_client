@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://0.0.0.0:8080/passenger_types.json?
+    uri: http://test.qt.sealink.com.au:8080/passenger_types.json
     body:
       encoding: UTF-8
       string: access_key=<QT_KEY>
