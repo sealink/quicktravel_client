@@ -4,114 +4,126 @@ http_interactions:
     method: get
     uri: http://0.0.0.0:8080/api/bookings/1.json?
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
-      content-length:
+      Content-Length:
       - '0'
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
-      p3p:
+      P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
-      content-type:
+      Content-Type:
       - application/json; charset=utf-8
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      etag:
-      - ! '"979f11e6024532d965e0b8281488f134"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-request-id:
-      - 843b269e235cf88c2b29901b8ae25c85
-      x-runtime:
-      - '0.128731'
-      date:
-      - Thu, 28 Feb 2013 14:20:59 GMT
-      x-rack-cache:
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-store, must-revalidate, private, max-age=0
+      X-Request-Id:
+      - e484be28139a6e16289015effe20f107
+      X-Runtime:
+      - '0.965696'
+      Vary:
+      - Origin
+      X-Rack-Cache:
       - miss
-      server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
-      content-length:
-      - '11694'
-      connection:
-      - close
-      set-cookie:
-      - _session_id=27e1d1ad1683ee7e4955e0f7384f1de2; path=/; HttpOnly
+      X-Miniprofiler-Ids:
+      - '["v89i3py9r73xf497p5uw","3n393d46407xjckipoz4","sbzq3sn22o19v6amh4lx","hnsva789t8cmifp64wx3","wmmnukmwie7vr7vj8xqf","2brmax1rs5fwk4fd7n5","dvsmvrl183r0tifnlw46","5o49qsg88hbcsljo43fu","w0wrmi9s9rgua6owkm3z","lxziuvwk5cnyi9wz6zbf"]'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      Date:
+      - Mon, 26 Oct 2015 00:18:45 GMT
+      Content-Length:
+      - '12124'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      - __profilin=p%3Dt; path=/
+      - __profilin=p%3Dt; path=/
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWY4YTQ1MDAxOGIwMGQzMTgxZDYxMmY1YWVlMWY0OGViBjsAVEkiCXVzZXIGOwBGaQY%3D--17d992c7f13a7208dbca2e4c4a036704ccb798c4;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '{"id":1,"state":"new","reference":"222223","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"post_code":null,"referral_code_id":1,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":38000,"nett_in_cents":38000,"gross_in_cents":38000,"commission_in_cents":0,"balance_in_cents":38000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"promo_code":null,"insurance_offered":false,"deposit_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00+10:30"},"balance_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00+10:30"},"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"complete":true,"reason_not_complete":null,"discardable_in":50,"inactivatable_in":0,"notices":{},"deposit_relevant":false,"passenger_ids":[1,2],"vehicle_ids":[],"reservation_ids":[1,3,2],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":1,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":1},{"id":2,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":1,"booking_id":1,"description":"A
-        basic studio room","comment":"","active":true,"service_ids":[3,4],"resource_id":6,"quantity":null,"complete":true,"reason_not_complete":null,"enough_time_before_travel_to_edit":true,"bed_configuration":"1
-        x Double","product_type_id":2,"itinerary_footer":false,"fare_basis_set_id":12,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":6,"pick_up_info":null,"drop_off_info":null,"selection_name":"Hilton
-        Hotel:  Executive Room","product_name_underscore":"accommodation","resource_class_name_underscore":"accommodation","resource_class_name":"Accommodation","first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"durational":true,"duration":2,"checkout_date":{"_type":"Date","_value":"2016-03-03"},"duration_units":"Nights","date_start_label":"In:","date_end_label":"Out:","accommodation_extra_picks":false,"has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
-        Priced as: Rack Rate","gross_including_packaged_item_in_cents":38000,"pre_adjusted_gross_including_packaged_item_in_cents":64000,"gross_in_cents":20000,"pre_adjusted_gross_in_cents":40000,"pre_adjusted_commission_in_cents":0,"cost_in_cents":20000,"sub_items_gross_in_cents":18000,"adjustments_attributes":[{"id":6,"gross_in_cents":-20000,"creator":{"_access_ip":null,"_access_key":null,"_crypted_password":null,"_login":null,"_password":null,"_remember_token":null,"_remember_token_expires_at":null,"_salt":null,"active":true,"age":null,"business_number":null,"business_number_type":null,"created_at":"2013-03-01T00:00:02+10:30","creator_id":null,"currency_iso_code":"AUD","first_name":"administrator","gender":null,"id":1,"internal_staff":true,"internal_subdivision":false,"last_name":"administrator","name":"Administrator
+      encoding: UTF-8
+      string: '{"id":1,"state":"active","reference":"222223","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":3,"post_code":"","referral_code_id":1,"created_at":"2013-03-01T00:05:46+10:30","updated_at":"2013-03-01T00:15:33+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":38000,"nett_in_cents":38000,"gross_in_cents":38000,"commission_in_cents":0,"balance_in_cents":38000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00+10:30"},"balance_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00+10:30"},"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"complete":true,"reason_not_complete":null,"discardable_in":-1395933,"inactivatable_in":-1395983,"notices":{},"passenger_ids":[1,2],"vehicle_ids":[],"reservation_ids":[1,3,2],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":1,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":1},{"id":2,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":1,"booking_id":1,"description":"A
+        basic studio room","comment":"","active":true,"service_ids":[3,4],"resource_id":6,"quantity":null,"adjustments_attributes":[{"id":6,"gross_in_cents":-20000,"creator":{"_access_ip":null,"_access_key":null,"_crypted_password":null,"_login":null,"_password":null,"_remember_token":null,"_remember_token_expires_at":null,"_salt":null,"active":true,"age":null,"business_number":null,"business_number_type":null,"created_at":"2013-03-01T00:00:02+10:30","creator_id":null,"currency_iso_code":"AUD","first_name":"administrator","gender":null,"id":1,"internal_staff":true,"internal_subdivision":false,"last_name":"administrator","name":"Administrator
         Administrator","notes":null,"remember_token":null,"remember_token_expires_at":null,"salt":null,"title":null,"updated_at":"2013-03-01T00:00:03+10:30","updator_id":null},"created_at":"2013-03-01T00:40:04+10:30","description":"50%
-        Off","adjustable_item_type":"Reservation","adjustable_item_id":1,"automatic":true}],"rules":[{"unique_name":"Test
+        Off","adjustable_item_type":"Reservation","adjustable_item_id":1,"adjustment_definition_id":1,"adjustment_category_id":1,"automatic":true}],"complete":true,"reason_not_complete":null,"enough_time_before_travel_to_edit":true,"bed_configuration":"1
+        x Double","product_type_id":2,"itinerary_footer":false,"fare_basis_set_id":12,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":6,"pick_up_info":null,"drop_off_info":null,"selection_name":"Hilton
+        Hotel:  Executive Room","product_name_underscore":"accommodation","resource_class_name_underscore":"accommodation","resource_class_name":"Accommodation","first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"durational":true,"duration":2,"checkout_date":{"_type":"Date","_value":"2016-03-03"},"duration_units":"Nights","date_start_label":"In:","date_end_label":"Out:","accommodation_extra_picks":false,"expires":false,"has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
+        Priced as: Rack Rate","gross_including_packaged_item_in_cents":38000,"pre_adjusted_gross_including_packaged_item_in_cents":64000,"gross_in_cents":20000,"pre_adjusted_gross_in_cents":40000,"pre_adjusted_commission_in_cents":0,"cost_in_cents":20000,"sub_items_gross_in_cents":18000,"rules":[{"unique_name":"Test
         Discount Hilton","description":"","display_name":"Test Discount Hilton"}],"package":false,"sub_reservation_depth":0,"sub_reservations_attributes":[{"id":3,"booking_id":1,"description":"You
         have declined Travel Insurance for your booking. If you wish to add Travel
         Insurance to this booking, please contact the SeaLink Travel Group on 13 13
-        01 prior to commencing your travels.","comment":null,"active":true,"service_ids":[7,8],"resource_id":4,"quantity":null,"complete":true,"reason_not_complete":null,"enough_time_before_travel_to_edit":true,"product_type_id":7,"itinerary_footer":true,"fare_basis_set_id":8,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":4,"pick_up_info":null,"drop_off_info":null,"selection_name":"Travel
+        01 prior to commencing your travels.","comment":null,"active":true,"service_ids":[7,8],"resource_id":4,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":null,"enough_time_before_travel_to_edit":true,"product_type_id":7,"itinerary_footer":true,"fare_basis_set_id":8,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":4,"pick_up_info":null,"drop_off_info":null,"selection_name":"Travel
         Insurance - Declined","product_name_underscore":"travel_insurance","resource_class_name_underscore":"insurance","resource_class_name":"Insurance","first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"durational":true,"duration":2,"duration_units":"Days","date_start_label":"Start
-        Date:","date_end_label":"End Date:","has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
-        Priced as: Rack Rate","gross_including_packaged_item_in_cents":12000,"pre_adjusted_gross_including_packaged_item_in_cents":12000,"gross_in_cents":12000,"pre_adjusted_gross_in_cents":12000,"pre_adjusted_commission_in_cents":0,"cost_in_cents":8000,"adjustments_attributes":[],"rules":[],"package":false,"sub_reservation_depth":1,"extra_pick":null,"child_resource":true,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pickup_information":null,"dropoff_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":3,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:17:34+10:30","gross_in_cents":6000,"id":7,"services_deck_division_id":null,"updated_at":"2013-03-01T00:17:34+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":3,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:17:34+10:30","gross_in_cents":6000,"id":8,"services_deck_division_id":null,"updated_at":"2013-03-01T00:17:34+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":6000,"2":6000}},{"id":2,"booking_id":1,"description":"QBE
+        Date:","date_end_label":"End Date:","expires":false,"has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
+        Priced as: Rack Rate","gross_including_packaged_item_in_cents":12000,"pre_adjusted_gross_including_packaged_item_in_cents":12000,"gross_in_cents":12000,"pre_adjusted_gross_in_cents":12000,"pre_adjusted_commission_in_cents":0,"cost_in_cents":8000,"rules":[],"package":false,"sub_reservation_depth":1,"extra_pick":null,"child_resource":true,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":3,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:17:34+10:30","gross_in_cents":6000,"id":7,"services_deck_division_id":null,"updated_at":"2013-03-01T00:17:34+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":3,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:17:34+10:30","gross_in_cents":6000,"id":8,"services_deck_division_id":null,"updated_at":"2013-03-01T00:17:34+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":6000,"2":6000}},{"id":2,"booking_id":1,"description":"QBE
         Travel Insurance Policy E known as the ''Australian Cancellation and Additional
         Expenses'' plan has been included into this booking. This covers you for defined
         unforeseen cancellations and additional expenses. Please refer to the Product
-        Disclosure Statement for further information.","comment":null,"active":true,"service_ids":[5,6],"resource_id":3,"quantity":null,"complete":true,"reason_not_complete":null,"enough_time_before_travel_to_edit":true,"product_type_id":7,"itinerary_footer":true,"fare_basis_set_id":8,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":4,"pick_up_info":null,"drop_off_info":null,"selection_name":"QBE
-        Travel Insurance - Policy E","product_name_underscore":"travel_insurance","resource_class_name_underscore":"insurance","resource_class_name":"Insurance","first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"durational":true,"duration":2,"duration_units":"Days","date_start_label":"Start
-        Date:","date_end_label":"End Date:","has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
-        Priced as: Rack Rate","gross_including_packaged_item_in_cents":6000,"pre_adjusted_gross_including_packaged_item_in_cents":12000,"gross_in_cents":6000,"pre_adjusted_gross_in_cents":12000,"pre_adjusted_commission_in_cents":0,"cost_in_cents":8000,"adjustments_attributes":[{"id":5,"gross_in_cents":-6000,"creator":{"_access_ip":null,"_access_key":null,"_crypted_password":null,"_login":null,"_password":null,"_remember_token":null,"_remember_token_expires_at":null,"_salt":null,"active":true,"age":null,"business_number":null,"business_number_type":null,"created_at":"2013-03-01T00:00:02+10:30","creator_id":null,"currency_iso_code":"AUD","first_name":"administrator","gender":null,"id":1,"internal_staff":true,"internal_subdivision":false,"last_name":"administrator","name":"Administrator
+        Disclosure Statement for further information.","comment":null,"active":true,"service_ids":[5,6],"resource_id":3,"quantity":null,"adjustments_attributes":[{"id":5,"gross_in_cents":-6000,"creator":{"_access_ip":null,"_access_key":null,"_crypted_password":null,"_login":null,"_password":null,"_remember_token":null,"_remember_token_expires_at":null,"_salt":null,"active":true,"age":null,"business_number":null,"business_number_type":null,"created_at":"2013-03-01T00:00:02+10:30","creator_id":null,"currency_iso_code":"AUD","first_name":"administrator","gender":null,"id":1,"internal_staff":true,"internal_subdivision":false,"last_name":"administrator","name":"Administrator
         Administrator","notes":null,"remember_token":null,"remember_token_expires_at":null,"salt":null,"title":null,"updated_at":"2013-03-01T00:00:03+10:30","updator_id":null},"created_at":"2013-03-01T00:40:04+10:30","description":"50%
-        Off","adjustable_item_type":"Reservation","adjustable_item_id":2,"automatic":true}],"rules":[{"unique_name":"QBE
-        Get Me","description":"","display_name":"QBE Get Me"}],"package":false,"sub_reservation_depth":1,"extra_pick":null,"child_resource":true,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pickup_information":null,"dropoff_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":2,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:11:08+10:30","gross_in_cents":6000,"id":3,"services_deck_division_id":null,"updated_at":"2013-03-01T00:11:08+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":2,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:11:08+10:30","gross_in_cents":6000,"id":4,"services_deck_division_id":null,"updated_at":"2013-03-01T00:11:08+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":3000,"2":3000}}],"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":[],"report_reservation_changes":false,"vendor_pnr":null,"pickup_information":null,"dropoff_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":1,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:08:00+10:30","gross_in_cents":0,"id":1,"services_deck_division_id":null,"updated_at":"2013-03-01T00:08:00+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":1,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:08:00+10:30","gross_in_cents":0,"id":2,"services_deck_division_id":null,"updated_at":"2013-03-01T00:08:00+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":0,"2":0}}],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","payment_method":"credit_card","credit_card_brand":"MasterCard","transaction_fee":"0.0","active":true,"position":2,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true},{"id":4,"name":"visa","description":"visa","payment_method":"credit_card","credit_card_brand":"Visa","transaction_fee":"0.0","active":true,"position":3,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true},{"id":7,"name":"PayPal","description":"Payments
-        made via PayPal account","payment_method":"paypal","credit_card_brand":null,"transaction_fee":"0.0","active":true,"position":6,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true}]}'
-    http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:37:48 GMT
+        Off","adjustable_item_type":"Reservation","adjustable_item_id":2,"adjustment_definition_id":1,"adjustment_category_id":1,"automatic":true}],"complete":true,"reason_not_complete":null,"enough_time_before_travel_to_edit":true,"product_type_id":7,"itinerary_footer":true,"fare_basis_set_id":8,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":4,"pick_up_info":null,"drop_off_info":null,"selection_name":"QBE
+        Travel Insurance - Policy E","product_name_underscore":"travel_insurance","resource_class_name_underscore":"insurance","resource_class_name":"Insurance","first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"durational":true,"duration":2,"duration_units":"Days","date_start_label":"Start
+        Date:","date_end_label":"End Date:","expires":false,"has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
+        Priced as: Rack Rate","gross_including_packaged_item_in_cents":6000,"pre_adjusted_gross_including_packaged_item_in_cents":12000,"gross_in_cents":6000,"pre_adjusted_gross_in_cents":12000,"pre_adjusted_commission_in_cents":0,"cost_in_cents":8000,"rules":[{"unique_name":"QBE
+        Get Me","description":"","display_name":"QBE Get Me"}],"package":false,"sub_reservation_depth":1,"extra_pick":null,"child_resource":true,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":2,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:11:08+10:30","gross_in_cents":6000,"id":3,"services_deck_division_id":null,"updated_at":"2013-03-01T00:11:08+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":2,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:11:08+10:30","gross_in_cents":6000,"id":4,"services_deck_division_id":null,"updated_at":"2013-03-01T00:11:08+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":3000,"2":3000}}],"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":[],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":1,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:08:00+10:30","gross_in_cents":0,"id":1,"services_deck_division_id":null,"updated_at":"2013-03-01T00:08:00+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":1,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:08:00+10:30","gross_in_cents":0,"id":2,"services_deck_division_id":null,"updated_at":"2013-03-01T00:08:00+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":0,"2":0}}],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","payment_method":"credit_card","gateway":"braintree","credit_card_brand":"MasterCard","transaction_fee":"0.0","active":true,"position":2,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false},{"id":4,"name":"visa","description":"visa","payment_method":"credit_card","gateway":"braintree","credit_card_brand":"Visa","transaction_fee":"0.0","active":true,"position":3,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false},{"id":7,"name":"PayPal","description":"Payments
+        made via PayPal account","payment_method":"paypal","gateway":"braintree","credit_card_brand":null,"transaction_fee":"0.0","active":true,"position":6,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false}],"issued_tickets_attributes":[]}'
+    http_version: 
+  recorded_at: Mon, 26 Oct 2015 00:18:45 GMT
 - request:
     method: get
-    uri: http://0.0.0.0:8080/api/bookings/1/documents.json?last_group=true&regenerate=false
+    uri: http://test.qt.sealink.com.au:8080/api/bookings/1/documents.json?last_group=true&regenerate=false
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
-      content-length:
+      Content-Length:
       - '0'
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
-      p3p:
+      P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
-      content-type:
+      Content-Type:
       - application/json; charset=utf-8
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      etag:
-      - ! '"877efa1d49e3e645f3aa1d836e4ee620"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-request-id:
-      - d0aeb7bb3e6bb5b030ede5cfe6ca2c91
-      x-runtime:
-      - '0.019773'
-      date:
-      - Thu, 28 Feb 2013 14:20:59 GMT
-      x-rack-cache:
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-store, must-revalidate, private, max-age=0
+      X-Request-Id:
+      - 0f52eb22083a5f05b4c5bb57b8a383a4
+      X-Runtime:
+      - '0.073278'
+      Vary:
+      - Origin
+      X-Rack-Cache:
       - miss
-      server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
-      content-length:
+      X-Miniprofiler-Ids:
+      - '["wey4tzg05y6h98h2ufkx","3n393d46407xjckipoz4","sbzq3sn22o19v6amh4lx","hnsva789t8cmifp64wx3","wmmnukmwie7vr7vj8xqf","2brmax1rs5fwk4fd7n5","dvsmvrl183r0tifnlw46","5o49qsg88hbcsljo43fu","w0wrmi9s9rgua6owkm3z","lxziuvwk5cnyi9wz6zbf"]'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      Date:
+      - Mon, 26 Oct 2015 00:18:45 GMT
+      Content-Length:
       - '51'
-      connection:
-      - close
-      set-cookie:
-      - _session_id=363eae498e13e14167f4e17b6bc7d532; path=/; HttpOnly
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      - __profilin=p%3Dt; path=/
+      - __profilin=p%3Dt; path=/
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWZkN2MwZjgwZThhM2Y2NWU1MTllZmEyNDExYTY3OGYzBjsAVEkiCXVzZXIGOwBGaQY%3D--5185c60ef29f56eb615cc2755030ee803ed2ef3c;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '[{"id":1,"name":"Invoice Document","booking_id":1}]'
-    http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:37:48 GMT
+      encoding: UTF-8
+      string: '[{"id":1,"name":"Invoice Document","booking_id":1}]'
+    http_version: 
+  recorded_at: Mon, 26 Oct 2015 00:18:45 GMT
 recorded_with: VCR 2.9.3

@@ -4,47 +4,53 @@ http_interactions:
     method: post
     uri: http://0.0.0.0:8080/api/bookings.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: booking[referral_code_id]=33&access_key=<QT_KEY>
     headers:
-      content-length:
+      Content-Length:
       - '0'
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
-      p3p:
+      P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
-      content-type:
+      Content-Type:
       - application/json; charset=utf-8
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      etag:
-      - ! '"f4a3881c4477a858ad2157aad8887436"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-request-id:
-      - bf709d73f2c947811bf2ec1153e361ac
-      x-runtime:
-      - '0.410944'
-      date:
-      - Thu, 28 Feb 2013 14:16:26 GMT
-      x-rack-cache:
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-store, must-revalidate, private, max-age=0
+      X-Request-Id:
+      - d4861dc66f06b575f04ee07a68c3dade
+      X-Runtime:
+      - '1.299366'
+      Vary:
+      - Origin
+      X-Rack-Cache:
       - invalidate, pass
-      server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
-      content-length:
-      - '1996'
-      connection:
-      - close
-      set-cookie:
-      - _session_id=c3f5b616d7b0a15b8634d496713152b2; path=/; HttpOnly
+      X-Miniprofiler-Ids:
+      - '["3zatihooarqo93hijqmw","3n393d46407xjckipoz4","sbzq3sn22o19v6amh4lx","hnsva789t8cmifp64wx3","wmmnukmwie7vr7vj8xqf","2brmax1rs5fwk4fd7n5","dvsmvrl183r0tifnlw46","5o49qsg88hbcsljo43fu","w0wrmi9s9rgua6owkm3z","lxziuvwk5cnyi9wz6zbf"]'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      Date:
+      - Mon, 26 Oct 2015 00:18:43 GMT
+      Content-Length:
+      - '2248'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      - __profilin=p%3Dt; path=/
+      - __profilin=p%3Dt; path=/
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWQ0NjRhYTk2ZTUyNTc1ZGNhZjJkZDk1ZjZhNzk5NDU1BjsAVEkiCXVzZXIGOwBGaQY%3D--5b9052a724d9f6014f694bd40b53c77d0993ab0b;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '{"id":3,"state":"new","reference":"222226","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"post_code":null,"referral_code_id":1,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":0,"nett_in_cents":0,"gross_in_cents":0,"commission_in_cents":0,"balance_in_cents":0,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":"SeaLink","promo_code":null,"insurance_offered":false,"deposit_due_on":null,"balance_due_on":null,"first_travel_date":{"_type":"Date","_value":"2013-03-01"},"last_travel_date":null,"complete":true,"reason_not_complete":null,"discardable_in":60,"inactivatable_in":10,"notices":{"currency":["Currency
-        has changed to currency AUD. Please set currency as appropriate."]},"deposit_relevant":false,"passenger_ids":[],"vehicle_ids":[],"reservation_ids":[],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[],"vehicles_attributes":[],"reservations_attributes":[],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","payment_method":"credit_card","credit_card_brand":"MasterCard","transaction_fee":"0.0","active":true,"position":2,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true},{"id":4,"name":"visa","description":"visa","payment_method":"credit_card","credit_card_brand":"Visa","transaction_fee":"0.0","active":true,"position":3,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true},{"id":7,"name":"PayPal","description":"Payments
-        made via PayPal account","payment_method":"paypal","credit_card_brand":null,"transaction_fee":"0.0","active":true,"position":6,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true}]}'
-    http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:33:16 GMT
+      encoding: UTF-8
+      string: '{"id":11,"state":"new","reference":"22222J","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"post_code":null,"referral_code_id":1,"created_at":"2015-10-26T10:48:43+10:30","updated_at":"2015-10-26T10:48:43+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":0,"nett_in_cents":0,"gross_in_cents":0,"commission_in_cents":0,"balance_in_cents":0,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":"SeaLink","deposit_relevant":false,"deposit_due_on":null,"balance_due_on":null,"first_travel_date":{"_type":"Date","_value":"2015-10-26"},"last_travel_date":null,"complete":true,"reason_not_complete":null,"discardable_in":60,"inactivatable_in":10,"notices":{"currency":["Currency
+        has changed to currency AUD. Please set currency as appropriate."]},"passenger_ids":[],"vehicle_ids":[],"reservation_ids":[],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[],"vehicles_attributes":[],"reservations_attributes":[],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","payment_method":"credit_card","gateway":"braintree","credit_card_brand":"MasterCard","transaction_fee":"0.0","active":true,"position":2,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false},{"id":4,"name":"visa","description":"visa","payment_method":"credit_card","gateway":"braintree","credit_card_brand":"Visa","transaction_fee":"0.0","active":true,"position":3,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false},{"id":7,"name":"PayPal","description":"Payments
+        made via PayPal account","payment_method":"paypal","gateway":"braintree","credit_card_brand":null,"transaction_fee":"0.0","active":true,"position":6,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false}],"issued_tickets_attributes":[]}'
+    http_version: 
+  recorded_at: Mon, 26 Oct 2015 00:18:43 GMT
 recorded_with: VCR 2.9.3
