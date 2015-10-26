@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://0.0.0.0:8080/api/products/date_range_bookability.json?travel_date=2016-03-01&duration=7&default_pax_type_numbers[1]=1&passenger_type_numbers[1]=2&passenger_type_numbers[2]=1&resource_ids[]=3&resource_ids[]=4&resource_ids[]=6
+    uri: http://test.qt.sealink.com.au:8080/api/products/date_range_bookability.json?default_pax_type_numbers%5B%5D=1&duration=7&passenger_type_numbers%5B%5D=1&passenger_type_numbers%5B%5D=2&resource_ids%5B%5D=3&resource_ids%5B%5D=4&resource_ids%5B%5D=6&travel_date=2016-03-01
     body:
       encoding: US-ASCII
       string: access_key=<QT_KEY>
