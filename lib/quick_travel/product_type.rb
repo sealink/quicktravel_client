@@ -9,7 +9,7 @@ module QuickTravel
                   :can_have_quantity,
                   :needs_passengers
 
-    self.api_base = '/product_types'
+    self.api_base = '/api/product_types'
 
     def self.all
       QuickTravel::Cache.cache 'all_product_types' do

@@ -48,7 +48,7 @@ http_interactions:
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"id":8,"booking_id":12,"description":"You have declined Travel Insurance
+      string: '{"id":4,"booking_id":3,"description":"You have declined Travel Insurance
         for your booking. If you wish to add Travel Insurance to this booking, please
         contact the SeaLink Travel Group on 13 13 01 prior to commencing your travels.","comment":null,"active":true,"service_ids":[7],"resource_id":4,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":null,"enough_time_before_travel_to_edit":true,"product_type_id":7,"itinerary_footer":true,"fare_basis_set_id":8,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":4,"pick_up_info":null,"drop_off_info":null,"selection_name":"Travel
         Insurance - Declined","product_name_underscore":"travel_insurance","resource_class_name_underscore":"insurance","resource_class_name":"Insurance","first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-01"},"durational":true,"duration":1,"duration_units":"Days","date_start_label":"Start

@@ -16,7 +16,7 @@ describe QuickTravel::Product do
 
   it 'should create a useful product object' do
     expect(@product.pricing_details.minimum_price).to eq 400.to_money
-    @product.pricing_details_for_rack_rate.should_not be_present
+    expect(@product.pricing_details_for_rack_rate).to_not be_present
   end
 
   it 'should return a rack minimum price when requested due to agent being logged in' do
@@ -29,7 +29,7 @@ describe QuickTravel::Product do
        )
     end
 
-    @product.pricing_details_for_rack_rate.should be_present
+    expect(@product.pricing_details_for_rack_rate).to be_present
   end
 end
 

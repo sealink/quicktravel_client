@@ -14,14 +14,14 @@ describe QuickTravel::Adapter do
       QuickTravel.config.access_key = qt_keys[0]
 
       expect(QuickTravel::Adapter.base_uri).to eq tenant1
-      QuickTravel::ProductType.find_all!("/product_types.json")
+      QuickTravel::ProductType.find_all!("/api/product_types.json")
       expect(QuickTravel::ProductType.base_uri).to eq tenant1
 
       QuickTravel::Adapter.base_uri tenant2
       QuickTravel.config.access_key = qt_keys[1]
 
       expect(QuickTravel::Adapter.base_uri).to eq tenant2
-      QuickTravel::ProductType.find_all!("/product_types.json")
+      QuickTravel::ProductType.find_all!("/api/product_types.json")
       expect(QuickTravel::ProductType.base_uri).to eq tenant2
     end
   end
