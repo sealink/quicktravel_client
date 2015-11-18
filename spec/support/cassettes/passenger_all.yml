@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: http://0.0.0.0:8080/passenger_types.json?
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
       content-length:
@@ -12,37 +12,40 @@ http_interactions:
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
       p3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       content-type:
       - application/json; charset=utf-8
       x-ua-compatible:
-      - IE=Edge,chrome=1
+      - IE=Edge
       etag:
-      - ! '"9a626d0671a91ec1f177c50925f2d74a"'
+      - '"9a626d0671a91ec1f177c50925f2d74a"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - dc992b62dc7de0631c1dd146a6458d2b
+      - 3dab64a71bbb5d38d1691786a4a8fed1
       x-runtime:
-      - '0.021192'
+      - '0.059064'
+      vary:
+      - Origin
       date:
-      - Thu, 28 Feb 2013 14:22:17 GMT
+      - Wed, 18 Nov 2015 03:40:22 GMT
       x-rack-cache:
       - miss
       server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
       content-length:
       - '488'
       connection:
       - close
       set-cookie:
-      - _session_id=79bfcc83fe8879e29d3fac1b4d669a9f; path=/; HttpOnly
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTY2OGFiZWNmNzg2ZjVlNTQyYzc4ZDM0YzQyNDM5MjExBjsAVEkiCXVzZXIGOwBGaQY%3D--9b039b2f7e68155fcb23c990e468b475f3ae109d;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad"},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In"},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch"}]'
+      encoding: UTF-8
+      string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad"},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In"},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch"}]'
     http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:39:06 GMT
+  recorded_at: Wed, 18 Nov 2015 03:40:22 GMT
 recorded_with: VCR 2.9.3

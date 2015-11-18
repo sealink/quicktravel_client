@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: http://0.0.0.0:8080/api/products/6.json?first_travel_date=2016-03-01&passenger_type_numbers[1]=1&date_range[start_date]=2016-03-01&date_range[end_date]=2016-03-02
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
       content-length:
@@ -12,41 +12,48 @@ http_interactions:
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
       p3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       content-type:
       - application/json; charset=utf-8
       x-ua-compatible:
-      - IE=Edge,chrome=1
+      - IE=Edge
       etag:
-      - ! '"0523c4af577a1cbb2a0df19e26e34e31"'
+      - '"bfeede5a03c1d7e89eebab362c40113b"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - d9d5669b34a7e1e20dd30c76819941a0
+      - 429788a95b86138c776b6e56b0d9430c
       x-runtime:
-      - '0.181506'
+      - '0.237530'
+      vary:
+      - Origin
       date:
-      - Thu, 28 Feb 2013 13:41:36 GMT
+      - Wed, 18 Nov 2015 03:40:23 GMT
       x-rack-cache:
       - miss
       server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
       content-length:
-      - '2927'
+      - '3100'
       connection:
       - close
       set-cookie:
-      - _session_id=62528a0ae9953ba030b851762c88a927; path=/; HttpOnly
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTdiOWVlNGQ0YTBlMWNjYTIyMjk4NTFiOWYyZDlkZmEyBjsAVEkiCXVzZXIGOwBGaQY%3D--da7efd037a7e5bd6877b6c752bd42f3244e42a5c;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '{"available":true,"availability_details":{"available":true,"capacity":2,"available_capacity":1,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":40000},"pricing_details":{"minimum_price":{"_type":"Money","_value":40000},"minimum_price_with_adjustments":{"_type":"Money","_value":40000},"adjustments_to_apply":[],"total_adjustments":{"_type":"Money","_value":0},"price_per_pax_type":{"":40000},"minimum_price_in_cents":40000,"minimum_price_with_adjustments_in_cents":40000,"total_adjustments_in_cents":0,"adjustments_to_apply_in_cents":[],"applied_rules":[]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"extras":[{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":1,"price":{"_type":"Money","_value":6000},"pricing_details":{"minimum_price":{"_type":"Money","_value":6000},"minimum_price_with_adjustments":{"_type":"Money","_value":6000},"adjustments_to_apply":[],"total_adjustments":{"_type":"Money","_value":0},"price_per_pax_type":{"1":6000},"minimum_price_in_cents":6000,"minimum_price_with_adjustments_in_cents":6000,"total_adjustments_in_cents":0,"adjustments_to_apply_in_cents":[],"applied_rules":[]},"reservation_attributes":{"resource_id":3},"resource_class_name_underscore":"insurance","product_name_underscore":"travel_insurance","image":{"url":"/assets/default-icon.png","desc":""},"extras":[],"selection_name":"QBE
+      encoding: UTF-8
+      string: '{"available":true,"availability_details":{"available":true,"capacity":2,"available_capacity":1,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"price":{"_type":"Money","_value":40000},"pricing_details":{"minimum_price":{"_type":"Money","_value":40000},"minimum_price_with_adjustments":{"_type":"Money","_value":20000},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-20000},"gross_in_cents":-20000}],"total_adjustments":{"_type":"Money","_value":-20000},"price_per_pax_type":{"":40000},"minimum_price_in_cents":40000,"minimum_price_with_adjustments_in_cents":20000,"total_adjustments_in_cents":-20000,"adjustments_to_apply_in_cents":[-20000],"applied_rules":["Test
+        Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"extras":[{"available":true,"availability_details":{"available":true,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":1,"price":{"_type":"Money","_value":6000},"pricing_details":{"minimum_price":{"_type":"Money","_value":6000},"minimum_price_with_adjustments":{"_type":"Money","_value":3000},"adjustments_to_apply":[{"description":"50%
+        Off","gross":{"_type":"Money","_value":-3000},"gross_in_cents":-3000}],"total_adjustments":{"_type":"Money","_value":-3000},"price_per_pax_type":{"1":6000},"minimum_price_in_cents":6000,"minimum_price_with_adjustments_in_cents":3000,"total_adjustments_in_cents":-3000,"adjustments_to_apply_in_cents":[-3000],"applied_rules":["QBE
+        Get Me"]},"reservation_attributes":{"resource_id":3},"resource_class_name_underscore":"insurance","product_name_underscore":"travel_insurance","image":{"url":"/assets/default-icon.png","desc":""},"extras":[],"selection_name":"QBE
         Travel Insurance - Policy E","description":"QBE Travel Insurance - Policy
-        E","error_message":"QBE Travel Insurance - Policy E cannot be booked on www.sealink.com.au"},{"available":true,"availability_details":{"available":true,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":1,"price":{"_type":"Money","_value":6000},"pricing_details":{"minimum_price":{"_type":"Money","_value":6000},"minimum_price_with_adjustments":{"_type":"Money","_value":6000},"adjustments_to_apply":[],"total_adjustments":{"_type":"Money","_value":0},"price_per_pax_type":{"1":6000},"minimum_price_in_cents":6000,"minimum_price_with_adjustments_in_cents":6000,"total_adjustments_in_cents":0,"adjustments_to_apply_in_cents":[],"applied_rules":[]},"reservation_attributes":{"resource_id":4},"resource_class_name_underscore":"insurance","product_name_underscore":"travel_insurance","image":{"url":"/assets/default-icon.png","desc":""},"extras":[],"selection_name":"Travel
+        E","error_message":null},{"available":true,"availability_details":{"available":true,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":1,"price":{"_type":"Money","_value":6000},"pricing_details":{"minimum_price":{"_type":"Money","_value":6000},"minimum_price_with_adjustments":{"_type":"Money","_value":6000},"adjustments_to_apply":[],"total_adjustments":{"_type":"Money","_value":0},"price_per_pax_type":{"1":6000},"minimum_price_in_cents":6000,"minimum_price_with_adjustments_in_cents":6000,"total_adjustments_in_cents":0,"adjustments_to_apply_in_cents":[],"applied_rules":[]},"reservation_attributes":{"resource_id":4},"resource_class_name_underscore":"insurance","product_name_underscore":"travel_insurance","image":{"url":"/assets/default-icon.png","desc":""},"extras":[],"selection_name":"Travel
         Insurance - Declined","description":"Travel Insurance - Declined","error_message":null}],"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":null}'
     http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 08:09:01 GMT
+  recorded_at: Wed, 18 Nov 2015 03:40:23 GMT
 recorded_with: VCR 2.9.3

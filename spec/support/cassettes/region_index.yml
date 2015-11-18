@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: http://0.0.0.0:8080/regions.json?
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
       content-length:
@@ -12,37 +12,40 @@ http_interactions:
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
       p3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       content-type:
       - application/json; charset=utf-8
       x-ua-compatible:
-      - IE=Edge,chrome=1
+      - IE=Edge
       etag:
-      - ! '"a4c8faefeca1cec1ee7134663a0817b7"'
+      - '"a4c8faefeca1cec1ee7134663a0817b7"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 958983dcd32b33f7157f7ff616d4d77a
+      - eefcfea7040e63a405485296a9fce861
       x-runtime:
-      - '0.021027'
+      - '0.063741'
+      vary:
+      - Origin
       date:
-      - Thu, 28 Feb 2013 14:27:23 GMT
+      - Wed, 18 Nov 2015 03:40:24 GMT
       x-rack-cache:
       - miss
       server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
       content-length:
       - '47'
       connection:
       - close
       set-cookie:
-      - _session_id=943b65a0bca41cbb3f90757a768011a9; path=/; HttpOnly
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWE0ZGViOTljYWI1ZjI2NjBmNDlkMWI2NjIzMGYzZTNiBjsAVEkiCXVzZXIGOwBGaQY%3D--b6dd9e60275fbeca62221afd4fa6600f16784c0f;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '[{"id":2,"name":"Adelaide","location_ids":[1]}]'
+      encoding: UTF-8
+      string: '[{"id":2,"name":"Adelaide","location_ids":[1]}]'
     http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:44:13 GMT
+  recorded_at: Wed, 18 Nov 2015 03:40:24 GMT
 recorded_with: VCR 2.9.3

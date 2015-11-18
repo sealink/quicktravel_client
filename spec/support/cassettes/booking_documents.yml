@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: get
-    uri: http://0.0.0.0:8080/api/bookings/3/documents.json?last_group=true&regenerate=false
+    uri: http://0.0.0.0:8080/api/bookings/2/documents.json?last_group=true&regenerate=false
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
       content-length:
@@ -12,37 +12,40 @@ http_interactions:
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
       p3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       content-type:
       - application/json; charset=utf-8
       x-ua-compatible:
-      - IE=Edge,chrome=1
+      - IE=Edge
       etag:
-      - ! '"d751713988987e9331980363e24189ce"'
+      - '"d751713988987e9331980363e24189ce"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - dda534836aa87de16e4676661b86732d
+      - fb195f292e680104baff97b0a1f1d5fb
       x-runtime:
-      - '0.025246'
+      - '0.070728'
+      vary:
+      - Origin
       date:
-      - Thu, 28 Feb 2013 14:16:27 GMT
+      - Wed, 18 Nov 2015 03:40:20 GMT
       x-rack-cache:
       - miss
       server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
       content-length:
       - '2'
       connection:
       - close
       set-cookie:
-      - _session_id=b6531aad203363dea39988a351a9b961; path=/; HttpOnly
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWEwZGUyYmEyYTY0MTM4NDU5ZTM3YzU2MDRiZmFmYTNkBjsAVEkiCXVzZXIGOwBGaQY%3D--eef7b1fdf2951e3f415915b248c896130dd61410;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '[]'
+      encoding: UTF-8
+      string: "[]"
     http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:33:16 GMT
+  recorded_at: Wed, 18 Nov 2015 03:40:20 GMT
 recorded_with: VCR 2.9.3

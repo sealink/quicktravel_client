@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: http://0.0.0.0:8080/resources/6.json?
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
       content-length:
@@ -12,39 +12,42 @@ http_interactions:
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
       p3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       content-type:
       - application/json; charset=utf-8
       x-ua-compatible:
-      - IE=Edge,chrome=1
+      - IE=Edge
       etag:
-      - ! '"597948cd4b4de4495bfbdf7274a6923d"'
+      - '"b20eabce108eba6c2618d0e5eee2be63"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 1c14aa89d7ff2b87dab94f3ace899c5a
+      - 4abfbb1d4371d95e3e44d9c20a0cfb5a
       x-runtime:
-      - '0.028282'
+      - '0.074134'
+      vary:
+      - Origin
       date:
-      - Thu, 28 Feb 2013 14:28:22 GMT
+      - Wed, 18 Nov 2015 03:40:25 GMT
       x-rack-cache:
       - miss
       server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
       content-length:
-      - '1499'
+      - '1413'
       connection:
       - close
       set-cookie:
-      - _session_id=68a0c30f91cf8e0b5990d8a37581b6ae; path=/; HttpOnly
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTMzZTM4ZWNmOTZlMDVmMGNlYjkzODNmZDBjZDdmN2M3BjsAVEkiCXVzZXIGOwBGaQY%3D--fe4cdecbbab56d29569bb57f82bac003bfdfe86f;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '{"id":6,"name":"Executive Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":0,"maximum_occupancy":2,"location_id":1,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"booking_notes":"","expiry_units":null,"uses":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"expiry_level":null,"unlimited_uses":false,"no_expiry":false,"reason_required":false,"resource_category_id":null,"created_at":"2013-03-01T00:08:49+10:30","updated_at":"2013-03-01T00:55:56+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"vehicle_ticket_format_id":null,"passenger_ticket_format_id":null,"reservation_ticket_format_id":null,"frequent_traveller_redemption_rate":null,"client_type_ids":[],"category":null,"location":"Adelaide
+      encoding: UTF-8
+      string: '{"id":6,"name":"Executive Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":0,"maximum_occupancy":2,"location_id":1,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"booking_notes":"","expiry_units":null,"uses":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"expiry_level":null,"unlimited_uses":false,"no_expiry":false,"reason_required":false,"resource_category_id":null,"created_at":"2013-03-01T00:08:49+10:30","updated_at":"2013-03-01T00:55:56+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"client_type_ids":[],"category":null,"location":"Adelaide
         CBD","current_description":"\u003Cp\u003EA basic studio room\u003C/p\u003E","graphics":[],"graphic_names":[],"property_name":"Hilton
         Hotel"}'
     http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:45:12 GMT
+  recorded_at: Wed, 18 Nov 2015 03:40:25 GMT
 recorded_with: VCR 2.9.3

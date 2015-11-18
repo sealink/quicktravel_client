@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: get
-    uri: http://0.0.0.0:8080/api/bookings/3.json?
+    uri: http://0.0.0.0:8080/api/bookings/2.json?
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: access_key=<QT_KEY>
     headers:
       content-length:
@@ -12,38 +12,41 @@ http_interactions:
   response:
     status:
       code: 200
-      message: ! 'OK '
+      message: 'OK '
     headers:
       p3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       content-type:
       - application/json; charset=utf-8
       x-ua-compatible:
-      - IE=Edge,chrome=1
+      - IE=Edge
       etag:
-      - ! '"e46ab802351e11f08fac294ef77f5c74"'
+      - '"d2f38c68e6e3967f96af3d5958b3b2f2"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 887edf25cea02eaf0683ae0720994553
+      - 3933a59b79e5a66276275dc30d2c9308
       x-runtime:
-      - '0.028099'
+      - '0.118419'
+      vary:
+      - Origin
       date:
-      - Thu, 28 Feb 2013 14:16:26 GMT
+      - Wed, 18 Nov 2015 03:40:20 GMT
       x-rack-cache:
       - miss
       server:
-      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
       content-length:
-      - '1908'
+      - '2159'
       connection:
       - close
       set-cookie:
-      - _session_id=21a47f3f5b34001c8bfead0f5511a0ba; path=/; HttpOnly
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWY0MmZhNmY5YTg1Mjg3ZWRjN2FkNmNkNjUzMzYyN2E4BjsAVEkiCXVzZXIGOwBGaQY%3D--9636462c83e605aecf781966f52d80c140ffe1e9;
+        path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '{"id":3,"state":"new","reference":"222226","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"post_code":null,"referral_code_id":1,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":0,"nett_in_cents":0,"gross_in_cents":0,"commission_in_cents":0,"balance_in_cents":0,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":"SeaLink","promo_code":null,"insurance_offered":false,"deposit_due_on":null,"balance_due_on":null,"first_travel_date":{"_type":"Date","_value":"2013-03-01"},"last_travel_date":null,"complete":true,"reason_not_complete":null,"discardable_in":60,"inactivatable_in":10,"notices":{},"deposit_relevant":false,"passenger_ids":[],"vehicle_ids":[],"reservation_ids":[],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[],"vehicles_attributes":[],"reservations_attributes":[],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","payment_method":"credit_card","credit_card_brand":"MasterCard","transaction_fee":"0.0","active":true,"position":2,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true},{"id":4,"name":"visa","description":"visa","payment_method":"credit_card","credit_card_brand":"Visa","transaction_fee":"0.0","active":true,"position":3,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true},{"id":7,"name":"PayPal","description":"Payments
-        made via PayPal account","payment_method":"paypal","credit_card_brand":null,"transaction_fee":"0.0","active":true,"position":6,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true}]}'
+      encoding: UTF-8
+      string: '{"id":2,"state":"new","reference":"222224","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"post_code":null,"referral_code_id":1,"created_at":"2015-11-18T14:10:20+10:30","updated_at":"2015-11-18T14:10:20+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":0,"nett_in_cents":0,"gross_in_cents":0,"commission_in_cents":0,"balance_in_cents":0,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":"SeaLink","deposit_relevant":false,"deposit_due_on":null,"balance_due_on":null,"first_travel_date":{"_type":"Date","_value":"2015-11-18"},"last_travel_date":null,"complete":true,"reason_not_complete":null,"discardable_in":60,"inactivatable_in":10,"notices":{},"passenger_ids":[],"vehicle_ids":[],"reservation_ids":[],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[],"vehicles_attributes":[],"reservations_attributes":[],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","payment_method":"credit_card","gateway":"braintree","credit_card_brand":"MasterCard","transaction_fee":"0.0","active":true,"position":2,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false},{"id":4,"name":"visa","description":"visa","payment_method":"credit_card","gateway":"braintree","credit_card_brand":"Visa","transaction_fee":"0.0","active":true,"position":3,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false},{"id":7,"name":"PayPal","description":"Payments
+        made via PayPal account","payment_method":"paypal","gateway":"braintree","credit_card_brand":null,"transaction_fee":"0.0","active":true,"position":6,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false}],"issued_tickets_attributes":[]}'
     http_version: '1.1'
-  recorded_at: Thu, 18 Dec 2014 07:33:16 GMT
+  recorded_at: Wed, 18 Nov 2015 03:40:20 GMT
 recorded_with: VCR 2.9.3
