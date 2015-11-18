@@ -13,13 +13,14 @@ require 'date' # Needed for stamp
 require 'stamp' # Some reasons stamp doesn't load automatically?
 require 'vcr'
 
-ENV['QT_KEYS'] ||= 'test_key_1,test_key_2'
+ENV['QT_KEYS'] ||= 'test_key_1,test_key_2,test_key_3'
 qt_keys = ENV['QT_KEYS'].split(',')
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/support/cassettes'
   c.default_cassette_options = { match_requests_on: [:method, :uri, :body] }
   c.filter_sensitive_data('<QT_KEY>')   { qt_keys[0] }
   c.filter_sensitive_data('<QT_KEY_2>') { qt_keys[1] }
+  c.filter_sensitive_data('<QT_KEY_3>') { qt_keys[2] }
   c.hook_into :fakeweb
 end
 
