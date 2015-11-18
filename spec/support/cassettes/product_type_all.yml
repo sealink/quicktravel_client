@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/product_types.json
+    body:
+      encoding: UTF-8
+      string: access_key=<QT_KEY>
+    headers:
+      content-length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      p3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"762f3a0c0b946665634d4f60ce381ca4"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 545b98da4928325f4c69d6d6afbf7cc7
+      x-runtime:
+      - '0.134710'
+      vary:
+      - Origin
+      date:
+      - Wed, 18 Nov 2015 01:27:14 GMT
+      x-rack-cache:
+      - miss
+      server:
+      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      content-length:
+      - '4799'
+      connection:
+      - close
+      set-cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTc4OWQ2ZmM2Yjc5MzQwNzQyOWNlZTMzMTdkYjJhOWJhBjsAVEkiCXVzZXIGOwBGaQY%3D--e5140ed2041a384d284116a2d74a6c3d53221bff;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"name":"Ferry","resource_class_name":"Ship","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":2,"name":"Accommodation","resource_class_name":"Accommodation","disclaimer_id":null,"durational":true,"can_find_by_location":true,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":3,"name":"Flight","resource_class_name":"ScheduledTripResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":4,"name":"Item","resource_class_name":"Item","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":5,"name":"Ticket","resource_class_name":"Ticket","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":6,"name":"Mainland
+        Coach Transfers","resource_class_name":"ScheduledTripResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":true,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2013-03-01T01:33:37+10:30","updated_at":"2013-03-01T01:33:37+10:30","code":"","can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":7,"name":"Travel
+        Insurance","resource_class_name":"Insurance","disclaimer_id":null,"durational":true,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":true,"created_at":"2014-09-12T17:06:45+09:30","updated_at":"2014-09-12T17:06:45+09:30","code":"","can_have_quantity":false,"can_have_dates":true,"needs_passengers":false},{"id":8,"name":"Merchandise","resource_class_name":"Item","disclaimer_id":1,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["reservation_group_id","trip_name","departure_time","pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2015-08-25T15:10:06+09:30","updated_at":"2015-08-25T15:10:06+09:30","code":"","can_have_quantity":true,"can_have_dates":false,"needs_passengers":false}]'
+    http_version: '1.1'
+  recorded_at: Wed, 18 Nov 2015 01:27:14 GMT
+recorded_with: VCR 2.9.3
