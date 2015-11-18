@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://sealink.dev:3000/product_types.json?
+    uri: http://sealink.dev:8080/api/product_types.json?
     body:
       encoding: UTF-8
       string: access_key=<QT_KEY>
@@ -82,7 +82,7 @@ http_interactions:
   recorded_at: Thu, 08 Oct 2015 04:47:49 GMT
 - request:
     method: get
-    uri: http://sealinkqld.dev:3000/product_types.json?
+    uri: http://sealinkqld.dev:8080/api/product_types.json?
     body:
       encoding: UTF-8
       string: access_key=<QT_KEY_2>
