@@ -59,13 +59,13 @@ describe QuickTravel::Product do
       context 'price per pax type' do
         let(:price_if_no_breakdown) { pricing_details.price_per_pax_type[0] }
         it 'should breakdown prices even if just a total' do
-          expect(price_if_no_breakdown).to eq 300.to_money
+          expect(price_if_no_breakdown).to eq 250.to_money
         end
       end
 
       context 'minimum price' do
         subject(:minimum_price) { pricing_details.minimum_price }
-        it { should eq 300.to_money } # $200 for 2 pax, $100 for extra passenger
+        it { should eq 250.to_money } # $200 for 2 pax, $50 for extra passenger
       end
 
       context 'adjustments' do
