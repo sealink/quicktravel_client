@@ -3,7 +3,7 @@ require 'quick_travel/passenger'
 require 'quick_travel/vehicle'
 require 'quick_travel/payment'
 require 'quick_travel/payment_type'
-require 'quick_travel/discounts'
+require 'quick_travel/price_changes'
 
 module QuickTravel
   class Booking < Adapter
