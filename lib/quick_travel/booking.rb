@@ -314,16 +314,16 @@ module QuickTravel
       (balance_in_cents == 0 && state != 'new' && !reservations.empty?) || state == 'quote'
     end
 
-    def discount
-      @discount ||= fetch_discount
+    def price_change
+      @price_change ||= fetch_price_change
     end
 
-    def discount_on(reservation)
-      discount.discount_on(reservation.id)
+    def price_change_on(reservation)
+      price_change.price_change_on(reservation.id)
     end
 
-    def total_discount_on(reservation)
-      discount.total_discount_on(reservation.id)
+    def total_price_change_on(reservation)
+      price_change.total_price_change_on(reservation.id)
     end
 
     def calculate_price_quote(segments = {})
@@ -362,9 +362,9 @@ module QuickTravel
       hash['_value'].to_date
     end
 
-    def fetch_discount
-      attributes = get_and_validate("#{api_base}/#{@id}/discount.json")
-      QuickTravel::Discounts::BookingDiscount.new(attributes)
+    def fetch_price_change
+      attributes = get_and_validate("#{api_base}/#{@id}/price_change.json")
+      QuickTravel::PriceChanges::BookingPriceChange.new(attributes)
     end
   end
 end

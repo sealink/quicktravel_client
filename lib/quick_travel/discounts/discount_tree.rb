@@ -1,24 +1,28 @@
 module QuickTravel
-  module Discounts
-    class DiscountTree < Discount
+  module PriceChanges
+    class PriceChangeTree < PriceChange
       attr_reader :root, :children
 
       def initialize(attrs = {})
         super(attrs)
-        @root     = Discount.new(attrs['root'])
+        @root     = PriceChange.new(attrs['root'])
         @children = attrs.fetch('children', []).map do |child_attrs|
-          DiscountTree.new(child_attrs)
+          PriceChangeTree.new(child_attrs)
         end
       end
 
-      def discount_on(id, type = 'Reservation')
+      def price_change_on(id, type = 'Reservation')
         return @root if applied_on?(id, type)
-        find_and_return_on_children { |child| child.discount_on(id, type) }
+        find_and_return_on_children { |child| child.price_change_on(id, type) }
       end
 
-      def total_discount_on(id, type = 'Reservation')
+      def total_price_change_on(id, type = 'Reservation')
         return self if applied_on?(id, type)
-        find_and_return_on_children { |child| child.total_discount_on(id, type) }
+        find_and_return_on_children { |child| child.total_price_change_on(id, type) }
+      end
+
+      def roots
+        [@root] + @children.flat_map(&:roots)
       end
 
       private
