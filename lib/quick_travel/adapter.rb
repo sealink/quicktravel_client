@@ -31,6 +31,7 @@ module QuickTravel
     end
 
     def self.find(id, opts = {})
+      check_id!(id)
       if lookup
         all.detect { |o| o.id == id.to_i }
       else
@@ -53,6 +54,7 @@ module QuickTravel
     end
 
     def self.update(id, options = {})
+      check_id!(id)
       put_and_validate("#{api_base}/#{id}.json", options)
     end
 
@@ -70,6 +72,10 @@ module QuickTravel
     end
 
     protected
+
+    def self.check_id!(id)
+      fail ArgumentError, 'id must be an integer' unless id.is_a? Integer
+    end
 
     # Find first
     def self.generic_first(request_path, opts = {})

@@ -26,10 +26,23 @@ describe QuickTravel::Product do
         passenger_type_numbers: {'1' => 1},
         rack_price_requested: true,
         date_range: {start_date: today, end_date: today + 1}
-       )
+      )
     end
 
     expect(@product.pricing_details_for_rack_rate).to be_present
+  end
+
+  it 'should ensure id is passed in correctly before calling' do
+    expect {
+      QuickTravel::Product.find(
+        nil,
+        passenger_type_numbers: {'1' => 1},
+        date_range: {start_date: today, end_date: today + 1}
+      )
+    }.to raise_error(
+      ArgumentError,
+      'id must be an integer'
+    )
   end
 end
 
