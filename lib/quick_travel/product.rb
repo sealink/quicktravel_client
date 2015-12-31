@@ -28,8 +28,12 @@ module QuickTravel
     #   passenger_types: {<passenger_type_id> => <num_pax>, ...},
     #   date_range: {start_date: <date>, end_date: <date>}
     def self.find(id, params = {})
-      fail 'Product#find requires passenger_type_numbers' if params[:passenger_type_numbers].blank?
-      fail 'Product#find requires date_range' if params[:date_range].blank?
+      if params[:passenger_type_numbers].blank?
+        fail ArgumentError, 'Product#find requires passenger_type_numbers'
+      end
+      if params[:date_range].blank?
+        fail ArgumentError, 'Product#find requires date_range'
+      end
       super
     end
 
