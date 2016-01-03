@@ -74,7 +74,10 @@ module QuickTravel
     protected
 
     def self.check_id!(id)
-      fail ArgumentError, 'id must be an integer' unless id.is_a? Integer
+      Integer(id)
+    rescue ArgumentError, # if invalid string
+           TypeError # if nil
+      fail ArgumentError, 'id must be an integer'
     end
 
     # Find first
