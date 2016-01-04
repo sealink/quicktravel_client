@@ -55,7 +55,7 @@ module QuickTravel
     end
 
     def country
-      Country.find(@country_id)
+      Country.find(@country_id) if @country_id
     end
 
     def deposit_due_on

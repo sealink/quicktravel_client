@@ -30,7 +30,9 @@ module QuickTravel
     # @returns: Party: Valid Credentials
     #          Nil: Invalid Credentialss
     def self.login(options = { login: nil, password: nil })
-      fail 'You must specify :login and :password' unless options[:login] && options[:password]
+      unless options[:login] && options[:password]
+        fail ArgumentError, 'You must specify :login and :password'
+      end
       response = post_and_validate(LOGIN_URL, options)
       Party.new(response) unless response[:error]
     end

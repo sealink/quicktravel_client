@@ -3,6 +3,14 @@ require 'quick_travel/product'
 
 describe QuickTravel::Product do
   let(:today) { '2016-03-01'.to_date }
+  let(:options) {
+    {
+      first_travel_date: today,
+      passenger_type_numbers: {'1' => 1},
+      rack_price_requested: true,
+      date_range: {start_date: today, end_date: today + 1}
+    }
+  }
 
   before do
     VCR.use_cassette('product_show') do
@@ -21,15 +29,36 @@ describe QuickTravel::Product do
 
   it 'should return a rack minimum price when requested due to agent being logged in' do
     VCR.use_cassette('product_show_as_agent') do
-      @product = QuickTravel::Product.find(6,
-        first_travel_date: today,
-        passenger_type_numbers: {'1' => 1},
-        rack_price_requested: true,
-        date_range: {start_date: today, end_date: today + 1}
-       )
+      @product = QuickTravel::Product.find(6, options)
     end
 
     expect(@product.pricing_details_for_rack_rate).to be_present
+  end
+
+  it 'should ensure id is passed in correctly before calling' do
+    expect {
+      QuickTravel::Product.find(nil, options)
+    }.to raise_error(
+      ArgumentError,
+      'id must be an integer'
+    )
+  end
+
+  it 'shouldnt allow other strings' do
+    expect {
+      QuickTravel::Product.find('six', options)
+    }.to raise_error(
+      ArgumentError,
+      'id must be an integer'
+    )
+  end
+
+  it 'should allow string integers' do
+    expect {
+      VCR.use_cassette('product_show_as_agent') do
+        QuickTravel::Product.find('6', options)
+      end
+    }.not_to raise_error
   end
 end
 
