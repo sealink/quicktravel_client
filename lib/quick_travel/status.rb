@@ -6,13 +6,13 @@ module QuickTravel
 
     def self.check!
       # Test Cache
-      QuickTravel::Cache.clear
+      QuickTravel::Cache.delete(key)
       QuickTravel::Cache.cache(key) { 'start' }
       unless QuickTravel::Cache.cache(key) == 'start'
         fail RuntimeError, 'Failed to cache status-check'
       end
 
-      QuickTravel::Cache.clear
+      QuickTravel::Cache.delete(key)
       QuickTravel::Cache.cache(key) { nil }
       unless QuickTravel::Cache.cache(key) == nil
         fail RuntimeError, 'Failed to clear status-check cache'

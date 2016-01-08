@@ -70,6 +70,10 @@ class HashCache
   def clear
     @cache = {}
   end
+
+  def delete(name)
+    @cache.delete(name)
+  end
 end
 
 QuickTravel::Cache.cache_store = HashCache.new
