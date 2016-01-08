@@ -2,7 +2,7 @@ module QuickTravel
   class Status
     def self.key
       # NOTE: This is not pretty, but we need to use a unique key per server
-      "status-check##{QuickTravel::Cache.hash}"
+      @key ||= "status-check##{SecureRandom.hex}"
     end
 
     def self.check!
