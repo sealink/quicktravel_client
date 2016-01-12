@@ -34,5 +34,9 @@ module QuickTravel
     def as_json(options = nil)
       super.merge(code: code)
     end
+
+    def self.information
+      get_and_validate('/api/payment_types/information.json')
+    end
   end
 end
