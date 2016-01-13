@@ -15,4 +15,14 @@ describe QuickTravel::PaymentType do
     let(:brand) { 'American Express' }
     its(:code) { should eq 'american_express' }
   end
+
+  context 'payment info' do
+    it 'should fetch payment info' do
+      VCR.use_cassette 'payment_info' do
+        expect(QuickTravel::PaymentType.information).to eq(
+          'poli_pay' => { 'login' => 'S1234567' }
+        )
+      end
+    end
+  end
 end
