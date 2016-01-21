@@ -27,7 +27,15 @@ module QuickTravel
 
     def initialize(hash = {})
       return nil if hash.blank?
+      define_readers(hash.keys)
       super(Parser.new(hash).parsed_attributes)
+    end
+
+    def define_readers(keys)
+      keys.each do |key|
+        next if respond_to?(key)
+        define_singleton_method(key) { instance_variable_get("@#{key}") }
+      end
     end
 
     def self.find(id, opts = {})
