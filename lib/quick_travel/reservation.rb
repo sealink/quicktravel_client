@@ -99,10 +99,6 @@ module QuickTravel
       end
     end
 
-    def duration
-      (last_travel_date - first_travel_date + 1).to_i
-    end
-
     def adjusted?
       pre_adjusted_gross_including_packaged_item != gross_including_packaged_item
     end
