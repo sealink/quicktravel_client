@@ -58,14 +58,6 @@ module QuickTravel
       Country.find(@country_id) if @country_id
     end
 
-    def deposit_due_on
-      @deposit_due_on_parsed ||= parse_date(@deposit_due_on)
-    end
-
-    def balance_due_on
-      @balance_due_on_parsed ||= parse_date(@balance_due_on)
-    end
-
     # Create an empty booking
     #
     # Note, options pertain to initializing booking with some values:
@@ -356,11 +348,6 @@ module QuickTravel
     end
 
     private
-
-    def parse_date(hash)
-      return if hash.blank? || hash['_value'].blank?
-      hash['_value'].to_date
-    end
 
     def fetch_price_change
       attributes = get_and_validate("#{api_base}/#{@id}/price_change.json")

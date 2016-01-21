@@ -212,6 +212,7 @@ module QuickTravel
     def parse(attribute, value)
       return nil if value.nil?
       return convert(value, :to_date) if attribute.to_s.ends_with?('_date')
+      return convert(value, :to_date) if attribute.to_s.ends_with?('_on')
       # to_datetime as it converts to app time zone, to_time converts to system time zone
       return convert(value, :to_datetime) if attribute.to_s.ends_with?('_time')
       return convert(value, :to_datetime) if attribute.to_s.ends_with?('_at')
