@@ -7,19 +7,6 @@ require 'quick_travel/cache'
 module QuickTravel
   class Resource < Adapter
     include QuickTravel::Cache
-    attr_accessor :id,
-                  :code,
-                  :name,
-                  :current_description,
-                  :images,
-                  :category,
-                  :property_name,
-                  :product_type_id,
-                  :package_options,
-                  :bed_requirements,
-                  :client_type_ids,
-                  :restrict_to_client_types,
-                  :type
     self.api_base = '/resources'
 
     def sub_resources

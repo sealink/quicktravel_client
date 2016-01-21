@@ -3,19 +3,6 @@ require 'quick_travel/cache'
 
 module QuickTravel
   class PaymentType < Adapter
-    attr_accessor :id,
-                  :name,
-                  :description,
-                  :position,
-                  :active,
-                  :payment_method,
-                  :for_frequent_traveller_redemption,
-                  :notes,
-                  :surchargeable,
-                  :transaction_fee,
-                  :redirect,
-                  :credit_card_brand
-
     self.api_base = '/payment_types'
     self.lookup = true
 
