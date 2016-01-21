@@ -79,8 +79,9 @@ module QuickTravel
       products_by_resource_id_and_date
     end
 
-    attr_accessor :pricing_details_for_rack_rate,
-                  :pricing_details_without_rules
+    # needed as captain cook grid cell exepcts them to be defined
+    attr_reader :pricing_details_for_rack_rate,
+                :pricing_details_without_rules
 
     def id
       @reservation_attributes['resource_id']
