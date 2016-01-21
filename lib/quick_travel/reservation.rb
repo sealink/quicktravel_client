@@ -4,21 +4,6 @@ require 'quick_travel/resource'
 
 module QuickTravel
   class Reservation < Adapter
-    attr_accessor :id, :booking_id,
-                  :gross_in_cents, :commission_in_cents, :cost_in_cents, :pre_adjusted_gross_in_cents,
-                  :pre_adjusted_gross_including_packaged_item_in_cents, :gross_including_packaged_item_in_cents, :price_rules,
-                  :first_travel_date, :last_travel_date, :checkout_date, :created_at, :start_time, :end_time,
-                  :resource_id, :resource_class_name, :product_type_id, :product_type_name,
-                  :bed_configuration_id, :inventory_type, :quantity,
-                  :comment, :selection_name,
-                  :service_ids,
-                  :vehicle_splits, :passenger_splits,
-                  :adjustments_attributes,
-                  :inverse_reservation_id,
-                  :from_route_stop_attributes, :to_route_stop_attributes,
-                  :route_id, :trip_id, :route_path, :pick_up_information, :drop_off_information,
-                  :complete, :enough_time_before_travel_to_edit
-
     money :gross, :commission, :cost, :pre_adjusted_gross, :gross_including_packaged_item, :pre_adjusted_gross_including_packaged_item
 
     def self.create(options)

@@ -7,18 +7,6 @@ require 'quick_travel/price_changes'
 
 module QuickTravel
   class Booking < Adapter
-    attr_accessor :reference, :state, :client_id, :first_travel_date, :created_at, :access_token
-    attr_accessor :gross_in_cents, :commission_in_cents, :cost_in_cents, :balance_in_cents, :paid_in_cents, :surcharge_in_cents
-    attr_accessor :deposit_in_cents, :deposit_due_on, :deposit_relevant
-
-    attr_accessor :id # booking_id. I am initializing this data member when we create booking.
-    attr_accessor :client_address, :client_party, :client_contact,
-                  :customer_contact_name, :customer_contact_phone, :customer_contact_mobile, :customer_contact_email,
-                  :post_code, :country_id, :referral_code_id,
-                  :discardable_in, :inactivatable_in,
-                  :promo_code, :web_site_name,
-                  :insurance_offered, :public_comments
-
     money :gross, :balance, :commission, :paid, :surcharge, :deposit
 
     def self.api_base

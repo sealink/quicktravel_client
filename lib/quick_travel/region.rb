@@ -5,8 +5,6 @@ module QuickTravel
   class Region < Adapter
     include Cache
 
-    attr_accessor :id, :name, :location_ids
-
     self.api_base = '/regions'
     self.lookup = true
 

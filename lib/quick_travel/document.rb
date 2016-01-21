@@ -2,8 +2,6 @@ require 'quick_travel/adapter'
 
 module QuickTravel
   class Document < Adapter
-    attr_accessor :id, :booking_id, :name
-
     self.api_base = "/front_office/bookings/#{@booking_id}/documents"
 
     # We used to direct the browser to QT directly

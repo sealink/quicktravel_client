@@ -2,24 +2,6 @@ require 'quick_travel/adapter'
 
 module QuickTravel
   class Product < Adapter
-    attr_accessor :selection_name,
-                  :description,
-                  :capacity,
-                  :available_capacity,
-                  :available,
-                  :error_message
-
-    attr_accessor :price # money_json(bookable_product.price)
-
-    attr_accessor :reservation_attributes
-    attr_accessor :image # is it url?  dunno  =>  json.image bookable_product.image
-    # {url: image_url, desc: image_desc}
-
-    attr_accessor :is_assigned # is it an assigned product -- i.e. reserved...
-    # useful only for extras when going through reservations api
-
-    attr_accessor :extras # more products
-
     self.api_base = '/api/products'
 
     # Find product details for a given product
@@ -97,10 +79,9 @@ module QuickTravel
       products_by_resource_id_and_date
     end
 
-    attr_accessor :availability_details
-    attr_accessor :pricing_details,
-                  :pricing_details_for_rack_rate,
-                  :pricing_details_without_rules
+    # needed as captain cook grid cell exepcts them to be defined
+    attr_reader :pricing_details_for_rack_rate,
+                :pricing_details_without_rules
 
     def id
       @reservation_attributes['resource_id']
@@ -146,9 +127,6 @@ module QuickTravel
   end
 
   class PricingDetails < Adapter
-    attr_accessor :minimum_price_in_cents, :minimum_price_with_adjustments_in_cents, :total_adjustments_in_cents
-    attr_accessor :price_per_pax_type, :adjustments_to_apply, :applied_rules
-
     money :minimum_price, :minimum_price_with_adjustments, :total_adjustments
 
     def price_per_pax_type=(pax_type_hash)
