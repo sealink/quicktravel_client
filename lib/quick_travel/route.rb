@@ -1,7 +1,5 @@
 module QuickTravel
   class Route < Adapter
-    attr_accessor :id, :name, :path, :position, :product_type_id, :reverse_id, :route_stops
-
     # First route for product_type_id
     def self.first(product_type_id)
       generic_first("/product_types/#{product_type_id}/routes.json")

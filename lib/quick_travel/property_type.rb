@@ -5,8 +5,6 @@ module QuickTravel
   class PropertyType < Adapter
     include Cache
 
-    attr_accessor :id, :name, :position
-
     def self.first(_id = nil)
       generic_first('/property_types.json')
     end
