@@ -9,7 +9,7 @@ module QuickTravel
     end
 
     def vehicle_type
-      VehicleType.all.detect { |vt| vt.id == vehicle_type_id }
+      VehicleType.find(vehicle_type_id)
     end
   end
 end

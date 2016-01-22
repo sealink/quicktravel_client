@@ -3,7 +3,7 @@ require 'quick_travel/region'
 
 describe QuickTravel::Region do
   describe '#first' do
-    subject { QuickTravel::Region.first }
+    subject { QuickTravel::Region.all.first }
 
     it 'should find a first instance of region from QuickTravel' do
       VCR.use_cassette('region_show') do

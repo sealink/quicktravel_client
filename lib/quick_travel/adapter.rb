@@ -88,11 +88,6 @@ module QuickTravel
       fail ArgumentError, 'id must be an integer'
     end
 
-    # Find first
-    def self.generic_first(request_path, opts = {})
-      find_all!(request_path, opts).first
-    end
-
     def self.find_all!(request_path, opts = {})
       response = get_and_validate(request_path, opts, return_response_object: true)
 
@@ -137,7 +132,7 @@ module QuickTravel
       end
     end
 
-    # The above generic_first find_all and the above find
+    # The above find_all and the above find
     # all suck
     #
     # We should make it standard behaviour that objects
