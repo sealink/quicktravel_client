@@ -3,27 +3,10 @@ require 'quick_travel/property_facility'
 
 module QuickTravel
   class Property < Adapter
-    attr_accessor :id, :name,  :check_in, :check_in_instructions, :check_out, :contact_id, :contact_person, :description
-    attr_accessor :location_id, :notes, :star_rating, :tourism_accredited, :availability, :on_request
-    attr_accessor :minimum_available_price_in_cents
-    attr_accessor :graphic # required in property search object
-    attr_accessor :boundary_start, :boundary_end, :season_id # added in API 3.8.*
-    attr_accessor :minimum_bookable_duration
-    attr_accessor :maximum_occupancy
-    attr_accessor :location_name, :region_names, :error
-
-    attr_reader :accommodations
-
     money :minimum_available_price
 
     def accommodations=(hash_array)
       @accommodations = hash_array.map { |accommodation_hash| Accommodation.new(accommodation_hash) }
-    end
-
-    # This method returns first object of Property based on property id from QuickTravel
-    def self.first(id, options = {})
-      fail ArgumentError.new('Must Specify valid property id') if id.blank? || id.class != Fixnum
-      generic_first("/api/properties/#{id}.json", options)
     end
 
     # This method returns all objects of property from QuickTravel that match
@@ -41,8 +24,9 @@ module QuickTravel
 
     def self.load_with_pricing(id, options)
       # Find property 'standard' way -- finds price for whole duration
-      property = Property.first(id, options)
-      first_travel_date = options[:product][:first_travel_date]
+      fail ArgumentError.new('Must Specify valid property id') if id.blank? || id.class != Fixnum
+      property = generic_first("/api/properties/#{id}.json", options)
+      first_travel_date = options.fetch(:product).fetch(:first_travel_date)
       property.accommodations.each do |accommodation|
         accommodation.minimum_nightly_price      = accommodation.nightly_price_on first_travel_date
         accommodation.minimum_price_for_duration = accommodation.minimum_price_on first_travel_date

@@ -1,5 +1,4 @@
 require 'quick_travel/adapter'
-require 'quick_travel/cache'
 
 module QuickTravel
   class Country < Adapter
