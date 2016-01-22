@@ -2,8 +2,8 @@ module QuickTravel
   class Party < Adapter
     LOGIN_URL = '/login.json'
 
-    attr_accessor :phone, :mobile, :email   # if has a contact
-    attr_accessor :post_code, :country_id   # if has an address
+    attr_reader :phone, :mobile, :email   # if has a contact
+    attr_reader :post_code, :country_id   # if has an address
 
     def initialize(hash = {})
       super
