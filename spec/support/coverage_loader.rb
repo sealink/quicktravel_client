@@ -1,8 +1,9 @@
 MINIMUM_COVERAGE = 74
 
-if ENV['COVERAGE']
+if ENV['COVERAGE'] != 'off'
   require 'simplecov'
   require 'simplecov-rcov'
+
   SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
   SimpleCov.start do
     add_filter '/vendor/'
