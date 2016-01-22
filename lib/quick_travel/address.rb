@@ -5,11 +5,8 @@ module QuickTravel
   class Address < Adapter
     attr_accessor :address_line1, :address_line2, :city, :country_id, :id, :post_code, :state, :country_name
 
-    def initialize(hash)
-      super(hash)
-      if @country_id == AUSTRALIA_COUNTRY_ID
-        @country_name = 'Australia'
-      end
+    def country_name
+      QuickTravel::Country.find(@country_id).name
     end
 
     def geocode

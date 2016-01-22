@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'quick_travel/address'
 require 'quick_travel/accommodation'
+require 'quick_travel/country'
 require 'quick_travel/property'
 
 describe QuickTravel::Property do
@@ -10,6 +11,12 @@ describe QuickTravel::Property do
       QuickTravel::Property.load_with_pricing(1, product: opts)
     end
   }
+
+  before do
+    VCR.use_cassette 'countries' do
+      QuickTravel::Country.all # preload countries for address
+    end
+  end
 
   its(:id) { should eq 1 }
   its(:name) { should eq 'Hilton Hotel' }

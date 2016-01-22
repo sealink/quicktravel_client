@@ -9,7 +9,6 @@ module QuickTravel
 
   # System wide
   PROPERTY_CACHE_TIMEOUT = 1440 # minutes
-  AUSTRALIA_COUNTRY_ID = 14
   QT_DATE_FORMAT = '%d-%m-%Y'
 
   DEFAULT_REFERRAL_CODE_ID = 33
