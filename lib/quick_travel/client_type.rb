@@ -1,3 +1,5 @@
+require 'quick_travel/adapter'
+
 module QuickTravel
   class ClientType < Adapter
     attr_accessor :id, :name, :agent, :position, :right_id
