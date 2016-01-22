@@ -29,4 +29,17 @@ describe QuickTravel::PassengerType do
       it { should eq ['2 Adults'] }
     end
   end
+
+  context 'caching of collection' do
+    subject(:all) do
+      VCR.use_cassette('passenger_all') { QuickTravel::PassengerType.all }
+    end
+
+    it 'should cache and fetch again' do
+      QuickTravel::Cache.cache_store.clear
+      all
+      # no cassette as not needed
+      QuickTravel::PassengerType.all
+    end
+  end
 end
