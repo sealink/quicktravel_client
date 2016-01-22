@@ -24,6 +24,7 @@ VCR.configure do |c|
 end
 
 require 'support/coverage_loader'
+require 'quick_travel' # eager load to ensure coverage correct
 
 require 'quick_travel/config'
 QuickTravel.configure do |c|
