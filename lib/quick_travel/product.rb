@@ -142,6 +142,5 @@ module QuickTravel
   end
 
   class PricePerPaxType < Adapter
-    attr_accessor :amount_in_cents
   end
 end

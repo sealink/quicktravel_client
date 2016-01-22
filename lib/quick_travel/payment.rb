@@ -3,7 +3,6 @@ require 'quick_travel/credit_card'
 
 module QuickTravel
   class Payment < Adapter
-    attr_accessor :id, :payment_type_id, :amount_in_cents, :authorization, :success, :created_at
     money :amount
 
     def payment_type

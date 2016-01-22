@@ -2,8 +2,6 @@ require 'quick_travel/adapter'
 
 module QuickTravel
   class Vehicle < Adapter
-    attr_accessor :id, :vehicle_type_id, :registration, :length, :linked_to, :vehicle_type_name, :details
-
     def self.create(booking_id, vehicle_types = {})
       options = { booking_id: booking_id, vehicle_types: vehicle_types }
       response = post_and_validate("#{Booking.front_office_base}/#{booking_id}/vehicles.json", options)

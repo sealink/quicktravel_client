@@ -1,7 +1,5 @@
 module QuickTravel
   class Route < Adapter
-    attr_accessor :id, :name, :path, :position, :product_type_id, :reverse_id, :route_stops
-
     # find_by_id -- but the API only does lookup by product_type_id
     def self.find_by_route_id_and_product_type_id(route_id, product_type_id)
       all_by_route_ids_and_product_type_id([route_id.to_i], product_type_id).first

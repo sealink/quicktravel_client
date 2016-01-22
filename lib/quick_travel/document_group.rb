@@ -3,8 +3,6 @@ require 'quick_travel/encrypt'
 
 module QuickTravel
   class DocumentGroup < Adapter
-    attr_accessor :id, :booking_id
-
     self.api_base = "/front_office/bookings/#{@booking_id}/document_groups"
 
     def pdf_url
