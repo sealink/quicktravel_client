@@ -25,7 +25,7 @@ module QuickTravel
     def self.load_with_pricing(id, options)
       # Find property 'standard' way -- finds price for whole duration
       fail ArgumentError.new('Must Specify valid property id') if id.blank? || id.class != Fixnum
-      property = generic_first("/api/properties/#{id}.json", options)
+      property = find_all!("/api/properties/#{id}.json", options).first
       first_travel_date = options.fetch(:product).fetch(:first_travel_date)
       property.accommodations.each do |accommodation|
         accommodation.minimum_nightly_price      = accommodation.nightly_price_on first_travel_date
