@@ -1,3 +1,5 @@
+require 'quick_travel/adapter'
+
 module QuickTravel
   class Client < Adapter
     attr_accessor :id, :party_id, :surchargeless, :client_type,
