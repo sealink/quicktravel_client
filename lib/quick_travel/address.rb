@@ -3,8 +3,6 @@ require 'geokit'
 
 module QuickTravel
   class Address < Adapter
-    attr_accessor :address_line1, :address_line2, :city, :country_id, :id, :post_code, :state, :country_name
-
     def country_name
       QuickTravel::Country.find(@country_id).name
     end
