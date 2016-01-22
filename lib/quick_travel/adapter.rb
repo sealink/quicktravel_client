@@ -93,8 +93,8 @@ module QuickTravel
 
     def self.find_all!(request_path, opts = {})
       response = if opts.key? :cache
-        QuickTravel::Cache.cache(opts[:cache]) {
-          get_and_validate(request_path, opts.except(:cache))
+        QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
+          get_and_validate(request_path, opts.except(:cache, :cache_options))
         }
       else
         get_and_validate(request_path, opts, return_response_object: true)
