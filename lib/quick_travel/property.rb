@@ -42,7 +42,7 @@ module QuickTravel
     def self.load_with_pricing(id, options)
       # Find property 'standard' way -- finds price for whole duration
       property = Property.first(id, options)
-      first_travel_date = options[:product][:first_travel_date]
+      first_travel_date = options.fetch(:product).fetch(:first_travel_date)
       property.accommodations.each do |accommodation|
         accommodation.minimum_nightly_price      = accommodation.nightly_price_on first_travel_date
         accommodation.minimum_price_for_duration = accommodation.minimum_price_on first_travel_date
