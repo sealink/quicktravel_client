@@ -128,14 +128,12 @@ module QuickTravel
         self.class.extract(collection_data, klass, opts)
       end
 
-      def self.extract(objects, klass, opts = {})
-        objects = Array.wrap(objects)
-        objects.map! { |item| item[opts[:object_key_name]] } if opts[:object_key_name]
-        objects.map! { |item| klass.new(item) }
-
-        # if opts[:page] && opts[:per_page]
-        # objects = WillPaginate::Collection.create(opts[:page], opts[:per_page], opts).replace(objects)
-        objects
+      def self.extract(raw_objects, klass, opts = {})
+        objects = Array.wrap(raw_objects)
+        if opts[:object_key_name]
+          objects = objects.map { |item| item[opts[:object_key_name]] }
+        end
+        objects.map { |item| klass.new(item) }
       end
     end
 
