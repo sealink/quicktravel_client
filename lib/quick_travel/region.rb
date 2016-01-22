@@ -1,10 +1,7 @@
 require 'quick_travel/adapter'
-require 'quick_travel/cache'
 
 module QuickTravel
   class Region < Adapter
-    include Cache
-
     self.api_base = '/regions'
     self.lookup = true
 

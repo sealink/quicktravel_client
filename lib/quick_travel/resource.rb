@@ -2,11 +2,9 @@ require 'quick_travel/adapter'
 require 'quick_travel/bed_requirement'
 require 'quick_travel/passenger_price_break'
 require 'quick_travel/product_type'
-require 'quick_travel/cache'
 
 module QuickTravel
   class Resource < Adapter
-    include QuickTravel::Cache
     self.api_base = '/resources'
 
     def sub_resources
@@ -14,7 +12,7 @@ module QuickTravel
     end
 
     def product_type
-      QuickTravel::ProductType.all.detect { |pt| pt.id == product_type_id }
+      QuickTravel::ProductType.find(product_type_id)
     end
 
     # this method is also duplicated in accommodation class. because now its room facilities are now also available in property show api call
