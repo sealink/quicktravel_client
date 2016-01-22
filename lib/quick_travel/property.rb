@@ -20,12 +20,6 @@ module QuickTravel
       @accommodations = hash_array.map { |accommodation_hash| Accommodation.new(accommodation_hash) }
     end
 
-    # This method returns first object of Property based on property id from QuickTravel
-    def self.first(id, options = {})
-      fail ArgumentError.new('Must Specify valid property id') if id.blank? || id.class != Fixnum
-      generic_first("/api/properties/#{id}.json", options)
-    end
-
     # This method returns all objects of property from QuickTravel that match
     #
     # location_id is compulsory param
@@ -41,7 +35,8 @@ module QuickTravel
 
     def self.load_with_pricing(id, options)
       # Find property 'standard' way -- finds price for whole duration
-      property = Property.first(id, options)
+      fail ArgumentError.new('Must Specify valid property id') if id.blank? || id.class != Fixnum
+      property = generic_first("/api/properties/#{id}.json", options)
       first_travel_date = options.fetch(:product).fetch(:first_travel_date)
       property.accommodations.each do |accommodation|
         accommodation.minimum_nightly_price      = accommodation.nightly_price_on first_travel_date
