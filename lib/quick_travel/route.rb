@@ -16,7 +16,7 @@ module QuickTravel
     #
     # Initializes with path set
     def self.all_by_route_ids_and_product_type_id(route_ids, product_type_id)
-      all(product_type_id).select do|route|
+      all(product_type_id).select do |route|
         route_ids.include?(route.id.to_i)
       end
     end
