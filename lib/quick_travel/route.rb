@@ -9,26 +9,17 @@ module QuickTravel
     #
     # Initializes with path set
     def self.all_by_route_ids_and_product_type_id(route_ids, product_type_id)
-      all(product_type_id).select do|route|
+      all(product_type_id).select do |route|
         route_ids.include?(route.id.to_i)
       end
     end
 
     # All routes for a given product type
     def self.all(product_type_id)
-      cache_key = "trip_routes_#{product_type_id}"
-      routes = QuickTravel::Cache.cache_store.read(cache_key)
-
-      if routes.blank? || !routes.first.instance_of?(Route) # this is hack for development env. Lazy loading is main issue with it.
-        routes = self.find_all!("/product_types/#{product_type_id}/routes.json")
-        QuickTravel::Cache.cache_store.write(
-          cache_key,
-          routes,
-          expires_in: 1440.minutes # expires_in will only work with something like Rails.cache
-        )
-      end
-
-      routes
+      find_all!("/product_types/#{product_type_id}/routes.json",
+                cache: "trip_routes_#{product_type_id}",
+                # expires_in will only work with something like Rails.cache
+                cache_options: { expires_in: 1440.minutes })
     end
 
     def self.find(routes_list, route_id)

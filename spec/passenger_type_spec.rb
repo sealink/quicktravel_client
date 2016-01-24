@@ -29,4 +29,34 @@ describe QuickTravel::PassengerType do
       it { should eq ['2 Adults'] }
     end
   end
+
+  context 'caching of collection' do
+    subject(:all) do
+      VCR.use_cassette('passenger_all') { QuickTravel::PassengerType.all }
+    end
+
+    let(:api) { double }
+
+    before do
+      stub_const('QuickTravel::Api', api)
+      allow(api).to receive(:call_and_validate) { [{id: 1}, {id: 2}] }
+    end
+    
+    context 'when called the first time' do
+      before do
+        QuickTravel::Cache.cache_store.clear
+        all
+      end
+      
+      specify { expect(api).to have_received(:call_and_validate).once }
+      
+      context 'when called again' do
+        before do
+          QuickTravel::PassengerType.all
+        end
+        
+        specify { expect(api).to have_received(:call_and_validate).once } # not called again
+      end
+    end
+  end
 end
