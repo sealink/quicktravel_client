@@ -35,11 +35,18 @@ describe QuickTravel::PassengerType do
       VCR.use_cassette('passenger_all') { QuickTravel::PassengerType.all }
     end
 
+    let(:api) { double }
+
+    before do
+      stub_const('QuickTravel::Api', api)
+      allow(api).to receive(:call_and_validate) { [{id: 1}, {id: 2}] }
+    end
+
     it 'should cache and fetch again' do
       QuickTravel::Cache.cache_store.clear
       all
-      # no cassette as not needed
       QuickTravel::PassengerType.all
+      expect(api).to have_received(:call_and_validate).once # first all
     end
   end
 end
