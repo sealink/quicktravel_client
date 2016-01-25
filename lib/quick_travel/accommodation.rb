@@ -4,6 +4,7 @@ require 'quick_travel/room_facility'
 
 module QuickTravel
   class Accommodation < Adapter
+    attr_reader :error
     attr_reader :bed_configurations, :room_facilities
 
     MAX_DAYS = 8

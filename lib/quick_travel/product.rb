@@ -2,6 +2,8 @@ require 'quick_travel/adapter'
 
 module QuickTravel
   class Product < Adapter
+    attr_reader :error_message
+
     self.api_base = '/api/products'
 
     # Find product details for a given product

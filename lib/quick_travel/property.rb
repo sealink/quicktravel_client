@@ -3,6 +3,7 @@ require 'quick_travel/property_facility'
 
 module QuickTravel
   class Property < Adapter
+    attr_reader :error
     money :minimum_available_price
 
     def accommodations=(hash_array)
