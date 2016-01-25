@@ -8,7 +8,7 @@ module QuickTravel
     def initialize(hash = {})
       super
       if type.blank?
-        self.type = 'Person'
+        @type = 'Person'
       end
     end
 
