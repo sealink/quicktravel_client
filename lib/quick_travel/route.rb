@@ -17,7 +17,7 @@ module QuickTravel
     # All routes for a given product type
     def self.all(product_type_id)
       find_all!("/product_types/#{product_type_id}/routes.json",
-                cache: "trip_routes_#{product_type_id}",
+                cache: "QuickTravel::Route.all-#{product_type_id}-attrs",
                 # expires_in will only work with something like Rails.cache
                 cache_options: { expires_in: 1440.minutes })
     end
