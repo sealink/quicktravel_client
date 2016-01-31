@@ -49,7 +49,7 @@ module QuickTravel
 
     def self.all(opts = {})
       if lookup
-        find_all!("#{api_base}.json", opts.merge(cache: "#{name}.all"))
+        find_all!("#{api_base}.json", opts.merge(cache: "#{name}.all-attrs"))
       else
         find_all!("#{api_base}.json", opts)
       end
