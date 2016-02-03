@@ -16,4 +16,7 @@ matrix:
 notifications:
   email:
     - support@travellink.com.au
-  flowdock: e69dcafad1fea15c6b8c76e9ced965af
+  flowdock:
+    secure: tIc3OVnTl83tGjhjzBSPk7AMRHVta4zAdacBDWOVA3s/YpDoa1wCMaq7xfG7GlEgHtPscvucSKbxoLocBd5d54jQVx3X9q9OrQ91D6h6tbTOK8ZTh1vTdSfMkIoxNjnVJ9KyZYJ3zy44DzfzgmcgqesshqSrXAgcpSvxkEcjAz8=
+sudo: false
+cache: bundler
