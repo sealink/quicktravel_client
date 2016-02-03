@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 1.9
   - 2.2
+  - 2.3.0
 script: "bundle && bundle exec rake coverage"
 gemfile:
   - gemfiles/rails2.gemfile
