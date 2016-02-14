@@ -236,18 +236,22 @@ module QuickTravel
     end
 
     def client_address
+      return nil unless @client_address
       @client_address_object ||= Address.new(@client_address)
     end
 
     def client_party
+      return nil unless @client_party
       @client_party_object ||= Party.new(@client_party)
     end
 
     def client_contact
+      return nil unless @client_contact
       @client_contact_object ||= Contact.new(@client_contact)
     end
 
     def client
+      return nil unless @client
       @client_object ||= Client.new(@client)
     end
 
