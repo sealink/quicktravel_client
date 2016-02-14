@@ -82,6 +82,13 @@ describe QuickTravel::Booking do
       expect(booking.documents.size).to eq 1
     end
   end
+
+  it 'should not have associated client objects' do
+    expect(booking.client).to be nil
+    expect(booking.client_party).to be nil
+    expect(booking.client_contact).to be nil
+    expect(booking.client_address).to be nil
+  end
 end
 
 describe QuickTravel::Booking do
