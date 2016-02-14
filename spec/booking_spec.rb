@@ -77,9 +77,33 @@ end
 
 describe QuickTravel::Booking do
   let(:booking) { QuickTravel::Booking.find(1) }
+
   it 'should have booking documents' do
     VCR.use_cassette('booking_with_documents') do
       expect(booking.documents.size).to eq 1
+    end
+  end
+
+  it 'should not have associated client objects' do
+    VCR.use_cassette('booking_with_documents') do
+      expect(booking.client).to be nil
+      expect(booking.client_party).to be nil
+      expect(booking.client_contact).to be nil
+      expect(booking.client_address).to be nil
+    end
+  end
+
+  let(:accom_product_type_id) { 2 }
+
+  it '#include_reservation_of?' do
+    VCR.use_cassette('booking_with_documents') do
+      expect(booking.include_reservation_of?(accom_product_type_id)).to be true
+    end
+  end
+
+  it '#includes_resource_class?' do
+    VCR.use_cassette('booking_with_documents') do
+      expect(booking.includes_resource_class?('Accommodation')).to be true
     end
   end
 end
