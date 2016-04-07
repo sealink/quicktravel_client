@@ -15,17 +15,6 @@ module QuickTravel
       QuickTravel::ProductType.find(product_type_id)
     end
 
-    # this method is also duplicated in accommodation class. because now its room facilities are now also available in property show api call
-    def room_facilities
-      if @_room_facilities.blank?
-        @_room_facilities = []
-        @room_facilities.each do |item|
-          @_room_facilities << RoomFacility.new(item['room_facility'])
-        end
-      end
-      @_room_facilities
-    end
-
     def bed_requirements
       @_bed_requirements ||= Array.wrap(@bed_requirements).map do |bed_requirement|
         BedRequirement.new(bed_requirement)
