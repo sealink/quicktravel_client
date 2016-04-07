@@ -35,6 +35,11 @@ module QuickTravel
       keys.each do |key|
         next if respond_to?(key)
         define_singleton_method(key) { instance_variable_get("@#{key}") }
+        if key.to_s.ends_with? '_cents'
+          define_singleton_method(key.to_s.gsub(/_in_cents$/, '')) {
+            Money.new(instance_variable_get("@#{key}"))
+          }
+        end
       end
     end
 
