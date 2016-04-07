@@ -129,7 +129,11 @@ module QuickTravel
   end
 
   class PricingDetails < Adapter
-    money :minimum_price, :minimum_price_with_adjustments, :total_adjustments
+    # define to avoid auto definition as money getter
+    # due to _in_cents postfix
+    def adjustments_to_apply_in_cents
+      @adjustments_to_apply_in_cents
+    end
 
     def price_per_pax_type=(pax_type_hash)
       @price_per_pax_type = convert_pax_type_hash(pax_type_hash)

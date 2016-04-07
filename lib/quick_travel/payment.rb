@@ -3,8 +3,6 @@ require 'quick_travel/credit_card'
 
 module QuickTravel
   class Payment < Adapter
-    money :amount
-
     def payment_type
       QuickTravel::PaymentType.find(@payment_type_id)
     end
