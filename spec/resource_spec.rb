@@ -19,4 +19,14 @@ describe QuickTravel::Resource do
       expect(picks.map(&:name)).to eq ['QBE Travel Insurance - Policy E', 'Travel Insurance - Declined']
     end
   end
+
+  context '#product_type' do
+    subject(:property_type) {
+      VCR.use_cassette 'resource_product_type' do
+        resource.product_type
+      end
+    }
+
+    its(:name) { should eq 'Accommodation' }
+  end
 end

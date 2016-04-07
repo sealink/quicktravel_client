@@ -11,6 +11,11 @@ module QuickTravel
       Resource.find_all!('/resources.json', parent_resource_id: @id)
     end
 
+    def self.all_with_price(opts)
+      find_all!("/api/resources/index_with_price.json",
+                opts.merge(cache: "#{name}.all_with_price-attrs"))
+    end
+
     def product_type
       QuickTravel::ProductType.find(product_type_id)
     end
