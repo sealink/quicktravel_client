@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'facets'
   spec.add_dependency 'money', '>= 3.0', '< 6.0' # 6.0 starts to deprecate/split
 
-  spec.add_development_dependency 'bundler', '~> 1.7'
+  spec.add_development_dependency 'bundler', '~> 1.11'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rspec-its'
