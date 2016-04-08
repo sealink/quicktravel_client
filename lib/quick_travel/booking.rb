@@ -7,8 +7,6 @@ require 'quick_travel/price_changes'
 
 module QuickTravel
   class Booking < Adapter
-    money :gross, :balance, :commission, :paid, :surcharge, :deposit
-
     def self.api_base
       '/api/bookings'
     end

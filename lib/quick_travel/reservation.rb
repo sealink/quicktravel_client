@@ -4,8 +4,6 @@ require 'quick_travel/resource'
 
 module QuickTravel
   class Reservation < Adapter
-    money :gross, :commission, :cost, :pre_adjusted_gross, :gross_including_packaged_item, :pre_adjusted_gross_including_packaged_item
-
     def self.create(options)
       json = post_and_validate('/api/reservations.json', options, expect: :json)
       new(json)

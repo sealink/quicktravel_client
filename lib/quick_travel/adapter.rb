@@ -3,7 +3,6 @@ require 'pp'
 require 'json'
 require 'active_support/core_ext'
 require 'money'
-require 'money_extensions/money_field'
 
 require 'quick_travel/config'
 require 'quick_travel/adapter_error'
@@ -12,7 +11,6 @@ require 'quick_travel/init_from_hash'
 module QuickTravel
   class Adapter
     include QuickTravel::InitFromHash
-    include MoneyField
 
     class_attribute :api_base, :lookup
 
@@ -37,7 +35,6 @@ module QuickTravel
         define_singleton_method(key) { instance_variable_get("@#{key}") }
         if key.to_s.ends_with? '_cents'
           name = key.to_s.gsub(/_in_cents$/, '')
-          next if respond_to?(name)
           define_singleton_method(name) {
             Money.new(instance_variable_get("@#{key}"))
           }
