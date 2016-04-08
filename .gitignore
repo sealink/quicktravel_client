@@ -26,4 +26,5 @@ tmp
 
 # Gems
 /vendor/ruby
+.bundle
 
