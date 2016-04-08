@@ -11,6 +11,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ### Changed
 - Discount API renamed Price Change API
 - Multiple internal refactorings and cleanups
+- Changes Price Quotes API to support non segment based products
 
 ## [1.1.1] - 2015-06-22
 ### Fixed

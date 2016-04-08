@@ -310,8 +310,7 @@ module QuickTravel
       price_change.total_price_change_on(reservation.id)
     end
 
-    def calculate_price_quote(segments = {})
-      params = segments.merge(segments: segments.keys)
+    def calculate_price_quote(params = {})
       response = post_and_validate("#{api_base}/#{@id}/price_quotes/calculate", params)
       Money.new(response['quoted_booking_gross_in_cents'])
     end
