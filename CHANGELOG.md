@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.0.1]
+### Added
+ - Add resource categories to client
+
 ## [2.0.0] - 2016-04-08
 ### Added
 - This changelog
