@@ -11,9 +11,19 @@ describe QuickTravel::ProductType do
     its(:length) { should == 8 }
 
     context 'first element' do
-      subject { all.first }
+      subject(:ferry) { all.first }
       its(:class) { should == QuickTravel::ProductType }
       its(:name)  { should == 'Ferry' }
+
+      context '#routes' do
+        subject {
+          VCR.use_cassette 'product_type_routes' do
+            ferry.routes
+          end
+        }
+        its(:size) { should eq 2 }
+        its('first.name') { should eq 'To Kangaroo Island' }
+      end
     end
   end
 end
