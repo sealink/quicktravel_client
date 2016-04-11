@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/resource_categories.json?product_type_ids%5B%5D=1
+    body:
+      encoding: UTF-8
+      string: access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - '"d751713988987e9331980363e24189ce"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - da10c21b9e6ec00d6e634342051985a5
+      X-Runtime:
+      - '0.284083'
+      Vary:
+      - Origin
+      Date:
+      - Mon, 11 Apr 2016 02:11:22 GMT
+      X-Rack-Cache:
+      - miss
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      Content-Length:
+      - '2'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWY0MGFlMmFiYTllYjliOWNhZWZmZDNlYjIyMzgxYWQ5BjsAVEkiCXVzZXIGOwBGaQY%3D--f0c739c517c26c0b6262b1546068d68cda8618b0;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 02:11:22 GMT
+recorded_with: VCR 3.0.1

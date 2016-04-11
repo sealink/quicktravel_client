@@ -8,5 +8,9 @@ module QuickTravel
     def routes
       Route.all(id)
     end
+
+    def resource_categories
+      ResourceCategory.all(product_type_ids: [id])
+    end
   end
 end
