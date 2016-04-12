@@ -48,6 +48,7 @@ module QuickTravel
   require 'quick_travel/region'
   require 'quick_travel/reservation'
   require 'quick_travel/resource'
+  require 'quick_travel/resource_category'
   require 'quick_travel/room_facility'
   require 'quick_travel/route_stop'
   require 'quick_travel/service'
