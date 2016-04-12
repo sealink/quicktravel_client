@@ -17,6 +17,7 @@ module QuickTravel
 
   require 'quick_travel/product'
   require 'quick_travel/product_configuration'
+  require 'quick_travel/basic_product'
   require 'quick_travel/search'
 
   # QuickTravel models

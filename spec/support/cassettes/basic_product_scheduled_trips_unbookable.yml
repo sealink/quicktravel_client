@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://test.qt.sealink.com.au:8080/reservation_for/scheduled_trips/find_services_for.json
+    body:
+      encoding: UTF-8
+      string: product_type_id=1&route_id=1&forward[first_travel_date]=2016-03-03&forward[passenger_types][1]=2&access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"d751713988987e9331980363e24189ce"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c68d0834907d70a16dcd7b8df889ab15
+      X-Runtime:
+      - '0.067009'
+      Vary:
+      - Origin
+      Date:
+      - Thu, 28 Feb 2013 13:58:07 GMT
+      X-Rack-Cache:
+      - invalidate, pass
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      Content-Length:
+      - '2'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWFmYWI2YzYzMmNhNDdkNzNmNzE2NGRhODQyYzYxODIxBjsAVEkiCXVzZXIGOwBGaQY%3D--aa8c65e373d1ace4e5fc10e86602b065c157896e;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 12 Apr 2016 06:41:39 GMT
+recorded_with: VCR 3.0.1
