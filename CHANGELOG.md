@@ -6,6 +6,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ## [2.0.1]
 ### Added
  - Add resource categories to client
+ - Move product class from booking app into client
 
 ## [2.0.0] - 2016-04-08
 ### Added
