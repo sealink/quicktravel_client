@@ -1,8 +1,7 @@
 require 'spec_helper'
-require 'quick_travel/base_product'
-require 'quick_travel/scheduled_trip_product'
+require 'quick_travel/products/scheduled_trip'
 
-describe QuickTravel::ScheduledTripProduct do
+describe QuickTravel::Products::ScheduledTrip do
   let(:params) {
     {
       product_type_id: 1,
@@ -16,7 +15,7 @@ describe QuickTravel::ScheduledTripProduct do
   let(:date) { '2016-03-01' }
   subject(:products) {
     VCR.use_cassette 'basic_product_scheduled_trips' do
-      QuickTravel::ScheduledTripProduct.find(params)
+      QuickTravel::Products::ScheduledTrip.find(params)
     end
   }
 
@@ -34,7 +33,7 @@ describe QuickTravel::ScheduledTripProduct do
   context 'when date has no services' do
     subject(:unbookable_products) {
       VCR.use_cassette 'basic_product_scheduled_trips_unbookable' do
-        QuickTravel::ScheduledTripProduct.find(params)
+        QuickTravel::Products::ScheduledTrip.find(params)
       end
     }
     let(:date) { '2016-03-03' }
@@ -58,7 +57,7 @@ describe QuickTravel::ScheduledTripProduct do
     let(:date) { '2016-03-01' }
     subject(:products) {
       VCR.use_cassette 'basic_product_scheduled_trips_multi_sector' do
-        QuickTravel::ScheduledTripProduct.find(params)
+        QuickTravel::Products::ScheduledTrip.find(params)
       end
     }
 
