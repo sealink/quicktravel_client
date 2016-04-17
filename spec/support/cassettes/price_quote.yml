@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
+    body:
+      encoding: UTF-8
+      string: reservations[][resource_id]=805&reservations[][quantity]=3&reservations[][first_travel_date]=2016-04-15&access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - '"daeb39a8541ca75d675e7d94ce1959eb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0c6f7f52dedeaaba829db4ea7ec85bb3
+      X-Runtime:
+      - '0.206104'
+      Vary:
+      - Origin
+      Date:
+      - Sun, 17 Apr 2016 23:22:27 GMT
+      X-Rack-Cache:
+      - invalidate, pass
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      Content-Length:
+      - '72'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTdmNDBkMGU4MjQ0ODcxMWI1OTBmYjcwYTUyYmViMzEzBjsAVEkiCXVzZXIGOwBGaQY%3D--d7da92b98b848fa2e9f9aa51038f0aeb1151de25;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"quoted_booking_gross_in_cents":7680,"applied_rules":["Special Offer"]}'
+    http_version: 
+  recorded_at: Sun, 17 Apr 2016 23:22:27 GMT
+recorded_with: VCR 3.0.1
