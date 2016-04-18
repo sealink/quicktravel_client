@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
     body:
       encoding: UTF-8
-      string: reservations[][resource_id]=805&reservations[][quantity]=3&reservations[][first_travel_date]=2016-04-15&access_key=<QT_KEY>
+      string: reservations[][resource_id]=7&reservations[][quantity]=2&reservations[][first_travel_date]=2016-04-15&access_key=<QT_KEY>
     headers:
       Content-Length:
       - '0'
@@ -31,17 +31,75 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge
       Etag:
-      - '"daeb39a8541ca75d675e7d94ce1959eb"'
+      - '"a06812777482200ad2e57474ab6eb025"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0c6f7f52dedeaaba829db4ea7ec85bb3
+      - 5c9f2014cfcc01cdbb680ebb7d03fac7
       X-Runtime:
-      - '0.206104'
+      - '0.739828'
       Vary:
       - Origin
       Date:
-      - Sun, 17 Apr 2016 23:22:27 GMT
+      - Mon, 18 Apr 2016 02:03:51 GMT
+      X-Rack-Cache:
+      - invalidate, pass
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      Content-Length:
+      - '57'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTNjM2JmOTFmMWY5YTFmZWZkOTE5ZTg1ODEzOGM5YjgyBjsAVEkiCXVzZXIGOwBGaQY%3D--90ec9a422ed33f83f756234b924f2ef31d0d3eb6;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"quoted_booking_gross_in_cents":6400,"applied_rules":[]}'
+    http_version: 
+  recorded_at: Mon, 18 Apr 2016 02:03:51 GMT
+- request:
+    method: post
+    uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
+    body:
+      encoding: UTF-8
+      string: reservations[][resource_id]=7&reservations[][quantity]=3&reservations[][first_travel_date]=2016-04-15&access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - '"be8282fde5fb52a677b61d1c7d5706a6"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dd2ef3d004966a8b8f98e24d6ed7fb57
+      X-Runtime:
+      - '0.148945'
+      Vary:
+      - Origin
+      Date:
+      - Mon, 18 Apr 2016 02:03:51 GMT
       X-Rack-Cache:
       - invalidate, pass
       Server:
@@ -51,11 +109,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTdmNDBkMGU4MjQ0ODcxMWI1OTBmYjcwYTUyYmViMzEzBjsAVEkiCXVzZXIGOwBGaQY%3D--d7da92b98b848fa2e9f9aa51038f0aeb1151de25;
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWVhMzI2MDY3NzQzYTgzMGExNTZlNzA2MGVmZGU1OGIzBjsAVEkiCXVzZXIGOwBGaQY%3D--bd5584b319f12bae6e3ca2fafe54a041c3655522;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"quoted_booking_gross_in_cents":7680,"applied_rules":["Special Offer"]}'
+      string: '{"quoted_booking_gross_in_cents":4800,"applied_rules":["Special Offer"]}'
     http_version: 
-  recorded_at: Sun, 17 Apr 2016 23:22:27 GMT
+  recorded_at: Mon, 18 Apr 2016 02:03:51 GMT
 recorded_with: VCR 3.0.1
