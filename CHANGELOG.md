@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.2.1] - 2016-04-18
+### Fixed
+ - Adds missing require for PriceQuote adapter
+
 ## [2.2.0] - 2016-04-18
 ### Added
  - PriceQuote adapter

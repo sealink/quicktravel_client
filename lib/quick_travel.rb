@@ -42,6 +42,7 @@ module QuickTravel
   require 'quick_travel/payment'
   require 'quick_travel/background_check'
   require 'quick_travel/payment_type'
+  require 'quick_travel/price_quote'
   require 'quick_travel/product_type'
   require 'quick_travel/property'
   require 'quick_travel/property_facility'
