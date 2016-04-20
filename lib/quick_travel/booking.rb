@@ -308,6 +308,8 @@ module QuickTravel
       price_change.total_price_change_on(reservation.id)
     end
 
+    # <b>DEPRECATED:</b>
+    # Please use <tt>PriceQuote.calculate(params.merge(booking_id: booking.id))</tt> instead.
     def calculate_price_quote(params = {})
       response = post_and_validate("#{api_base}/#{@id}/price_quotes/calculate", params)
       Money.new(response['quoted_booking_gross_in_cents'])
