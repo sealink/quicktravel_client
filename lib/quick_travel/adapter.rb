@@ -36,7 +36,9 @@ module QuickTravel
         if key.to_s.ends_with? '_cents'
           name = key.to_s.gsub(/_in_cents$/, '')
           define_singleton_method(name) {
-            Money.new(instance_variable_get("@#{key}"))
+            cents = instance_variable_get("@#{key}")
+            return nil unless cents
+            Money.new(cents)
           }
         end
       end
