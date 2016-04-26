@@ -3,9 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## [Unreleased]
+## [2.2.2]
 ### Changed
  - Deprecates Booking#calculate_price_quote
+ - Fix when money is nil from QT
 
 ## [2.2.1] - 2016-04-18
 ### Fixed
