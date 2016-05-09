@@ -13,7 +13,7 @@ module QuickTravel
 
     def self.all_with_price(opts)
       find_all!("/api/resources/index_with_price.json",
-                opts.merge(cache: "#{name}.all_with_price-attrs"))
+                opts.merge(cache: "#{name}.all_with_price-attrs?#{opts.to_param}&date=#{Date.current}"))
     end
 
     def product_type
