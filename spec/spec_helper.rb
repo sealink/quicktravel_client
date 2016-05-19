@@ -11,22 +11,14 @@ require 'bundler/setup'
 require 'rspec/its'
 require 'date' # Needed for stamp
 require 'stamp' # Some reasons stamp doesn't load automatically?
-require 'vcr'
 
 ENV['QT_KEYS'] ||= 'test_key_1,test_key_2'
-qt_keys = ENV['QT_KEYS'].split(',')
-VCR.configure do |c|
-  c.cassette_library_dir = 'spec/support/cassettes'
-  c.default_cassette_options = { match_requests_on: [:method, :uri, :body] }
-  c.filter_sensitive_data('<QT_KEY>')   { qt_keys[0] }
-  c.filter_sensitive_data('<QT_KEY_2>') { qt_keys[1] }
-  c.hook_into :webmock
-end
-
+require 'support/vcr_loader'
 require 'support/coverage_loader'
 require 'quick_travel' # eager load to ensure coverage correct
 
 require 'quick_travel/config'
+qt_keys = ENV['QT_KEYS'].split(',')
 QuickTravel.configure do |c|
   c.url = 'http://test.qt.sealink.com.au:8080'
   c.access_key = qt_keys[0]
