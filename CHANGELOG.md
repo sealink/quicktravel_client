@@ -4,9 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [2.3.0]
-
 ### Changed
  - Change cache expiries
+- Adds support for passing dates to Resource#all_with_price
+
+### Fixed
+- Fixes issue with HTTParty ~> 0.14
+- Updates HTTParty dependency to ~> 0.14
 
 ## [2.2.2]
 ### Changed
