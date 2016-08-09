@@ -7,6 +7,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 - Adds support for passing dates to Resource#all_with_price
 - Fixes issue with HTTParty ~> 0.14
+- Updates HTTParty dependency to ~> 0.14
 
 ## [2.3.0]
 
