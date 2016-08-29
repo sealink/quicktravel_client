@@ -316,6 +316,16 @@ module QuickTravel
       parsed_response.is_a?(Hash) && parsed_response.key?('error')
     end
 
+    # HTTParty v0.14.0 addressed introduced this change:
+    #
+    #   * [allow empty array to be used as param](https://github.com/jnunemaker/httparty/pull/477)
+    #
+    # Unfortunately, when submitting an empty array as a parameter,
+    # Rack interprets it as an array containing an empty string:
+    #
+    #   Rack::Utils.parse_nested_query('array[]=') #=> {"array"=>[""]}
+    #
+    # The workaround is to avoid sending empty arrays to Rack based web applications
     class FilterQuery
       def initialize(query)
         @query = query
