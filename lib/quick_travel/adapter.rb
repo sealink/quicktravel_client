@@ -316,7 +316,7 @@ module QuickTravel
       parsed_response.is_a?(Hash) && parsed_response.key?('error')
     end
 
-    # HTTParty v0.14.0 addressed introduced this change:
+    # HTTParty v0.14.0 introduced this change:
     #
     #   * [allow empty array to be used as param](https://github.com/jnunemaker/httparty/pull/477)
     #
