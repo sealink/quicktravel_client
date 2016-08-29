@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.3.1]
+### Fixed
+- Omits empty array parameters
+
 ## [2.3.0]
 ### Changed
 - Change cache expiries
