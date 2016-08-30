@@ -3,9 +3,13 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.3.1]
+### Fixed
+- Omits empty array parameters
+
 ## [2.3.0]
 ### Changed
- - Change cache expiries
+- Change cache expiries
 - Adds support for passing dates to Resource#all_with_price
 
 ### Fixed
@@ -14,21 +18,21 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [2.2.2]
 ### Changed
- - Deprecates Booking#calculate_price_quote
- - Fix when money is nil from QT
+- Deprecates Booking#calculate_price_quote
+- Fix when money is nil from QT
 
 ## [2.2.1] - 2016-04-18
 ### Fixed
- - Adds missing require for PriceQuote adapter
+- Adds missing require for PriceQuote adapter
 
 ## [2.2.0] - 2016-04-18
 ### Added
- - PriceQuote adapter
+- PriceQuote adapter
 
 ## [2.1.0] - 2016-04-13
 ### Added
- - Resource categories
- - Products
+- Resource categories
+- Products
 
 ## [2.0.0] - 2016-04-08
 ### Added

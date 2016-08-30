@@ -3,6 +3,8 @@ require 'pp'
 require 'json'
 require 'active_support/core_ext'
 require 'money'
+require 'facets/hash/recurse'
+require 'facets/hash/delete_values'
 
 require 'quick_travel/config'
 require 'quick_travel/adapter_error'
@@ -247,7 +249,7 @@ module QuickTravel
       return_response_object = http_params.delete(:return_response_object)
 
       # Set default token
-      http_params[:query] ||= query
+      http_params[:query]   ||= FilterQuery.new(query).call
       http_params[:headers] ||= {}
       http_params[:headers]['Content-length'] = '0' if http_params[:body].blank?
       expect = http_params.delete(:expect)
@@ -312,6 +314,36 @@ module QuickTravel
     def self.response_contains_error?(response)
       parsed_response = response.parsed_response
       parsed_response.is_a?(Hash) && parsed_response.key?('error')
+    end
+
+    # HTTParty v0.14.0 introduced this change:
+    #
+    #   * [allow empty array to be used as param](https://github.com/jnunemaker/httparty/pull/477)
+    #
+    # Unfortunately, when submitting an empty array as a parameter,
+    # Rack interprets it as an array containing an empty string:
+    #
+    #   Rack::Utils.parse_nested_query('array[]=') #=> {"array"=>[""]}
+    #
+    # The workaround is to avoid sending empty arrays to Rack based web applications
+    class FilterQuery
+      def initialize(query)
+        @query = query
+      end
+
+      def call
+        return @query unless @query.is_a? Hash
+        without_empty_arrays
+      end
+
+      private
+
+      def without_empty_arrays
+        @query.recurse { |hash|
+          hash.delete_values([])
+          hash
+        }
+      end
     end
   end
 end
