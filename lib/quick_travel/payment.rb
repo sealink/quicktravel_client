@@ -7,10 +7,6 @@ module QuickTravel
       QuickTravel::PaymentType.find(@payment_type_id)
     end
 
-    def self.create(options = {})
-      post_and_validate("/front_office/bookings/#{options[:booking_id]}/payments.json", options)
-    end
-
     def self.get_redirect_url(options)
       response = get_and_validate("/api/checkouts/migs_redirect_url.json", options)
       response[:redirect_url]
