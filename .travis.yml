@@ -1,7 +1,7 @@
 language: ruby
 rvm:
-  - 2.2
-  - 2.3.0
+  - 2.2.5
+  - 2.3.1
 script: bundle && bundle exec rake spec
 gemfile:
   - gemfiles/rails4.gemfile
