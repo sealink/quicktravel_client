@@ -1,24 +1,13 @@
 language: ruby
 rvm:
-  - 1.9
-  - 2.2
-  - 2.3.0
+  - 2.2.5
+  - 2.3.1
 script: bundle && bundle exec rake spec
 gemfile:
-  - gemfiles/rails2.gemfile
   - gemfiles/rails4.gemfile
-matrix:
-  exclude:
-    - rvm: 1.9
-      gemfile: gemfiles/rails4.gemfile
-    - rvm: 2.2
-      gemfile: gemfiles/rails2.gemfile
-    - rvm: 2.3.0
-      gemfile: gemfiles/rails2.gemfile
+  - gemfiles/rails5.gemfile
 notifications:
   email:
     - support@travellink.com.au
-  flowdock:
-    secure: tIc3OVnTl83tGjhjzBSPk7AMRHVta4zAdacBDWOVA3s/YpDoa1wCMaq7xfG7GlEgHtPscvucSKbxoLocBd5d54jQVx3X9q9OrQ91D6h6tbTOK8ZTh1vTdSfMkIoxNjnVJ9KyZYJ3zy44DzfzgmcgqesshqSrXAgcpSvxkEcjAz8=
 sudo: false
 cache: bundler
