@@ -61,6 +61,17 @@ describe QuickTravel::Booking do
     end
   end
 
+  it 'should be able to return its payments and payment types' do
+    VCR.use_cassette('booking_show') do
+      b = QuickTravel::Booking.find(@booking.id)
+      expect(b.payment_types).to be_an_instance_of Array
+      expect(b.payment_types.size).to eq 3
+      expect(b.payment_types.first).to be_an_instance_of QuickTravel::PaymentType
+      expect(b.payments).to be_an_instance_of Array
+      expect(b.payments.size).to eq 0
+    end
+  end
+
   it 'should be able to update the booking' do
     VCR.use_cassette('booking_update') do
       response = @booking.update(customer_contact_name: 'John')

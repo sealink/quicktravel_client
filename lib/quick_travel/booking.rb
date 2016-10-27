@@ -11,10 +11,6 @@ module QuickTravel
       '/api/bookings'
     end
 
-    def self.front_office_base
-      '/front_office/bookings'
-    end
-
     def self.find_by_reference(reference)
       find_all!("#{api_base}/reference/#{reference}.json").first
     end
@@ -24,13 +20,11 @@ module QuickTravel
                          last_group: true, regenerate: regenerate)
     end
 
-    def payments
-      Payment.find_all!("#{Booking.front_office_base}/#{@id}/payments.json")
-    end
-
-    def payment_types
-      PaymentType.find_all!("#{Booking.front_office_base}/#{@id}/payment_types.json")
-    end
+    has_many :reservations
+    has_many :passengers
+    has_many :vehicles
+    has_many :payments
+    has_many :payment_types
 
     def on_account_payment_type
       payment_types_by_code = payment_types.group_by(&:code)
@@ -192,18 +186,6 @@ module QuickTravel
       Booking.find(@id)  # refresh
     end
 
-    # Generate passenger objects from passenger data (hash)
-    def passengers
-      @passengers ||=
-        @passengers_attributes.map { |passenger| Passenger.new(passenger) }
-    end
-
-    # Generate passenger objects from passenger data (hash)
-    def vehicles
-      @vehicles ||=
-        @vehicles_attributes.map { |vehicle| Vehicle.new(vehicle) }
-    end
-
     def find_passenger_by_id(pid)
       passengers.detect { |p| p.id.to_i == pid.to_i }
     end
@@ -220,13 +202,6 @@ module QuickTravel
 
     def vehicles_hash
       @vehicles
-    end
-
-    # It returns booking items for a booking.
-    # Array of BookingItem
-    def reservations
-      fail AdapterError, 'Reservations have not been set from API' if @reservations_attributes.nil?
-      @_reservations_object_array ||= @reservations_attributes.map { |item| Reservation.new(item) }
     end
 
     def legacy_reservations

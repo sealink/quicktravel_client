@@ -4,15 +4,12 @@ require 'quick_travel/products/base'
 module QuickTravel
   module Products
     class ScheduledTrip < Base
+      belongs_to :to_route_stop, class_name: 'RouteStop'
+      belongs_to :from_route_stop, class_name: 'RouteStop'
+
       @reservation_for_type = :scheduled_trips
 
-      def to_route_stop
-        RouteStop.new(@to_route_stop_attributes) if @to_route_stop_attributes
-      end
 
-      def from_route_stop
-        RouteStop.new(@from_route_stop_attributes) if @from_route_stop_attributes
-      end
 
       def from_route_stop_id
         return nil if from_route_stop.nil?
