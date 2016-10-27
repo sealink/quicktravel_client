@@ -30,15 +30,6 @@ module QuickTravel
       end_time.to_time.on(last_travel_date) if end_time
     end
 
-    # it send API request for Resource show. and cache the data.
-    # i think now this method is not required because now booking show api call have display_text for every reservation
-    def details
-      if @_resource.blank?
-        @_resource = Resource.find(@resource_id) unless @resource_id.blank?
-      end
-      @_resource
-    end
-
     def passengers_count_string(booking)
       passengers_count(booking).join(', ')
     end

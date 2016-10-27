@@ -200,14 +200,6 @@ module QuickTravel
       end
     end
 
-    def vehicles_hash
-      @vehicles
-    end
-
-    def legacy_reservations
-      @_reservations_object_array = @reservations.map { |item| Reservation.new(item) }
-    end
-
     def client_address
       return nil unless @client_address
       @client_address_object ||= Address.new(@client_address)
