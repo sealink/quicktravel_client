@@ -9,7 +9,7 @@ describe QuickTravel::ProductType do
     end
 
     its(:class) { should == Array }
-    its(:length) { should == 8 }
+    its(:length) { should == 9 }
 
     context 'first element' do
       subject(:ferry) { all.first }

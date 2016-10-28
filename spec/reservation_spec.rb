@@ -10,8 +10,11 @@ describe QuickTravel::Reservation do
         first_travel_date: '2016-03-01',
         passenger_types_numbers: { '1' => '2', '2' => '1' }
       )
-      expect(reservation.booking_id).to eq 3 # based on running ALL specs
+      expect(reservation.booking_id).to eq 4 # based on running ALL specs
                                              # from a fresh bootstrap.sql
+                                             # bootstrap.sql has 2 bookings
+                                             # Plus 3rd booking created in booking_spec
+                                             # Plus 4th booking created here
     end
   end
 
