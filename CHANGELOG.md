@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.4.0]
+### Changed
+- Improve error handling when non JSON response
+- Update test cassettes due to API changes
+- Update test data due to new bootstrap.sql
+
 ## [2.3.1]
 ### Fixed
 - Omits empty array parameters
