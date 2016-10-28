@@ -35,4 +35,21 @@ describe QuickTravel::Adapter do
 
     specify { expect(QuickTravel::Api).to have_received(:post).with(url, expected_params) }
   end
+
+  context 'when response non standard' do
+    let(:url) { 'http://www.google.com' }
+
+    let(:adapter_response) {
+      VCR.use_cassette 'wrong_url' do
+        QuickTravel::Adapter.get_and_validate(url)
+      end
+    }
+
+    specify do
+      expect { adapter_response }.to raise_error(
+        QuickTravel::AdapterError,
+        /That’s all we know/
+      )
+    end
+  end
 end
