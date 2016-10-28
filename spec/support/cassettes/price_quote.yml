@@ -14,50 +14,50 @@ http_interactions:
       code: 200
       message: 'OK '
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '1'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
       P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
       Etag:
-      - '"a06812777482200ad2e57474ab6eb025"'
+      - '"dba0b1c6031ddd388a154f34fad3a95e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5c9f2014cfcc01cdbb680ebb7d03fac7
+      - 36c3c06b5e8578b816695f5586f21624
       X-Runtime:
-      - '0.739828'
+      - '0.434247'
       Vary:
       - Origin
       Date:
-      - Mon, 18 Apr 2016 02:03:51 GMT
+      - Fri, 01 Jan 2016 02:32:34 GMT
       X-Rack-Cache:
       - invalidate, pass
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '57'
+      - '332'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTNjM2JmOTFmMWY5YTFmZWZkOTE5ZTg1ODEzOGM5YjgyBjsAVEkiCXVzZXIGOwBGaQY%3D--90ec9a422ed33f83f756234b924f2ef31d0d3eb6;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTE0NzI4MDFiMGIzZDVhYzc5N2Q2Y2FhYWEyMzhkNzc4BjsAVEkiCXVzZXIGOwBGaQY%3D--d7e6ea881d160177b5e2af8c283dd816dc8e5e6e;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"quoted_booking_gross_in_cents":6400,"applied_rules":[]}'
     http_version: 
-  recorded_at: Mon, 18 Apr 2016 02:03:51 GMT
+  recorded_at: Fri, 28 Oct 2016 05:28:10 GMT
 - request:
     method: post
     uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
@@ -72,48 +72,48 @@ http_interactions:
       code: 200
       message: 'OK '
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '1'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
       P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
       Etag:
-      - '"be8282fde5fb52a677b61d1c7d5706a6"'
+      - '"42dedf38987939db1c16de673bd9067a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dd2ef3d004966a8b8f98e24d6ed7fb57
+      - f89fc66d8fe4f1ae28f055a2de5cb5de
       X-Runtime:
-      - '0.148945'
+      - '0.112283'
       Vary:
       - Origin
       Date:
-      - Mon, 18 Apr 2016 02:03:51 GMT
+      - Fri, 01 Jan 2016 02:32:34 GMT
       X-Rack-Cache:
       - invalidate, pass
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '72'
+      - '362'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWVhMzI2MDY3NzQzYTgzMGExNTZlNzA2MGVmZGU1OGIzBjsAVEkiCXVzZXIGOwBGaQY%3D--bd5584b319f12bae6e3ca2fafe54a041c3655522;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTYwMTZhMjFlMDZmYjVmNzJkYmJkNmQ1MTQ0MmVmNzg4BjsAVEkiCXVzZXIGOwBGaQY%3D--423de8f2af72b0b90551487d0f2ee6287c9deafb;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"quoted_booking_gross_in_cents":4800,"applied_rules":["Special Offer"]}'
     http_version: 
-  recorded_at: Mon, 18 Apr 2016 02:03:51 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 28 Oct 2016 05:28:10 GMT
+recorded_with: VCR 3.0.3

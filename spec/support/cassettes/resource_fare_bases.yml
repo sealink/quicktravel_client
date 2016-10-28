@@ -19,32 +19,39 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
+      Etag:
+      - '"f3b17331349cbba7025e60e3ef3c20c4"'
       Cache-Control:
-      - no-store, must-revalidate, private, max-age=0
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a888f1493c39836d9a76249f6e7d03be
+      - 25f24512dc4057dd7053a930d1c81f6e
       X-Runtime:
-      - '0.063580'
+      - '0.094607'
       Vary:
       - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:40 GMT
       X-Rack-Cache:
       - miss
-      X-Miniprofiler-Ids:
-      - '["cb1fhhmviia4g48z9ueg","3n393d46407xjckipoz4","sbzq3sn22o19v6amh4lx","hnsva789t8cmifp64wx3","wmmnukmwie7vr7vj8xqf","2brmax1rs5fwk4fd7n5","dvsmvrl183r0tifnlw46","5o49qsg88hbcsljo43fu","w0wrmi9s9rgua6owkm3z","lxziuvwk5cnyi9wz6zbf"]'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
-      Date:
-      - Mon, 26 Oct 2015 00:18:52 GMT
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '3494'
+      - '3780'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - __profilin=p%3Dt; path=/
-      - __profilin=p%3Dt; path=/
-      - __profilin=p%3Dt; path=/
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWJjYWMzN2Y5MGI2ZjdhYWY1ODc3MTVlODllNzg5N2M3BjsAVEkiCXVzZXIGOwBGaQY%3D--f19bbf8bfd4d0418d90d6cf724598c0b2eaaa795;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWE3ZTg0Y2I0ODIyOTM0MGU0NThhOWRjNDkyZTFmNjAxBjsAVEkiCXVzZXIGOwBGaQY%3D--06e25fc453458d190110817ac1968586508c475c;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -62,5 +69,5 @@ http_interactions:
         Insurance to this booking, please contact the SeaLink Travel Group on 13 13
         01 prior to commencing your travels.\u003C/p\u003E","graphics":[],"graphic_names":[]}]'
     http_version: 
-  recorded_at: Mon, 26 Oct 2015 00:18:52 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 28 Oct 2016 05:28:17 GMT
+recorded_with: VCR 3.0.3

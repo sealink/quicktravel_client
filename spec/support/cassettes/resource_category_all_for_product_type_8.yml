@@ -14,48 +14,48 @@ http_interactions:
       code: 200
       message: 'OK '
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '1'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
       P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
       Etag:
       - '"ad47d06108ac00a1dde480369a551084"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c27ad890639b172d9d36d4664d40bc4f
+      - 1ae0b0d46dc8e7025e6a23f48f4bcaad
       X-Runtime:
-      - '0.063613'
+      - '0.087508'
       Vary:
       - Origin
       Date:
-      - Mon, 11 Apr 2016 02:11:23 GMT
+      - Fri, 01 Jan 2016 02:32:40 GMT
       X-Rack-Cache:
       - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
       - '323'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTQxYzY0YzAwNjQwNmJlMTJhMDQ4MzkyNmRjNzQzMWYyBjsAVEkiCXVzZXIGOwBGaQY%3D--62155a212c211b0f29dbcdb6b1b7f552a10eef2f;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTZiODU3Nzg0YmM1NTk5YjljNGViNjA2NDg4Y2FhMGM2BjsAVEkiCXVzZXIGOwBGaQY%3D--2d54bfbe0c4b367f6863723750a185f88f5ddc70;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"created_at":"2015-08-25T15:11:16+09:30","description":"","id":3,"name":"General","position":null,"product_type_id":8,"updated_at":"2015-08-25T15:11:16+09:30"},{"created_at":"2015-08-25T15:11:28+09:30","description":"","id":4,"name":"Muzzles","position":null,"product_type_id":8,"updated_at":"2015-08-25T15:11:28+09:30"}]'
     http_version: 
-  recorded_at: Mon, 11 Apr 2016 02:11:23 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 28 Oct 2016 05:28:16 GMT
+recorded_with: VCR 3.0.3

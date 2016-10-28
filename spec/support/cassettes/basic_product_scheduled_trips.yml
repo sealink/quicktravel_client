@@ -14,16 +14,6 @@ http_interactions:
       code: 200
       message: 'OK '
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '1'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
       P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
@@ -35,23 +25,33 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 91d524692c087648a1441c481cb68a75
+      - 4aaa8ad21113c2b935ea363623ea6842
       X-Runtime:
-      - '0.248636'
+      - '0.392632'
       Vary:
       - Origin
       Date:
-      - Thu, 28 Feb 2013 13:58:07 GMT
+      - Fri, 01 Jan 2016 02:32:37 GMT
       X-Rack-Cache:
       - invalidate, pass
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
       - '5528'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTU5NWIxODhiOGRmODZjZWQ2ODVkNjdlMTYxYjZhNjgzBjsAVEkiCXVzZXIGOwBGaQY%3D--488a6a29ce9432df25900b3453a9f87ede1651f9;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTEyMWNhOTc4YmM2Mjg2NDQ3ZjBkZjA1OWFiY2JlYzgxBjsAVEkiCXVzZXIGOwBGaQY%3D--20f11c05a3d416b3c8a1276b2ef7c06ef03bb2cd;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -77,5 +77,5 @@ http_interactions:
         class=\"money positive\"\u003E$40.00\u003C/span\u003E","pre_adjusted_price":"$40.00","price_breakdown":"\u003Cspan\u003E\u003Cstrong\u003EPassengers:\u003C/strong\u003E\u0026nbsp;\u003Cspan
         class=\"money positive\"\u003E$40.00\u003C/span\u003E\u0026nbsp;\u003C/span\u003E","price_breakdown_passengers_in_cents":4000,"price_breakdown_vehicles_in_cents":0,"trip_id":6,"stop_departure_time":"2000-01-01T21:00:00Z","stop_arrival_time":"2000-01-01T21:45:00Z","from_route_stop_attributes":null,"to_route_stop_attributes":null,"departure_time":"2000-01-01T21:00:00Z","arrival_time":"2000-01-01T21:45:00Z"}]'
     http_version: 
-  recorded_at: Tue, 12 Apr 2016 06:41:39 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 28 Oct 2016 05:28:13 GMT
+recorded_with: VCR 3.0.3

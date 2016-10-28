@@ -14,16 +14,6 @@ http_interactions:
       code: 200
       message: 'OK '
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '1'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
       P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
@@ -31,27 +21,37 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"9503e00e7b614fbc247659c2ea55bfcd"'
+      - '"795979f24e7421f51cae13d82446d84a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e62582468ae4e5c6f62bf097849a88da
+      - b3b78d6941533c517f465f85baa4a0b3
       X-Runtime:
-      - '0.281571'
+      - '0.260748'
       Vary:
       - Origin
       Date:
-      - Thu, 28 Feb 2013 13:32:44 GMT
+      - Fri, 01 Jan 2016 02:32:33 GMT
       X-Rack-Cache:
       - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '12036'
+      - '11906'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWFkNzUyZGQyZjY3ZmM3YTkzN2U0NjVmNzdhZGIxMGE5BjsAVEkiCXVzZXIGOwBGaQY%3D--f529790171ba393e739a0fa9152d724807708cad;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTczYTY0ZWZhYTU5M2I1YjA5OTE1NjQxYjIwMGVhNzg3BjsAVEkiCXVzZXIGOwBGaQY%3D--084496bde08ffb1f2ffe2e04d2b843de84202a80;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -82,5 +82,5 @@ http_interactions:
         Get Me","description":"","display_name":"QBE Get Me"}],"package":false,"sub_reservation_depth":1,"extra_pick":null,"child_resource":true,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":2,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:11:08+10:30","gross_in_cents":6000,"id":3,"services_deck_division_id":null,"updated_at":"2013-03-01T00:11:08+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":2,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:11:08+10:30","gross_in_cents":6000,"id":4,"services_deck_division_id":null,"updated_at":"2013-03-01T00:11:08+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":3000,"2":3000}}],"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":[],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":1,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:08:00+10:30","gross_in_cents":0,"id":1,"services_deck_division_id":null,"updated_at":"2013-03-01T00:08:00+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":1,"consumer_splittable_type":"Reservation","created_at":"2013-03-01T00:08:00+10:30","gross_in_cents":0,"id":2,"services_deck_division_id":null,"updated_at":"2013-03-01T00:08:00+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":0,"2":0}}],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","payment_method":"credit_card","gateway":"braintree","credit_card_brand":"MasterCard","transaction_fee":"0.0","active":true,"position":2,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false},{"id":4,"name":"visa","description":"visa","payment_method":"credit_card","gateway":"braintree","credit_card_brand":"Visa","transaction_fee":"0.0","active":true,"position":3,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false},{"id":7,"name":"PayPal","description":"Payments
         made via PayPal account","payment_method":"paypal","gateway":"braintree","credit_card_brand":null,"transaction_fee":"0.0","active":true,"position":6,"surchargeable":false,"for_frequent_traveller_redemption":false,"comment_required":false,"external":true,"redirect":false}],"issued_tickets_attributes":[]}'
     http_version: 
-  recorded_at: Wed, 30 Dec 2015 05:57:39 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 28 Oct 2016 05:28:09 GMT
+recorded_with: VCR 3.0.3
