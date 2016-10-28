@@ -15,3 +15,13 @@ Gives models that are integrated with the QuickTravel API
 
 Add to your Gemfile:
 gem 'quicktravel_client'
+
+# REGENERATE CASSETTES
+
+In QuickTravel:
+mysql quicktravel_test < ../quicktravel_test/bootstrap.sql
+TIMECOP=1 QUICKTRAVEL_CONFIG_DIR=spec/support/config RAILS_ENV=test bundle exec rails s -p8080
+
+In QuickTravel Client:
+rm spec/support/cassettes/ -rf
+QT_KEYS=a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2,a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2 bundle exec rspec
