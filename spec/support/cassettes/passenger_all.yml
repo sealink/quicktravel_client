@@ -55,7 +55,7 @@ http_interactions:
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad"},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In"},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch"}]'
+      string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad","conditions":null},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In","conditions":null},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch","conditions":null}]'
     http_version: 
   recorded_at: Fri, 28 Oct 2016 05:28:10 GMT
 recorded_with: VCR 3.0.3

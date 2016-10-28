@@ -56,28 +56,20 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '[{"product_id":"9","product_id_field":"trip_id","resource_id":2,"resource_class_name_underscore":"scheduled_trip_resource","product_name_underscore":"mainland_coach_transfers","tariff_level_id":1,"service_ids":[25,26,27],"first_travel_date":"01-03-2016","last_travel_date":"01-03-2016","time_class":"","exception_type":null,"bookable_class":"
-        bookable","bookable":true,"display_text":"Advise clients times can vary by
-        up to 10mins and to be waiting in view of coach","from_label":"from","reason_unbookable":null,"service_notes":null,"booking_notes":"Advise
-        clients times can vary by up to 10mins and to be waiting in view of coach","adjustment_notes":null,"developer_notes":null,"inventory_type_code":"A","price_in_cents":3000,"total_price_adjustment_in_cents":0,"selection_name":"06:45am
+        bookable","bookable":true,"display_text":"","from_label":"from","reason_unbookable":null,"service_notes":null,"booking_notes":null,"adjustment_notes":null,"developer_notes":null,"inventory_type_code":"A","price_in_cents":3000,"total_price_adjustment_in_cents":0,"selection_name":"06:45am
         - Ferry ConnectionDeparting Adelaide - AM","input_disabled":"","input_overbook":"","formatted_price":"\u003Cspan
         class=\"money positive\"\u003E$30.00\u003C/span\u003E","price":"$30.00","formatted_pre_adjusted_price":"\u003Cspan
         class=\"money positive\"\u003E$30.00\u003C/span\u003E","pre_adjusted_price":"$30.00","price_breakdown":"\u003Cspan\u003E\u003Cstrong\u003EPassengers:\u003C/strong\u003E\u0026nbsp;\u003Cspan
-        class=\"money positive\"\u003E$30.00\u003C/span\u003E\u0026nbsp;\u003C/span\u003E","price_breakdown_passengers_in_cents":3000,"price_breakdown_vehicles_in_cents":0,"trip_id":9,"stop_departure_time":"2000-01-01T06:45:00Z","stop_arrival_time":"2000-01-01T08:30:00Z","from_route_stop_attributes":{"address":"85
-        Franklin Street, Adelaide","code":"ACBS","created_at":"2013-03-01T01:49:04+10:30","id":5,"inventory_controlled":true,"name":"Adelaide
-        Central Bus Station","position":1,"route_id":3,"stop_id":3,"updated_at":"2013-03-01T01:49:04+10:30"},"to_route_stop_attributes":{"address":"Main
-        Road, Cape Jervis","code":"CPJ","created_at":"2013-03-01T01:49:04+10:30","id":14,"inventory_controlled":true,"name":"Cape
-        Jervis Ferry Terminal","position":10,"route_id":3,"stop_id":12,"updated_at":"2013-03-01T01:49:04+10:30"},"departure_time":"2000-01-01T06:00:00Z","arrival_time":"2000-01-01T08:30:00Z"},{"product_id":"13","product_id_field":"trip_id","resource_id":2,"resource_class_name_underscore":"scheduled_trip_resource","product_name_underscore":"mainland_coach_transfers","tariff_level_id":1,"service_ids":[28,29,30],"first_travel_date":"01-03-2016","last_travel_date":"01-03-2016","time_class":"","exception_type":null,"bookable_class":"
-        bookable","bookable":true,"display_text":"Advise clients times can vary by
-        up to 10mins and to be waiting in view of coach","from_label":"from","reason_unbookable":null,"service_notes":null,"booking_notes":"Advise
-        clients times can vary by up to 10mins and to be waiting in view of coach","adjustment_notes":null,"developer_notes":null,"inventory_type_code":"A","price_in_cents":3000,"total_price_adjustment_in_cents":0,"selection_name":"03:45pm
+        class=\"money positive\"\u003E$30.00\u003C/span\u003E\u0026nbsp;\u003C/span\u003E","price_breakdown_passengers_in_cents":3000,"price_breakdown_vehicles_in_cents":0,"trip_id":9,"stop_departure_time":"2000-01-01T06:45:00Z","stop_arrival_time":"2000-01-01T08:30:00Z","from_route_stop_attributes":{"id":5,"inventory_controlled":true,"route_id":3,"position":1,"created_at":"2013-03-01T01:49:04+10:30","updated_at":"2013-03-01T01:49:04+10:30","stop_id":3,"name":"Adelaide
+        Central Bus Station","code":"ACBS"},"to_route_stop_attributes":{"id":14,"inventory_controlled":true,"route_id":3,"position":10,"created_at":"2013-03-01T01:49:04+10:30","updated_at":"2013-03-01T01:49:04+10:30","stop_id":12,"name":"Cape
+        Jervis Ferry Terminal","code":"CPJ"},"departure_time":"2000-01-01T06:00:00Z","arrival_time":"2000-01-01T08:30:00Z"},{"product_id":"13","product_id_field":"trip_id","resource_id":2,"resource_class_name_underscore":"scheduled_trip_resource","product_name_underscore":"mainland_coach_transfers","tariff_level_id":1,"service_ids":[28,29,30],"first_travel_date":"01-03-2016","last_travel_date":"01-03-2016","time_class":"","exception_type":null,"bookable_class":"
+        bookable","bookable":true,"display_text":"","from_label":"from","reason_unbookable":null,"service_notes":null,"booking_notes":null,"adjustment_notes":null,"developer_notes":null,"inventory_type_code":"A","price_in_cents":3000,"total_price_adjustment_in_cents":0,"selection_name":"03:45pm
         - Ferry ConnectionDeparting Adelaide - PM","input_disabled":"","input_overbook":"","formatted_price":"\u003Cspan
         class=\"money positive\"\u003E$30.00\u003C/span\u003E","price":"$30.00","formatted_pre_adjusted_price":"\u003Cspan
         class=\"money positive\"\u003E$30.00\u003C/span\u003E","pre_adjusted_price":"$30.00","price_breakdown":"\u003Cspan\u003E\u003Cstrong\u003EPassengers:\u003C/strong\u003E\u0026nbsp;\u003Cspan
-        class=\"money positive\"\u003E$30.00\u003C/span\u003E\u0026nbsp;\u003C/span\u003E","price_breakdown_passengers_in_cents":3000,"price_breakdown_vehicles_in_cents":0,"trip_id":13,"stop_departure_time":"2000-01-01T15:45:00Z","stop_arrival_time":"2000-01-01T17:30:00Z","from_route_stop_attributes":{"address":"85
-        Franklin Street, Adelaide","code":"ACBS","created_at":"2013-03-01T01:49:04+10:30","id":5,"inventory_controlled":true,"name":"Adelaide
-        Central Bus Station","position":1,"route_id":3,"stop_id":3,"updated_at":"2013-03-01T01:49:04+10:30"},"to_route_stop_attributes":{"address":"Main
-        Road, Cape Jervis","code":"CPJ","created_at":"2013-03-01T01:49:04+10:30","id":14,"inventory_controlled":true,"name":"Cape
-        Jervis Ferry Terminal","position":10,"route_id":3,"stop_id":12,"updated_at":"2013-03-01T01:49:04+10:30"},"departure_time":"2000-01-01T15:00:00Z","arrival_time":"2000-01-01T17:30:00Z"}]'
+        class=\"money positive\"\u003E$30.00\u003C/span\u003E\u0026nbsp;\u003C/span\u003E","price_breakdown_passengers_in_cents":3000,"price_breakdown_vehicles_in_cents":0,"trip_id":13,"stop_departure_time":"2000-01-01T15:45:00Z","stop_arrival_time":"2000-01-01T17:30:00Z","from_route_stop_attributes":{"id":5,"inventory_controlled":true,"route_id":3,"position":1,"created_at":"2013-03-01T01:49:04+10:30","updated_at":"2013-03-01T01:49:04+10:30","stop_id":3,"name":"Adelaide
+        Central Bus Station","code":"ACBS"},"to_route_stop_attributes":{"id":14,"inventory_controlled":true,"route_id":3,"position":10,"created_at":"2013-03-01T01:49:04+10:30","updated_at":"2013-03-01T01:49:04+10:30","stop_id":12,"name":"Cape
+        Jervis Ferry Terminal","code":"CPJ"},"departure_time":"2000-01-01T15:00:00Z","arrival_time":"2000-01-01T17:30:00Z"}]'
     http_version: 
   recorded_at: Fri, 28 Oct 2016 05:28:14 GMT
 recorded_with: VCR 3.0.3

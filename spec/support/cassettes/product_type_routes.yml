@@ -56,10 +56,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '[{"id":1,"product_type_id":1,"reverse_id":2,"position":1,"created_at":"2013-03-01T00:01:37+10:30","updated_at":"2013-03-01T00:06:45+10:30","name":"To
-        Kangaroo Island","path":"Cape Jervis to Penneshaw","route_stops":[{"id":1,"name":"Cape
-        Jervis","address":"","inventory_controlled":true,"route_id":1,"position":1,"created_at":"2013-03-01T00:01:37+10:30","updated_at":"2013-03-01T00:01:37+10:30","code":"CPJ","stop_id":1},{"id":2,"name":"Penneshaw","address":"","inventory_controlled":true,"route_id":1,"position":2,"created_at":"2013-03-01T00:01:37+10:30","updated_at":"2013-03-01T00:01:37+10:30","code":"PEN","stop_id":2}]},{"id":2,"product_type_id":1,"reverse_id":1,"position":2,"created_at":"2013-03-01T00:02:06+10:30","updated_at":"2013-03-01T00:06:38+10:30","name":"From
-        Kangaroo Island","path":"Penneshaw to Cape Jervis","route_stops":[{"id":3,"name":"Penneshaw","address":"","inventory_controlled":true,"route_id":2,"position":1,"created_at":"2013-03-01T00:02:06+10:30","updated_at":"2013-03-01T00:02:06+10:30","code":"PEN","stop_id":2},{"id":4,"name":"Cape
-        Jervis","address":"","inventory_controlled":true,"route_id":2,"position":2,"created_at":"2013-03-01T00:02:06+10:30","updated_at":"2013-03-01T00:02:06+10:30","code":"CPJ","stop_id":1}]}]'
+        Kangaroo Island","path":"Cape Jervis to Penneshaw","route_stops":[{"id":1,"inventory_controlled":true,"route_id":1,"position":1,"created_at":"2013-03-01T00:01:37+10:30","updated_at":"2013-03-01T00:01:37+10:30","stop_id":1,"name":"Cape
+        Jervis","code":"CPJ","address":""},{"id":2,"inventory_controlled":true,"route_id":1,"position":2,"created_at":"2013-03-01T00:01:37+10:30","updated_at":"2013-03-01T00:01:37+10:30","stop_id":2,"name":"Penneshaw","code":"PEN","address":""}]},{"id":2,"product_type_id":1,"reverse_id":1,"position":2,"created_at":"2013-03-01T00:02:06+10:30","updated_at":"2013-03-01T00:06:38+10:30","name":"From
+        Kangaroo Island","path":"Penneshaw to Cape Jervis","route_stops":[{"id":3,"inventory_controlled":true,"route_id":2,"position":1,"created_at":"2013-03-01T00:02:06+10:30","updated_at":"2013-03-01T00:02:06+10:30","stop_id":2,"name":"Penneshaw","code":"PEN","address":""},{"id":4,"inventory_controlled":true,"route_id":2,"position":2,"created_at":"2013-03-01T00:02:06+10:30","updated_at":"2013-03-01T00:02:06+10:30","stop_id":1,"name":"Cape
+        Jervis","code":"CPJ","address":""}]}]'
     http_version: 
   recorded_at: Fri, 28 Oct 2016 05:28:13 GMT
 recorded_with: VCR 3.0.3
