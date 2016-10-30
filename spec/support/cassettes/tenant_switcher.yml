@@ -65,7 +65,7 @@ http_interactions:
     uri: http://test.qt.other.com.au:8080/api/product_types.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: access_key=<QT_KEY_2>
     headers:
       Content-Length:
       - '0'
