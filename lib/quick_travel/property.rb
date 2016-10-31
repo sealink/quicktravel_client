@@ -28,6 +28,7 @@ module QuickTravel
       property = find_all!("/api/properties/#{id}.json", options).first
       first_travel_date = options.fetch(:product).fetch(:first_travel_date)
       property.accommodations.each do |accommodation|
+        # Is this right? Why is first_travel_date assumed to be cheapest
         accommodation.minimum_nightly_price      = accommodation.nightly_price_on first_travel_date
         accommodation.minimum_price_for_duration = accommodation.minimum_price_on first_travel_date
       end

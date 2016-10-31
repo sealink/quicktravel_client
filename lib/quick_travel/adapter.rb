@@ -46,6 +46,34 @@ module QuickTravel
       end
     end
 
+    def self.has_many(relation_name, options = {})
+      define_method relation_name do
+        instance_variable_get("@#{relation_name}") || instance_variable_set(
+          "@#{relation_name}",
+          begin
+            klass = QuickTravel.const_get(options[:class_name] || relation_name.to_s.singularize.classify)
+            instance_variable_get("@#{relation_name}_attributes").map { |attr|
+              klass.new(attr)
+            }
+          end
+        )
+      end
+    end
+
+    def self.belongs_to(relation_name, options = {})
+      define_method relation_name do
+        instance_variable_get("@#{relation_name}") || instance_variable_set(
+          "@#{relation_name}",
+          begin
+            attrs = instance_variable_get("@#{relation_name}_attributes")
+            return nil unless attrs
+            klass = QuickTravel.const_get(options[:class_name] || relation_name.to_s.singularize.classify)
+            klass.new(attrs)
+          end
+        )
+      end
+    end
+
     def self.find(id, opts = {})
       check_id!(id)
       if lookup

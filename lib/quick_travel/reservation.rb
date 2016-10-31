@@ -4,6 +4,11 @@ require 'quick_travel/resource'
 
 module QuickTravel
   class Reservation < Adapter
+    has_many :adjustments
+    has_many :sub_reservations, class_name: 'Reservation'
+    belongs_to :to_route_stop, class_name: 'RouteStop'
+    belongs_to :from_route_stop, class_name: 'RouteStop'
+
     def self.create(options)
       json = post_and_validate('/api/reservations.json', options, expect: :json)
       new(json)
@@ -11,10 +16,6 @@ module QuickTravel
 
     def self.destroy(id)
       delete_and_validate("/api/reservations/#{id}.json")
-    end
-
-    def adjustments
-      @adjustments_attributes.map { |adjustment| Adjustment.new(adjustment) }
     end
 
     def resource
@@ -27,29 +28,6 @@ module QuickTravel
 
     def end_date_time
       end_time.to_time.on(last_travel_date) if end_time
-    end
-
-    def to_route_stop
-      QuickTravel::RouteStop.new(@to_route_stop_attributes) if @to_route_stop_attributes
-    end
-
-    def from_route_stop
-      QuickTravel::RouteStop.new(@from_route_stop_attributes) if @from_route_stop_attributes
-    end
-
-    # it send API request for Resource show. and cache the data.
-    # i think now this method is not required because now booking show api call have display_text for every reservation
-    def details
-      if @_resource.blank?
-        @_resource = Resource.find(@resource_id) unless @resource_id.blank?
-      end
-      @_resource
-    end
-
-    def sub_reservations
-      @sub_reservations ||= Array(@sub_reservations_attributes).map do |attributes|
-        Reservation.new(attributes)
-      end
     end
 
     def passengers_count_string(booking)

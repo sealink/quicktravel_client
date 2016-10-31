@@ -19,36 +19,43 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
+      Etag:
+      - '"2c56aef5eda86adf6ec974aca78aac0e"'
       Cache-Control:
-      - no-store, must-revalidate, private, max-age=0
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d0e28004b1b7d2aa30435308831d0026
+      - 9c39d6a904b9eb9dfe781817065bf869
       X-Runtime:
-      - '0.149156'
+      - '0.070803'
       Vary:
       - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:33 GMT
       X-Rack-Cache:
       - miss
-      X-Miniprofiler-Ids:
-      - '["hc2nd9g85pcfaqbxtvgz","3n393d46407xjckipoz4","sbzq3sn22o19v6amh4lx","hnsva789t8cmifp64wx3","wmmnukmwie7vr7vj8xqf","2brmax1rs5fwk4fd7n5","dvsmvrl183r0tifnlw46","5o49qsg88hbcsljo43fu","w0wrmi9s9rgua6owkm3z","lxziuvwk5cnyi9wz6zbf"]'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
-      Date:
-      - Mon, 26 Oct 2015 00:18:47 GMT
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '488'
+      - '542'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - __profilin=p%3Dt; path=/
-      - __profilin=p%3Dt; path=/
-      - __profilin=p%3Dt; path=/
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTU4OTZjYjk4YWRhNDZhYjVhNTk0MThiOWYyMjRkZGIwBjsAVEkiCXVzZXIGOwBGaQY%3D--cbcd1d84f0f511b7d0981571df7c55984f20727b;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWIwNWIyNjExMzk1ODUwZGIyMGRhNzE3NWQ5MzMxNjg2BjsAVEkiCXVzZXIGOwBGaQY%3D--05f6a8ce6b98b4ab8975bc9aded9917d3c837a0f;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad"},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In"},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch"}]'
+      string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad","conditions":null},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In","conditions":null},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch","conditions":null}]'
     http_version: 
-  recorded_at: Mon, 26 Oct 2015 00:18:47 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 28 Oct 2016 05:28:10 GMT
+recorded_with: VCR 3.0.3

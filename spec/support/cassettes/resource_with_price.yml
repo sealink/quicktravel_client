@@ -14,16 +14,6 @@ http_interactions:
       code: 200
       message: 'OK '
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '1'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
       P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
@@ -31,33 +21,46 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"bb1d26de241b81d26f40904a269d8e56"'
+      - '"4021e9c5ee2443266c0cff2a606de158"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9591c5d94258db0d9fb4859e0c22fd36
+      - 4d20d16ecfa3816287c45e7b885cc4d6
       X-Runtime:
-      - '0.142174'
+      - '0.106900'
       Vary:
       - Origin
       Date:
-      - Thu, 28 Feb 2013 13:30:18 GMT
+      - Fri, 01 Jan 2016 02:32:40 GMT
       X-Rack-Cache:
       - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '3815'
+      - '4895'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTQxNWVlY2QxMGJhOTgwM2Y2MTEwYzY5M2RkOTUzMDFiBjsAVEkiCXVzZXIGOwBGaQY%3D--ecffeb7fcbe10f9d3422590fb09ac6e40414e338;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWMxYTgzNmQ2MTdiMzRhYzRiMzBlMGJkMzhiMzhhNDJmBjsAVEkiCXVzZXIGOwBGaQY%3D--1cc254b42d691db0988afc5e493189f2ddc0d030;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":7,"name":"Adult Return","product_type_id":5,"default_capacity":null,"type":"Ticket","inventory_type":1,"maximum_occupancy":null,"location_id":null,"property_id":null,"fare_basis_pointer_id":null,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"booking_notes":"","expiry_units":"days","uses":2,"inline_price_in_cents":3200,"inline_cost_in_cents":0,"expiry_level":30,"unlimited_uses":false,"no_expiry":false,"reason_required":false,"resource_category_id":1,"created_at":"2015-08-25T14:22:46+09:30","updated_at":"2015-08-25T14:22:46+09:30","code":"2AD","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":true,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":true,"individual_tickets":false,"frequent_traveller_redemption_rate":null,"position":null,"todays_price_in_cents":3200,"child_resources":[]},{"id":8,"name":"Concession
-        Return","product_type_id":5,"default_capacity":null,"type":"Ticket","inventory_type":1,"maximum_occupancy":null,"location_id":null,"property_id":null,"fare_basis_pointer_id":null,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"booking_notes":"","expiry_units":"days","uses":2,"inline_price_in_cents":1600,"inline_cost_in_cents":0,"expiry_level":30,"unlimited_uses":false,"no_expiry":false,"reason_required":false,"resource_category_id":1,"created_at":"2015-08-25T14:24:45+09:30","updated_at":"2015-08-25T14:24:45+09:30","code":"2CON","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":true,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":true,"individual_tickets":false,"frequent_traveller_redemption_rate":null,"position":null,"todays_price_in_cents":1600,"child_resources":[]},{"id":9,"name":"Student
-        Flexi","product_type_id":5,"default_capacity":null,"type":"Ticket","inventory_type":1,"maximum_occupancy":null,"location_id":null,"property_id":null,"fare_basis_pointer_id":null,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"booking_notes":"","expiry_units":"days","uses":2,"inline_price_in_cents":6800,"inline_cost_in_cents":0,"expiry_level":30,"unlimited_uses":false,"no_expiry":false,"reason_required":false,"resource_category_id":2,"created_at":"2015-08-25T14:25:43+09:30","updated_at":"2015-08-25T14:25:43+09:30","code":"10STU","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":true,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":false,"frequent_traveller_redemption_rate":null,"position":null,"todays_price_in_cents":6800,"child_resources":[]}]'
+      string: '[{"id":7,"name":"Adult Return","product_type_id":5,"default_capacity":null,"type":"Item","inventory_type":1,"maximum_occupancy":null,"location_id":null,"property_id":null,"fare_basis_pointer_id":null,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"booking_notes":"","expiry_units":"days","uses":2,"inline_price_in_cents":3200,"inline_cost_in_cents":0,"expiry_level":30,"unlimited_uses":false,"no_expiry":false,"reason_required":false,"resource_category_id":1,"created_at":"2015-08-25T14:22:46+09:30","updated_at":"2016-07-13T09:44:55+09:30","code":"2AD","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":true,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":true,"individual_tickets":false,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":1,"generate_tickets_by_quantity":true,"todays_price_in_cents":3200,"todays_price_with_rules_in_cents":3200,"applied_rules":[],"description":"","ticket_template":{"activation_trigger":"travel_date","created_at":"2016-07-13T09:44:55+09:30","expiry_days":30,"id":1,"maximum_uses":2,"name":"2
+        uses, 30 days expiry","updated_at":"2016-07-13T09:44:55+09:30"},"expiry_days":30,"child_resources":[]},{"id":8,"name":"Concession
+        Return","product_type_id":5,"default_capacity":null,"type":"Item","inventory_type":1,"maximum_occupancy":null,"location_id":null,"property_id":null,"fare_basis_pointer_id":null,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"booking_notes":"","expiry_units":"days","uses":2,"inline_price_in_cents":1600,"inline_cost_in_cents":0,"expiry_level":30,"unlimited_uses":false,"no_expiry":false,"reason_required":false,"resource_category_id":1,"created_at":"2015-08-25T14:24:45+09:30","updated_at":"2016-07-13T09:44:55+09:30","code":"2CON","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":true,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":true,"individual_tickets":false,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":1,"generate_tickets_by_quantity":true,"todays_price_in_cents":1600,"todays_price_with_rules_in_cents":1600,"applied_rules":[],"description":"","ticket_template":{"activation_trigger":"travel_date","created_at":"2016-07-13T09:44:55+09:30","expiry_days":30,"id":1,"maximum_uses":2,"name":"2
+        uses, 30 days expiry","updated_at":"2016-07-13T09:44:55+09:30"},"expiry_days":30,"child_resources":[]},{"id":9,"name":"Student
+        Flexi","product_type_id":5,"default_capacity":null,"type":"Item","inventory_type":1,"maximum_occupancy":null,"location_id":null,"property_id":null,"fare_basis_pointer_id":null,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"booking_notes":"","expiry_units":"days","uses":2,"inline_price_in_cents":6800,"inline_cost_in_cents":0,"expiry_level":30,"unlimited_uses":false,"no_expiry":false,"reason_required":false,"resource_category_id":2,"created_at":"2015-08-25T14:25:43+09:30","updated_at":"2016-07-13T09:44:55+09:30","code":"10STU","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":true,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":false,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":1,"generate_tickets_by_quantity":true,"todays_price_in_cents":6800,"todays_price_with_rules_in_cents":6800,"applied_rules":[],"description":"","ticket_template":{"activation_trigger":"travel_date","created_at":"2016-07-13T09:44:55+09:30","expiry_days":30,"id":1,"maximum_uses":2,"name":"2
+        uses, 30 days expiry","updated_at":"2016-07-13T09:44:55+09:30"},"expiry_days":30,"child_resources":[]}]'
     http_version: 
-  recorded_at: Thu, 07 Apr 2016 06:51:59 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 28 Oct 2016 05:28:17 GMT
+recorded_with: VCR 3.0.3

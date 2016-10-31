@@ -19,29 +19,39 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
       Etag:
       - '"286cd3804b167c609224433145e3211f"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a191b24129fcfa65150537ec4bf821e6
+      - 6db6bc3cca05bdb5b642c8ad783a8610
       X-Runtime:
-      - '0.253269'
+      - '0.325491'
       Vary:
       - Origin
       Date:
-      - Mon, 26 Oct 2015 02:34:31 GMT
+      - Fri, 01 Jan 2016 02:32:35 GMT
       X-Rack-Cache:
       - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
       - '4595'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWI2ZjU0YzEyNTNjYzk1YjI3OGMzYWM4NTgxNjVhYzk3BjsAVEkiCXVzZXIGOwBGaQY%3D--426784ec3078bdd7dd1fab7851516ed4ce5e2045;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWQ3YWRkZGRhNWJiMWExMDMzMjcxYTY1MmNlNzM1YmVjBjsAVEkiCXVzZXIGOwBGaQY%3D--685e050b1a4a316d9a57a9c61254d0a832b5bd90;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -59,5 +69,5 @@ http_interactions:
         Insurance - Declined","description":"Travel Insurance - Declined","error_message":null}],"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":null}'
     http_version: 
-  recorded_at: Mon, 26 Oct 2015 02:34:31 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 28 Oct 2016 05:28:11 GMT
+recorded_with: VCR 3.0.3

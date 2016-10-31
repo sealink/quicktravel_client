@@ -14,16 +14,6 @@ http_interactions:
       code: 200
       message: 'OK '
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '1'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
       P3p:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
@@ -35,23 +25,33 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 34122a78d9ec23eb326d639a2a3d7b3b
+      - db8ab95e81d0b208e8442de75066d08b
       X-Runtime:
-      - '0.123689'
+      - '0.117373'
       Vary:
       - Origin
       Date:
-      - Thu, 28 Feb 2013 13:42:59 GMT
+      - Fri, 01 Jan 2016 02:32:37 GMT
       X-Rack-Cache:
       - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
       Server:
-      - WEBrick/1.3.1 (Ruby/2.2.3/2015-08-18)
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
       - '41663'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTcxZDYyNGQ2NTFkMjBlNTU0ZDMyMTkzNWJhYTIyNzgwBjsAVEkiCXVzZXIGOwBGaQY%3D--3c33ed235fb4c4046a105dc81c90c73217bd0865;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTA4NzU5MWYxNjU4OTIyMzE0ODU0YTY1Yjg4NTM3NDUzBjsAVEkiCXVzZXIGOwBGaQY%3D--45156529958ca46b6d22869e87f74cc429ba0a45;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -136,5 +136,5 @@ http_interactions:
         and Futuna","updated_at":"2013-03-01T00:01:27+10:30"},{"created_at":"2013-03-01T00:01:27+10:30","id":242,"iso_3166_code":"WS","latitude":-13.35,"longitude":172.2,"name":"Samoa","updated_at":"2013-03-01T00:01:27+10:30"},{"created_at":"2013-03-01T00:01:27+10:30","id":243,"iso_3166_code":"YE","latitude":15.0,"longitude":-48.0,"name":"Yemen","updated_at":"2013-03-01T00:01:27+10:30"},{"created_at":"2013-03-01T00:01:27+10:30","id":244,"iso_3166_code":"YT","latitude":-12.5,"longitude":-45.1,"name":"Mayotte","updated_at":"2013-03-01T00:01:27+10:30"},{"created_at":"2013-03-01T00:01:27+10:30","id":245,"iso_3166_code":"ZA","latitude":-29.0,"longitude":-24.0,"name":"South
         Africa","updated_at":"2013-03-01T00:01:27+10:30"},{"created_at":"2013-03-01T00:01:27+10:30","id":246,"iso_3166_code":"ZM","latitude":-15.0,"longitude":-30.0,"name":"Zambia","updated_at":"2013-03-01T00:01:27+10:30"},{"created_at":"2013-03-01T00:01:27+10:30","id":247,"iso_3166_code":"ZW","latitude":-20.0,"longitude":-30.0,"name":"Zimbabwe","updated_at":"2013-03-01T00:01:27+10:30"}]'
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 04:53:53 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 28 Oct 2016 05:28:14 GMT
+recorded_with: VCR 3.0.3
