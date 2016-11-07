@@ -52,7 +52,7 @@ module QuickTravel
           "@#{relation_name}",
           begin
             klass = QuickTravel.const_get(options[:class_name] || relation_name.to_s.singularize.classify)
-            instance_variable_get("@#{relation_name}_attributes").map { |attr|
+            Array(instance_variable_get("@#{relation_name}_attributes")).map { |attr|
               klass.new(attr)
             }
           end

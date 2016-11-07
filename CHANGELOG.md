@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.4.1]
+### Changed
+- Handle nil values for empty lists
+
 ## [2.4.0]
 ### Changed
 - Improve error handling when non JSON response
