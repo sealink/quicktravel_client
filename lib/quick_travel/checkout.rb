@@ -12,6 +12,10 @@ module QuickTravel
 
     attr_reader :error
 
+    def self.client_token(data)
+      get_and_validate('/api/checkouts/client_token.json', data).symbolize_keys
+    end
+
     # Create a checkout in QuickTravel
     def self.create(data)
       build_checkout_for { post_and_validate('/api/checkouts.json', data) }
