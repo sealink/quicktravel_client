@@ -20,7 +20,10 @@ gem 'quicktravel_client'
 
 In QuickTravel:
 mysql quicktravel_test < ../quicktravel_test/bootstrap.sql
-TIMECOP=1 QUICKTRAVEL_CONFIG_DIR=spec/support/config RAILS_ENV=test bundle exec rails s -p8080
+TIMECOP=1 WEBMOCK=0 QUICKTRAVEL_CONFIG_DIR=spec/support/config RAILS_ENV=test bundle exec rails s -p8080
+
+In Payment Service: (if needing to generate checkout cassettes):
+bundle exec puma -Ilib -p7000
 
 In QuickTravel Client:
 rm spec/support/cassettes/ -rf
