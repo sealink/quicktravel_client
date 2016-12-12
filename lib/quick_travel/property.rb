@@ -18,8 +18,7 @@ module QuickTravel
     #   { :property_type_id=>1, :location_id=>5  , :number_of_rooms => 1 ,  :product => {:first_travel_date => "07-05-2010" , :duration => 1 } }
     def self.find!(condition = {})
       condition[:number_of_rooms] = 1 if condition[:number_of_rooms].blank? ||  condition[:number_of_rooms].to_i < 1
-      condition[:last_travel_date] = condition[:product][:last_travel_date].to_date - 1 if condition[:product].try(:fetch, :last_travel_date, nil)
-      self.find_all!('/api/properties.json', condition)
+      find_all!('/api/properties.json', condition)
     end
 
     def self.load_with_pricing(id, options)
