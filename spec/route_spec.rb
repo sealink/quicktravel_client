@@ -24,6 +24,7 @@ describe QuickTravel::Route do
       its(:position) { should eq 1 }
       its(:product_type_id) { should eq 1 }
       its(:reverse_id) { should eq from_route_id }
+      its(:can_choose_stops?) { should eq false }
 
       context 'route stops' do
         subject(:route_stops) { route.route_stops }

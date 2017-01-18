@@ -30,6 +30,10 @@ module QuickTravel
       @_stops ||= @route_stops.map { |item| RouteStop.new(item) }
     end
 
+    def can_choose_stops?
+      route_stops.count > 2
+    end
+
     def get_return_route_stop!(forward_stop)
       if forward_stop.blank?
         fail AdapterError, 'Selected pick up/drop off stops have not been set up for the selected route.'
