@@ -119,9 +119,6 @@ module QuickTravel
 
       last_travel_date = Date.strptime(reservations_options[:last_travel_date], '%d/%m/%Y')
 
-      # Because QT requires last-date to be the date of use, we have to subtract one
-      last_travel_date -= 1
-
       options = { reservations: reservations_options }
       options[:reservations][:last_travel_date] = last_travel_date.strftime(QT_DATE_FORMAT)
 
