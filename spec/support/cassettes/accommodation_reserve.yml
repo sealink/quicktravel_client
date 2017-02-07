@@ -1,0 +1,188 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://test.qt.sealink.com.au:8080/reservation_for/accommodations/create_or_update.json
+    body:
+      encoding: UTF-8
+      string: reservations[passenger_ids][]=1&reservations[passenger_ids][]=2&reservations[resource_id]=6&reservations[bed_configuration_id]=1&reservations[first_travel_date]=01%2F03%2F2016&reservations[last_travel_date]=02%2F03%2F2016&booking_id=1&access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"7215ee9c7d9dc229d2921a40e899ec5f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8483181abc52a31a2826eb6ff745cd65
+      X-Runtime:
+      - '0.583677'
+      Vary:
+      - Origin
+      Date:
+      - Fri, 01 Jan 2016 04:38:24 GMT
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
+      Content-Length:
+      - '1'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTZhYjQyOTVjMGExNTJkZTM3MThhODk2YmY0MDQ1NDQ0BjsAVEkiCXVzZXIGOwBGaQY%3D--d7a6c585df1323901ec4d571ae9e7b92a3623e1f;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: " "
+    http_version: 
+  recorded_at: Wed, 08 Feb 2017 00:35:12 GMT
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/bookings/1.json
+    body:
+      encoding: UTF-8
+      string: access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"ea2f8a56e770a78eec327ba979588850"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7d3bf632051d184e80724dc59dba8b34
+      X-Runtime:
+      - '0.155058'
+      Vary:
+      - Origin
+      Date:
+      - Fri, 01 Jan 2016 04:38:25 GMT
+      X-Rack-Cache:
+      - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
+      Content-Length:
+      - '6280'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWFmZWIxNmZkYjBjOTc0ZDQ3YzgxYmE3N2UyMTdlZTMzBjsAVEkiCXVzZXIGOwBGaQY%3D--b1bc261a811a392ee20584effaf23a3db290b279;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"state":"active","reference":"222223","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":3,"post_code":"","referral_code_id":1,"external_identifier":null,"created_at":"2013-03-01T00:05:46+10:30","updated_at":"2016-01-01T15:08:24+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":20000,"nett_in_cents":20000,"gross_in_cents":20000,"commission_in_cents":0,"balance_in_cents":20000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00+10:30"},"balance_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00+10:30"},"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"complete":true,"reason_not_complete":"","first_reason_not_complete":"","discardable_in":60,"inactivatable_in":10,"notices":{},"client":null,"passenger_ids":[1,2],"vehicle_ids":[],"reservation_ids":[13],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":1,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":1},{"id":2,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":13,"booking_id":1,"description":"A
+        basic studio room","comment":null,"active":true,"service_ids":[3,4],"resource_id":6,"quantity":null,"adjustments_attributes":[{"id":12,"gross_in_cents":-20000,"creator":{"active":true,"age":null,"business_number":null,"business_number_type":null,"created_at":"2013-03-01T00:00:02+10:30","creator_id":null,"currency_iso_code":"AUD","first_name":"administrator","gender":null,"id":1,"internal_staff":true,"internal_subdivision":false,"last_name":"administrator","name":"Administrator
+        Administrator","notes":null,"remember_token":null,"remember_token_expires_at":null,"salt":null,"title":null,"updated_at":"2013-03-01T00:00:03+10:30","updator_id":null},"created_at":"2016-01-01T15:08:24+10:30","description":"50%
+        Off","adjustable_item_type":"Reservation","adjustable_item_id":13,"adjustment_definition_id":1,"adjustment_category_id":1,"automatic":true}],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"bed_configuration":"1
+        x Double and 1 x Single","product_type_id":2,"itinerary_footer":false,"fare_basis_set_id":12,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":6,"pick_up_info":null,"drop_off_info":null,"selection_name":"Hilton
+        Hotel:  Executive Room","product_name_underscore":"accommodation","resource_class_name_underscore":"accommodation","resource_class_name":"Accommodation","has_ticket_template":false,"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"durational":true,"duration":2,"checkout_date":{"_type":"Date","_value":"2016-03-03"},"duration_units":"Nights","date_start_label":"In:","date_end_label":"Out:","accommodation_extra_picks":false,"expires":false,"expiry":"*NA*","has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
+        Priced as: Rack Rate","gross_including_packaged_item_in_cents":20000,"pre_adjusted_gross_including_packaged_item_in_cents":40000,"gross_in_cents":20000,"pre_adjusted_gross_in_cents":40000,"pre_adjusted_commission_in_cents":0,"cost_in_cents":20000,"rules":[{"unique_name":"Test
+        Discount Hilton","description":"","display_name":"Test Discount Hilton"}],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":[],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1,2],"passenger_splits":[{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":1,"consumer_splittable_id":13,"consumer_splittable_type":"Reservation","created_at":"2016-01-01T15:08:24+10:30","gross_in_cents":0,"id":23,"updated_at":"2016-01-01T15:08:24+10:30"},{"commission_in_cents":0,"commission_percentage":"0.0","consumer_id":2,"consumer_splittable_id":13,"consumer_splittable_type":"Reservation","created_at":"2016-01-01T15:08:24+10:30","gross_in_cents":0,"id":24,"updated_at":"2016-01-01T15:08:24+10:30"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1":0,"2":0}}],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":5,"name":"master","description":"master","transaction_fee":"0.0","active":true,"position":2,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":"MasterCard","payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":4,"name":"visa","description":"visa","transaction_fee":"0.0","active":true,"position":3,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":"Visa","payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":7,"name":"PayPal","description":"Payments
+        made via PayPal account","transaction_fee":"0.0","active":true,"position":6,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":"2013-03-01T00:00:03+10:30","updated_at":"2013-03-01T00:00:03+10:30","credit_card_brand":null,"payment_method":"paypal","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false}],"issued_tickets_attributes":[]}'
+    http_version: 
+  recorded_at: Wed, 08 Feb 2017 00:35:12 GMT
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/resources/6.json
+    body:
+      encoding: UTF-8
+      string: access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"4d660ebe1fce6dba8cfe89a924383b21"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - befb6299b8e9da3e8c7c2be5741aa0ee
+      X-Runtime:
+      - '0.065444'
+      Vary:
+      - Origin
+      Date:
+      - Fri, 01 Jan 2016 04:38:25 GMT
+      X-Rack-Cache:
+      - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
+      Content-Length:
+      - '1444'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWJkNmVhMDgwMDNjNzlhZGFkY2Y0YjM3NDEyYjRkMmFjBjsAVEkiCXVzZXIGOwBGaQY%3D--d7a54eab8057174197ebacf5b21a47b876feade9;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"id":6,"name":"Executive Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":0,"maximum_occupancy":2,"location_id":1,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"reason_required":false,"resource_category_id":null,"created_at":"2013-03-01T00:08:49+10:30","updated_at":"2013-03-01T00:55:56+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"to_s":"Hilton
+        Hotel - Executive Room","client_type_ids":[],"category":null,"location":"Adelaide
+        CBD","current_description":"\u003Cp\u003EA basic studio room\u003C/p\u003E","graphics":[],"graphic_names":[],"property_name":"Hilton
+        Hotel","ticket_template":null,"expiry_days":null}'
+    http_version: 
+  recorded_at: Wed, 08 Feb 2017 00:35:12 GMT
+recorded_with: VCR 3.0.3
