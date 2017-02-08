@@ -12,9 +12,6 @@ module QuickTravel
   require 'quick_travel/connection_error'
   require 'quick_travel/status'
 
-  # Don't include this guy: pull the pieces into the classes that use it, or ref
-  require 'quick_travel/constants'
-
   require 'quick_travel/product'
   require 'quick_travel/product_configuration'
   require 'quick_travel/products/base'

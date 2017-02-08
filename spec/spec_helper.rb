@@ -25,7 +25,6 @@ QuickTravel.configure do |c|
 end
 
 require 'quick_travel/connection_error'
-require 'quick_travel/constants'
 require 'quick_travel/cache'
 
 class HashCache
