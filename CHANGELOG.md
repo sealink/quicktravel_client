@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.9.0]
+### Removed
+- Remove unused constants
+
 ## [2.8.0]
 ### Changed
 - @booking.accommodation_reserve now expects to be passed the adjusted last_travel_date
