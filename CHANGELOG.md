@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [2.9.0]
+### Changed
+- Use new API login
+
 ### Removed
 - Remove unused constants and default referral code
 
