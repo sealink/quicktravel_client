@@ -5,7 +5,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [2.9.0]
 ### Removed
-- Remove unused constants
+- Remove unused constants and default referral code
 
 ## [2.8.0]
 ### Changed

@@ -5,6 +5,4 @@ module QuickTravel
 
   # System wide
   QT_DATE_FORMAT = '%d-%m-%Y'
-
-  DEFAULT_REFERRAL_CODE_ID = 33
 end
