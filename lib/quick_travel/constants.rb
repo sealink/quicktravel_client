@@ -2,7 +2,4 @@
 
 module QuickTravel
   LOGIN_URL  = '/parties/login' # CMS_SSL_URL + '/parties/login'
-
-  # System wide
-  QT_DATE_FORMAT = '%d-%m-%Y'
 end

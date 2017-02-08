@@ -114,12 +114,7 @@ module QuickTravel
         fail AdapterError.new('No checkout date specified')
       end
 
-      last_travel_date = Date.strptime(reservations_options[:last_travel_date], '%d/%m/%Y')
-
-      options = { reservations: reservations_options }
-      options[:reservations][:last_travel_date] = last_travel_date.strftime(QT_DATE_FORMAT)
-
-      reserve('accommodations/create_or_update', options)
+      reserve('accommodations/create_or_update', reservations: reservations_options)
     end
 
     # Reserve a scheduled trips resource
