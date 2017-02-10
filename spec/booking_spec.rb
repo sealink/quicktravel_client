@@ -140,3 +140,30 @@ describe QuickTravel::Booking do
     expect(updated_consumer.first_name).to eq 'New'
   end
 end
+
+describe QuickTravel::Booking, 'when booking accommodation' do
+  let(:booking) {
+    VCR.use_cassette('booking_with_documents') {
+      QuickTravel::Booking.find(1)
+    }
+  }
+  let(:reservation) {
+    VCR.use_cassette('accommodation_reserve') do
+      booking.accommodation_reserve(
+        passenger_ids: booking.passenger_ids,
+        resource_id: 6, # executive room
+        bed_configuration_id: 1,
+        first_travel_date: '01/03/2016',
+        last_travel_date: '02/03/2016'
+      )
+      booking.reservations.detect { |reservation| reservation.resource.name == 'Executive Room' }
+    end
+  }
+
+  it 'should create acommodation reservation' do
+    expect(reservation.first_travel_date).to eq '2016-03-01'.to_date
+    expect(reservation.last_travel_date).to eq '2016-03-02'.to_date
+    expect(reservation.resource.name).to eq 'Executive Room'
+    expect(reservation.passenger_ids).to eq booking.passenger_ids
+  end
+end

@@ -101,15 +101,6 @@ module QuickTravel
       put_and_validate("#{api_base}/#{id}.json", options)
     end
 
-    def self.qt_date_format_conversion(str)
-      qt_date_format_conversion!(str)
-    rescue ArgumentError
-    end
-
-    def self.qt_date_format_conversion!(str)
-      Date.strptime(str, '%d/%m/%Y').strftime('%d-%m-%Y')
-    end
-
     def to_hash
       instance_values
     end

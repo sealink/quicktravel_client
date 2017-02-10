@@ -51,10 +51,7 @@ module QuickTravel
     #  :trailer => { :vehicle_type_id => nil , :length => nil  }
     # }
     def self.create(options = {})
-      default_options = { referral_code_id: DEFAULT_REFERRAL_CODE_ID }
-      options = { booking: default_options.merge(options) }
-
-      response = post_and_validate("#{api_base}.json", options)
+      response = post_and_validate("#{api_base}.json", booking: options)
       fail AdapterError.new(response) unless response['id']
 
       return nil unless response['id']
@@ -117,12 +114,7 @@ module QuickTravel
         fail AdapterError.new('No checkout date specified')
       end
 
-      last_travel_date = Date.strptime(reservations_options[:last_travel_date], '%d/%m/%Y')
-
-      options = { reservations: reservations_options }
-      options[:reservations][:last_travel_date] = last_travel_date.strftime(QT_DATE_FORMAT)
-
-      reserve('accommodations/create_or_update', options)
+      reserve('accommodations/create_or_update', reservations: reservations_options)
     end
 
     # Reserve a scheduled trips resource
