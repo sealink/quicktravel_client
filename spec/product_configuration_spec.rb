@@ -71,7 +71,7 @@ describe QuickTravel::ProductConfiguration do
     )
   end
 
-  subject { QuickTravel::ProductConfiguration.new(product) }
+  subject(:config) { QuickTravel::ProductConfiguration.new(product) }
 
   context '#initialize' do
     it 'should create the extra pick configurations' do
@@ -79,170 +79,123 @@ describe QuickTravel::ProductConfiguration do
     end
   end
 
-  context '#select!' do
-    before do
-      subject.select!
-    end
+  context 'selections' do
+    it { is_expected.not_to be_selected }
 
-    it 'should be selected' do
-      expect(subject.selected?).to be true
-    end
-  end
+    context '#select!' do
+      before { subject.select! }
+      it { is_expected.to be_selected }
 
-  context '#deselect!' do
-    before do
-      subject.select!
-      subject.deselect!
-    end
-
-    it 'should be not selected' do
-      expect(subject.selected?).to be false
-    end
-  end
-
-  context '#selected?' do
-    it 'should default to not-selected' do
-      expect(subject.selected?).to be false
+      context '#deselect!' do
+        before { subject.deselect! }
+        it { is_expected.not_to be_selected }
+      end
     end
   end
 
   context '#available?' do
     context 'the product is available' do
       let(:available) { true }
-      it 'configuration should be available' do
-        expect(subject.available?).to be true
+      it { is_expected.to be_available }
+
+      context 'extra pick unavailable' do
+        let(:extra_pick_available) { false }
+
+        context 'non selected extra picks' do
+          it { is_expected.to be_available }
+        end
+
+        context 'selected extra pick' do
+          before { subject.select_extra_pick(extra_pick_product) }
+          it { is_expected.not_to be_available }
+        end
       end
     end
 
     context 'the product is unavailable' do
       let(:available) { false }
-      it 'configuration should be available' do
-        expect(subject.available?).to be false
-      end
-    end
-
-    context 'product is available with unavailble, non selected extra picks' do
-      let(:available) { true }
-      let(:extra_pick_available) { false }
-      it 'configuration should be available' do
-        expect(subject.available?).to be true
-      end
-    end
-
-    context 'product is available with selected extra picks which are NOT available' do
-      let(:available) { true }
-      let(:extra_pick_available) { false }
-      before do
-        subject.select_extra_pick(extra_pick_product)
-      end
-
-      it 'configuration should be unavailable' do
-        expect(subject.available?).to be false
-      end
+      it { is_expected.not_to be_available }
     end
   end
 
   context '#priced?' do
     context 'when the pricing details are present' do
-      it 'should be priced' do
-        expect(subject.priced?).to be true
-      end
+      it { is_expected.to be_priced }
     end
 
     context 'when no pricing details are present' do
       let(:pricing_details) { nil }
-      it 'should not be priced' do
-        expect(subject.priced?).to be false
-      end
+      it { is_expected.not_to be_priced }
     end
   end
 
   context '#price' do
-    it 'should equal the minimum_price_with_adjustments' do
-      expect(subject.price).to eq minimum_price
-    end
+    subject { config.price }
+    it { is_expected.to eq minimum_price }
   end
 
   context '#price_without_rules' do
+    subject { config.price_without_rules }
+
     context 'when the rules are not defined' do
       let(:pricing_details_without_rules) { nil }
-      it 'should be the same as price' do
-        expect(subject.price_without_rules).to eq subject.price
-      end
+      it { is_expected.to eq config.price }
     end
 
     context 'when the rules are defined' do
-      it 'should use the minimum price from rules' do
-        expect(subject.price_without_rules).to eq minimum_without_rules_price
-      end
+      it { is_expected.to eq minimum_without_rules_price }
     end
   end
 
   context '#price_for_rack_rate' do
+    subject { config.price_for_rack_rate }
+
     context 'when the rules are not defined' do
       let(:pricing_details_for_rack_rate) { nil }
-      it 'should be the same as price' do
-        expect(subject.price_for_rack_rate).to eq subject.price
-      end
+      it { is_expected.to eq config.price }
     end
 
     context 'when the rules are defined' do
-      it 'should use the minimum price from rules' do
-        expect(subject.price_for_rack_rate).to eq minimum_rack_price
-      end
+      it { is_expected.to eq minimum_rack_price }
     end
   end
 
   context '#total_price' do
+    subject { config.total_price }
+
     context 'when there are no selected extra picks' do
-      it 'should be the base product price' do
-        expect(subject.total_price).to eq subject.price
-      end
+      it { is_expected.to eq config.price }
     end
 
     context 'when there are selected extra picks' do
-      before do
-        subject.select_extra_pick(extra_pick_product)
-      end
+      before { config.select_extra_pick(extra_pick_product) }
+      it { is_expected.to eq extra_pick_minimum_price + minimum_price }
 
-      it 'should equal the price of the base product plus its picks' do
-        expect(subject.total_price).to eq extra_pick_minimum_price + minimum_price
-      end
-    end
-
-    context 'when there are selected extra picks with no price' do
-      let(:extra_pick_pricing_details) { nil }
-      before do
-        subject.select_extra_pick(extra_pick_product)
-      end
-
-      it 'should equal the price of the base product plus its picks' do
-        expect(subject.total_price).to eq subject.price
+      context 'without a price' do
+        let(:extra_pick_pricing_details) { nil }
+        it { is_expected.to eq config.price }
       end
     end
   end
 
   context '#total_price_without_rules' do
+    subject { config.total_price_without_rules }
     context 'when there are no selected extra picks' do
-      it 'should be the base product price' do
-        expect(subject.total_price_without_rules).to eq subject.price_without_rules
-      end
+      it { is_expected.to eq config.price_without_rules }
     end
   end
 
   context '#total_price_for_rack_rate' do
+    subject { config.total_price_for_rack_rate }
     context 'when there are no selected extra picks' do
-      it 'should be the base product price' do
-        expect(subject.total_price_for_rack_rate).to eq subject.price_for_rack_rate
-      end
+      it { is_expected.to eq config.price_for_rack_rate }
     end
   end
 
   context '#applied_rules' do
     let(:applied_rules) { [1, 1, 2, 2] }
-    it 'should return unique rules applied' do
-      expect(subject.applied_rules).to eq [1, 2]
-    end
+    subject { config.applied_rules }
+    it { is_expected.to eq [1, 2] }
   end
 
   context '#total_applied_rules' do
@@ -302,7 +255,10 @@ describe QuickTravel::ProductConfiguration do
   context '#select_extra_pick' do
     context 'when the extra pick does not exist' do
       it 'should raise an exception' do
-        expect { subject.select_extra_pick(product) }.to raise_error(ArgumentError, 'That extra pick does not belong to the product')
+        expect { subject.select_extra_pick(product) }.to raise_error(
+          ArgumentError,
+          'That extra pick does not belong to the product'
+        )
       end
     end
   end
