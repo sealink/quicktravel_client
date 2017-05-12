@@ -102,20 +102,28 @@ module QuickTravel
       end
     end
 
+    def selected_extra_picks_with_price
+      selected_extra_pick_configurations.select(&:priced?)
+    end
+
     def selected_extra_picks_price
-      selected_extra_pick_configurations.map(&:price).total_money
+      total_money(selected_extra_picks_with_price.map(&:price))
     end
 
     def selected_extra_picks_price_without_rules
-      selected_extra_pick_configurations.map(&:price_without_rules).total_money
+      total_money(selected_extra_picks_with_price.map(&:price_without_rules))
     end
 
     def selected_extra_picks_price_for_rack_rate
-      selected_extra_pick_configurations.map(&:price_for_rack_rate).total_money
+      total_money(selected_extra_picks_with_price.map(&:price_for_rack_rate))
     end
 
     def selected_extra_picks_applied_rules
-      selected_extra_pick_configurations.flat_map(&:applied_rules)
+      selected_extra_picks_with_price.flat_map(&:applied_rules)
+    end
+
+    def total_money(array)
+      array.reduce(Money.new(0), :+)
     end
 
     def pricing_details
