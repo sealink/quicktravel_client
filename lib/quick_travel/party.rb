@@ -32,11 +32,11 @@ module QuickTravel
 
     def self.request_password(login, url)
       options = { login: login, url: url }
-      post_and_validate('/sessions/request_password_reset', options)
+      post_and_validate('/api/sessions/request_password_reset', options)
     end
 
     def self.set_password_via_token(token, password)
-      post_and_validate('/sessions/set_password_via_token', token: token, password: password)
+      post_and_validate('/api/sessions/set_password_via_token', token: token, password: password)
     rescue QuickTravel::AdapterError => e
       { error: e.message }
     end
