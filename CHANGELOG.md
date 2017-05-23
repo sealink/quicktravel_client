@@ -10,6 +10,8 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ### Changed
 - Use new reset password url
 
+### Added
+- Setting API
 
 ## [2.9.0]
 ### Changed
