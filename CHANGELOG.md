@@ -3,13 +3,15 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## [2.9.2]
+## [2.9.1 Unreleased]
+### Fixed
+- Allow zero pricing for extra pick items
+
 ### Changed
 - Use new reset password url
 
-## [2.9.1]
-### Fixed
-- Allow zero pricing for extra pick items
+### Added
+- Setting API
 
 ## [2.9.0]
 ### Changed

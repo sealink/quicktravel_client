@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/settings/basic.json
+    body:
+      encoding: UTF-8
+      string: access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"168ce77e85be5b01489cbdeb4579ae80"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9bc0325ad1d87df4cfeabe842fd54665
+      X-Runtime:
+      - '0.162131'
+      Vary:
+      - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:35:07 GMT
+      X-Rack-Cache:
+      - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
+      Content-Length:
+      - '195'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTA1MTMxYmM3MzVkODRmNDc3ZTJkYzdjMTQ5YzM3M2Q3BjsAVEkiCXVzZXIGOwBGaQY%3D--a046d093f16ee7b3088c89116f6cfe2d12594657;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"vehicle_optional_fields":["weight","registration"],"default_passenger_type_id":1,"time_zone":"Australia/Adelaide","ob_num_pax_requiring_details":"none","person_titles":["Mr","Mrs","Ms","Miss"]}'
+    http_version: 
+  recorded_at: Tue, 23 May 2017 04:09:58 GMT
+recorded_with: VCR 3.0.3
