@@ -3,7 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## [2.9.1 Unreleased]
+
+## [3.0.0 Unreleased]
 ### Fixed
 - Allow zero pricing for extra pick items
 
@@ -12,6 +13,9 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ### Added
 - Setting API
+
+### Removed
+- Removed geocode function on address
 
 ## [2.9.0]
 ### Changed

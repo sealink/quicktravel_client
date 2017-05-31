@@ -1,21 +1,9 @@
 require 'quick_travel/adapter'
-require 'geokit'
 
 module QuickTravel
   class Address < Adapter
     def country_name
       QuickTravel::Country.find(@country_id).name
-    end
-
-    # TODO: Remove this method
-    # Geokit is a dependency and ONLY used here
-    # This function should be done outside this gem
-    def geocode
-      @_geocode ||= QuickTravel::Cache.cache("geocode_#{self}") {
-        Geokit::Geocoders::MultiGeocoder.geocode(to_s)
-      }
-    rescue Geokit::Geocoders::TooManyQueriesError
-      nil # do not cache, do not error
     end
 
     def to_s

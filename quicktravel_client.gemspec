@@ -18,8 +18,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'httparty', '~> 0.14'
   spec.add_dependency 'json'
-  # Geokit dependency should be removed (see address.rb for details)
-  spec.add_dependency 'geokit', '~> 1.8.3' # used in address model
   spec.add_dependency 'activesupport', '>= 2.0.0'
   spec.add_dependency 'facets'
   spec.add_dependency 'money', '>= 3.0', '< 6.0' # 6.0 starts to deprecate/split
