@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 
-## [3.0.0 Unreleased]
+## [3.0.0]
 ### Fixed
 - Allow zero pricing for extra pick items
 
