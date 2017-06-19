@@ -1,8 +1,6 @@
 # QuickTravel
 #
 module QuickTravel
-  VERSION = '0.0.2'
-
   require 'active_support' # for .try, etc.
 
   require 'quick_travel/cache'
