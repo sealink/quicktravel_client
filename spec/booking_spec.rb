@@ -122,6 +122,7 @@ end
 describe QuickTravel::Booking do
   let(:booking) { QuickTravel::Booking.find(1) }
   subject(:consumer) { booking.passengers.first }
+
   it 'should updated nested attributes' do
     updated_booking = nil
     VCR.use_cassette('booking_with_nested_attributes') do
@@ -165,5 +166,23 @@ describe QuickTravel::Booking, 'when booking accommodation' do
     expect(reservation.last_travel_date).to eq '2016-03-02'.to_date
     expect(reservation.resource.name).to eq 'Executive Room'
     expect(reservation.passenger_ids).to eq booking.passenger_ids
+  end
+end
+
+describe QuickTravel::Booking, 'when changing state' do
+  let(:booking) { QuickTravel::Booking.find(2) }
+
+  it 'should be able to activate the booking' do
+    VCR.use_cassette('booking_activate') do
+      response = booking.activate!
+      expect(response["success"]).to eq true
+    end
+  end
+
+  it 'should be able to cancel the booking' do
+    VCR.use_cassette('booking_cancel') do
+      response = booking.cancel!
+      expect(response["success"]).to eq true
+    end
   end
 end
