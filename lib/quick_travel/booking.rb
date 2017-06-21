@@ -275,6 +275,10 @@ module QuickTravel
       put_and_validate("#{api_base}/#{@id}/activate")
     end
 
+    def cancel!
+      put_and_validate("#{api_base}/#{@id}/cancel")
+    end
+
     def subscribe_to_email_list(email = nil)
       params = email.nil? ? {} : { email: email }
       put_and_validate("#{api_base}/#{@id}/subscribe_to_email_list", params)

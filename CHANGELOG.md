@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 
+## [3.1.0]
+### Added
+- API to cancel a booking
+
 ## [3.0.0]
 ### Fixed
 - Allow zero pricing for extra pick items
