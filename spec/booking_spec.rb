@@ -186,3 +186,16 @@ describe QuickTravel::Booking, 'when changing state' do
     end
   end
 end
+
+describe QuickTravel::Booking, "when booking doesn't exist" do
+  let(:booking) { QuickTravel::Booking.find_by_reference('111111') }
+
+  it 'should raise an error' do
+    VCR.use_cassette('booking_non_existant') do
+      expect{ booking }.to raise_error(QuickTravel::AdapterError) { |exception|
+        expect(exception.status).to eq 404
+        expect(exception.response).to eq({'error' => "Booking not found. It may have been removed due to inactivity"})
+      }
+    end
+  end
+end
