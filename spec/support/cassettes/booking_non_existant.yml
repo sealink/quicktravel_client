@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/bookings/reference/111111.json
+    body:
+      encoding: UTF-8
+      string: access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 404
+      message: 'Not Found '
+    headers:
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 620e301e261f4038453464856be47a9a
+      X-Runtime:
+      - '0.576024'
+      Vary:
+      - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:07 GMT
+      X-Rack-Cache:
+      - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
+      Content-Length:
+      - '73'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRlNDQwYjQxYmYwODAyM2IwOTVhZWRmZmViZmM3MDFlBjsAVEkiCXVzZXIGOwBGaQY%3D--77cc7c8dff3a0d680d605543218ef1419ead29da;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"error":"Booking not found. It may have been removed due to inactivity"}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 07:39:13 GMT
+recorded_with: VCR 3.0.3
