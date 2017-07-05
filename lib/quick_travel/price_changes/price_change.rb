@@ -2,7 +2,7 @@ module QuickTravel
   module PriceChanges
     class PriceChange
       attr_reader :target
-      attr_reader :original_price, :changed_price, :price_change, :reason
+      attr_reader :original_price, :changed_price, :price_change, :reason, :reasons
 
       delegate :positive?, :negative?, to: :price_change
 
@@ -13,6 +13,7 @@ module QuickTravel
         @changed_price  = Money.new(attrs.fetch('changed_price_in_cents'))
         @price_change   = Money.new(attrs.fetch('price_change_in_cents'))
         @reason         = attrs.fetch('reason')
+        @reasons        = attrs.fetch('reasons', [@reason])
       end
 
       def applied_on?(id, type = 'Reservation')
