@@ -16,6 +16,14 @@ describe QuickTravel::Property do
     VCR.use_cassette 'countries' do
       QuickTravel::Country.all # preload countries for address
     end
+
+    VCR.use_cassette 'locations' do
+      QuickTravel::Location.all # preload countries for address
+    end
+
+    VCR.use_cassette 'property_types' do
+      QuickTravel::PropertyType.all # preload countries for address
+    end
   end
 
   its(:id) { should eq 1 }
@@ -79,5 +87,17 @@ describe QuickTravel::Property do
         its(:updated_at) { should be_a(Date) }
       end
     end
+  end
+
+  context 'its location' do
+    subject(:location) { property.location }
+
+    its(:id) { should eq 5 }
+  end
+
+  context 'its property types' do
+    subject(:property_types) { property.property_types }
+
+    its(:size) { should eq 1 }
   end
 end
