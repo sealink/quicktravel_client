@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/locations.json
+    body:
+      encoding: UTF-8
+      string: access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"559340bc8df8e9afa56c4988e50056fd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dce465a4771d31fef9a11e7b5c1dd0a5
+      X-Runtime:
+      - '0.135948'
+      Vary:
+      - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:38 GMT
+      X-Rack-Cache:
+      - miss
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
+      Content-Length:
+      - '3105'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWMwNjc3NWQ3OGQ4MjYyNDliMzkxNjYxNzQ5ZmJmOTZhBjsAVEkiCXVzZXIGOwBGaQY%3D--c66937bc6407b64b8cf72fc320799d0907d7de31;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '[{"id":5,"name":"Adelaide CBD","region_ids":[3,19]},{"id":90,"name":"Aldinga Beach","region_ids":[9,19]},{"id":6,"name":"American River","region_ids":[1,19]},{"id":8,"name":"Antechamber Bay","region_ids":[1,19]},{"id":67,"name":"Apollo Bay","region_ids":[11]},{"id":89,"name":"Arkaba","region_ids":[10]},{"id":54,"name":"Ballarat","region_ids":[5]},{"id":10,"name":"Baudin Beach","region_ids":[1,19]},{"id":12,"name":"Brown Beach","region_ids":[1,19]},{"id":11,"name":"Brownlow","region_ids":[1,19]},{"id":37,"name":"Cape Borda","region_ids":[1,19]},{"id":38,"name":"Cape Du Couedic","region_ids":[1,19]},{"id":102,"name":"Cape Hart","region_ids":[1,19]},{"id":2,"name":"Cape Jervis","region_ids":[9,19]},{"id":36,"name":"Cape Willoughby","region_ids":[1,19]},{"id":101,"name":"Cassini","region_ids":[1,19]},{"id":59,"name":"Clare","region_ids":[7,19]},{"id":64,"name":"Coober Pedy","region_ids":[10]},{"id":72,"name":"Coonawarra","region_ids":[14]},{"id":97,"name":"Cygnet River","region_ids":[1,19]}]'
+    http_version:
+  recorded_at: Fri, 28 Oct 2016 05:28:14 GMT
+recorded_with: VCR 3.0.3
