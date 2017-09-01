@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [3.4.0]
+###
+- Properties now return their associated location and types
+
 ## [3.3.0]
 ### Added
 - Price change reasons are now passed as an array

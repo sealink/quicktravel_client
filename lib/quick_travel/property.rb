@@ -79,5 +79,13 @@ module QuickTravel
     def address
       @_address ||= Address.new(@address)
     end
+
+    def location
+      @_location ||= Location.find(location_id)
+    end
+
+    def property_types
+      @_property_types ||= PropertyType.all.select{ |pt| property_type_ids.include?(pt.id) }
+    end
   end
 end
