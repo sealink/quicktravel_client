@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [Unreleased]
+
+## [3.5.0]
 ###
 - [TT-3147] Remove unused payment methods
 - [TT-3278] Add full_response option to booking update
