@@ -59,8 +59,8 @@ module QuickTravel
     end
 
     # Update an existing booking
-    def update(options = {})
-      response = put_and_validate("#{api_base}/#{@id}.json", booking: options)
+    def update(attrs = {}, options = {})
+      response = put_and_validate("#{api_base}/#{@id}.json", options.merge(booking: attrs))
       # id is returned if other attributes change otherwise success: true
       fail AdapterError.new(response) unless response['id'] || response['success']
 
