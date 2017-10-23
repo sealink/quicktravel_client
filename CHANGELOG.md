@@ -6,6 +6,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ## [Unreleased]
 ###
 - [TT-3147] Remove unused payment methods
+- [TT-3278] Add full_response option to booking update
 
 ## [3.4.0]
 ###
