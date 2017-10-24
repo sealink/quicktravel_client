@@ -7,6 +7,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ###
 - [TT-3147] Remove unused payment methods
 - [TT-3278] Add full_response option to booking update
+- [ROT-114] Add drop off details
 
 ## [3.4.0]
 ###
