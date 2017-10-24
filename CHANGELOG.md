@@ -4,10 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [Unreleased]
+- [ROT-114] Add drop off details
+
+## [3.5.0]
 ###
 - [TT-3147] Remove unused payment methods
 - [TT-3278] Add full_response option to booking update
-- [ROT-114] Add drop off details
 
 ## [3.4.0]
 ###
