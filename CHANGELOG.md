@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [Unreleased]
+- [ROT-114] Add drop off details
 
 ## [3.5.0]
 ###

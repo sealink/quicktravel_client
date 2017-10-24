@@ -30,6 +30,8 @@ module QuickTravel
   require 'quick_travel/country'
   require 'quick_travel/document'
   require 'quick_travel/document_group'
+  require 'quick_travel/drop_off_location'
+  require 'quick_travel/drop_off_option'
   require 'quick_travel/location'
   require 'quick_travel/party'
   require 'quick_travel/passenger'
