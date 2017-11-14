@@ -13,8 +13,7 @@ module QuickTravel
     end
 
     def self.find_by_reference(reference)
-      uri = URI.escape("#{api_base}/reference/#{reference}.json")
-      find_all!(uri).first
+      find_all!("#{api_base}/reference/#{URI.escape(reference)}.json").first
     end
 
     def documents(regenerate = false)
