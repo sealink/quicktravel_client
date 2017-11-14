@@ -6,6 +6,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ## [Unreleased]
 ###
 - [TT-3304] Handle no response in booking update API
+- [TT-3337] Add booking.delete_reservations method
 
 ## [3.6.0]
 ###
