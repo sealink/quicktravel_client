@@ -9,7 +9,6 @@ require 'facets/hash/delete_values'
 require 'quick_travel/config'
 require 'quick_travel/adapter_error'
 require 'quick_travel/init_from_hash'
-require 'uri'
 
 module QuickTravel
   class Adapter
@@ -285,7 +284,7 @@ module QuickTravel
       http_params[:follow_redirects] = false
 
       begin
-        response = self.send(http_method, URI.escape(path), http_params)
+        response = self.send(http_method, path, http_params)
       rescue Errno::ECONNREFUSED
         raise ConnectionError.new('Connection refused')
       rescue SocketError

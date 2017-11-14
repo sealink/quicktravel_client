@@ -9,15 +9,6 @@ describe QuickTravel::Adapter do
     allow(QuickTravel::Api).to receive(:post).and_return(response)
   end
 
-  context 'when the query needs to be url encoded' do
-    let(:url) { 'http://test.quicktravel.com.au/ blah' }
-    before do
-      QuickTravel::Adapter.post_and_validate(url, {})
-    end
-    let(:expected_url) { 'http://test.quicktravel.com.au/%20blah' }
-    specify { expect(QuickTravel::Api).to have_received(:post).with(expected_url, instance_of(Hash)) }
-  end
-
   context 'when the query contains empty arrays' do
     let(:url) { 'http://test.quicktravel.com.au' }
     let(:query) {
