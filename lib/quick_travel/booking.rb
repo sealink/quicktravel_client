@@ -157,6 +157,10 @@ module QuickTravel
       reserve(:packages, options)
     end
 
+    def delete_reservations
+      delete_and_validate("#{api_base}/#{@id}/reservations")
+    end
+
     # Delete a reservation
     #
     # Returns current booking object after deleting the reservation
