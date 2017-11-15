@@ -4,6 +4,7 @@ require 'quick_travel/vehicle'
 require 'quick_travel/payment'
 require 'quick_travel/payment_type'
 require 'quick_travel/price_changes'
+require 'uri'
 
 module QuickTravel
   class Booking < Adapter
@@ -12,7 +13,7 @@ module QuickTravel
     end
 
     def self.find_by_reference(reference)
-      find_all!("#{api_base}/reference/#{reference}.json").first
+      find_all!("#{api_base}/reference/#{URI.escape(reference)}.json").first
     end
 
     def documents(regenerate = false)
