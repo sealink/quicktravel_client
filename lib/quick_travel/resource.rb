@@ -5,10 +5,10 @@ require 'quick_travel/product_type'
 
 module QuickTravel
   class Resource < Adapter
-    self.api_base = '/resources'
+    self.api_base = '/api/resources'
 
     def sub_resources
-      Resource.find_all!('/resources.json', parent_resource_id: @id)
+      Resource.find_all!('/api/resources.json', parent_resource_id: @id)
     end
 
     def self.all_with_price(opts)

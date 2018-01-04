@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://test.qt.sealink.com.au:8080/resources.json?parent_resource_id=6
+    uri: http://test.qt.sealink.com.au:8080/api/resources.json?parent_resource_id=6
     body:
       encoding: UTF-8
       string: access_key=<QT_KEY>
@@ -70,6 +70,6 @@ http_interactions:
         have declined Travel Insurance for your booking. If you wish to add Travel
         Insurance to this booking, please contact the SeaLink Travel Group on 13 13
         01 prior to commencing your travels.\u003C/p\u003E","graphics":[],"graphic_names":[],"ticket_template":null,"expiry_days":null}]'
-    http_version: 
+    http_version:
   recorded_at: Fri, 28 Oct 2016 05:28:17 GMT
 recorded_with: VCR 3.0.3

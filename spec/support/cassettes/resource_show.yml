@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://test.qt.sealink.com.au:8080/resources/6.json
+    uri: http://test.qt.sealink.com.au:8080/api/resources/6.json
     body:
       encoding: UTF-8
       string: access_key=<QT_KEY>
@@ -59,6 +59,6 @@ http_interactions:
         Hotel - Executive Room","client_type_ids":[],"category":null,"location":"Adelaide
         CBD","current_description":"\u003Cp\u003EA basic studio room\u003C/p\u003E","graphics":[],"graphic_names":[],"property_name":"Hilton
         Hotel","ticket_template":null,"expiry_days":null}'
-    http_version: 
+    http_version:
   recorded_at: Fri, 28 Oct 2016 05:28:17 GMT
 recorded_with: VCR 3.0.3
