@@ -161,10 +161,16 @@ describe QuickTravel::Booking, 'when booking accommodation' do
     end
   }
 
+  let(:resource) {
+    VCR.use_cassette('reservation_resource') do
+      QuickTravel::Resource.find(reservation.resource_id)
+    end
+  }
+
   it 'should create acommodation reservation' do
     expect(reservation.first_travel_date).to eq '2016-03-01'.to_date
     expect(reservation.last_travel_date).to eq '2016-03-02'.to_date
-    expect(reservation.resource.name).to eq 'Executive Room'
+    expect(resource.name).to eq 'Executive Room'
     expect(reservation.passenger_ids).to eq booking.passenger_ids
   end
 end
