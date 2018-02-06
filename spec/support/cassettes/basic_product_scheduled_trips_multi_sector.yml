@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"05bd5d4d4ef6c4b5d312cad0ed8fc08f"'
+      - W/"21bc7368405df99d401d745a726c5d71"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 67e63e1e224eb5484a402505f341baf2
+      - 95d2ed0e-8a5d-46c2-a637-e682e1b35371
       X-Runtime:
-      - '0.235456'
-      Vary:
-      - Origin
+      - '0.368036'
       Date:
-      - Fri, 01 Jan 2016 02:32:37 GMT
+      - Fri, 01 Jan 2016 20:48:41 GMT
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,29 +45,23 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '3733'
+      - '2915'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTZhNDliNGM1YmNhNWFiMjczM2JjODMzMDFkM2U4ZThlBjsAVEkiCXVzZXIGOwBGaQY%3D--7b94523c7f150819b65217849cea43c305f4bbc8;
+      - _session_id=K3BrU2d4V2o0c0VlVkN2NDBabFBSak1aeWczTVVxdzY3OGRSVVBNeTBWbjhjR2taTWUwUzBKSWJJdFpicjY4eVZ2amZ1Tkp3ZFZSMFFJSFRwRldRSCtVSkR0QzQzUHEzKzVmOXZCa1o3dmc9LS00dzViWUVMb3lzNTVNU0p5MEhyTjBBPT0%3D--8a0c3ee7379bdadfd9276da860e962ff707c6728;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"product_id":"9","product_id_field":"trip_id","resource_id":2,"resource_class_name_underscore":"scheduled_trip_resource","product_name_underscore":"mainland_coach_transfers","tariff_level_id":1,"service_ids":[25,26,27],"first_travel_date":"01-03-2016","last_travel_date":"01-03-2016","time_class":"","exception_type":null,"bookable_class":"
-        bookable","bookable":true,"display_text":"","from_label":"from","reason_unbookable":null,"service_notes":null,"booking_notes":null,"adjustment_notes":null,"developer_notes":null,"inventory_type_code":"A","price_in_cents":3000,"total_price_adjustment_in_cents":0,"selection_name":"06:45am
-        - Ferry ConnectionDeparting Adelaide - AM","input_disabled":"","input_overbook":"","formatted_price":"\u003Cspan
-        class=\"money positive\"\u003E$30.00\u003C/span\u003E","price":"$30.00","formatted_pre_adjusted_price":"\u003Cspan
-        class=\"money positive\"\u003E$30.00\u003C/span\u003E","pre_adjusted_price":"$30.00","price_breakdown":"\u003Cspan\u003E\u003Cstrong\u003EPassengers:\u003C/strong\u003E\u0026nbsp;\u003Cspan
-        class=\"money positive\"\u003E$30.00\u003C/span\u003E\u0026nbsp;\u003C/span\u003E","price_breakdown_passengers_in_cents":3000,"price_breakdown_vehicles_in_cents":0,"trip_id":9,"stop_departure_time":"2000-01-01T06:45:00Z","stop_arrival_time":"2000-01-01T08:30:00Z","from_route_stop_attributes":{"id":5,"inventory_controlled":true,"route_id":3,"position":1,"created_at":"2013-03-01T01:49:04+10:30","updated_at":"2013-03-01T01:49:04+10:30","stop_id":3,"name":"Adelaide
-        Central Bus Station","code":"ACBS"},"to_route_stop_attributes":{"id":14,"inventory_controlled":true,"route_id":3,"position":10,"created_at":"2013-03-01T01:49:04+10:30","updated_at":"2013-03-01T01:49:04+10:30","stop_id":12,"name":"Cape
-        Jervis Ferry Terminal","code":"CPJ"},"departure_time":"2000-01-01T06:00:00Z","arrival_time":"2000-01-01T08:30:00Z"},{"product_id":"13","product_id_field":"trip_id","resource_id":2,"resource_class_name_underscore":"scheduled_trip_resource","product_name_underscore":"mainland_coach_transfers","tariff_level_id":1,"service_ids":[28,29,30],"first_travel_date":"01-03-2016","last_travel_date":"01-03-2016","time_class":"","exception_type":null,"bookable_class":"
-        bookable","bookable":true,"display_text":"","from_label":"from","reason_unbookable":null,"service_notes":null,"booking_notes":null,"adjustment_notes":null,"developer_notes":null,"inventory_type_code":"A","price_in_cents":3000,"total_price_adjustment_in_cents":0,"selection_name":"03:45pm
-        - Ferry ConnectionDeparting Adelaide - PM","input_disabled":"","input_overbook":"","formatted_price":"\u003Cspan
-        class=\"money positive\"\u003E$30.00\u003C/span\u003E","price":"$30.00","formatted_pre_adjusted_price":"\u003Cspan
-        class=\"money positive\"\u003E$30.00\u003C/span\u003E","pre_adjusted_price":"$30.00","price_breakdown":"\u003Cspan\u003E\u003Cstrong\u003EPassengers:\u003C/strong\u003E\u0026nbsp;\u003Cspan
-        class=\"money positive\"\u003E$30.00\u003C/span\u003E\u0026nbsp;\u003C/span\u003E","price_breakdown_passengers_in_cents":3000,"price_breakdown_vehicles_in_cents":0,"trip_id":13,"stop_departure_time":"2000-01-01T15:45:00Z","stop_arrival_time":"2000-01-01T17:30:00Z","from_route_stop_attributes":{"id":5,"inventory_controlled":true,"route_id":3,"position":1,"created_at":"2013-03-01T01:49:04+10:30","updated_at":"2013-03-01T01:49:04+10:30","stop_id":3,"name":"Adelaide
-        Central Bus Station","code":"ACBS"},"to_route_stop_attributes":{"id":14,"inventory_controlled":true,"route_id":3,"position":10,"created_at":"2013-03-01T01:49:04+10:30","updated_at":"2013-03-01T01:49:04+10:30","stop_id":12,"name":"Cape
-        Jervis Ferry Terminal","code":"CPJ"},"departure_time":"2000-01-01T15:00:00Z","arrival_time":"2000-01-01T17:30:00Z"}]'
+      string: '[{"product_id":"9","product_id_field":"trip_id","resource_id":2,"resource_class_name_underscore":"scheduled_trip_resource","product_name_underscore":"mainland_coach_transfers","tariff_level_id":1,"service_ids":[25,26,27],"first_travel_date":"01-03-2016","last_travel_date":"01-03-2016","time_class":"","exception_type":null,"bookable":true,"reason_unbookable":null,"service_notes":null,"booking_notes":null,"inventory_type_code":"A","price_in_cents":3000,"pre_adjusted_price_in_cents":3000,"total_price_adjustment_in_cents":0,"adjustments":[],"selection_name":"06:45am
+        - Ferry ConnectionDeparting Adelaide - AM","price_breakdown":"\u003cspan\u003e\u003cstrong\u003ePassengers:\u003c/strong\u003e\u0026nbsp;\u003cspan
+        class=\"money positive\"\u003e$30.00\u003c/span\u003e\u0026nbsp;\u003c/span\u003e","price_breakdown_passengers_in_cents":3000,"price_breakdown_vehicles_in_cents":0,"trip_id":9,"stop_departure_time":"2000-01-01T06:45:00.000Z","stop_arrival_time":"2000-01-01T08:30:00.000Z","from_route_stop_attributes":{"id":5,"inventory_controlled":true,"route_id":3,"position":1,"created_at":null,"updated_at":null,"stop_id":3,"name":"Adelaide
+        Central Bus Station","code":"ACBS"},"to_route_stop_attributes":{"id":14,"inventory_controlled":true,"route_id":3,"position":10,"created_at":null,"updated_at":null,"stop_id":12,"name":"Cape
+        Jervis Ferry Terminal","code":null},"departure_time":"2000-01-01T06:00:00.000Z","arrival_time":"2000-01-01T08:30:00.000Z"},{"product_id":"13","product_id_field":"trip_id","resource_id":2,"resource_class_name_underscore":"scheduled_trip_resource","product_name_underscore":"mainland_coach_transfers","tariff_level_id":1,"service_ids":[28,29,30],"first_travel_date":"01-03-2016","last_travel_date":"01-03-2016","time_class":"","exception_type":null,"bookable":true,"reason_unbookable":null,"service_notes":null,"booking_notes":null,"inventory_type_code":"A","price_in_cents":3000,"pre_adjusted_price_in_cents":3000,"total_price_adjustment_in_cents":0,"adjustments":[],"selection_name":"03:45pm
+        - Ferry ConnectionDeparting Adelaide - PM","price_breakdown":"\u003cspan\u003e\u003cstrong\u003ePassengers:\u003c/strong\u003e\u0026nbsp;\u003cspan
+        class=\"money positive\"\u003e$30.00\u003c/span\u003e\u0026nbsp;\u003c/span\u003e","price_breakdown_passengers_in_cents":3000,"price_breakdown_vehicles_in_cents":0,"trip_id":13,"stop_departure_time":"2000-01-01T15:45:00.000Z","stop_arrival_time":"2000-01-01T17:30:00.000Z","from_route_stop_attributes":{"id":5,"inventory_controlled":true,"route_id":3,"position":1,"created_at":null,"updated_at":null,"stop_id":3,"name":"Adelaide
+        Central Bus Station","code":"ACBS"},"to_route_stop_attributes":{"id":14,"inventory_controlled":true,"route_id":3,"position":10,"created_at":null,"updated_at":null,"stop_id":12,"name":"Cape
+        Jervis Ferry Terminal","code":null},"departure_time":"2000-01-01T15:00:00.000Z","arrival_time":"2000-01-01T17:30:00.000Z"}]'
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:14 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:44 GMT
 recorded_with: VCR 3.0.3

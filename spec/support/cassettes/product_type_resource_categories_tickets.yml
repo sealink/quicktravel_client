@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"d1fd940d0166dbb4832b5f5171b67a60"'
+      - W/"3b463d79f48c515bd0ed3e6b755d1d4b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f6cd11cba56885f3e309a07dc4fb526f
+      - d1a104d5-4c54-40bd-98cf-ff8f6fc62796
       X-Runtime:
-      - '0.069853'
-      Vary:
-      - Origin
+      - '0.168229'
       Date:
-      - Fri, 01 Jan 2016 02:32:36 GMT
+      - Fri, 01 Jan 2016 20:48:39 GMT
       X-Rack-Cache:
       - miss
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,16 +45,16 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '328'
+      - '240'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTZiZWEwOWMwYmYzMzQ4MDhjYjViZWIyN2FlMDkwZDNjBjsAVEkiCXVzZXIGOwBGaQY%3D--ce1756095e1dcab88d9b48fe05070de5ca0868cc;
+      - _session_id=Tjh5UkhEdGdwcnVJUmNuVVZ4Ynl3aVRyQkl1Yk5KdmptZDlIR09CZk10UkFvS3hWSDRkdjJieGQ5dDhDa25FY0NIWHRnOTg3bWhVbXRkYkJjRldoRzR6UlRXTlNSRDc4N0xUaG1HQVIxdjA9LS1VcVNxbWgrdlpMa09uZzVCbjZCSk9nPT0%3D--1b8107970101d2435815e4560b5a7182213f76d1;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"created_at":"2015-08-25T14:14:25+09:30","description":"","id":1,"name":"Common","position":null,"product_type_id":5,"updated_at":"2015-08-25T14:14:25+09:30"},{"created_at":"2015-08-25T14:14:50+09:30","description":"","id":2,"name":"Multiple
-        Trip","position":null,"product_type_id":5,"updated_at":"2015-08-25T14:14:50+09:30"}]'
+      string: '[{"id":1,"name":"Common","description":null,"product_type_id":5,"created_at":null,"updated_at":null,"position":null},{"id":2,"name":"Multiple
+        Trip","description":null,"product_type_id":5,"created_at":null,"updated_at":null,"position":null}]'
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:13 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:42 GMT
 recorded_with: VCR 3.0.3

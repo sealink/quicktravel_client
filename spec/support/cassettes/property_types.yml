@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"559340bc8df8e9afa56c4988e50056fd"'
+      - W/"626f377a41b553c6c0727da215f3e53f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dce465a4771d31fef9a11e7b5c1dd0a5
+      - d54c5676-0f95-4d47-9015-c01696d0b22b
       X-Runtime:
-      - '0.135948'
-      Vary:
-      - Origin
+      - '0.127166'
       Date:
-      - Fri, 01 Jan 2016 02:32:38 GMT
+      - Fri, 01 Jan 2016 20:48:41 GMT
       X-Rack-Cache:
       - miss
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,15 +45,15 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '3105'
+      - '77'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWMwNjc3NWQ3OGQ4MjYyNDliMzkxNjYxNzQ5ZmJmOTZhBjsAVEkiCXVzZXIGOwBGaQY%3D--c66937bc6407b64b8cf72fc320799d0907d7de31;
+      - _session_id=eDNaYktGNWtnRzlJOG1oM2NSeCtYYXBTc3hHWG5jc2NFYkZjN3J1c2dvdXdRZTQzSFhDb2prNkUxd3BKZkdoZVNjR04yMlltQXNCUHgzYklUYjBsK0NoTmpPZ2NieUIwMVZXNmZEZFJ2bmc9LS1DamlWb3VrdWlyQnFwTlFqb1lpbTdBPT0%3D--542b857fa1d46d6507eb5ff48227e1ed0048e0f6;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":6,"name":"Bed and Breakfast","position":1,"created_at":"2011-04-07T07:07:14+09:30","updated_at":"2014-02-04T16:00:14+10:30"},{"id":4,"name":"Non Hosted Bed and Breakfast","position":2,"created_at":"2011-04-07T07:07:14+09:30","updated_at":"2011-04-07T07:07:14+09:30"},{"id":1,"name":"Hotel or Motel","position":3,"created_at":"2011-04-07T07:07:14+09:30","updated_at":"2011-04-07T07:07:14+09:30"},{"id":7,"name":"Self Contained","position":4,"created_at":"2011-04-07T07:07:14+09:30","updated_at":"2011-04-07T07:07:14+09:30"},{"id":12,"name":"Luxury Retreats","position":5,"created_at":"2017-02-13T16:03:04+10:30","updated_at":"2017-02-13T16:03:04+10:30"},{"id":10,"name":"Caravan and Camping","position":6,"created_at":"2011-04-07T07:07:14+09:30","updated_at":"2011-04-07T07:07:14+09:30"},{"id":5,"name":"Lodge or Backpackers","position":7,"created_at":"2011-04-07T07:07:14+09:30","updated_at":"2016-10-31T15:21:46+10:30"},{"id":8,"name":"Groups","position":8,"created_at":"2011-04-07T07:07:14+09:30","updated_at":"2011-04-07T07:07:14+09:30"},{"id":9,"name":"Ski","position":9,"created_at":"2011-04-07T07:07:14+09:30","updated_at":"2011-04-07T07:07:14+09:30"},{"id":11,"name":"Cruise Ship","position":10,"created_at":"2014-09-25T08:31:00+09:30","updated_at":"2014-09-25T08:31:00+09:30"}]'
-    http_version:
-  recorded_at: Fri, 28 Oct 2016 05:28:14 GMT
+      string: '[{"id":1,"name":"Hotel","position":null,"created_at":null,"updated_at":null}]'
+    http_version: 
+  recorded_at: Tue, 06 Feb 2018 20:49:44 GMT
 recorded_with: VCR 3.0.3

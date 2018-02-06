@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"3ff67a732ba04673f7461eccd9b919ed"'
+      - W/"1fe4427aa58b4d56ec64723a80cfd66d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a8f086cb2db5c9acec5cb1d5a1bbd7d7
+      - ff7896fc-6715-466d-ae2b-3c3982a11f12
       X-Runtime:
-      - '0.095191'
-      Vary:
-      - Origin
+      - '0.124392'
       Date:
-      - Fri, 01 Jan 2016 02:32:36 GMT
+      - Fri, 01 Jan 2016 20:48:39 GMT
       X-Rack-Cache:
       - miss
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,17 +45,21 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '5576'
+      - '5426'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWIzNTNjYTEwMGFlMzkxMzc0ODI3MTgzMzY5MmYyODU1BjsAVEkiCXVzZXIGOwBGaQY%3D--413db14ab241526c5a5f68e77c4c80566a1ba883;
+      - _session_id=OERLa3Bja0JZZjlyMHdQY1BDdTZiMU5rUDVqSU9uL25mOEJsMjZwblBEejExMkgzWjNRYWtwMTVsSld3ZzI1RCs0OEZPNURITGloeXdZbkduU0hKcnk5NHpoSlBKME5jOS9NbFNhclV6QTQ9LS0yVWp1dTJybEZYK0NRNjZGUnI3UWF3PT0%3D--2464d5487e6cb6d4817943e9a241328eb4e99519;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Ferry","resource_class_name":"Ship","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":2,"name":"Accommodation","resource_class_name":"Accommodation","disclaimer_id":null,"durational":true,"can_find_by_location":true,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":3,"name":"Flight","resource_class_name":"ScheduledTripResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":4,"name":"Item","resource_class_name":"Item","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"needs_services":false,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":5,"name":"Ticket","resource_class_name":"Item","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":null,"maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":null,"created_at":null,"updated_at":null,"code":null,"needs_services":false,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":6,"name":"Mainland
-        Coach Transfers","resource_class_name":"ScheduledTripResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":true,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2013-03-01T01:33:37+10:30","updated_at":"2013-03-01T01:33:37+10:30","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":7,"name":"Travel
-        Insurance","resource_class_name":"Insurance","disclaimer_id":null,"durational":true,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":true,"created_at":"2014-09-12T17:06:45+09:30","updated_at":"2014-09-12T17:06:45+09:30","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":false},{"id":8,"name":"Merchandise","resource_class_name":"Item","disclaimer_id":1,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["reservation_group_id","trip_name","departure_time","pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2015-08-25T15:10:06+09:30","updated_at":"2015-08-25T15:10:06+09:30","code":"","needs_services":false,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":9,"name":"Cruise","resource_class_name":"GenericResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2016-05-11T12:10:20+09:30","updated_at":"2016-05-11T12:10:20+09:30","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true}]'
+        Coach Transfers","resource_class_name":"ScheduledTripResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":true,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":7,"name":"Travel
+        Insurance","resource_class_name":"Insurance","disclaimer_id":null,"durational":true,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr
+        notes_for_vendor","vendor_staff note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":true,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":false},{"id":8,"name":"Merchandise","resource_class_name":"Item","disclaimer_id":1,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":"''---\n  -
+        reservation_group_id\n  - trip_name departure_time\n  - pick_up_information\n  -
+        drop_off_information\n  - vendor_pnr\n  - notes_for_vendor\n  - vendor_staff\n  -
+        note_for_inventory_type_change''\n","only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":false,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":9,"name":"Cruise","resource_class_name":"GenericResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true}]'
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:13 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:42 GMT
 recorded_with: VCR 3.0.3

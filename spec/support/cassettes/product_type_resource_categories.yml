@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"d751713988987e9331980363e24189ce"'
+      - W/"4f53cda18c2baa0c0354bb5f9a3ecbe5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - abeeb7c1da610a4ec0669b1af29f1de1
+      - 8b50ffbf-49a3-4415-ac04-b6ded7f19a53
       X-Runtime:
-      - '0.083924'
-      Vary:
-      - Origin
+      - '0.109897'
       Date:
-      - Fri, 01 Jan 2016 02:32:36 GMT
+      - Fri, 01 Jan 2016 20:48:39 GMT
       X-Rack-Cache:
       - miss
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -51,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTQ4NDQwMGJkNmNkNzM4MmUwYjlhOWFhYzQ4NmNhZDliBjsAVEkiCXVzZXIGOwBGaQY%3D--4c9774af3f338d0eb51870362aa2d15e0fc500c3;
+      - _session_id=bUtPNS9aR2ZFQ0VPY3hoNmp5Uk5oREdFd0MrN01nTDVkKzhOSk9UQTZHQkRSbndPR1hYK0JDMFVuREpoejlFRlhma3JRU21ncjJSU0V3cVQydThJa3NkNEJvUnM1c0VkcUhRemx1am56OFU9LS1udUlRRFNnNkFYTkhPcmpFeTVJalJBPT0%3D--33aac4b848edf4faa6a9e95bca3c7eb14f1825fd;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:13 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:42 GMT
 recorded_with: VCR 3.0.3

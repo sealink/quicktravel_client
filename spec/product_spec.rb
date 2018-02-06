@@ -99,13 +99,13 @@ describe QuickTravel::Product do
         it { should eq expected_price } # $200 for 2 pax, $50 for extra passenger
       end
 
-      context 'adjustments' do
-        subject(:adjustments)   { pricing_details.adjustments_to_apply }
+      context 'applied rules' do
+        subject(:rules)   { pricing_details.applied_rules }
         it { should be_an_instance_of Array }
 
-        context 'first adjustment' do
-          subject(:adjustment) { adjustments.first }
-          it { should be_an_instance_of Hash }
+        context 'first rule' do
+          subject(:rule) { rules.first }
+          it { should be_an_instance_of String }
         end
       end
     end
