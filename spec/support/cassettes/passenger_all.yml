@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"2c56aef5eda86adf6ec974aca78aac0e"'
+      - W/"0f4424dcbc52748cfe7472d15e4b8fa3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9c39d6a904b9eb9dfe781817065bf869
+      - d007e9d5-d389-41ff-b82c-cd717418bc28
       X-Runtime:
-      - '0.070803'
-      Vary:
-      - Origin
+      - '0.128100'
       Date:
-      - Fri, 01 Jan 2016 02:32:33 GMT
+      - Fri, 01 Jan 2016 20:48:35 GMT
       X-Rack-Cache:
       - miss
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,15 +45,15 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '542'
+      - '614'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWIwNWIyNjExMzk1ODUwZGIyMGRhNzE3NWQ5MzMxNjg2BjsAVEkiCXVzZXIGOwBGaQY%3D--05f6a8ce6b98b4ab8975bc9aded9917d3c837a0f;
+      - _session_id=WW01Y2NSbk5DUEcyUFRtMnplLzNRQVgrUTlYdERuRkxXREF5dVhlTHVYOXhQUWNkUGk1QWNUek50cEs2UVdkZGZhQ3pWdXJ0aGZETmszdWFOd3hvWlpOMXFtcVNwVjJDZi9FS3pQSmt5Snc9LS1hQ2lnNHRaaFhyeTVJOCs0S0VSbjlBPT0%3D--bb08a7eadd3e0a07f04de779954d4ed74dfb5793;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad","conditions":null},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In","conditions":null},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch","conditions":null}]'
+      string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad","conditions":null,"requires_review":false},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In","conditions":null,"requires_review":false},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch","conditions":null,"requires_review":false}]'
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:10 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:38 GMT
 recorded_with: VCR 3.0.3

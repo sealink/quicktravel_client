@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"314afdcb3a8a6eac01d4623ef1efecd0"'
+      - W/"c05c6d45cc2c6397adceb6f4064b2dc3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 29648df7c964ee9d1e4f08e9900e9998
+      - e64c1730-ffbf-4bbb-ac51-bc834ca7e6f7
       X-Runtime:
-      - '0.144204'
-      Vary:
-      - Origin
+      - '0.143082'
       Date:
-      - Fri, 01 Jan 2016 03:45:51 GMT
+      - Fri, 01 Jan 2016 20:48:45 GMT
       X-Rack-Cache:
       - miss
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,25 +45,18 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '4591'
+      - '1437'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTdhY2EzNzY2ZWFjYmI1OTYwODE1ZjU1YzJjMWVjOWJiBjsAVEkiCXVzZXIGOwBGaQY%3D--dd25af850f8c5a3ae115b19043b7a408fdf4776f;
+      - _session_id=bDAxVWlKaTZEVlJJSDNxVk5KZk4zWGtraUpzT0lSbkFtY09CckE1Z1lGN1pUNmVaVmxzOGFkVlJ4VTdoa000eng0WjArV2Zkb09MWEYrbW02emZHcllacGdOUmo5TjRRclFkc1Y0dWRJQUE9LS1wTm5EZkNEdlh1R3dPMlhVMmx5WllBPT0%3D--5b48437080a3bb1359a3f3a517a9104bdd84c5f0;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":6,"name":"Executive Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":1,"maximum_occupancy":2,"location_id":1,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"inline_price_in_cents":400,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2013-03-01T00:08:49+10:30","updated_at":"2013-03-01T00:55:56+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":true,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":0,"todays_price_in_cents":20000,"todays_price_with_rules_in_cents":10000,"applied_rules":["Test
-        Discount Hilton"],"description":"A basic studio room","ticket_template":null,"expiry_days":null,"child_resources":[{"id":3,"name":"QBE
-        Travel Insurance - Policy E","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"location_id":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2014-09-12T17:10:47+09:30","updated_at":"2014-09-12T17:10:55+09:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":19,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":0,"todays_price_in_cents":3000,"todays_price_with_rules_in_cents":1500,"applied_rules":["QBE
-        Get Me"],"description":"QBE Travel Insurance Policy E known as the ''Australian
-        Cancellation and Additional Expenses'' plan has been included into this booking.
-        This covers you for defined unforeseen cancellations and additional expenses.
-        Please refer to the Product Disclosure Statement for further information.","ticket_template":null,"expiry_days":null,"child_resources":[]},{"id":4,"name":"Travel
-        Insurance - Declined","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"location_id":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2014-09-12T17:12:11+09:30","updated_at":"2013-03-01T00:17:12+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":0,"todays_price_in_cents":3000,"todays_price_with_rules_in_cents":3000,"applied_rules":[],"description":"You
-        have declined Travel Insurance for your booking. If you wish to add Travel
-        Insurance to this booking, please contact the SeaLink Travel Group on 13 13
-        01 prior to commencing your travels.","ticket_template":null,"expiry_days":null,"child_resources":[]}]}]'
+      string: '[{"id":6,"name":"Executive Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":0,"maximum_occupancy":2,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-02-07T07:17:31.000+10:30","updated_at":"2018-02-07T07:17:31.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"Hilton
+        Hotel - Executive Room","client_type_ids":[],"category":null,"location_ids":[5],"current_description":"\u003cp\u003eA
+        basic studio room\u003c/p\u003e","graphics":[],"graphic_names":[],"property_name":"Hilton
+        Hotel","ticket_template":null,"expiry_days":null}]'
     http_version: 
-  recorded_at: Tue, 16 Jan 2018 05:29:42 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Tue, 06 Feb 2018 20:49:48 GMT
+recorded_with: VCR 3.0.3

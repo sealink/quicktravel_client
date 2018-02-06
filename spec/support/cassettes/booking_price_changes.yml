@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"7b91c75a4f38e04e4f967265134f1051"'
+      - W/"bbf4e2642cbe40a2d5b574fa25d7bfda"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e02cf837aeb32b6789eea3f866d47996
+      - feb3dc9c-2194-4a43-9758-b0897ca2e082
       X-Runtime:
-      - '0.094684'
-      Vary:
-      - Origin
+      - '0.155232'
       Date:
-      - Fri, 01 Jan 2016 02:32:33 GMT
+      - Fri, 01 Jan 2016 20:48:35 GMT
       X-Rack-Cache:
       - miss
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,20 +45,24 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '1625'
+      - '2377'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWRlMDI2MDM2NTUyYzE3NjdkMDYwMTY0NjQwYzE4MGYyBjsAVEkiCXVzZXIGOwBGaQY%3D--fd3c60dd8581d6e294d16064d3fc0ceda7bf9e4a;
+      - _session_id=UFNvOXU4Vy9RRnpDNXcydVR0UlUzWW9VbmVvSTgyekErL2JtNGx3OU9oZ0p0RUZkL3djcWRIMVI4NTlvQ0N0dktmT052dXhTMGRGYjhkVjVCVS92MzJrcXJva3NjOVdUQW45SnBwTUh1bHM9LS1aTjRnSFJjOHd6c0Z5ZHVVWnZhblBBPT0%3D--e920d558584e01d1277931b39d04eb9bdabf4706;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"target":{"type":"Booking","id":1},"original_price_in_cents":64000,"changed_price_in_cents":38000,"price_change_in_cents":-26000,"reason":"Test
-        Discount Hilton and QBE Get Me","discounted_price_in_cents":38000,"discount_in_cents":-26000,"reservation_price_changes":[{"target":{"type":"Reservation","id":1},"original_price_in_cents":64000,"changed_price_in_cents":38000,"price_change_in_cents":-26000,"reason":"Test
-        Discount Hilton and QBE Get Me","discounted_price_in_cents":38000,"discount_in_cents":-26000,"root":{"target":{"type":"Reservation","id":1},"original_price_in_cents":40000,"changed_price_in_cents":20000,"price_change_in_cents":-20000,"reason":"Test
-        Discount Hilton","discounted_price_in_cents":20000,"discount_in_cents":-20000},"children":[{"target":{"type":"Reservation","id":3},"original_price_in_cents":12000,"changed_price_in_cents":12000,"price_change_in_cents":0,"reason":"","discounted_price_in_cents":12000,"discount_in_cents":0,"root":{"target":{"type":"Reservation","id":3},"original_price_in_cents":12000,"changed_price_in_cents":12000,"price_change_in_cents":0,"reason":"","discounted_price_in_cents":12000,"discount_in_cents":0},"children":[]},{"target":{"type":"Reservation","id":2},"original_price_in_cents":12000,"changed_price_in_cents":6000,"price_change_in_cents":-6000,"reason":"QBE
-        Get Me","discounted_price_in_cents":6000,"discount_in_cents":-6000,"root":{"target":{"type":"Reservation","id":2},"original_price_in_cents":12000,"changed_price_in_cents":6000,"price_change_in_cents":-6000,"reason":"QBE
-        Get Me","discounted_price_in_cents":6000,"discount_in_cents":-6000},"children":[]}]}]}'
+        Discount Hilton and QBE Get Me","reasons":["Test Discount Hilton","QBE Get
+        Me"],"discounted_price_in_cents":38000,"discount_in_cents":-26000,"reservation_price_changes":[{"target":{"type":"Reservation","id":1},"original_price_in_cents":64000,"changed_price_in_cents":38000,"price_change_in_cents":-26000,"reason":"Test
+        Discount Hilton and QBE Get Me","reasons":["Test Discount Hilton","QBE Get
+        Me"],"discounted_price_in_cents":38000,"discount_in_cents":-26000,"root":{"target":{"type":"Reservation","id":1},"original_price_in_cents":40000,"changed_price_in_cents":20000,"price_change_in_cents":-20000,"reason":"Test
+        Discount Hilton","reasons":["Test Discount Hilton"],"discounted_price_in_cents":20000,"discount_in_cents":-20000,"breakdown":[{"target":{"type":"Reservation","id":1},"original_price_in_cents":40000,"changed_price_in_cents":20000,"price_change_in_cents":-20000,"reason":"Test
+        Discount Hilton","reasons":["Test Discount Hilton"],"discounted_price_in_cents":20000,"discount_in_cents":-20000}]},"children":[{"target":{"type":"Reservation","id":3},"original_price_in_cents":12000,"changed_price_in_cents":12000,"price_change_in_cents":0,"reason":"","reasons":[],"discounted_price_in_cents":12000,"discount_in_cents":0,"root":{"target":{"type":"Reservation","id":3},"original_price_in_cents":12000,"changed_price_in_cents":12000,"price_change_in_cents":0,"reason":"","reasons":[],"discounted_price_in_cents":12000,"discount_in_cents":0,"breakdown":[]},"children":[]},{"target":{"type":"Reservation","id":2},"original_price_in_cents":12000,"changed_price_in_cents":6000,"price_change_in_cents":-6000,"reason":"QBE
+        Get Me","reasons":["QBE Get Me"],"discounted_price_in_cents":6000,"discount_in_cents":-6000,"root":{"target":{"type":"Reservation","id":2},"original_price_in_cents":12000,"changed_price_in_cents":6000,"price_change_in_cents":-6000,"reason":"QBE
+        Get Me","reasons":["QBE Get Me"],"discounted_price_in_cents":6000,"discount_in_cents":-6000,"breakdown":[{"target":{"type":"Reservation","id":2},"original_price_in_cents":12000,"changed_price_in_cents":6000,"price_change_in_cents":-6000,"reason":"QBE
+        Get Me","reasons":["QBE Get Me"],"discounted_price_in_cents":6000,"discount_in_cents":-6000}]},"children":[]}]}]}'
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:09 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:38 GMT
 recorded_with: VCR 3.0.3

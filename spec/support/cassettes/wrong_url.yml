@@ -16,10 +16,12 @@ http_interactions:
     headers:
       Content-Type:
       - text/html; charset=UTF-8
+      Referrer-Policy:
+      - no-referrer
       Content-Length:
       - '1555'
       Date:
-      - Fri, 28 Oct 2016 05:28:05 GMT
+      - Tue, 06 Feb 2018 20:49:27 GMT
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -59,5 +61,5 @@ http_interactions:
         dWVkIGEgbWFsZm9ybWVkIG9yIGlsbGVnYWwgcmVxdWVzdC4gIDxpbnM+VGhh
         dOKAmXMgYWxsIHdlIGtub3cuPC9pbnM+Cg==
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:05 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:25 GMT
 recorded_with: VCR 3.0.3

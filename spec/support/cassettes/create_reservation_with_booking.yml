@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"32328bcb7d16793a864c65a57ff52f69"'
+      - W/"0e431b5b87e5c6d514aa69fed9dc0562"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cd3a5a65cd08794733ac6e9f01af06bf
+      - 254739a5-8a7c-4655-87ac-3dc831c1a20d
       X-Runtime:
-      - '0.579922'
-      Vary:
-      - Origin
+      - '0.872575'
       Date:
-      - Fri, 01 Jan 2016 02:32:39 GMT
+      - Fri, 01 Jan 2016 20:48:43 GMT
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,20 +45,21 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '2020'
+      - '2027'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTgzZjdkOTc5NDE3NTdhZDY1Y2QyOTdlOGIzYzY5NDgzBjsAVEkiCXVzZXIGOwBGaQY%3D--33f2dc99b47b872b6547cc7be28522a868c52163;
+      - _session_id=Y1oyUXlvL1dNSlQ5MVBqSUZUTmhuM3pDaWFYdkVDTDhFZTRta2JFbmdkc201VXdXK05sdXdmbUh1OUhWbzlFSlNrVmRNMDVFTVNmZTJ6L0ZQdVBMa0lqSXRyaHk5SFFHMnUrSkQ0V09PZkk9LS1UdUczZ2phRUMxUTVYMHNnalNFVXRRPT0%3D--cfa874e48f55356d014b43dc86e2343b9f02fbe7;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"id":6,"booking_id":4,"description":"You have declined Travel Insurance
+      string: '{"id":7,"booking_id":5,"description":"You have declined Travel Insurance
         for your booking. If you wish to add Travel Insurance to this booking, please
-        contact the SeaLink Travel Group on 13 13 01 prior to commencing your travels.","comment":null,"active":true,"service_ids":[7],"resource_id":4,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"product_type_id":7,"itinerary_footer":true,"fare_basis_set_id":8,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":4,"pick_up_info":null,"drop_off_info":null,"selection_name":"Travel
-        Insurance - Declined","product_name_underscore":"travel_insurance","resource_class_name_underscore":"insurance","resource_class_name":"Insurance","has_ticket_template":false,"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-01"},"durational":true,"duration":1,"duration_units":"Days","date_start_label":"Start
+        contact the SeaLink Travel Group on 13 13 01 prior to commencing your travels.","comment":null,"active":true,"service_ids":[7],"resource_id":4,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"product_type_id":7,"itinerary_footer":true,"fare_basis_set_id":8,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":null,"fare_basis_pointer_id":4,"pick_up_info":null,"drop_off_info":null,"selection_name":"Travel
+        Insurance - Declined","product_name_underscore":"travel_insurance","resource_class_name_underscore":"insurance","resource_class_name":"Insurance","has_ticket_template":false,"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-01"},"durational":true,"duration":1,"span":1,"duration_units":"Days","date_start_label":"Start
         Date:","date_end_label":"End Date:","expires":false,"expiry":"*NA*","has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
-        Priced as: Rack Rate","gross_including_packaged_item_in_cents":0,"pre_adjusted_gross_including_packaged_item_in_cents":0,"gross_in_cents":0,"pre_adjusted_gross_in_cents":0,"pre_adjusted_commission_in_cents":0,"cost_in_cents":0,"rules":[],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[],"passenger_splits":[],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{}}'
+        Priced as: Rack Rate","gross_including_packaged_item_in_cents":0,"pre_adjusted_gross_including_packaged_item_in_cents":0,"gross_in_cents":0,"pre_adjusted_gross_in_cents":0,"pre_adjusted_commission_in_cents":0,"cost_in_cents":0,"rules":[],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr
+        notes_for_vendor","vendor_staff note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[],"passenger_splits":[],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{}}'
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:16 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:46 GMT
 recorded_with: VCR 3.0.3

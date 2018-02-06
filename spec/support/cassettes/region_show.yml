@@ -18,22 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"a4c8faefeca1cec1ee7134663a0817b7"'
+      - W/"510afb159eb43929754bda9aa96bfacb"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 30e76aedeed8e4dab14a8ab517531251
+      - 917fe807-b096-4a5e-bdcf-78b01eeb0f37
       X-Runtime:
-      - '0.069329'
-      Vary:
-      - Origin
+      - '0.200988'
       Date:
-      - Fri, 01 Jan 2016 02:32:38 GMT
+      - Fri, 01 Jan 2016 20:48:42 GMT
       X-Rack-Cache:
       - miss
+      Vary:
+      - Origin
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,15 +45,15 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '47'
+      - '58'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWRjM2Y4MjYzODIwMmNmYjA5YjZhYWM4M2FhOWNiMmVhBjsAVEkiCXVzZXIGOwBGaQY%3D--ed3b1c5e3e7fd34bd7c5c2270a28968bf5926d2a;
+      - _session_id=ZHNCTEt5Qmt4NXVlb043Mis4YmxIbzVFVE0wR1JUTkk1UnR3N1d5UjVmWnZVeUVzd3A5cGExank5YjgxWHJxRGNwRmFjYlMvRjdneHdUeWhoY2w5Nm82YWZkNGYxN0NSR25iM2lRTlFYRVk9LS01Y3V2YWVZMUMrNGc0V3ZDZmthVkdRPT0%3D--84d84cd5e30524b0b777431ac9f6e74c34bc5b4b;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":2,"name":"Adelaide","location_ids":[1]}]'
+      string: '[{"id":1,"name":"Kangaroo Island","location_ids":[3,4,5]}]'
     http_version: 
-  recorded_at: Fri, 28 Oct 2016 05:28:15 GMT
+  recorded_at: Tue, 06 Feb 2018 20:49:45 GMT
 recorded_with: VCR 3.0.3
