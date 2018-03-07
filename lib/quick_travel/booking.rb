@@ -246,8 +246,8 @@ module QuickTravel
     end
 
     def clear_unfinished_reservations!
-      booking = self
-      reservations.reject(&:complete).each do |reservation|
+      booking = refresh!
+      booking.reservations.reject(&:complete).each do |reservation|
         # This will return updated booking..
         booking = delete_reservation(reservation)
       end
