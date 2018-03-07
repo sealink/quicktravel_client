@@ -144,12 +144,10 @@ end
 
 describe QuickTravel::Booking, 'when booking accommodation' do
   let(:booking) {
-    VCR.use_cassette('booking_create_accommodation') do
-      QuickTravel.config.version = 4
-      QuickTravel::Booking.create
-    end
+    VCR.use_cassette('booking_with_documents') {
+      QuickTravel::Booking.find(1)
+    }
   }
-
   let(:reservation) {
     VCR.use_cassette('accommodation_reserve') do
       booking.accommodation_reserve(
@@ -159,20 +157,14 @@ describe QuickTravel::Booking, 'when booking accommodation' do
         first_travel_date: '01/03/2016',
         last_travel_date: '02/03/2016'
       )
-      QuickTravel::Booking.find(booking.id).reservations.detect { |reservation| reservation.resource.name == 'Executive Room' }
-    end
-  }
-
-  let(:resource) {
-    VCR.use_cassette('reservation_resource') do
-      QuickTravel::Resource.find(reservation.resource_id)
+      booking.reservations.detect { |reservation| reservation.resource.name == 'Executive Room' }
     end
   }
 
   it 'should create acommodation reservation' do
     expect(reservation.first_travel_date).to eq '2016-03-01'.to_date
     expect(reservation.last_travel_date).to eq '2016-03-02'.to_date
-    expect(resource.name).to eq 'Executive Room'
+    expect(reservation.resource.name).to eq 'Executive Room'
     expect(reservation.passenger_ids).to eq booking.passenger_ids
   end
 end

@@ -4,10 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [Unreleased]
+
+## [3.6.1]
 ###
 - [TT-3304] Handle no response in booking update API
-- [TT-3333] URL encode data sent to booking reference lookup
-- [TT-3337] Add booking.delete_reservations method
 
 ## [3.6.0]
 ###

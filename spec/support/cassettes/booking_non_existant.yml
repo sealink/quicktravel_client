@@ -18,18 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 10bbaf5e-f73d-4146-9d7f-be3700d70db2
+      - 620e301e261f4038453464856be47a9a
       X-Runtime:
-      - '0.276238'
-      Date:
-      - Fri, 01 Jan 2016 20:48:32 GMT
-      X-Rack-Cache:
-      - miss
+      - '0.576024'
       Vary:
       - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:07 GMT
+      X-Rack-Cache:
+      - miss
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=aFpaczhMR3FLZmJKU3lHeUlaZmN1aVlsaEhxUFBaRW1DTVNlN0pnTnRIMmxOVjkzbXN0Njh4MnBWVmpVNUZLVTJONEZwMXduNHhDcU9pUGJWZHRQdHB2V2Q1eDY1a0llb0VaMHcrS3lmdjA9LS12UDljRTU3eXNIV1I2QjNDdk50WHBRPT0%3D--4fc93ce1e60e3598e5eda7c499dbf331bd51236e;
+      - _session_id=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRlNDQwYjQxYmYwODAyM2IwOTVhZWRmZmViZmM3MDFlBjsAVEkiCXVzZXIGOwBGaQY%3D--77cc7c8dff3a0d680d605543218ef1419ead29da;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"error":"Booking not found. It may have been removed due to inactivity"}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:35 GMT
+  recorded_at: Tue, 04 Jul 2017 07:39:13 GMT
 recorded_with: VCR 3.0.3
