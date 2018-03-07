@@ -10,7 +10,11 @@ describe QuickTravel::Reservation do
         first_travel_date: '2016-03-01',
         passenger_types_numbers: { '1' => '2', '2' => '1' }
       )
-      expect(reservation.booking_id).not_to eq 0
+      expect(reservation.booking_id).to eq 4 # based on running ALL specs
+                                             # from a fresh bootstrap.sql
+                                             # bootstrap.sql has 2 bookings
+                                             # Plus 3rd booking created in booking_spec
+                                             # Plus 4th booking created here
     end
   end
 
@@ -31,7 +35,7 @@ describe QuickTravel::Reservation do
     resource_names = nil
     VCR.use_cassette('reservation_with_extra_picks') do
       @booking = QuickTravel::Booking.find(1)
-      @reservation = @booking.reservations.last
+      @reservation = @booking.reservations.first
       sub_reservations = @reservation.sub_reservations
       resource_names = sub_reservations.map(&:resource).map(&:name)
     end

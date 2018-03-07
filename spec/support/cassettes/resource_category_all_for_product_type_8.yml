@@ -18,20 +18,22 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
       Etag:
-      - W/"7af57753c4ea1f84237249cd521bd2cc"
+      - '"ad47d06108ac00a1dde480369a551084"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 38e5b706-3773-48b1-aad8-e9009dba529a
+      - 1ae0b0d46dc8e7025e6a23f48f4bcaad
       X-Runtime:
-      - '0.193569'
-      Date:
-      - Fri, 01 Jan 2016 20:48:45 GMT
-      X-Rack-Cache:
-      - miss
+      - '0.087508'
       Vary:
       - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:40 GMT
+      X-Rack-Cache:
+      - miss
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -45,15 +47,15 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '235'
+      - '323'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=eDhxNmF6RTBPUU40Y1diWjd6MWlDalJHblFHeGdSWGdqM3NmKzhHZWhCN2NwY011M1BJQ1pOczlKeUdEUUlJbUR1K1RBbXhucm0yUkhtS1lERjN1cmJNdjlvbW1PcGFNcnlVNzZ6RjFSdGs9LS1ncVpLeU9pbGREeHA2V3NPRmJNYm13PT0%3D--a75ea6ddfd7f3608a3f26017378d760b5a3a30a2;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTZiODU3Nzg0YmM1NTk5YjljNGViNjA2NDg4Y2FhMGM2BjsAVEkiCXVzZXIGOwBGaQY%3D--2d54bfbe0c4b367f6863723750a185f88f5ddc70;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":3,"name":"General","description":null,"product_type_id":8,"created_at":null,"updated_at":null,"position":null},{"id":4,"name":"Muzzles","description":null,"product_type_id":8,"created_at":null,"updated_at":null,"position":null}]'
+      string: '[{"created_at":"2015-08-25T15:11:16+09:30","description":"","id":3,"name":"General","position":null,"product_type_id":8,"updated_at":"2015-08-25T15:11:16+09:30"},{"created_at":"2015-08-25T15:11:28+09:30","description":"","id":4,"name":"Muzzles","position":null,"product_type_id":8,"updated_at":"2015-08-25T15:11:28+09:30"}]'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:48 GMT
+  recorded_at: Fri, 28 Oct 2016 05:28:16 GMT
 recorded_with: VCR 3.0.3

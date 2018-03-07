@@ -18,20 +18,22 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
       Etag:
-      - W/"965a46d99381b380fbbfdfc8c4f8164d"
+      - '"6a08ce333252422c798300df8367be5a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fe1ef6e9-a9f0-4694-87e4-787437130950
+      - 935cf836857d08e4183e5e831b5d12cd
       X-Runtime:
-      - '0.135061'
-      Date:
-      - Fri, 01 Jan 2016 20:48:45 GMT
-      X-Rack-Cache:
-      - miss
+      - '0.060126'
       Vary:
       - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:40 GMT
+      X-Rack-Cache:
+      - miss
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -45,16 +47,16 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '474'
+      - '650'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=cTF5c0lVQ09uakY5NlJ0OUFJaUh6VnY5eXZOelVaY1E1RGpoeW9nM3haYlErRW51NXEvWHhpKzROa1BqenhOV3BhOTN2aDlocHgxRHhTQXJHYjlRdHNuN1JlTkZpSWszQTdNK0lBbnJtbTA9LS1EcXJ3QUlVRTcvelJQczF3S1p3L2ZRPT0%3D--cb209c48fcd53177a825aaf9a3c0e3e4b66a1d67;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTI2YzgzMGQzOGY2YWMzNTRmZWNiZjQ0NzM4MGVjMDkxBjsAVEkiCXVzZXIGOwBGaQY%3D--7e9f122a15d13c1ee508e8bfdba4a6cfab88b941;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":1,"name":"Common","description":null,"product_type_id":5,"created_at":null,"updated_at":null,"position":null},{"id":2,"name":"Multiple
-        Trip","description":null,"product_type_id":5,"created_at":null,"updated_at":null,"position":null},{"id":3,"name":"General","description":null,"product_type_id":8,"created_at":null,"updated_at":null,"position":null},{"id":4,"name":"Muzzles","description":null,"product_type_id":8,"created_at":null,"updated_at":null,"position":null}]'
+      string: '[{"created_at":"2015-08-25T14:14:25+09:30","description":"","id":1,"name":"Common","position":null,"product_type_id":5,"updated_at":"2015-08-25T14:14:25+09:30"},{"created_at":"2015-08-25T14:14:50+09:30","description":"","id":2,"name":"Multiple
+        Trip","position":null,"product_type_id":5,"updated_at":"2015-08-25T14:14:50+09:30"},{"created_at":"2015-08-25T15:11:16+09:30","description":"","id":3,"name":"General","position":null,"product_type_id":8,"updated_at":"2015-08-25T15:11:16+09:30"},{"created_at":"2015-08-25T15:11:28+09:30","description":"","id":4,"name":"Muzzles","position":null,"product_type_id":8,"updated_at":"2015-08-25T15:11:28+09:30"}]'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:48 GMT
+  recorded_at: Fri, 28 Oct 2016 05:28:16 GMT
 recorded_with: VCR 3.0.3

@@ -18,20 +18,22 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
       Etag:
-      - W/"5c82dc53593c47d6fe1dab0bf46ab26b"
+      - '"dba0b1c6031ddd388a154f34fad3a95e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 572899e7-18c6-4c62-8e3c-e16acd909435
+      - 36c3c06b5e8578b816695f5586f21624
       X-Runtime:
-      - '0.124168'
-      Date:
-      - Fri, 01 Jan 2016 20:48:35 GMT
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.434247'
       Vary:
       - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:34 GMT
+      X-Rack-Cache:
+      - invalidate, pass
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -49,13 +51,13 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=NzArK0VXUE0xZzY1cElMTUJVSWFpVzNzUUVLcThCajhrTWZHYkprMk9qbmxzaERERWhPNGc1SDROUUZQdUxCNTE5QjJhczFKbzhWMlZ2eHRhdmE2RFVUSHJzN2xEQWVtTWVVMExWY0Jab3M9LS1pZUpIV0lzN2lSaVlINVFiOGFlUG53PT0%3D--ca14bb45f3341089447351c922db58241ad070fc;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTE0NzI4MDFiMGIzZDVhYzc5N2Q2Y2FhYWEyMzhkNzc4BjsAVEkiCXVzZXIGOwBGaQY%3D--d7e6ea881d160177b5e2af8c283dd816dc8e5e6e;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"quoted_booking_gross_in_cents":6400,"original_booking_gross_in_cents":0,"applied_rules":[],"quoted_booking_breakdown":[{"quoted_gross_in_cents":6400,"original_gross_in_cents":0,"applied_rules":[],"reservation":{"id":null,"resource_id":7,"first_travel_date":"2016-04-15","passengers":{},"vehicles":[]},"new":true,"deleted":false}]}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:39 GMT
+  recorded_at: Fri, 28 Oct 2016 05:28:10 GMT
 - request:
     method: post
     uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
@@ -74,20 +76,22 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
       Etag:
-      - W/"fcdfcfff79f5c60b174480976538dbb9"
+      - '"42dedf38987939db1c16de673bd9067a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e437c571-7759-4b5e-8489-a3be5d09aa2d
+      - f89fc66d8fe4f1ae28f055a2de5cb5de
       X-Runtime:
-      - '0.130351'
-      Date:
-      - Fri, 01 Jan 2016 20:48:36 GMT
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.112283'
       Vary:
       - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:34 GMT
+      X-Rack-Cache:
+      - invalidate, pass
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -105,7 +109,7 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=ME1Ob2plTU9WWHFhVk9oeVVqMmREa0dwc2VkaERLR0FyYzBENmdWa1k2WW9teG9YS2pqNVZJazhWS3kxdW43NkhqeXNyR21BUUJuOG1TQ0xlaWVEb1pTYlBnWWtVT1NTSC95cTNDVzBldFk9LS1rVWVKWGlWc3NuTkZaTlBEZUpBYnRBPT0%3D--d9954135eba9f04d534a32876247cb5f0287e943;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTYwMTZhMjFlMDZmYjVmNzJkYmJkNmQ1MTQ0MmVmNzg4BjsAVEkiCXVzZXIGOwBGaQY%3D--423de8f2af72b0b90551487d0f2ee6287c9deafb;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -113,5 +117,5 @@ http_interactions:
         Offer"],"quoted_booking_breakdown":[{"quoted_gross_in_cents":4800,"original_gross_in_cents":0,"applied_rules":["Special
         Offer"],"reservation":{"id":null,"resource_id":7,"first_travel_date":"2016-04-15","passengers":{},"vehicles":[]},"new":true,"deleted":false}]}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:39 GMT
+  recorded_at: Fri, 28 Oct 2016 05:28:10 GMT
 recorded_with: VCR 3.0.3

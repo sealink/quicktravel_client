@@ -18,18 +18,20 @@ http_interactions:
       - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
       Content-Type:
       - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - d6a5eebc-c7a5-40ca-b6c4-79d13a24a194
+      - 1ada1db0058d6d86a4df24687468bb12
       X-Runtime:
-      - '0.379432'
-      Date:
-      - Fri, 01 Jan 2016 20:48:43 GMT
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.225165'
       Vary:
       - Origin
+      Date:
+      - Fri, 01 Jan 2016 02:32:39 GMT
+      X-Rack-Cache:
+      - invalidate, pass
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -47,12 +49,12 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=bHVRbmtpVzFnQWdveWV6SURLRW82b2ZhRHhVTFBEbnJVWHo4d1JDUWV6N0xBYTNWckRLcVo5TlN6UVNDWlVlb0VrZ3JGQUQ5Q1hNRCs1KytabTBzOHorTWNLL283NmMzTjhPSmE1SG1JZEE9LS0xQTUyQzZlMUZFR0hzbFVoYmNad3JnPT0%3D--3c1a6f079b70b09a862bf3f3daef7b199d7e11d6;
+      - _quick_travel_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBmNmVjNDU3OGVkMjY4MTlkN2UyYmMzZTk4OGUwNjczBjsAVEkiCXVzZXIGOwBGaQY%3D--b64e796af441c202e97ba0aeda7bcd682a89e472;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"error":"No services selected for [10-09-2099 -- Travel Insurance
         - Declined -- 0 pax assigned]"}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:46 GMT
+  recorded_at: Fri, 28 Oct 2016 05:28:16 GMT
 recorded_with: VCR 3.0.3
