@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ba8146a6b7504a036240df1f89a438cd"
+      - W/"048fff46bbe2ed2ec978ad8eeef9c668"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2dbbd7e1-486f-4f1e-b3ff-aaef5fe4f8d1
+      - 5e959a3a-c13f-41b1-a417-12b4a5cb754a
       X-Runtime:
-      - '1.652037'
+      - '2.853424'
       Date:
-      - Fri, 01 Jan 2016 20:48:39 GMT
+      - Fri, 01 Jan 2016 19:10:51 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -45,11 +45,11 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '16090'
+      - '15782'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=WTA5RVM3aFR4R3pBMXVob0F3VzFuWjl0SjhkZXVzSWFoaEozeTVPaFBpTi9LR1Z6RVN6SXJnZDNGWlhSRWdxZVVrOXV2VHdhSlMweVZoR1NVNVFrNXl0YVA2TWZPRmVsTU1JUkU0cnFVRG89LS1MUk56WnRSeTIvQTZzRUlGNXBhaU9nPT0%3D--29d4fc7bde9fb8a5fffb481d0770663de3042cbc;
+      - _session_id=blJ2M09zM0ZzRGJPcVNMN2dRdEZOdXFsWUFCeUdqYUFCNDM4L3hXNjRRZHB5dXNNSkk4b0ROSElZdEd6OFFxNEhKVUl5VjBDMzc0MjRUcDM3TWlzUmVMSlJiZHprejZ4Q3lZQTFjamJjMEk9LS1hNlZ3cnFPWStuTkxCbEs4MFpCWmJ3PT0%3D--4f26196c7553a0c3ce826f4008a0b32a8ba39493;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -90,25 +90,25 @@ http_interactions:
         services setup"}}},{"resource":{"id":6,"name":"Executive Room"},"bookability":{"2016-03-01":{"available":false,"availability_details":{"available":false,"capacity":2,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
         Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003cResourceService::ConsumerRestrictionChecker:0x0055da1a500678\u003e"},"2016-03-02":{"available":false,"availability_details":{"available":false,"capacity":2,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
+        reserve more than 2 passengers in Hilton Hotel - Executive Room"},"2016-03-02":{"available":false,"availability_details":{"available":false,"capacity":2,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
         Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003cResourceService::ConsumerRestrictionChecker:0x0055da17f555b8\u003e"},"2016-03-03":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
+        reserve more than 2 passengers in Hilton Hotel - Executive Room"},"2016-03-03":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
         Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003cResourceService::ConsumerRestrictionChecker:0x0055da17ef71c0\u003e"},"2016-03-04":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
+        reserve more than 2 passengers in Hilton Hotel - Executive Room"},"2016-03-04":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
         Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003cResourceService::ConsumerRestrictionChecker:0x0055da17849dc8\u003e"},"2016-03-05":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
+        reserve more than 2 passengers in Hilton Hotel - Executive Room"},"2016-03-05":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
         Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003cResourceService::ConsumerRestrictionChecker:0x0055da165c9a68\u003e"},"2016-03-06":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
+        reserve more than 2 passengers in Hilton Hotel - Executive Room"},"2016-03-06":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
         Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003cResourceService::ConsumerRestrictionChecker:0x0055da123b82f0\u003e"},"2016-03-07":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
+        reserve more than 2 passengers in Hilton Hotel - Executive Room"},"2016-03-07":{"available":false,"availability_details":{"available":false,"capacity":null,"available_capacity":null,"master_capacity":null,"master_available_capacity":null,"unavailable_type":null},"inventory_type":0,"pricing_details":{"price_per_pax_type":{"":25000},"minimum_price_in_cents":25000,"minimum_price_with_adjustments_in_cents":12500,"total_adjustments_in_cents":-12500,"applied_rules":["Test
         Discount Hilton"]},"reservation_attributes":{"resource_id":6},"resource_class_name_underscore":"accommodation","product_name_underscore":"accommodation","image":{"url":"/assets/default-icon.png","desc":""},"selection_name":"Executive
         Room","description":"Hilton Hotel - Executive Room","error_message":"Cannot
-        reserve more than 2 passengers in #\u003cResourceService::ConsumerRestrictionChecker:0x0055da0fc238c0\u003e"}}}]'
+        reserve more than 2 passengers in Hilton Hotel - Executive Room"}}}]'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:42 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 19 Mar 2018 21:31:26 GMT
+recorded_with: VCR 4.0.0

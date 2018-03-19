@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 572899e7-18c6-4c62-8e3c-e16acd909435
+      - 1d5a3c0d-0edd-41d8-98da-e6b1a25040e2
       X-Runtime:
-      - '0.124168'
+      - '0.235329'
       Date:
-      - Fri, 01 Jan 2016 20:48:35 GMT
+      - Fri, 01 Jan 2016 19:10:45 GMT
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,13 +49,13 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=NzArK0VXUE0xZzY1cElMTUJVSWFpVzNzUUVLcThCajhrTWZHYkprMk9qbmxzaERERWhPNGc1SDROUUZQdUxCNTE5QjJhczFKbzhWMlZ2eHRhdmE2RFVUSHJzN2xEQWVtTWVVMExWY0Jab3M9LS1pZUpIV0lzN2lSaVlINVFiOGFlUG53PT0%3D--ca14bb45f3341089447351c922db58241ad070fc;
+      - _session_id=NkxEN3djS3haTmM0NXJwWlpuczZibGJjZUVhL3BTQ1pGRkFMbmROd2JJSSt0MlNvc01xT1NJS1V1TUI3amNpUkg5ZXJUL1A0WWxlV2MzQjgvWDVpNG45TlVGRFdPYkIvRUtXYWhyNnZVbUE9LS1MTVZmbENJU3FFaU52Y1g2Mjd0U2NRPT0%3D--af1b72b20873964d9cedf17eb7b04285c7a822c5;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"quoted_booking_gross_in_cents":6400,"original_booking_gross_in_cents":0,"applied_rules":[],"quoted_booking_breakdown":[{"quoted_gross_in_cents":6400,"original_gross_in_cents":0,"applied_rules":[],"reservation":{"id":null,"resource_id":7,"first_travel_date":"2016-04-15","passengers":{},"vehicles":[]},"new":true,"deleted":false}]}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:39 GMT
+  recorded_at: Mon, 19 Mar 2018 21:31:20 GMT
 - request:
     method: post
     uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
@@ -79,11 +79,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e437c571-7759-4b5e-8489-a3be5d09aa2d
+      - 947da719-787a-441a-82c1-8ed3c9fdaa2d
       X-Runtime:
-      - '0.130351'
+      - '0.240389'
       Date:
-      - Fri, 01 Jan 2016 20:48:36 GMT
+      - Fri, 01 Jan 2016 19:10:46 GMT
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -105,7 +105,7 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=ME1Ob2plTU9WWHFhVk9oeVVqMmREa0dwc2VkaERLR0FyYzBENmdWa1k2WW9teG9YS2pqNVZJazhWS3kxdW43NkhqeXNyR21BUUJuOG1TQ0xlaWVEb1pTYlBnWWtVT1NTSC95cTNDVzBldFk9LS1rVWVKWGlWc3NuTkZaTlBEZUpBYnRBPT0%3D--d9954135eba9f04d534a32876247cb5f0287e943;
+      - _session_id=ZlBqMDBtK2RRSUwzdGV4MFdlRUpHdmV6S1gza20wdlVHYlU3SlJOMUIzZmNQdDNNVk5TVVRVdVFFWlZqbGVFSEpUZFYrRXpGVW1kK0ZVK2p2aXN1d01vblZWN0RTRkVOT2V5OW41dUc3R2M9LS1rbWlyalZvSVh2Q2pNUHNDQnk0bXhnPT0%3D--cc3f54ff4c0785e5c68bb7e485ecad1f6a58b158;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -113,5 +113,5 @@ http_interactions:
         Offer"],"quoted_booking_breakdown":[{"quoted_gross_in_cents":4800,"original_gross_in_cents":0,"applied_rules":["Special
         Offer"],"reservation":{"id":null,"resource_id":7,"first_travel_date":"2016-04-15","passengers":{},"vehicles":[]},"new":true,"deleted":false}]}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:39 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 19 Mar 2018 21:31:21 GMT
+recorded_with: VCR 4.0.0

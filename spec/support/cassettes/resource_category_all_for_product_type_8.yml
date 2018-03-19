@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 38e5b706-3773-48b1-aad8-e9009dba529a
+      - e1c530cd-5579-49d5-92d2-95d7ff6a4b15
       X-Runtime:
-      - '0.193569'
+      - '0.184796'
       Date:
-      - Fri, 01 Jan 2016 20:48:45 GMT
+      - Fri, 01 Jan 2016 19:11:01 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=eDhxNmF6RTBPUU40Y1diWjd6MWlDalJHblFHeGdSWGdqM3NmKzhHZWhCN2NwY011M1BJQ1pOczlKeUdEUUlJbUR1K1RBbXhucm0yUkhtS1lERjN1cmJNdjlvbW1PcGFNcnlVNzZ6RjFSdGs9LS1ncVpLeU9pbGREeHA2V3NPRmJNYm13PT0%3D--a75ea6ddfd7f3608a3f26017378d760b5a3a30a2;
+      - _session_id=YkduQnVHdlFIQzV1OWw0ZGhLdndhejYvVzJVMlNxMVBwZmxDOW5UNmVkVVIyMnJzVmRYY3owMzZXVlJ1L1h2RkZhRjV1QlBTbEVVa3hFZHBWV2pyTkI4YityWmgzbTlHMmZoQ0xZbmcxU1U9LS1aRHNDWldZVk9zVndSckIyZzdHQ053PT0%3D--d96605ed650bddb0434f8366684457d418f6ebbd;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"id":3,"name":"General","description":null,"product_type_id":8,"created_at":null,"updated_at":null,"position":null},{"id":4,"name":"Muzzles","description":null,"product_type_id":8,"created_at":null,"updated_at":null,"position":null}]'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:48 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 19 Mar 2018 21:31:36 GMT
+recorded_with: VCR 4.0.0

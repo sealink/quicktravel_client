@@ -65,7 +65,7 @@ describe QuickTravel::Booking do
     VCR.use_cassette('booking_show') do
       b = QuickTravel::Booking.find(@booking.id)
       expect(b.payment_types).to be_an_instance_of Array
-      expect(b.payment_types.size).to eq 3
+      expect(b.payment_types.size).to eq 4
       expect(b.payment_types.first).to be_an_instance_of QuickTravel::PaymentType
       expect(b.payments).to be_an_instance_of Array
       expect(b.payments.size).to eq 0

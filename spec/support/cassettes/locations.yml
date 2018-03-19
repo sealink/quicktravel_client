@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b06ca980-a1e4-4543-b3c3-5a99f5fc9e0d
+      - 0a3651f6-fdaf-49c8-a461-fc42a82ea8d3
       X-Runtime:
-      - '0.166398'
+      - '0.220279'
       Date:
-      - Fri, 01 Jan 2016 20:48:41 GMT
+      - Fri, 01 Jan 2016 19:10:55 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=TjdkTFBsR0RCUVYrYzV1LzRTbFh6NTZzTnRlVUt2bkFLWTMxaVo2TzJVZThJa3N2NXRHM3pMSEFUck1OS0NLMldNZ2NMRDVqSFdZSXhTd1JHcmJmNVZHeHVDTnFGdzdGbnRpVDlmS1RVYTg9LS1YaWRUVG0rNEhlOFVUR3V0bzdWWDNBPT0%3D--70e8446a8b6db620820c25ad20a5e728bf17eff9;
+      - _session_id=UENNSktiSmo1MDQ2L2FySlRyTXg0b3RSM1YyenczNkpIb0w3TlBpM3JNczlObU9ycW9BaU5VMjFiVDkrWENyVjQwUnNXQWl0eElKUzBKSktiMFpjcUtaTW5RRURtejdVQmRpdzRxdUhndkk9LS1IYXRrUG1TaERneUNwT3NlTjBiQ0tBPT0%3D--5ab522f5e3d443eccfb5e04b9333b4c24b7d9a93;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"id":5,"name":"American River","region_ids":[1]}]'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:44 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 19 Mar 2018 21:31:30 GMT
+recorded_with: VCR 4.0.0

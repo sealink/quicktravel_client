@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d54c5676-0f95-4d47-9015-c01696d0b22b
+      - 2f820edd-c7cc-4e4d-8d90-08e00dc0f763
       X-Runtime:
-      - '0.127166'
+      - '0.260462'
       Date:
-      - Fri, 01 Jan 2016 20:48:41 GMT
+      - Fri, 01 Jan 2016 19:10:55 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=eDNaYktGNWtnRzlJOG1oM2NSeCtYYXBTc3hHWG5jc2NFYkZjN3J1c2dvdXdRZTQzSFhDb2prNkUxd3BKZkdoZVNjR04yMlltQXNCUHgzYklUYjBsK0NoTmpPZ2NieUIwMVZXNmZEZFJ2bmc9LS1DamlWb3VrdWlyQnFwTlFqb1lpbTdBPT0%3D--542b857fa1d46d6507eb5ff48227e1ed0048e0f6;
+      - _session_id=T1lzV29nL3Y1ODd0KzBZcGplRi9HUHU2U3JZUFNEenlua0g4OTN2UUFjNFRWc1hTR1BKNWljZkM0WDh1dFlHKzRDVzIyQWtEU0NwRmZFREc0OUF0QnpBbUsyR0lhejRybEJDSkNkWUZ5alE9LS00bWdKblVrS204UEF5WVU2NWpYblpRPT0%3D--346cf5acdd6a55e1f074a9ec6cda1be6ffbd532a;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Hotel","position":null,"created_at":null,"updated_at":null}]'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:44 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 19 Mar 2018 21:31:30 GMT
+recorded_with: VCR 4.0.0
