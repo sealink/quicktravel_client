@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"252f914720c91c56745d41cf60ae2614"
+      - W/"40c87959d6a432bd6cff357f19648b20"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - abea2ab0-f55e-4e67-bc57-5c6f4909d417
+      - 2884d1e2-6294-4e21-be84-35b72c5e09f8
       X-Runtime:
-      - '0.150432'
+      - '0.244272'
       Date:
-      - Fri, 01 Jan 2016 20:48:45 GMT
+      - Fri, 01 Jan 2016 19:11:01 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,22 +49,22 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=TC9LMVFjZjV1WXJ5NXpmWnZEOVhZci9kZnpPWEk3Zkg3ZFh1UFIvZHZ5TUJKSVkyb3kvbTBYWWVqNi9tR3R0Z2J1SUlES1FoZDVvNWJKWHFGY3h3aWpxWFRvY3M0V3BJeER2MDlMNTAyTkE9LS03djluTnRWd3MwV2FiTWlyTDRsUFhnPT0%3D--242214aa021681aa9be02a4e52b7be78d399abc6;
+      - _session_id=elFiSlUvWEo2dStUc0RpUzZYRXNwOWxWWWh3NFJNQlNMcWMyWE9lUU1Fb2NBcXYvTFQwLzZnZ0pPanNzSmI5aUxuR0xIK3VHSmpYSEwzREdibENJSmpOT0lpZTljUjdQZzA3UnFvMGFVSXM9LS1YdTNoekZqTXovL1AyRTV5c1RPT05BPT0%3D--aad94d9f36e3fe393f3a17d367090e33dbedfef7;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":3,"name":"QBE Travel Insurance - Policy E","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-02-07T07:17:31.000+10:30","updated_at":"2018-02-07T07:17:31.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":19,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":1,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"QBE
+      string: '[{"id":3,"name":"QBE Travel Insurance - Policy E","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":19,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":1,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"QBE
         Travel Insurance - Policy E","client_type_ids":[],"category":null,"location_ids":[],"current_description":"\u003cp\u003e\u003cspan
         class=\"caps\"\u003eQBE\u003c/span\u003e Travel Insurance Policy E known as
         the \u0026#8216;Australian Cancellation and Additional Expenses\u0026#8217;
         plan has been included into this booking. This covers you for defined unforeseen
         cancellations and additional expenses. Please refer to the Product Disclosure
         Statement for further information.\u003c/p\u003e","graphics":[],"graphic_names":[],"ticket_template":null,"expiry_days":null},{"id":4,"name":"Travel
-        Insurance - Declined","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-02-07T07:17:31.000+10:30","updated_at":"2018-02-07T07:17:31.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":2,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"Travel
+        Insurance - Declined","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":2,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"Travel
         Insurance - Declined","client_type_ids":[],"category":null,"location_ids":[],"current_description":"\u003cp\u003eYou
         have declined Travel Insurance for your booking. If you wish to add Travel
         Insurance to this booking, please contact the SeaLink Travel Group on 13 13
         01 prior to commencing your travels.\u003c/p\u003e","graphics":[],"graphic_names":[],"ticket_template":null,"expiry_days":null}]'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:48 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 19 Mar 2018 21:31:36 GMT
+recorded_with: VCR 4.0.0
