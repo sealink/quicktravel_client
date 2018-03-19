@@ -21,11 +21,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 10bbaf5e-f73d-4146-9d7f-be3700d70db2
+      - 8ee11228-a08a-4c95-82df-ca136f805f51
       X-Runtime:
-      - '0.276238'
+      - '0.235754'
       Date:
-      - Fri, 01 Jan 2016 20:48:32 GMT
+      - Fri, 01 Jan 2016 19:10:40 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -47,11 +47,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=aFpaczhMR3FLZmJKU3lHeUlaZmN1aVlsaEhxUFBaRW1DTVNlN0pnTnRIMmxOVjkzbXN0Njh4MnBWVmpVNUZLVTJONEZwMXduNHhDcU9pUGJWZHRQdHB2V2Q1eDY1a0llb0VaMHcrS3lmdjA9LS12UDljRTU3eXNIV1I2QjNDdk50WHBRPT0%3D--4fc93ce1e60e3598e5eda7c499dbf331bd51236e;
+      - _session_id=UCtBakc1aDBXQzg4L1ZsUERJelB1R2Z0WVVXSVRzSkpyYiswOC9VWFFjVnRDa3lDd2wxam0rb01qb283N3BNcnk3dEtuYWdqS1U0NTR4b1hRcGEvek02WWhSQmorSll3OEhOWkJQQUxVTG89LS0vQXdUazhCZWp1Q2RtTk1YTnZKclBnPT0%3D--f726bde59248d865d40ee62c870b293ac6ee8edc;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"error":"Booking not found. It may have been removed due to inactivity"}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 20:49:35 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 19 Mar 2018 21:31:15 GMT
+recorded_with: VCR 4.0.0
