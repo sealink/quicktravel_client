@@ -8,6 +8,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 - [TT-3304] Handle no response in booking update API
 - [TT-3333] URL encode data sent to booking reference lookup
 - [TT-3337] Add booking.delete_reservations method
+- [TT-3780] Add tests for Opal payments
 
 ## [3.6.0]
 ###
