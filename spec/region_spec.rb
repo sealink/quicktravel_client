@@ -8,10 +8,10 @@ describe QuickTravel::Region do
     it 'should find a first instance of region from QuickTravel' do
       VCR.use_cassette('region_show') do
         expect(subject).to be_an_instance_of QuickTravel::Region
-        expect(subject.id).to be_an_instance_of Fixnum
+        expect(subject.id).to be_an_instance_of Integer
         expect(subject.name).to be_an_instance_of String
         expect(subject.location_ids).to be_an_instance_of Array
-        expect(subject.location_ids[0]).to be_an_instance_of Fixnum
+        expect(subject.location_ids[0]).to be_an_instance_of Integer
       end
     end
   end
