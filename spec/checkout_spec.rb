@@ -39,7 +39,7 @@ describe QuickTravel::Checkout do
         end
       }
 
-      let(:udpate_payment_request) {
+      let(:update_payment_request) {
         {
           gateway_response: {
             raw_response: '{
@@ -65,7 +65,7 @@ describe QuickTravel::Checkout do
 
       let(:update_payment_response) {
         VCR.use_cassette('opal_modern_pay_failed_update') do
-          QuickTravel::Checkout.update(create_payment_response.id, udpate_payment_request)
+          QuickTravel::Checkout.update(create_payment_response.id, update_payment_request)
         end
       }
 
