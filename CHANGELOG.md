@@ -10,6 +10,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 - [TT-3337] Add booking.delete_reservations method
 - [TT-3780] Add tests for Opal payments
 - [TT-3780] Add tests for Opal payment using create / update workflow
+- [TT-3783] Remove deprecated FixNum
 
 ## [3.6.0]
 ###

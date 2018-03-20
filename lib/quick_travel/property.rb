@@ -23,7 +23,7 @@ module QuickTravel
 
     def self.load_with_pricing(id, options)
       # Find property 'standard' way -- finds price for whole duration
-      fail ArgumentError.new('Must Specify valid property id') if id.blank? || id.class != Fixnum
+      fail ArgumentError.new('Must Specify valid property id') if id.blank? || !id.is_a?(Integer)
       property = find_all!("/api/properties/#{id}.json", options).first
       first_travel_date = options.fetch(:product).fetch(:first_travel_date)
       property.accommodations.each do |accommodation|
