@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://test.qt.sealink.com.au:8080/regions.json
+    method: post
+    uri: http://test.qt.sealink.com.au:8080/api/checkouts.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: booking_id=6&payment[payment_type_id]=10&payment[amount_in_cents]=10&payment[uid]=modern-opal-uid&payment[comment]=Test%20Opal%20Payment&access_key=<QT_KEY>
     headers:
       Content-Length:
       - '0'
@@ -19,17 +19,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"510afb159eb43929754bda9aa96bfacb"
+      - W/"3a5d8871c85df7675b823e4ae118f2dc"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6d1a10cd-6c35-42b7-9ce9-7409d88fda72
+      - fd232fcc-df8d-4b34-b837-a96173d01547
       X-Runtime:
-      - '0.206615'
+      - '0.107059'
       Date:
-      - Fri, 01 Jan 2016 02:38:46 GMT
+      - Fri, 01 Jan 2016 02:38:36 GMT
       X-Rack-Cache:
-      - miss
+      - invalidate, pass
       Vary:
       - Origin
       X-Content-Type-Options:
@@ -45,15 +45,15 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '58'
+      - '53'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=RW1iY1RkNnBHbDNzS2x1VDE0R3hZQ29OTzVQSjZhZVNQVjUxcU5sN1RucytlMHlMbGl3ejFOa3lqdnIwaWRkNjRTRzNhSkFhdTB0bmt3d2h0dE5rQWduYVBrNm1IN3Jla1NBRjNEVWM2MFk9LS1JT2tORjZlZkt6ZjBRUlc5b1Z5MVZRPT0%3D--96ba6683b3ff4d08a1792416bd49772ecab94b6c;
+      - _session_id=a0JJYnl5Y2ozMlBBTlBPSUhNSnJueUFtOWRqSlNJRkVGaDNkZ0REQUtPQ3ZmYVlTU0wybHY1aDNzWlQySzAxYkJYYXdIVHcvWnlkMU9LcHd4SlBqZDQrWXFyVmMxdlhnTlFwbVIrUUkrdlk9LS00WVdCbFZnNURWWmJNUU5maTY5ei93PT0%3D--a5469f29407194fca0c4d9c1953737e09be93914;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":1,"name":"Kangaroo Island","location_ids":[3,4,5]}]'
+      string: '{"checkout_id":"modern-opal-uid","completable":false}'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:08 GMT
+  recorded_at: Tue, 20 Mar 2018 04:31:59 GMT
 recorded_with: VCR 4.0.0

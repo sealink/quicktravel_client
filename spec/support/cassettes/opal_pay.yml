@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/checkouts.json
     body:
       encoding: UTF-8
-      string: booking_id=5&payment[gateway_response]=%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardNumber%22%3A%203085227007682330%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardBalance%22%3A%206546%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardSequenceNumber%22%3A%2055%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CILAmount%22%3A%200%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22AuthorizedAmount%22%3A%20890%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22SalesReferenceNumber%22%3A%2053183943%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionDTM%22%3A%20%222018-01-04T09%3A00%3A43.106%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionReferenceNumber%22%3A%201271099697%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardBlockState%22%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22AutoloadAmount%22%3A%200%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D&payment[meta_data]=%7B%22applicationInstanceId%22%3A%22101166%22%2C%22operatorId%22%3A%22an_operator%22%7D&payment[payment_type_id]=10&payment[amount_in_cents]=10&payment[uid]=random-payment-id&payment[comment]=Test%20Opal%20Payment&access_key=<QT_KEY>
+      string: booking_id=7&payment[gateway_response]=%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardNumber%22%3A%203085227007682330%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardBalance%22%3A%206546%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardSequenceNumber%22%3A%2055%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CILAmount%22%3A%200%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22AuthorizedAmount%22%3A%20890%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22SalesReferenceNumber%22%3A%2053183943%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionDTM%22%3A%20%222018-01-04T09%3A00%3A43.106%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionReferenceNumber%22%3A%201271099697%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardBlockState%22%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22AutoloadAmount%22%3A%200%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D&payment[payment_type_id]=10&payment[amount_in_cents]=10&payment[uid]=opal-uid&payment[comment]=Test%20Opal%20Payment&payment[meta_data][applicationInstanceId]=101166&payment[meta_data][operatorId]=an_operator&access_key=<QT_KEY>
     headers:
       Content-Length:
       - '0'
@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"30c7cc5facde1cb9ae6c35b316bba16d"
+      - W/"f113c5ed556221b4ceed7b1d8a6606c8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c5e93e93-2c96-4508-bdef-2f9898bb92d6
+      - 11c2e291-9f58-46b0-b2b8-9dd154e40eb5
       X-Runtime:
-      - '0.558408'
+      - '0.267425'
       Date:
-      - Fri, 01 Jan 2016 19:10:42 GMT
+      - Fri, 01 Jan 2016 02:38:37 GMT
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -45,15 +45,15 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '77'
+      - '68'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=bHNIb3EzUnI1Q3c0YnlMaVpwNUE3WXNRbWlNcEJqQUU1cGZPeEdqR2JMcDVGRm5kMDN6Mk90WldmQ1I2RDNRUVVuQTJxYzR2dy9uSElnV24vOHQyeHFDM3VpZG40UStHRHpBbGJWRVJFdmM9LS1IWlo0TXFTOGxLQjE2WHBEV3lmNXFRPT0%3D--5c7499e82088592381e47e9b7c6a49112c68302a;
+      - _session_id=RjNMS1dYMjN3VmlEMGo3TTY4OUkxR2NlaURzenZXR0drcnpzeHhzRFBHQVI4dXpGUXlvUU9OT3VaMDRKWEZ2eVkzTDBRSkF0RC9EM3lvZlhOZnJrNzMzdjI4YzRpbTBLNlp4ZXNYS2VLNjA9LS16SUZmanVVOFYwYjZSS3dPYW1LUkVRPT0%3D--51bb5ec377a264d4ab61029ab725f11c9cf6a9a5;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"checkout_id":"random-payment-id","completable":true,"progress":"completed"}'
+      string: '{"checkout_id":"opal-uid","completable":true,"progress":"completed"}'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:17 GMT
+  recorded_at: Tue, 20 Mar 2018 04:31:59 GMT
 recorded_with: VCR 4.0.0

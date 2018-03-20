@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c4ea25d1-fe14-4b98-bb1a-aa9ca47bee1d
+      - 953fcbf8-25b9-4cae-9dd6-eb353f7279b2
       X-Runtime:
-      - '0.230634'
+      - '0.121545'
       Date:
-      - Fri, 01 Jan 2016 19:10:45 GMT
+      - Fri, 01 Jan 2016 02:38:38 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=UmtOSXJKYWJoTEloY0labFVlRFhJZFBWNXlGQzRKR3BhVXgvdzk2T1JjaXhNZm1uSkdTMHBoblFJQ2dhRXVnV2FZcU42TlcvY1pGdGM2ZjV2L2JWRFBhWk1ZZVlKcFBEQjEvOTh2OTl6N2c9LS1raWw0MkZUdFJSUjVhaGJkTlpKZlJRPT0%3D--c2389463720f9a4f4c85801af400ee727abf51b2;
+      - _session_id=RHo3U2Q2WDdiTy9oUWFEbml3NHdZaUhpOGlaTVdic1Z2ZjRndEtIVHVWL29oLzFHVnF2NlpXUmtjcmx5NkNuTkZ2RCtFNzVZN0ZrblhTbm0rTTQ0cU1qQ0QyMi9jVWZBUHJwUnMvZXFVbWc9LS1jdDFDOEY3aWtEMFQyaFNQTGpaenFRPT0%3D--3c4f033e747ecb92923e4e0c0c4d07cda22664ce;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Adult","minimum_age":null,"maximum_age":null,"age_range_required":false,"position":1,"default_age":30,"created_at":null,"updated_at":null,"code":"Ad","conditions":null,"requires_review":false},{"id":3,"name":"Infant","minimum_age":0,"maximum_age":2,"age_range_required":true,"position":2,"default_age":0,"created_at":null,"updated_at":null,"code":"In","conditions":null,"requires_review":false},{"id":2,"name":"Child","minimum_age":3,"maximum_age":14,"age_range_required":true,"position":3,"default_age":3,"created_at":null,"updated_at":null,"code":"Ch","conditions":null,"requires_review":false}]'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:20 GMT
+  recorded_at: Tue, 20 Mar 2018 04:32:01 GMT
 recorded_with: VCR 4.0.0

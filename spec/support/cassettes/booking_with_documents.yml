@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"47c47c9617c455f72cfd538011c93116"
+      - W/"1fe058b84cdd459e03a4c0565ff0455e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c717e3c9-f340-49c9-907d-927a7158a99f
+      - 44ef546e-3c93-42c2-897e-fb3374e7710b
       X-Runtime:
-      - '1.248591'
+      - '1.458469'
       Date:
-      - Fri, 01 Jan 2016 19:10:30 GMT
+      - Fri, 01 Jan 2016 02:38:26 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=eDhGdE5YT1g2QTNubHdDbzY1dDlKaXRkT2dDa3h2bU41RkwxVWczd1djaXdOMTR6UzhhdEF6Q25JY2xXK292cXkydkFIV2pTR1UyYTZKYlhhbnNyMzllaTc2YVBySHJrSXp0NjdJY2c4bzQ9LS03dFZBSXRnZktickk3WFpCNXhaeDZ3PT0%3D--6a80fc1b2d1612c07b92e546973cd92500f67fc9;
+      - _session_id=UTg3dkZibmVWcWxKSUlRcXMwenFpVnp6UzFubUUvNThHdEJmSld1UWo2OFgvakxENktZR2NPby9BU3k4cHJieENTK0lUKzUvZlBuVnorRVJJMDNEUURkelE5QXVFMW5ZckRKNUVQc1hES1U9LS1ZRUZIRkw0OFNCQnpid3I5TmFWWnBBPT0%3D--8e584d540df5e82b982cb082bd7898abafd34249;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"id":1,"state":"active","reference":"222223","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":3,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":"","referral_code_id":1,"external_identifier":null,"created_at":"2013-03-01T00:05:46.000+10:30","updated_at":"2013-03-01T00:15:33.000+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":38000,"nett_in_cents":38000,"gross_in_cents":38000,"commission_in_cents":0,"balance_in_cents":38000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00.000+10:30"},"balance_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00.000+10:30"},"due":false,"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"discardable_in":-1493544,"inactivatable_in":-1493594,"notices":{},"client":null,"passenger_ids":[1,2],"vehicle_ids":[],"reservation_ids":[1,3,2],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":1,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":1},{"id":2,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":1,"booking_id":1,"description":"A
+      string: '{"id":1,"state":"active","reference":"222223","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":3,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":"","referral_code_id":1,"external_identifier":null,"created_at":"2013-03-01T00:05:46.000+10:30","updated_at":"2013-03-01T00:15:33.000+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":38000,"nett_in_cents":38000,"gross_in_cents":38000,"commission_in_cents":0,"balance_in_cents":38000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00.000+10:30"},"balance_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00.000+10:30"},"due":false,"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"discardable_in":-1492552,"inactivatable_in":-1492602,"notices":{},"client":null,"passenger_ids":[1,2],"vehicle_ids":[],"reservation_ids":[1,3,2],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":1,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":1},{"id":2,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":1,"booking_id":1,"description":"A
         basic studio room","comment":"","active":true,"service_ids":[3,4],"resource_id":6,"quantity":null,"adjustments_attributes":[{"id":6,"gross_in_cents":-20000,"creator":{"id":1,"name":"Administrator
         Administrator","age":null,"first_name":"administrator","last_name":"administrator","title":null,"gender":null,"created_at":null,"updated_at":null,"notes":null,"updator_id":null,"creator_id":null,"active":true,"internal_subdivision":false,"business_number":null,"business_number_type":null,"currency_iso_code":"AUD","access_type":2},"created_at":"2013-03-01T00:40:04.000+10:30","description":"50%
         Off","adjustable_item_type":"Reservation","adjustable_item_id":1,"adjustment_definition_id":1,"adjustment_category_id":1,"automatic":true}],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"bed_configuration":"1
@@ -82,7 +82,7 @@ http_interactions:
         made via PayPal account","transaction_fee":"0.0","active":true,"position":6,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"paypal","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":10,"name":"Opal
         Pay","description":"Opal Payments","transaction_fee":"0.0","active":true,"position":9,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"opal_pay","gateway":null,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":false,"creditlink":false,"surchargeable":false}],"issued_tickets_attributes":[]}'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:05 GMT
+  recorded_at: Tue, 20 Mar 2018 04:31:49 GMT
 - request:
     method: get
     uri: http://test.qt.sealink.com.au:8080/api/bookings/1/documents.json?last_group=true&regenerate=false
@@ -106,11 +106,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2b4b4ba5-fffd-4945-8ece-4ca57bde2bef
+      - e8ba7a8f-c048-4f63-afb5-6a513c03af1b
       X-Runtime:
-      - '0.154551'
+      - '0.087271'
       Date:
-      - Fri, 01 Jan 2016 19:10:30 GMT
+      - Fri, 01 Jan 2016 02:38:26 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -132,11 +132,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=Qnd2aCs3aU1SRVEvS1pOUDkzRE92WXVUVjFIV1l6TUI1czdMS2t1alBPb1FxMmZWUmhuc21oeTBxVDdmTERRQmltTHRVNlMzVnc2ZzBrTUEyRktVYUtWR0d5QWxrczk3OVM0R2xoOWYxdUk9LS1YTm1DOWU0RG5mRktMS0RBMTdSbXZnPT0%3D--6dcd8b5277c1475785918d3bf854e9f1577863e0;
+      - _session_id=KytlajBWQkpqbWdhV0ZuZHFFRjl4bEtLcUFteFJacVJSQWdscjN4eXEvK3R5R0xBMXRkL0hnSnpvb1lBQkxtSHpuUkJhZ3pVOFdvTzJHNmIyV0RJQ2hYTi9TTmpFc0JvR3FvOWdhTlVDc289LS1Ia2VabmhUeDdKS2tWM29BMFl3bGVBPT0%3D--f34266c39bc346ef30913abb06feef3f5b413a63;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Invoice Document","booking_id":1}]'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:05 GMT
+  recorded_at: Tue, 20 Mar 2018 04:31:49 GMT
 recorded_with: VCR 4.0.0

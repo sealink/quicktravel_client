@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d41f09e1-a512-4986-8b5c-40bf7a209c1b
+      - 85a05d3d-eb09-4e23-b410-aafba1eca712
       X-Runtime:
-      - '0.384550'
+      - '0.207137'
       Date:
-      - Fri, 01 Jan 2016 19:11:02 GMT
+      - Fri, 01 Jan 2016 02:38:49 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,7 +49,7 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=NTJpekh3WE1nSjJqN1pKNm9Sa3BmZGVzYWE0R3JXVVNnZEZOMjI1NER5WmpyZUlEYTRmaDM3Sy91OUNZaXJsMGtNZFdoa1FoZ0RRd3pnZVV1QXl4MEpKMjhqZVQrOGF3YzdyOHk4UzUvb3c9LS1sOStKVThRYWNkUFdrY3NhdjUxOFRnPT0%3D--47eb2f7f5d52d30f810d4c14257ce995823faf7f;
+      - _session_id=YmVJS3drSnp5MkRVL2dFUlZ2L0g2YlJwQkF5cTg2Y3RBbEZSNVI0alFWL0tMd0lUUUNoQ3ptU2p0WkpNcUJmOEFqV0ttTEplZ0JJWjlVTGxlWC8wMHpxVk9XRGlJQkFzWENlSDY5ZFZiblk9LS15dHdRNHh6RExMM2ZKV05RTDVtamF3PT0%3D--39bf43ac17d01322183d135c8af28b692091a075;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -60,5 +60,5 @@ http_interactions:
         Flexi","product_type_id":5,"default_capacity":null,"type":"Item","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":null,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":6800,"inline_cost_in_cents":0,"resource_category_id":2,"created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","code":"10STU","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":true,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":false,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":1,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"location_ids":[],"todays_price_in_cents":6800,"todays_price_with_rules_in_cents":6800,"applied_rules":[],"description":"","ticket_template":{"id":1,"name":"2
         uses, 30 days expiry","maximum_uses":2,"expiry_days":30,"activation_trigger":"travel_date","created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","validity_duration_minutes":15,"daily_uses_limit":null,"parent_id":null},"expiry_days":30,"child_resources":[]}]'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:37 GMT
+  recorded_at: Tue, 20 Mar 2018 04:32:12 GMT
 recorded_with: VCR 4.0.0
