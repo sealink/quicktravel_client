@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://test.qt.sealink.com.au:8080/regions.json
+    method: post
+    uri: http://test.qt.sealink.com.au:8080/api/checkouts.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: booking_id=5&payment[payment_type_id]=10&payment[amount_in_cents]=10&payment[uid]=modern-opal-failed-uid&payment[comment]=Test%20Opal%20Payment&access_key=<QT_KEY>
     headers:
       Content-Length:
       - '0'
@@ -19,17 +19,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"510afb159eb43929754bda9aa96bfacb"
+      - W/"82f4920f9d1df287070e5615a996b73c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6d1a10cd-6c35-42b7-9ce9-7409d88fda72
+      - 271edf7c-a6a9-47dc-b7c8-6e39149ea472
       X-Runtime:
-      - '0.206615'
+      - '0.173347'
       Date:
-      - Fri, 01 Jan 2016 02:38:46 GMT
+      - Fri, 01 Jan 2016 02:38:36 GMT
       X-Rack-Cache:
-      - miss
+      - invalidate, pass
       Vary:
       - Origin
       X-Content-Type-Options:
@@ -45,15 +45,15 @@ http_interactions:
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
       Content-Length:
-      - '58'
+      - '60'
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=RW1iY1RkNnBHbDNzS2x1VDE0R3hZQ29OTzVQSjZhZVNQVjUxcU5sN1RucytlMHlMbGl3ejFOa3lqdnIwaWRkNjRTRzNhSkFhdTB0bmt3d2h0dE5rQWduYVBrNm1IN3Jla1NBRjNEVWM2MFk9LS1JT2tORjZlZkt6ZjBRUlc5b1Z5MVZRPT0%3D--96ba6683b3ff4d08a1792416bd49772ecab94b6c;
+      - _session_id=UzdYbXEzaVpWL3l2VDI0ejVaYjZybjJ1OUw4cUVzUkdIMWxQTVF2M3dJaFdnTmhsZGUwcTliaTQxMnFKVUtaM3VmeUJSeGhZSlJyNGJkRXVoWVVBQW9BS2h3a2dDTUhrU3p1Tkh4NXRiRFE9LS1PQ2d6aVBEdW9saHlEakpiSzFtdWZBPT0%3D--8ab1ec3bc30d4fe8e3ceefeaea8b7a23aac9408f;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":1,"name":"Kangaroo Island","location_ids":[3,4,5]}]'
+      string: '{"checkout_id":"modern-opal-failed-uid","completable":false}'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:08 GMT
+  recorded_at: Tue, 20 Mar 2018 04:31:58 GMT
 recorded_with: VCR 4.0.0

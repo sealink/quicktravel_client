@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e08353f9-de1a-45cb-b8df-cd3ca1d7e0f9
+      - f5fda7df-5a2a-457d-ab96-fd3bfbe09e8b
       X-Runtime:
-      - '0.189677'
+      - '0.125166'
       Date:
-      - Fri, 01 Jan 2016 19:10:51 GMT
+      - Fri, 01 Jan 2016 02:38:42 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,7 +49,7 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=SExXYlc4UTFOazZnRzIvSTF5YW9DVGEvMTlWZ29sSXZrYlVJSy9WZUt6MDRQZmtUeU9lSFVJdlZUSEw0WU9NNHV3NytCdkRpUWc4SmhpcHlGQWR1Tk5FZ2dlWk9sZmxWQkJsY3lEemlSUHM9LS1xK2lDZDBLb0JzUFZQWHY0RFFwN05RPT0%3D--8ab2060de3b80b424b6f27627d9dce88f448e751;
+      - _session_id=YmxGeDJObXB1NzZNM2RIbmhzMGhoK3ExZHlIdXRQSjd5U2hIcm9Ed2hFQ0pleHQ5MnUvNDJ5RkdIV2VhV094QjRBRWFGSm1HZm1GTHBaa05vRFUvMENhVkZXRVhSUFd6UnQ1OGY3eUJaMmc9LS1YS3FqM1oyYkhoWVBOZis5aWtXYjlRPT0%3D--086d2af28c18ae67e351e95de4e662af6ef16934;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -61,5 +61,5 @@ http_interactions:
         drop_off_information\n  - vendor_pnr\n  - notes_for_vendor\n  - vendor_staff\n  -
         note_for_inventory_type_change''\n","only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":false,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":9,"name":"Cruise","resource_class_name":"GenericResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true}]'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:26 GMT
+  recorded_at: Tue, 20 Mar 2018 04:32:05 GMT
 recorded_with: VCR 4.0.0

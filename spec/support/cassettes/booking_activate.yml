@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"06e37d285556836a6b784b5490182e7a"
+      - W/"2ba843cf5ee729b1cc69010b300a5690"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '097d1f0a-cb90-41f4-ad36-d590deeb3496'
+      - 6b111990-bdd4-4c30-b3ee-ec1d20b69e07
       X-Runtime:
-      - '0.901594'
+      - '0.818769'
       Date:
-      - Fri, 01 Jan 2016 19:10:37 GMT
+      - Fri, 01 Jan 2016 02:38:32 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=QW9ETXYwRWJ3b1BzalI2QlBpNU5jWlplY3BFNjFRY29tbGdLcXgwR0duRzFUM3YwdXRJRFA2NGZrRkdFUVBKTzgxYVkyRGNRNUVFOTZYenp5Vk5XbFRJanpSNGp2VmdBcEo3R1JOc2VUdFE9LS1panpaZ0xUTUJlbHFPSnRiMUM4dlh3PT0%3D--cd8a29218d154247215a4f1275548adae4045169;
+      - _session_id=dU95eWU0b3o1ZkRCUlQrMS9lNkNja2hyanZpTXBmelJTK3Z2cUJDOWMxNW5NL0ptejFDRzRtVnVHckpZOTNIRHVUQW9OMFVaMjRmbWZNWWNyOEpWVGJ3dU1PbXNFMmNKeE93TDJ0dytnZTQ9LS0ybUROdjZJOENBYVdQRS9SQ3FCdmZRPT0%3D--154b2871d9c06b244a0cbff22258bc5e7f04e55f;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"id":2,"state":"new","reference":"222224","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":null,"referral_code_id":1,"external_identifier":null,"created_at":"2016-05-11T13:09:47.000+09:30","updated_at":"2016-07-13T12:00:24.000+09:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":25000,"nett_in_cents":25000,"gross_in_cents":25000,"commission_in_cents":0,"balance_in_cents":25000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2016-09-02T00:00:00.000+09:30"},"balance_due_on":{"_type":"Date","_value":"2016-09-02T00:00:00.000+09:30"},"due":false,"first_travel_date":{"_type":"Date","_value":"2016-09-02"},"last_travel_date":{"_type":"Date","_value":"2016-09-02"},"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"discardable_in":278420,"inactivatable_in":278370,"notices":{},"client":null,"passenger_ids":[3,4],"vehicle_ids":[],"reservation_ids":[4,5],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":3,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":1},{"id":4,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":4,"booking_id":2,"description":"","comment":"","active":true,"service_ids":[58],"resource_id":12,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"product_type_id":9,"itinerary_footer":false,"fare_basis_set_id":14,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":null,"fare_basis_pointer_id":7,"pick_up_info":null,"drop_off_info":null,"selection_name":"Dinner
+      string: '{"id":2,"state":"new","reference":"222224","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":null,"referral_code_id":1,"external_identifier":null,"created_at":"2016-05-11T13:09:47.000+09:30","updated_at":"2016-07-13T12:00:24.000+09:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":25000,"nett_in_cents":25000,"gross_in_cents":25000,"commission_in_cents":0,"balance_in_cents":25000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2016-09-02T00:00:00.000+09:30"},"balance_due_on":{"_type":"Date","_value":"2016-09-02T00:00:00.000+09:30"},"due":false,"first_travel_date":{"_type":"Date","_value":"2016-09-02"},"last_travel_date":{"_type":"Date","_value":"2016-09-02"},"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"discardable_in":279412,"inactivatable_in":279362,"notices":{},"client":null,"passenger_ids":[3,4],"vehicle_ids":[],"reservation_ids":[4,5],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":3,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":1},{"id":4,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":4,"booking_id":2,"description":"","comment":"","active":true,"service_ids":[58],"resource_id":12,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"product_type_id":9,"itinerary_footer":false,"fare_basis_set_id":14,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":null,"fare_basis_pointer_id":7,"pick_up_info":null,"drop_off_info":null,"selection_name":"Dinner
         Cruise","product_name_underscore":"cruise","resource_class_name_underscore":"generic_resource","resource_class_name":"GenericResource","has_ticket_template":false,"first_travel_date":{"_type":"Date","_value":"2016-09-02"},"last_travel_date":{"_type":"Date","_value":"2016-09-02"},"durational":false,"duration":1,"span":1,"duration_units":"Days","date_start_label":"Start
         Date:","date_end_label":"End Date:","expires":false,"expiry":"*NA*","has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
         Priced as: Rack Rate","gross_including_packaged_item_in_cents":25000,"pre_adjusted_gross_including_packaged_item_in_cents":25000,"gross_in_cents":20000,"pre_adjusted_gross_in_cents":20000,"pre_adjusted_commission_in_cents":0,"cost_in_cents":6000,"sub_items_gross_in_cents":5000,"rules":[],"package":false,"sub_reservation_depth":0,"sub_reservations_attributes":[{"id":5,"booking_id":2,"description":"","comment":null,"active":true,"service_ids":[62],"resource_id":13,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"product_type_id":9,"itinerary_footer":false,"fare_basis_set_id":16,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":null,"fare_basis_pointer_id":8,"pick_up_info":null,"drop_off_info":null,"selection_name":"Dinner
@@ -63,7 +63,7 @@ http_interactions:
         made via PayPal account","transaction_fee":"0.0","active":true,"position":6,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"paypal","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":10,"name":"Opal
         Pay","description":"Opal Payments","transaction_fee":"0.0","active":true,"position":9,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"opal_pay","gateway":null,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":false,"creditlink":false,"surchargeable":false}],"issued_tickets_attributes":[]}'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:12 GMT
+  recorded_at: Tue, 20 Mar 2018 04:31:55 GMT
 - request:
     method: put
     uri: http://test.qt.sealink.com.au:8080/api/bookings/2/activate
@@ -87,11 +87,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1e2b239c-6c50-441e-935f-182589df81e2
+      - 97f97a6f-12f4-4a2c-a604-52d571fec13b
       X-Runtime:
-      - '0.317536'
+      - '0.120860'
       Date:
-      - Fri, 01 Jan 2016 19:10:38 GMT
+      - Fri, 01 Jan 2016 02:38:32 GMT
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -113,11 +113,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=VWNUeW1yczBnRyswdlExTEU1aTRWVnVuMENtOG5mNVF2LzhQc3J0NkhQR21LNWthek5BNTVBNmtqR1kyS0tYTFlQNXd2SExsK0pBalYvZHhYbUdtYXpSd1FHcWtjK3FRdno5RGh2Vk1WZTA9LS1rL0NFdzNFVStxVUtzVTNrVFZOK0dnPT0%3D--dae0fee84c3a659c8c1d4babcbf9845190f8b9a6;
+      - _session_id=TTlyN3RFSFNzL2tLMWVPS0ZRSDMrNUlZSS9HQzhvYXlYWnRHaGRmdStBN1hTVTlOT21lOXUwbFYyYXNiYU9DT2Y1NTN1MkdpdVBHYzhlYnA4QURvUVdVNGhoNHljYUI5Z1RSYTJSazBtcDg9LS0ycTVvVHhSclZEZDBtb2NjWGcvRXZBPT0%3D--dc8535bead1b321f8cd0ef24d4e45fddd9cc3f39;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"success":true}'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:13 GMT
+  recorded_at: Tue, 20 Mar 2018 04:31:55 GMT
 recorded_with: VCR 4.0.0

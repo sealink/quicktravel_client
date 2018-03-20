@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"67f51c53ca87c784fc2a1a893af42137"
+      - W/"a4d41818773c0fcb0b1be4863075ec51"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 38b20dcb-5a46-4d81-ae38-8dcea7283a10
+      - be0b4c3a-9daf-4f3d-a703-52be38331ebf
       X-Runtime:
-      - '1.234689'
+      - '0.875177'
       Date:
-      - Fri, 01 Jan 2016 19:10:57 GMT
+      - Fri, 01 Jan 2016 02:38:47 GMT
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=N0RBd1dPN2dMYkJ2eVprSlgybnZYeFg0eFcyQ01NcjZWN2pqaHNJQURFQUNUa0swUmU4eU5kVVMwZEdyWjg4WTlzRmJ0QVBST0UvS243SzVYcmNMV2MrVG9xR2EzZVlwU3YwUlJYZ3VYWTQ9LS13ajk5eWY5MUdXUktNSmYwZ3FKWndBPT0%3D--1d1888a2393f47671c500793d61e237b85f15d7d;
+      - _session_id=RFIrSTdWQncrdnpWZXNsYXcvQ3pJL0R4eEl2SytVcGF4Z3J1RzdXOGNGRVhFczJSNTdTKzBXVURIT2RHL2hVRUx2a0RVS04reEN4SXk3eEJvKzRXbE1WNS80VjVYd0lQd0NrN3VtQ0ovZm89LS1WOVRpak5IQkx1VndUdzBoRVVYa3NRPT0%3D--080b4cddbbfe7b9248162e4644cdfb312c3fc996;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"id":7,"booking_id":6,"description":"You have declined Travel Insurance
+      string: '{"id":7,"booking_id":8,"description":"You have declined Travel Insurance
         for your booking. If you wish to add Travel Insurance to this booking, please
         contact the SeaLink Travel Group on 13 13 01 prior to commencing your travels.","comment":null,"active":true,"service_ids":[7],"resource_id":4,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"product_type_id":7,"itinerary_footer":true,"fare_basis_set_id":8,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_fare_basis":true,"fare_basis_season_name":null,"fare_basis_pointer_id":4,"pick_up_info":null,"drop_off_info":null,"selection_name":"Travel
         Insurance - Declined","product_name_underscore":"travel_insurance","resource_class_name_underscore":"insurance","resource_class_name":"Insurance","has_ticket_template":false,"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-01"},"durational":true,"duration":1,"span":1,"duration_units":"Days","date_start_label":"Start
@@ -61,5 +61,5 @@ http_interactions:
         Priced as: Rack Rate","gross_including_packaged_item_in_cents":0,"pre_adjusted_gross_including_packaged_item_in_cents":0,"gross_in_cents":0,"pre_adjusted_gross_in_cents":0,"pre_adjusted_commission_in_cents":0,"cost_in_cents":0,"rules":[],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr
         notes_for_vendor","vendor_staff note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[],"passenger_splits":[],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{}}'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:32 GMT
+  recorded_at: Tue, 20 Mar 2018 04:32:09 GMT
 recorded_with: VCR 4.0.0

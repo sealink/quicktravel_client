@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 27e7eb0f-ad0f-497f-ac61-90b6eb109675
+      - a6737ae3-2c66-499d-b299-d43e4e5d5000
       X-Runtime:
-      - '0.294671'
+      - '0.210537'
       Date:
-      - Fri, 01 Jan 2016 19:11:00 GMT
+      - Fri, 01 Jan 2016 02:38:49 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,12 +49,12 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=NHdOT3pRN0lxUEZXYUVEV3hBRStha2cwc2hLcHF3R1JKZnoxZEVLQU0rOFlvNHNsOTRuVG5RRWM1eDlsVDVaNlNlZE1Pb0RKemZVajhLQW9EVi9zZ05HeGlWMU9ka3dIMXZRVmNNVmg1Q1U9LS1jTXRYZi94NmdINzQySWt0aDhSaFpBPT0%3D--4de947c9d16c68589b7bda32a66dfa1d1e3b7f62;
+      - _session_id=aStDYnJCeXBod2dIVk5LeTBSVWxWdUJFS1Bjd0VpbEN6ellwcmpQdEovYXdqN2ZIWTJTaE91dXp6K2E2QkVsSi9JV3JHRHlvTzNtSkVtNi91YXp6NW5QNTIxNnU2c3Q2alN3RDN4ZzJSeG89LS1TOCt4dFZRbmZOdTZFM1EzTDJNU2x3PT0%3D--b5f843c2b9a06dc85fc3208a766fbbe1893da15c;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Common","description":null,"product_type_id":5,"created_at":null,"updated_at":null,"position":null},{"id":2,"name":"Multiple
         Trip","description":null,"product_type_id":5,"created_at":null,"updated_at":null,"position":null},{"id":3,"name":"General","description":null,"product_type_id":8,"created_at":null,"updated_at":null,"position":null},{"id":4,"name":"Muzzles","description":null,"product_type_id":8,"created_at":null,"updated_at":null,"position":null}]'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:35 GMT
+  recorded_at: Tue, 20 Mar 2018 04:32:11 GMT
 recorded_with: VCR 4.0.0

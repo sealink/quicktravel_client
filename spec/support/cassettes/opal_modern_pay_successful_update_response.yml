@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://test.qt.sealink.com.au:8080/api/checkouts/modern-opal-uid.json
+    body:
+      encoding: UTF-8
+      string: gateway_response[raw_response]=%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22CardNumber%22%3A%203085227007682330%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22CardBalance%22%3A%206546%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22CardSequenceNumber%22%3A%2055%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22CILAmount%22%3A%200%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22AuthorizedAmount%22%3A%20890%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22SalesReferenceNumber%22%3A%2053183943%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionDTM%22%3A%20%222018-01-04T09%3A00%3A43.106%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionReferenceNumber%22%3A%201271099697%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22CardBlockState%22%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22AutoloadAmount%22%3A%200%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D&gateway_response[success]=true&gateway_response[meta_data][applicationInstanceId]=101166&gateway_response[meta_data][operatorId]=an_operator&access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e326e290336b4fd5ec10660641d17791"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 87705b40-15bb-4ca9-9b80-a86b5045af74
+      X-Runtime:
+      - '0.274203'
+      Date:
+      - Fri, 01 Jan 2016 02:38:36 GMT
+      X-Rack-Cache:
+      - invalidate, pass
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.5/2016-04-26)
+      Content-Length:
+      - '19'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=UDRtN0liZXNCcWpiNWpwdmZNdzk2OWRMelJseFdtL044VjZFRmovQzJJb0NYbURNSll2YmZYclBwUEtaaWQzUHByMHF3TENMbXZjSVhGUzNjM1FXS081dE1McnhjSnU5K25JMGZndWNuelk9LS0vU1hReXZWQXkvaHMvNUFsQ1ZFZVZBPT0%3D--b898df2310afb50d1f04371dcbc42b67c707506a;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"successful":true}'
+    http_version: 
+  recorded_at: Tue, 20 Mar 2018 04:31:59 GMT
+recorded_with: VCR 4.0.0

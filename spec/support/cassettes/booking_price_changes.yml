@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6b8985c7-e400-4558-8fb5-771f5e0c434d
+      - 372c1e60-86a9-45d1-9406-e315b58a88a0
       X-Runtime:
-      - '0.262336'
+      - '0.170922'
       Date:
-      - Fri, 01 Jan 2016 19:10:44 GMT
+      - Fri, 01 Jan 2016 02:38:38 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,7 +49,7 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=Wnp5aHI1SGZ3NkdyYVdIMnpIMXF4aWhrd3Y1WEpMODNPQi9LYmNwOVdNd2VIMjFSNklMUnk2dzhZYUh1K3ZrbHY0eWE0YU5hQlZaYjVDZWVWZ0FoMVdsL0pHd21MT1RvbjN0T3ZvWUM3a0U9LS1DVTZrVTRyYUY3aEkwYkE0bFd3a1RBPT0%3D--c74812f505368b4a18c145292c420110e4569e61;
+      - _session_id=RGd2aVVrN21GK3FEbDBlZFU3TEZPZVhoUzE4TDN1TnlYcWt3ajNLUFFuMkhyMEhSNC9SS0RicklpcUE0dGpNNXVmaThmb0MvYmpsZTBQM21PUUU1QWhOS3lnQmNLMXlUNEhQUXhHRnJmRm89LS1UbG1lTTdqQXh0RHpHb2xtZXFoNTNnPT0%3D--7e509707db02c0b09484d69c995bdc171ecebc2a;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -64,5 +64,5 @@ http_interactions:
         Get Me","reasons":["QBE Get Me"],"discounted_price_in_cents":6000,"discount_in_cents":-6000,"breakdown":[{"target":{"type":"Reservation","id":2},"original_price_in_cents":12000,"changed_price_in_cents":6000,"price_change_in_cents":-6000,"reason":"QBE
         Get Me","reasons":["QBE Get Me"],"discounted_price_in_cents":6000,"discount_in_cents":-6000}]},"children":[]}]}]}'
     http_version: 
-  recorded_at: Mon, 19 Mar 2018 21:31:19 GMT
+  recorded_at: Tue, 20 Mar 2018 04:32:00 GMT
 recorded_with: VCR 4.0.0
