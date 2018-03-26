@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 56349c5b-98b4-4f10-94fc-a73679f13d7d
+      - 12a84107-d09e-4489-b75f-3938be33386f
       X-Runtime:
-      - '0.148554'
+      - '0.134015'
       Date:
-      - Fri, 01 Jan 2016 02:38:50 GMT
+      - Fri, 01 Jan 2016 02:32:38 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,7 +49,7 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=Zm9ZVXRmUEZXbFJScnRSSkxQQThNVURWMDJyTURIeU1OajZKRVFCcFF3V2w3NFN4THVSVnMvNWs2MFJOV1JOVUNHS0tJZ0x5SzV4MG85SnRzeDl2eVY4TjRHUG5uTmdqMmE2NUZlMkJGcDA9LS00bVVzZU5VNngraHpkQVVaTW9Fa2tnPT0%3D--7860dff3adbada6610d548daa21d8cceec445b2e;
+      - _session_id=S29rR2pielF4Zy85MHZUa0I1VlBFbkh5NHRpd00rREJrempqZDNtcUx6cTg1ejBVSFVjMzVWWjVubXBSZmEza0lRTFJiNGJ4RWs1cmxtUk4zaURUMUQ1cW16YVpSd3YwM3BKcWhIZFhvRFU9LS1aQzluc2VPYjl2YXhrekd4WDhERFNRPT0%3D--c599bc05bd16b7ee5f77a2a73172b44b7c455580;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -61,7 +61,7 @@ http_interactions:
         drop_off_information\n  - vendor_pnr\n  - notes_for_vendor\n  - vendor_staff\n  -
         note_for_inventory_type_change''\n","only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":false,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":9,"name":"Cruise","resource_class_name":"GenericResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true}]'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:12 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:45 GMT
 - request:
     method: get
     uri: http://test.qt.other.com.au:8080/api/product_types.json
@@ -85,11 +85,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ab89ea8d-acab-4dab-9eea-fa5418911c81
+      - 4fb41203-646a-4e9b-a16b-d1f3e611527b
       X-Runtime:
-      - '0.180873'
+      - '0.154429'
       Date:
-      - Fri, 01 Jan 2016 02:38:50 GMT
+      - Fri, 01 Jan 2016 02:32:38 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -111,7 +111,7 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=aWIrZkJxZFVYbUJnMG0yelBWWUk5SzN4Y29FaXNSNXhMeGVVQ3F4S3Y0TGFOSUtSVFVma1JvankyN0NDNGd4ZE1PMnZiMHFmV3gwdmw1azg1MjVBQi9vaFZ6MzZxcWhUNkFNRTJYcDUvVE09LS0vcHRwNHdxbjM5ZHRIWjFJc1FUcEZRPT0%3D--6f4398f273ec00e0c2462aac648a1b2319948ec0;
+      - _session_id=UmNXNXBDRStoMksrSHpLeDhYZWpoL05jSUorWXpRekdwVXVMUFo0TEZOK2tjdXUxWWdwSGxvTUVZLzIzNTRnNDBONlpzY3NKUndWbWlvUjFkWE5sQWgvMndxV3k2SG1vaUlHOXE4SGxCR0U9LS0wL3VGaXNTYndhaU55eFQrOEJTbHdBPT0%3D--3d8f1b0d841e72a9aa76714b0c996d0b4cc24317;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -123,5 +123,5 @@ http_interactions:
         drop_off_information\n  - vendor_pnr\n  - notes_for_vendor\n  - vendor_staff\n  -
         note_for_inventory_type_change''\n","only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":false,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":9,"name":"Cruise","resource_class_name":"GenericResource","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":null,"updated_at":null,"code":null,"needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true}]'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:12 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:45 GMT
 recorded_with: VCR 4.0.0

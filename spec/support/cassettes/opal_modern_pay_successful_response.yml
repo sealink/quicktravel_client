@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fd232fcc-df8d-4b34-b837-a96173d01547
+      - 200f1abb-f3fd-4097-a61d-a246cce27252
       X-Runtime:
-      - '0.107059'
+      - '0.191352'
       Date:
-      - Fri, 01 Jan 2016 02:38:36 GMT
+      - Fri, 01 Jan 2016 02:32:20 GMT
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=a0JJYnl5Y2ozMlBBTlBPSUhNSnJueUFtOWRqSlNJRkVGaDNkZ0REQUtPQ3ZmYVlTU0wybHY1aDNzWlQySzAxYkJYYXdIVHcvWnlkMU9LcHd4SlBqZDQrWXFyVmMxdlhnTlFwbVIrUUkrdlk9LS00WVdCbFZnNURWWmJNUU5maTY5ei93PT0%3D--a5469f29407194fca0c4d9c1953737e09be93914;
+      - _session_id=Q254b0gvbzhoS05PZjNqM0VEWlBKUlFTVjhsQUZFTVdkZkdOaGlsQnZjSDA1YWZLckh1VmgyN1V6VkRUMlNLR0JIa3U2Y0IvcmZ6dzBGcmJMVzRHNGV3RlJxNHBqV3JLWWU5Z3liRTZXUlU9LS1Tb0hKdktjQWQ5SWl0SElwUEllZUl3PT0%3D--274c0f78030a0c1e450fc81c1683461734cfd3c7;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"checkout_id":"modern-opal-uid","completable":false}'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:31:59 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:27 GMT
 recorded_with: VCR 4.0.0

@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9608bfb3a89b722e1aad3c8dda0777b8"
+      - W/"685ae49cb57c9b594806370995c9b4c1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ddebd910-aede-4c75-b0a3-87500a2cb5b0
+      - 82132a16-f2a3-402f-bc8e-efb6386e8b21
       X-Runtime:
-      - '0.941490'
+      - '1.201049'
       Date:
-      - Fri, 01 Jan 2016 02:38:48 GMT
+      - Fri, 01 Jan 2016 02:32:36 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,12 +49,12 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=NjFwSWN4K2JQRWF2MW1jczE4UXpVUG82TXlKTVhGOXB4WmlpaThsRnBDNmhZRllpZ05JV2lLcFBnOHNOZ3JUTWt3ei8xVTF0V0txMVI5U2dKcGx1SnZteUV5dUtXaUd6bnpuZGZjRFk3d2s9LS05dW1WclA4U3pTemdDeVJtK2dEOHJRPT0%3D--af2a30114be5f1331cc2811b7387ac82ab304807;
+      - _session_id=Kys3alNBSWl5NUpMWEkxZkhMMlVSZDM3RThocHV0S2plblpqOUVteHloY3VMbUxFYTZCM3BDSTgvYUxkOS94YUc2cURJcDNxOVhWU0szZnBWakhxOGtpMEd0SlN3cStlTk0rZ0dIeE9zUWc9LS1mTVVZR1p2eUpQcXM1NE5aQTV2T3JBPT0%3D--e1cea9e43decfe19bd618ab15f4b2f7322e53d84;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"id":1,"state":"active","reference":"222223","public_comments":null,"internal_comments":null,"customer_contact_name":"New
-        Name","customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":3,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":"","referral_code_id":1,"external_identifier":null,"created_at":"2013-03-01T00:05:46.000+10:30","updated_at":"2016-01-01T13:08:28.000+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":38000,"nett_in_cents":38000,"gross_in_cents":38000,"commission_in_cents":0,"balance_in_cents":38000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00.000+10:30"},"balance_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00.000+10:30"},"due":false,"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"discardable_in":60,"inactivatable_in":10,"notices":{},"client":null,"passenger_ids":[1,2],"vehicle_ids":[],"reservation_ids":[1,3,2],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":1,"title":"Mr","first_name":"New","last_name":"Name","passenger_type_id":1,"age":30,"gender":"Male","position":1},{"id":2,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":1,"booking_id":1,"description":"A
+        Name","customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":3,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":"","referral_code_id":1,"external_identifier":null,"created_at":"2013-03-01T00:05:46.000+10:30","updated_at":"2016-01-01T13:02:11.000+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":38000,"nett_in_cents":38000,"gross_in_cents":38000,"commission_in_cents":0,"balance_in_cents":38000,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":null,"deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00.000+10:30"},"balance_due_on":{"_type":"Date","_value":"2016-03-01T00:00:00.000+10:30"},"due":false,"first_travel_date":{"_type":"Date","_value":"2016-03-01"},"last_travel_date":{"_type":"Date","_value":"2016-03-02"},"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"discardable_in":60,"inactivatable_in":10,"notices":{},"client":null,"passenger_ids":[1,2],"vehicle_ids":[],"reservation_ids":[1,3,2],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":1,"title":"Mr","first_name":"New","last_name":"Name","passenger_type_id":1,"age":30,"gender":"Male","position":1},{"id":2,"title":null,"first_name":null,"last_name":null,"passenger_type_id":1,"age":30,"gender":null,"position":2}],"vehicles_attributes":[],"reservations_attributes":[{"id":1,"booking_id":1,"description":"A
         basic studio room","comment":"","active":true,"service_ids":[3,4],"resource_id":6,"quantity":null,"adjustments_attributes":[{"id":6,"gross_in_cents":-20000,"creator":{"id":1,"name":"Administrator
         Administrator","age":null,"first_name":"administrator","last_name":"administrator","title":null,"gender":null,"created_at":null,"updated_at":null,"notes":null,"updator_id":null,"creator_id":null,"active":true,"internal_subdivision":false,"business_number":null,"business_number_type":null,"currency_iso_code":"AUD","access_type":2},"created_at":"2013-03-01T00:40:04.000+10:30","description":"50%
         Off","adjustable_item_type":"Reservation","adjustable_item_id":1,"adjustment_definition_id":1,"adjustment_category_id":1,"automatic":true}],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"bed_configuration":"1
@@ -83,7 +83,7 @@ http_interactions:
         made via PayPal account","transaction_fee":"0.0","active":true,"position":6,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"paypal","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":10,"name":"Opal
         Pay","description":"Opal Payments","transaction_fee":"0.0","active":true,"position":9,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"opal_pay","gateway":null,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":false,"creditlink":false,"surchargeable":false}],"issued_tickets_attributes":[]}'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:11 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:43 GMT
 - request:
     method: get
     uri: http://test.qt.sealink.com.au:8080/api/resources/4.json
@@ -103,15 +103,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"37a6f15cd6c7438550efc3892fd9ce7a"
+      - W/"053bdb956c14091551a8303c0dd8a47b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9b36964d-8188-4774-8ffe-f854f961b0e3
+      - 9e577651-3c1a-4e4b-b798-bec18428c0bc
       X-Runtime:
-      - '0.147247'
+      - '0.372467'
       Date:
-      - Fri, 01 Jan 2016 02:38:48 GMT
+      - Fri, 01 Jan 2016 02:32:36 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -133,17 +133,17 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=L3BJV0pwb2ZKYWtzWmU2cmNkTmZkTmQrTTZaLzZaclpnUWRvUTJxR2o5WjF2MndJS2hVUytyUVMrN1lRaGN5STZ1Nlo5VFN3eXExdlBNL1BIWDAzL0V0YXkzRXdpQjdjOVhnZ2JhcHNNR3c9LS1DaW8rbHlUWGJVSkNVUXFkbElBcnl3PT0%3D--b71b2a15350ac5ec07bcd0040ecace6f3f852f06;
+      - _session_id=TlJnM0tPcmlielEybjNzUmxwWXBXLzV4MkxackZXK0RUMWpqWkZSRit1eG4yY0YrcDFLZGptUG5HQjltWmFoYnZTVGtleUdNVWh4YTlGT3RmckFkTFIrbGc5M3ozak1QMzBsVmhKbXdRd2c9LS1BTWhjZlIzVUFJLys5Wm5Qc1FFNlhRPT0%3D--fc3716bfe1dd4d3f566ef5d9611376b17cca57f4;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":4,"name":"Travel Insurance - Declined","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":2,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"Travel
+      string: '[{"id":4,"name":"Travel Insurance - Declined","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":2,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"Travel
         Insurance - Declined","client_type_ids":[],"category":null,"location_ids":[],"current_description":"\u003cp\u003eYou
         have declined Travel Insurance for your booking. If you wish to add Travel
         Insurance to this booking, please contact the SeaLink Travel Group on 13 13
         01 prior to commencing your travels.\u003c/p\u003e","graphics":[],"graphic_names":[],"ticket_template":null,"expiry_days":null}]'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:11 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:43 GMT
 - request:
     method: get
     uri: http://test.qt.sealink.com.au:8080/api/resources/3.json
@@ -163,15 +163,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"14cbe36a6f2d230b3f9781d0c4628a35"
+      - W/"44af53c02bbef81d5c7121b3be95c496"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a34162be-9feb-4363-9918-f8196aa3d0ab
+      - f440da5b-5482-4782-af5e-0cbcbfb4d584
       X-Runtime:
-      - '0.147060'
+      - '0.181288'
       Date:
-      - Fri, 01 Jan 2016 02:38:48 GMT
+      - Fri, 01 Jan 2016 02:32:36 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -193,11 +193,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=OG9CLzlIbUNINzhjUXg1Y3dtbEVmRmdjbUh5YWVBVG9TcktQZGt1RU9ZQ2hyK1NQL2VEL1BEY0JycEMxdzRHdWMzdWtVdFdqSDdTekFoQlczQzVXbE5JQ0ZHSW1tOTJ1dzBiNWZSOTh0OUk9LS1HU1hFc0kxSFBiSWJlU1JPL0ZFTnNnPT0%3D--45f1be0bb71ae258723354ebfb6242704f02ba75;
+      - _session_id=dGVuaXB3ZUg4TkNaM2cya1NpeFFnRGZBcUxSaHFvWjIwSVR1MkJHOThOUlJENEVvNU1Ia05kR202Wm12ZFlVRjJpbHB0b1I3dWRpcmNiUy8rNlZJZ3VYZU1RR2NYc3I5eklERjRzS1NsbFk9LS1Vc1lubEZRcE1pS3pRcTJzL1ZUVjVRPT0%3D--76d59347b136559a1defb24eb25a0b780a738c4e;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":3,"name":"QBE Travel Insurance - Policy E","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":19,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":1,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"QBE
+      string: '[{"id":3,"name":"QBE Travel Insurance - Policy E","product_type_id":7,"default_capacity":null,"type":"Insurance","inventory_type":1,"maximum_occupancy":null,"property_id":null,"fare_basis_pointer_id":4,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":null,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":19,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":1,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"QBE
         Travel Insurance - Policy E","client_type_ids":[],"category":null,"location_ids":[],"current_description":"\u003cp\u003e\u003cspan
         class=\"caps\"\u003eQBE\u003c/span\u003e Travel Insurance Policy E known as
         the \u0026#8216;Australian Cancellation and Additional Expenses\u0026#8217;
@@ -205,5 +205,5 @@ http_interactions:
         cancellations and additional expenses. Please refer to the Product Disclosure
         Statement for further information.\u003c/p\u003e","graphics":[],"graphic_names":[],"ticket_template":null,"expiry_days":null}]'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:11 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:43 GMT
 recorded_with: VCR 4.0.0

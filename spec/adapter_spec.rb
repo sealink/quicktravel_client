@@ -37,7 +37,7 @@ describe QuickTravel::Adapter do
   end
 
   context 'when response non standard' do
-    let(:url) { 'http://www.google.com' }
+    let(:url) { 'https://httpstat.us/418' }
 
     let(:adapter_response) {
       VCR.use_cassette 'wrong_url' do
@@ -48,7 +48,7 @@ describe QuickTravel::Adapter do
     specify do
       expect { adapter_response }.to raise_error(
         QuickTravel::AdapterError,
-        /That’s all we know/
+        /418 I'm a teapot/
       )
     end
   end

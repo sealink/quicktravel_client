@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9516a7417ba55cf3a44ee49acbac7e65"
+      - W/"ed8722bc4263575de827725f60e9f91b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7678ffda-c674-4e89-bde9-32c222c998ef
+      - f25a23ed-495e-4cbc-ae5d-cf4824c4aa98
       X-Runtime:
-      - '0.103802'
+      - '0.192259'
       Date:
-      - Fri, 01 Jan 2016 02:38:24 GMT
+      - Fri, 01 Jan 2016 02:32:06 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,13 +49,13 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=aGJSb3l5endKWlNsejVpSlhBdzk4dkszQjkxbjFZNWlMYWpqWGdZWDFNNmI0OVpmYnV6Q0xZQjlOdElMRm4rYlpSUnlxaGpaVFdiQmZGaGFRbnpmZWkwTk53V09SdEZtOWtVblAxUDNkTmc9LS1HZFBVM3htbkl6UnJ0QWVkZXNkeUVnPT0%3D--b3a9d27bde80dfb8ba48c9d5285c97cb42d94522;
+      - _session_id=Vy9TV1NJTitmNU9vTFl6M3NQT0R6Qmp5dFVNaEowM1FMck9BWEd6RXVPREIrdmRPN1JUR3lKbWpxU2x3ZG41YndwYWx0WFJxNk16bW1yU3I1eG1raVRTSWh4WmVLcVMxQU1yN3Q2SER5czA9LS02b3d2dVBjY3MrWUNVTHlKQ21wbW5BPT0%3D--5e4730663b28710ffb41a60c5acd57f4648ce4ff;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"id":3,"state":"new","reference":"222226","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":null,"referral_code_id":1,"external_identifier":null,"created_at":"2016-01-01T13:08:24.000+10:30","updated_at":"2016-01-01T13:08:24.000+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":0,"nett_in_cents":0,"gross_in_cents":0,"commission_in_cents":0,"balance_in_cents":0,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":"SeaLink","deposit_relevant":false,"deposit_due_on":null,"balance_due_on":null,"due":true,"first_travel_date":{"_type":"Date","_value":"2016-01-01"},"last_travel_date":null,"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"discardable_in":60,"inactivatable_in":10,"notices":{},"client":null,"passenger_ids":[],"vehicle_ids":[],"reservation_ids":[],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[],"vehicles_attributes":[],"reservations_attributes":[],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":4,"name":"visa","description":"visa","transaction_fee":"0.0","active":true,"position":3,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":"Visa","payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":5,"name":"master","description":"master","transaction_fee":"0.0","active":true,"position":4,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":7,"name":"PayPal","description":"Payments
+      string: '{"id":3,"state":"new","reference":"222226","public_comments":null,"internal_comments":null,"customer_contact_name":null,"customer_contact_phone":null,"customer_contact_mobile":null,"customer_contact_email":null,"currency_iso_code":"AUD","country_id":14,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":null,"referral_code_id":1,"external_identifier":null,"created_at":"2016-01-01T13:02:06.000+10:30","updated_at":"2016-01-01T13:02:06.000+10:30","promo_code":null,"promo_code_id":null,"insurance_offered":false,"total_adjustments_in_cents":0,"pre_adjusted_gross_in_cents":0,"nett_in_cents":0,"gross_in_cents":0,"commission_in_cents":0,"balance_in_cents":0,"paid_in_cents":0,"surcharge_in_cents":0,"deposit_in_cents":0,"web_site_name":"SeaLink","deposit_relevant":false,"deposit_due_on":null,"balance_due_on":null,"due":true,"first_travel_date":{"_type":"Date","_value":"2016-01-01"},"last_travel_date":null,"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"discardable_in":60,"inactivatable_in":10,"notices":{},"client":null,"passenger_ids":[],"vehicle_ids":[],"reservation_ids":[],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[],"vehicles_attributes":[],"reservations_attributes":[],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":4,"name":"visa","description":"visa","transaction_fee":"0.0","active":true,"position":3,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":"Visa","payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":5,"name":"master","description":"master","transaction_fee":"0.0","active":true,"position":4,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":7,"name":"PayPal","description":"Payments
         made via PayPal account","transaction_fee":"0.0","active":true,"position":6,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"paypal","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":10,"name":"Opal
         Pay","description":"Opal Payments","transaction_fee":"0.0","active":true,"position":9,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"opal_pay","gateway":null,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":false,"creditlink":false,"surchargeable":false}],"issued_tickets_attributes":[]}'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:31:47 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:13 GMT
 recorded_with: VCR 4.0.0

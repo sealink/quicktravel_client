@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 81f26c65-bd25-4762-b5b7-bafaf6e52fe3
+      - 98c73fc1-a714-4467-89a4-e7741ed8a80d
       X-Runtime:
-      - '0.166310'
+      - '0.129914'
       Date:
-      - Fri, 01 Jan 2016 02:38:39 GMT
+      - Fri, 01 Jan 2016 02:32:24 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,11 +49,11 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=enpFZTQrNWRNVXN6VCt6bytHWmNubjJ0VGZoeGRrakNZRHhUcTRId1ZUS3Y0ejUrcklmbHU1cWVOQytYTEhnY1h0QzVEOWhkbmhmQmRFbW5JL0JyTEZNdmNWRzhIc3BwK1BrbHZCMzFtaVk9LS1pV2U0Q3l4WTZJTks4Y0l4MXdWL093PT0%3D--801e4a0e02ed59076c8adc0518d5d8131d736417;
+      - _session_id=c3M0WHRTdHFWc0JUTUhBZWRqMGJsUHdNNGEvQ3lrTDU1My83ODA2MGdXLyswSEZ3YjI3UXorTFZZTFAvZWNDY1F4dTdBeDl0N05qa0lCNjdEY0VXalVGUXhXeUhscTBubHZ2a0FialZYVUU9LS10MFA0VTNMcmEyRUlCMFNCTm1EaVNBPT0%3D--27475c8de90058e6efc826f06746a8a7d0bd16d2;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '{"poli_pay":{"login":"S1234567"}}'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:01 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:31 GMT
 recorded_with: VCR 4.0.0

@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0cd728183d49391c311d0f82f186bc10"
+      - W/"641461e04c30167b268dd9059d420764"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 365cf24d-0650-46e7-ae52-7831c355eb83
+      - 3d60184a-17a0-4b82-b04b-4db7ff3793f2
       X-Runtime:
-      - '0.159468'
+      - '0.203714'
       Date:
-      - Fri, 01 Jan 2016 02:38:49 GMT
+      - Fri, 01 Jan 2016 02:32:37 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,14 +49,14 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=TS8wSno5TVBnTlJveFBlOWFnRU5EditqaVBIemRrc013allHOEFBOENBVEZOeDJPWEE0VS9uaElGSXRaQllJYldNMThWK1IwcTdnY3ByeENUdFRsTXlSZE43NTNmY1dma0Q1WTEzbHJTZXc9LS1ocCtpeEQyNC9DVTZQS0h3TndsV1dnPT0%3D--89bac914badd9e3623d67bd4f0f8676eb53b1fbb;
+      - _session_id=Q2paaVFEVXVRMkUyYzBLa014WkxaeStrQkltMm1MZE9TVmF4N3YrTVNHeFE0RDFYY0FXQ0wwV242S2J3RGRBQWVseWpWMWY2Ti90RGlrVldXNml4dGdmeHNDaThJSURYKytTeHVpUlBBS3c9LS1wLzJNcE5TVmtDMmQ2Q05FYzhwMlRRPT0%3D--f16fffab318d81b9a68b2d14478da63f0d2921d8;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"id":6,"name":"Executive Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":0,"maximum_occupancy":2,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"Hilton
+      string: '[{"id":6,"name":"Executive Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":0,"maximum_occupancy":2,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"to_s":"Hilton
         Hotel - Executive Room","client_type_ids":[],"category":null,"location_ids":[5],"current_description":"\u003cp\u003eA
         basic studio room\u003c/p\u003e","graphics":[],"graphic_names":[],"property_name":"Hilton
         Hotel","ticket_template":null,"expiry_days":null}]'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:11 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:44 GMT
 recorded_with: VCR 4.0.0
