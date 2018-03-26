@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7b5c8877-bbdd-4ae6-9c02-e66f18d5a363
+      - 675b8a20-1deb-4b15-9f4b-f14d49a319e2
       X-Runtime:
-      - '0.140122'
+      - '0.170937'
       Date:
-      - Fri, 01 Jan 2016 02:38:43 GMT
+      - Fri, 01 Jan 2016 02:32:29 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,12 +49,12 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=ZmJMdjl4YStxejRHcUxSaE53NUs5eXJtTTNJK3FrYytyaDc0Y3FnNGNXQXBXU2RvVTJRa3p4eXp2cXRZWGQ3N2s1ajlTRGpCSjFaZjVHQS9GTE9FVUd3UjNKRElUSTFoMDlETHdrR1RWUEE9LS1scEJVci85RGxXZTl3YitaQmlZRURnPT0%3D--72685f2e140fa173ccf28403d479cf45ade844ae;
+      - _session_id=YWQvaFpNMWUxVUV5ZXdkT1dDVkFBTlRWMmJIY3ZiUFkzNUVjWHdpUFl3K1ExbWxLYVBxWWM3UFk5L0c0aVRBWVc3NElQSEhsRG5qK3MvRWVTS2RRM1VSSVFDWEFrNWZpbEVDeTIyWFFtaTA9LS1mQmxkUUN6ZUdzS2lrYWhERU1hbCt3PT0%3D--91270029e9b9fb0b3b89c0396fde8e01c3b87aca;
         path=/; HttpOnly
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Common","description":null,"product_type_id":5,"created_at":null,"updated_at":null,"position":null},{"id":2,"name":"Multiple
         Trip","description":null,"product_type_id":5,"created_at":null,"updated_at":null,"position":null}]'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:05 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:36 GMT
 recorded_with: VCR 4.0.0

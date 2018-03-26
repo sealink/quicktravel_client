@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2389618f-e104-4cbc-884e-3629378a6f3a
+      - f94d8818-f44a-421e-9667-6997e3a3184e
       X-Runtime:
-      - '0.725578'
+      - '0.775919'
       Date:
-      - Fri, 01 Jan 2016 02:38:44 GMT
+      - Fri, 01 Jan 2016 02:32:30 GMT
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,7 +49,7 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=RlpXYXpwMjQ5cXZSL0E5Tjg2bWtUbU5EbjNHakViRDI5amdlTHVaUWRsbmRoMEQ5NG5IWnFSZHFFUDcxbXRpeVNkejRQMVVGOXpSVnpLK2lRSmNDd09UTXQxNTdjWE04LzZ6aW9VVy9mdG89LS1xU01ZTjBiTC83MzJRK3hZVjhqeklBPT0%3D--34d28c19ada21c78467fdc9713b00ec4b4da0538;
+      - _session_id=aFRYTUY5Vk9HalpJWTRLWHo3YnFJTm5rSWUzL3FDcjl2RS8yOGFpTEVFUWlUdGlEQmlnaFNqeUlFeVJXQWZudjFIankyQ3FMZ1VyNDlwMGhvWXAwelMvc1d2bGFFZlQ1b1pkdHJ4eXN5dzA9LS0yVkdTN0Y4VFY1anFTMDdwUlNjVEJnPT0%3D--1b1595c5d82b206e5a76b5110153f99c984cae87;
         path=/; HttpOnly
     body:
       encoding: UTF-8
@@ -63,5 +63,5 @@ http_interactions:
         - KI Ferry","price_breakdown":"\u003cspan\u003e\u003cstrong\u003ePassengers:\u003c/strong\u003e\u0026nbsp;\u003cspan
         class=\"money positive\"\u003e$40.00\u003c/span\u003e\u0026nbsp;\u003c/span\u003e","price_breakdown_passengers_in_cents":4000,"price_breakdown_vehicles_in_cents":0,"trip_id":6,"stop_departure_time":"2000-01-01T21:00:00.000Z","stop_arrival_time":"2000-01-01T21:45:00.000Z","from_route_stop_attributes":null,"to_route_stop_attributes":null,"departure_time":"2000-01-01T21:00:00.000Z","arrival_time":"2000-01-01T21:45:00.000Z"}]'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:06 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:37 GMT
 recorded_with: VCR 4.0.0

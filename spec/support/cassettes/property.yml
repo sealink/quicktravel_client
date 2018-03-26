@@ -19,15 +19,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"57ed2519e57ee3a8427bc66f983aa433"
+      - W/"8223f9e3c1ebcadfb2edacc484671357"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e810b390-7c97-481f-b365-099368d214ec
+      - e3bef60c-77c6-4be0-965e-2c32c8830e50
       X-Runtime:
-      - '0.400885'
+      - '0.457836'
       Date:
-      - Fri, 01 Jan 2016 02:38:45 GMT
+      - Fri, 01 Jan 2016 02:32:32 GMT
       X-Rack-Cache:
       - miss
       Vary:
@@ -49,16 +49,16 @@ http_interactions:
       Connection:
       - Keep-Alive
       Set-Cookie:
-      - _session_id=ZEhlQjFxYzVlT1c4T2NGUitlLzUydE15VUx2dk1NRXVwODRqRk1PU3JSOVY1czVmR0tTVGViZkNFOVE3VFNmNExZRlk1amVwQmt6MWkxV2YrWTNuQk1HaGFRNkp3KzZCZFcxSGIvMVpmMjA9LS1HT1NQVkdPcWNMcVB2a0ZOSW0yUnVBPT0%3D--796a01e68d34698fa2a0dcf387673310bf76333a;
+      - _session_id=MTR0Z2JnVHJ0SS9UaWF5cXFTMmtCQVVTTnE4RGcrM0psczUvTVF3U2NUcUNaRVB4U2lycnRBSGErZ2s0TXJ6dTdWcFhQUFExNDBjb05tWGd0clc0SXM1MWpSZlB3RzFuSG9oZHhjYTgydlk9LS1yTEEyK0s5bnlsajZSL1ZyMXVTYWlnPT0%3D--684c82a0751328e694ea044091e7063b4fa3060b;
         path=/; HttpOnly
     body:
       encoding: UTF-8
-      string: '{"id":1,"name":"Hilton Hotel","description":"","location_id":5,"check_in":"2000-01-01T14:00:00.000Z","check_out":"2000-01-01T10:00:00.000Z","check_in_instructions":"","star_rating":null,"contact_id":null,"notes":"","tourism_accredited":false,"season_id":9,"boundary_start":"2013-03-01","boundary_end":"2013-03-01","created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","virtual_tour_url":null,"address":{"id":1,"address_line1":"Level
+      string: '{"id":1,"name":"Hilton Hotel","description":"","location_id":5,"check_in":"2000-01-01T14:00:00.000Z","check_out":"2000-01-01T10:00:00.000Z","check_in_instructions":"","star_rating":null,"contact_id":null,"notes":"","tourism_accredited":false,"season_id":9,"boundary_start":"2013-03-01","boundary_end":"2013-03-01","created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","virtual_tour_url":null,"address":{"id":1,"address_line1":"Level
         2","address_line2":"1 Victoria Square","city":"Adelaide","state":"SA","post_code":"5000","created_at":null,"updated_at":null,"party_id":null,"country_id":14,"property_id":1},"location_name":"American
-        River","region_names":"Kangaroo Island","property_facilities":[{"id":1,"name":"Pool","created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","category_id":1,"position":1},{"id":2,"name":"Spa","created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","category_id":1,"position":1}],"graphics":[],"maximum_occupancy":2,"minimum_bookable_duration":0,"availability":{"2016-01-01":true},"on_request":false,"minimum_available_price_in_cents":20000,"property_type_ids":[1],"accommodations":[{"id":6,"name":"Executive
-        Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":0,"maximum_occupancy":2,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"room_facilities":[{"id":1,"name":"Shower","created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","category_id":2,"position":1},{"id":3,"name":"Hairdryer","created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","category_id":2,"position":3}],"bed_configurations":[{"id":1,"creator_id":null,"updator_id":null,"resource_id":6,"created_at":"2018-03-19T11:00:35.000+10:30","updated_at":"2018-03-19T11:00:35.000+10:30","overriding_fare_basis_pointer_id":null,"name":"1
+        River","region_names":"Kangaroo Island","property_facilities":[{"id":1,"name":"Pool","created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","category_id":1,"position":1},{"id":2,"name":"Spa","created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","category_id":1,"position":1}],"graphics":[],"maximum_occupancy":2,"minimum_bookable_duration":0,"availability":{"2016-01-01":true},"on_request":false,"minimum_available_price_in_cents":20000,"property_type_ids":[1],"accommodations":[{"id":6,"name":"Executive
+        Room","product_type_id":2,"default_capacity":2,"type":"Accommodation","inventory_type":0,"maximum_occupancy":2,"property_id":1,"fare_basis_pointer_id":6,"disclaimer_id":null,"deposit_rule_id":null,"vendor_id":null,"maximum_weight":null,"days_before_inventory_expires":null,"property_type_id":1,"star_rating":null,"inline_price_in_cents":null,"inline_cost_in_cents":null,"resource_category_id":null,"created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","code":"","restrict_to_client_types":false,"minimum_age":null,"guardian_minimum_age":null,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"active":true,"report_changes":false,"inline_pricing":false,"bookable_individually":true,"minimum_passengers":null,"maximum_passengers":null,"required_number_of_vehicles":null,"frequent_traveller_points_multiplier":null,"commissionable":true,"masterpoint_resource_id":null,"print_tickets":false,"individual_tickets":null,"frequent_traveller_redemption_rate":null,"position":null,"ticket_template_id":null,"generate_tickets_by_quantity":true,"inventory_release_hour":null,"room_facilities":[{"id":1,"name":"Shower","created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","category_id":2,"position":1},{"id":3,"name":"Hairdryer","created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","category_id":2,"position":3}],"bed_configurations":[{"id":1,"creator_id":null,"updator_id":null,"resource_id":6,"created_at":"2018-03-21T11:24:01.000+10:30","updated_at":"2018-03-21T11:24:01.000+10:30","overriding_fare_basis_pointer_id":null,"name":"1
         x Double and 1 x Single","active":true,"position":1}],"description":"A basic
         studio room","graphics":[],"on_request":false,"minimum_price":{"2016-01-01":20000},"nightly_price":{"2016-01-01":20000},"availability":{"2016-01-01":false},"minimum_bookable_duration":null}]}'
     http_version: 
-  recorded_at: Tue, 20 Mar 2018 04:32:08 GMT
+  recorded_at: Wed, 21 Mar 2018 04:40:39 GMT
 recorded_with: VCR 4.0.0
