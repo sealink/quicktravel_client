@@ -11,6 +11,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 - [TT-3780] Add tests for Opal payments
 - [TT-3780] Add tests for Opal payment using create / update workflow
 - [TT-3783] Remove deprecated FixNum
+- [TT-3812] Update cassettes
 
 ## [3.6.0]
 ###
