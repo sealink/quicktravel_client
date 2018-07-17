@@ -189,6 +189,10 @@ module QuickTravel
       vehicles.detect { |v| v.id.to_i == vid.to_i }
     end
 
+    def passengers
+      @passenger_objects ||= @passengers_attributes.map{ |p| Passenger.new(p) }
+    end
+
     def passenger_types_counts
       passengers.each_with_object(Hash.new(0)) do |passenger, hash|
         hash[passenger.passenger_type_id] += 1

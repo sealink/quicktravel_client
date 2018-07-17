@@ -30,6 +30,10 @@ module QuickTravel
       end_time.to_time.on(last_travel_date) if end_time
     end
 
+    def passenger_splits
+      @_passenger_splits ||= @passenger_splits.map{ |split| PassengerSplit.new(split) }
+    end
+
     def passengers_count_string(booking)
       passengers_count(booking).join(', ')
     end

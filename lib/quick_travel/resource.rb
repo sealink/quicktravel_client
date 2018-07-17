@@ -20,6 +20,15 @@ module QuickTravel
       QuickTravel::ProductType.find(product_type_id)
     end
 
+    def locations
+      location_ids.map{ |id| Location.find(id) }
+    end
+
+    def category
+      return nil if @category.nil?
+      @_category ||= QuickTravel::ResourceCategory.new(@category)
+    end
+
     def bed_requirements
       @_bed_requirements ||= Array.wrap(@bed_requirements).map do |bed_requirement|
         BedRequirement.new(bed_requirement)

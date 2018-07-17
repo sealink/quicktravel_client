@@ -21,6 +21,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activesupport', '>= 2.0.0'
   spec.add_dependency 'facets'
   spec.add_dependency 'money', '>= 3.0', '< 6.0' # 6.0 starts to deprecate/split
+  #this dependency cannot be found when loaded this way for some reason...
+  #spec.add_dependency 'will_paginate'
 
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake'

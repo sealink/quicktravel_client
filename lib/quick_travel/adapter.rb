@@ -84,6 +84,14 @@ module QuickTravel
       instance_values
     end
 
+    def to_s
+      if defined? @to_s
+        @to_s
+      else
+        super
+      end
+    end
+
     protected
 
     def self.check_id!(id)
