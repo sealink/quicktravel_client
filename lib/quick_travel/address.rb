@@ -1,7 +1,9 @@
-require 'quick_travel/adapter'
+require 'quick_travel/init_from_hash'
 
 module QuickTravel
-  class Address < Adapter
+  class Address
+    include QuickTravel::InitFromHash
+
     def country_name
       QuickTravel::Country.find(@country_id).name
     end
