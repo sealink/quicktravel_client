@@ -3,6 +3,7 @@ require 'quick_travel/property_facility'
 
 module QuickTravel
   class Property < Adapter
+    self.api_base = '/api/properties'
     attr_reader :error
 
     def accommodations=(hash_array)
