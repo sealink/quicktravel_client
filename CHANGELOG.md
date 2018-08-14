@@ -3,14 +3,18 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## [Unreleased]
-###
+## [3.7.0]
+### Added
 - [DC-1437] Add relationship accesssor methods
-- [TT-3304] Handle no response in booking update API
-- [TT-3333] URL encode data sent to booking reference lookup
 - [TT-3337] Add booking.delete_reservations method
 - [TT-3780] Add tests for Opal payments
 - [TT-3780] Add tests for Opal payment using create / update workflow
+
+### Fixed
+- [TT-3304] Handle no response in booking update API
+
+### Changed
+- [TT-3333] URL encode data sent to booking reference lookup
 - [TT-3783] Remove deprecated FixNum
 - [TT-3812] Update cassettes
 
