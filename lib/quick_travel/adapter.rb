@@ -202,7 +202,13 @@ module QuickTravel
     end
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
-      Api.call_and_validate(http_method, path, query, opts)
+      response = if opts.key? :cache
+        QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
+          Api.call_and_validate(http_method, path, query, opts.except(:cache, :cache_options))
+        }
+      else
+        Api.call_and_validate(http_method, path, query, opts)
+      end
     end
 
     def self.base_uri(uri = nil)

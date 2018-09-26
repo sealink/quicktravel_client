@@ -52,4 +52,36 @@ describe QuickTravel::Adapter do
       )
     end
   end
+
+  context 'when cache options present' do
+    subject(:all) do
+      QuickTravel::Adapter.call_and_validate(:get, 'some_path', {}, { cache: 'test_key', cache_options: { expires_in: 3.minutes } })
+    end
+    let(:api) { double }
+
+    before do
+      QuickTravel::Cache.cache_store.clear
+      stub_const('QuickTravel::Api', api)
+      allow(api).to receive(:call_and_validate) { [{id: 1}, {id: 2}] }
+      all
+    end
+
+    specify { expect(api).to have_received(:call_and_validate).once }
+
+    context 'when called again' do
+      before do
+        QuickTravel::Adapter.call_and_validate(:get, 'some_path', {}, { cache: 'test_key', cache_options: { expires_in: 3.minutes } })
+      end
+
+      specify { expect(api).to have_received(:call_and_validate).once } # not called again
+    end
+
+    context 'when called with different key' do
+      before do
+        QuickTravel::Adapter.call_and_validate(:get, 'some_path', {}, { cache: 'test_key1', cache_options: { expires_in: 3.minutes } })
+      end
+
+      specify { expect(api).to have_received(:call_and_validate).twice }
+    end
+  end
 end
