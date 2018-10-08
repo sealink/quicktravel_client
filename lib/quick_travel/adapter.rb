@@ -103,20 +103,18 @@ module QuickTravel
 
     def self.find_all!(request_path, opts = {})
       response = if opts.key? :cache
-        QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
-          get_and_validate(request_path, opts.except(:cache, :cache_options))
-        }
+        QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) do
+          get_and_validate(request_path, opts.except(:cache, :cache_options), return_response_object: true)
+        end
       else
         get_and_validate(request_path, opts, return_response_object: true)
       end
-      full_response = response.respond_to? :parsed_response
-      parsed_response = full_response ? response.parsed_response : response
 
-      deserializer = Deserializer.new(parsed_response)
+      deserializer = Deserializer.new(response[:parsed_response])
       objects = Array.wrap(deserializer.extract_under_root(self))
 
-      if full_response && response.headers['pagination'].present?
-        pagination_headers = ::JSON.parse(response.headers['pagination'])
+      if response[:headers]['pagination'].present?
+        pagination_headers = ::JSON.parse(response[:headers]['pagination'])
         WillPaginate::Collection.create(pagination_headers['current_page'], pagination_headers['per_page'], pagination_headers['total_entries']) do |pager|
           pager.replace(objects)
         end
@@ -263,7 +261,10 @@ module QuickTravel
       validate!(response)
 
       if return_response_object
-        response
+        {
+          parsed_response: response.parsed_response,
+          headers: response.headers,
+        }
       else
         response.parsed_response
       end
