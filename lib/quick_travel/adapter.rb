@@ -264,6 +264,7 @@ module QuickTravel
         {
           parsed_response: response.parsed_response,
           headers: response.headers,
+          code: response.code
         }
       else
         response.parsed_response

@@ -39,7 +39,7 @@ describe QuickTravel::PassengerType do
 
     before do
       stub_const('QuickTravel::Api', api)
-      allow(api).to receive(:call_and_validate) { [{id: 1}, {id: 2}] }
+      allow(api).to receive(:call_and_validate) { { parsed_response: [{id: 1}, {id: 2}], headers: {} } }
     end
     
     context 'when called the first time' do
