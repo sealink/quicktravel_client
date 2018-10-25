@@ -7,6 +7,9 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ### Added
 - [DC-1418] Port NRMA portal availability cache back to EcomEngine
 
+### Changed
+- [DC-1767] include long/lat changes to Stop
+
 ## [3.7.0]
 ### Added
 - [DC-1437] Add relationship accesssor methods

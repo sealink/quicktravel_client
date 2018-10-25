@@ -5,7 +5,14 @@ module QuickTravel
     include QuickTravel::InitFromHash
 
     def stop
-      Stop.new({ id: stop_id, name: name, code: code, address: address })
+      Stop.new({
+        id: stop_id,
+        name: name,
+        code: code,
+        address: address,
+        longitude: longitude,
+        latitude: latitude
+      })
     end
   end
 
