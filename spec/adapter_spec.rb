@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'quick_travel/adapter'
 
 describe QuickTravel::Adapter do
-  let(:response) { double code: 200, parsed_response: parsed_response }
+  let(:response) { double code: 200, parsed_response: parsed_response, headers: {} }
   let(:parsed_response) { { test: true } }
 
   before do

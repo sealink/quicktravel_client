@@ -205,7 +205,11 @@ module QuickTravel
           Api.call_and_validate(http_method, path, query, opts.except(:cache, :cache_options))
         }
       else
-        Api.call_and_validate(http_method, path, query, opts)
+        if opts[:return_response_object]
+          Api.call_and_validate(http_method, path, query, opts)
+        else
+          Api.call_and_validate(http_method, path, query, opts)[:parsed_response]
+        end
       end
     end
 
@@ -219,8 +223,6 @@ module QuickTravel
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
       http_params = opts.clone
-      return_response_object = http_params.delete(:return_response_object)
-
       # Set default token
       http_params[:query]   ||= FilterQuery.new(query).call
       http_params[:headers] ||= {}
@@ -260,15 +262,11 @@ module QuickTravel
 
       validate!(response)
 
-      if return_response_object
-        {
-          parsed_response: response.parsed_response,
-          headers: response.headers,
-          code: response.code
-        }
-      else
-        response.parsed_response
-      end
+      {
+        parsed_response: response.parsed_response,
+        headers: response.headers,
+        code: response.code
+      }
     end
 
     # Do standard validations on response
