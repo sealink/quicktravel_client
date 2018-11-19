@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/client_templates/2.json
+    body:
+      encoding: UTF-8
+      string: access_key=<QT_KEY>
+    headers:
+      Content-Length:
+      - '0'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b6be9931bd0aa8a85b01110a597d8bb7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6d297dbe-0ebf-4a63-802b-3d36551c8f1d
+      X-Runtime:
+      - '0.191253'
+      Date:
+      - Fri, 01 Jan 2016 02:37:04 GMT
+      X-Rack-Cache:
+      - miss
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.4/2018-03-28)
+      Content-Length:
+      - '336'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _session_id=TzRUNmM1YjFFcUpvSUhqYTZUMU4zZ0xLNXBzeml4VHdxbmZKY2NxSldZYllBanhBQVdhQXE4UDVzcWpmc3A4QW9zMnNUNVZ1VC9jZlVKQm5QMWYweWp6UTNWYzJtUmdHNENuU3U5ZGZONkU9LS1HQUtvK2hySU9hSHhHZWxZaFZUVHV3PT0%3D--0f6ccd57f30e82dd50e914b717d9a4a9b5f8d5ad;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"vehicle_templates":[{"id":1,"length":5.0,"height":1.5,"width":1.8,"weight":1000.0,"details":"Holden
+        Commodore","registration":"ABC123","cargo":"None","vehicle_type_id":1,"party_id":9}],"passenger_templates":[{"id":1,"age":30,"title":"Mr","first_name":"Homer","last_name":"Simpson","gender":"Male","passenger_type_id":1,"party_id":9}]}'
+    http_version: 
+  recorded_at: Mon, 19 Nov 2018 23:14:50 GMT
+recorded_with: VCR 4.0.0
