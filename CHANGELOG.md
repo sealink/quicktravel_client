@@ -6,6 +6,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ## Unreleased
 ### Added
 - [DC-1418] Port NRMA portal availability cache back to EcomEngine
+- [TT-4850] Added client templates
 
 ### Changed
 - [DC-1767] include long/lat changes to Stop

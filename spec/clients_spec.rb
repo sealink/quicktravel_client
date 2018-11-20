@@ -1,18 +1,17 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require 'quick_travel/client_templates'
+require 'quick_travel/client'
 
-describe QuickTravel::ClientTemplates do
+describe QuickTravel::Client do
   context '#find' do
     let(:templates) do
       VCR.use_cassette('client_templates') do
-        QuickTravel::ClientTemplates.find(2)
+        QuickTravel::Client.find(2).templates
       end
     end
     it 'should find the templates correctly' do
-
-      expect(templates.vehicle_templates).to eq([
+      expect(templates['vehicle_templates']).to eq([
         {
           'id' => 1,
           'length' => 5.0,
@@ -26,7 +25,7 @@ describe QuickTravel::ClientTemplates do
           'party_id' => 9
         }
       ])
-      expect(templates.passenger_templates).to eq([
+      expect(templates['passenger_templates']).to eq([
         {
           'id' => 1,
           'age' => 30,

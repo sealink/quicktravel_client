@@ -25,7 +25,6 @@ module QuickTravel
   require 'quick_travel/booking'
   require 'quick_travel/checkout'
   require 'quick_travel/client'
-  require 'quick_travel/client_templates'
   require 'quick_travel/client_type'
   require 'quick_travel/contact'
   require 'quick_travel/country'
