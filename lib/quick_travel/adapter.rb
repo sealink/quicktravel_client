@@ -102,13 +102,9 @@ module QuickTravel
     end
 
     def self.find_all!(request_path, opts = {})
-      response = if opts.key? :cache
-        QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
-          get_and_validate(request_path, opts.except(:cache, :cache_options), return_response_object: true)
-        }
-      else
-        get_and_validate(request_path, opts, return_response_object: true)
-      end
+      response = QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
+        get_and_validate(request_path, opts.except(:cache, :cache_options), return_response_object: true)
+      }
 
       deserializer = Deserializer.new(response[:parsed_response])
       objects = Array.wrap(deserializer.extract_under_root(self))
@@ -200,17 +196,11 @@ module QuickTravel
     end
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
-      response = if opts.key? :cache
-        QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
-          Api.call_and_validate(http_method, path, query, opts.except(:cache, :cache_options))
-        }
-      else
-        if opts[:return_response_object]
-          Api.call_and_validate(http_method, path, query, opts)
-        else
-          Api.call_and_validate(http_method, path, query, opts)[:parsed_response]
-        end
-      end
+      response = QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
+        response_object = Api.call_and_validate(http_method, path, query, opts.except(:cache, :cache_options))
+        response_object = response_object[:parsed_response] if !opts[:cache] and !opts[:return_response_object]
+        response_object
+      }
     end
 
     def self.base_uri(uri = nil)

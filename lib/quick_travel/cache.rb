@@ -7,6 +7,7 @@ module QuickTravel
     end
 
     def self.cache(key, cache_options = {})
+      return yield unless key.present?
       cached_value = cache_store.read(key)
       return cached_value unless cached_value.nil?
       return nil unless block_given?
