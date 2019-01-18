@@ -8,7 +8,7 @@ module QuickTravel
     self.api_base = '/api/resources'
 
     def sub_resources
-      Resource.find_all!('/api/resources.json', parent_resource_id: @id)
+      @sub_resources ||= Resource.find_all!('/api/resources.json', parent_resource_id: @id)
     end
 
     def self.all_with_price(opts)

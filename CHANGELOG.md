@@ -10,6 +10,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ### Changed
 - [DC-1767] include long/lat changes to Stop
+- [TT-5043] Cache sub-resources
 
 ## [3.7.0]
 ### Added
