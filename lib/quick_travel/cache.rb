@@ -7,6 +7,7 @@ module QuickTravel
     end
 
     def self.cache(key, cache_options = {})
+      key = "#{@@namespace}_#{key}" unless cache_options[:disable_namespacing]
       return yield unless key.present?
       cached_value = cache_store.read(key)
       return cached_value unless cached_value.nil?
@@ -28,8 +29,16 @@ module QuickTravel
       @@cache_store
     end
 
-    def self.cache_store=(store)
-      @@cache_store = store
+    def self.cache_store=(session)
+      @@session = session
+    end
+
+    def self.namespace
+      @@namespace
+    end
+
+    def self.namespace=(namespace)
+      @@namespace = namespace
     end
   end
 end
