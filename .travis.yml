@@ -4,7 +4,7 @@ rvm:
   - 2.3
   - 2.4
   - 2.5
-script: bundle && bundle exec rake spec
+script: gem install bundler && bundle && bundle exec rake spec
 gemfile:
   - gemfiles/rails4.gemfile
   - gemfiles/rails5.gemfile
