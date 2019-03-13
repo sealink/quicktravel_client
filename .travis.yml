@@ -5,9 +5,8 @@ rvm:
   - 2.4
   - 2.5
 before_install:
-  - "find /home/travis/.rvm/rubies -wholename '*default/bundler-*.gemspec' -delete"
-  - rvm @global do gem uninstall bundler
-  - gem install bundler --version "~>1.7"
+  - gem install bundler --version "1.17.3"
+  - bundle _1.17.3_ install
 script: bundle && bundle exec rake spec
 gemfile:
   - gemfiles/rails4.gemfile
