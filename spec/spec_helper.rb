@@ -50,6 +50,7 @@ class HashCache
 end
 
 QuickTravel::Cache.cache_store = HashCache.new
+QuickTravel::Cache.namespace = 'namespace'
 
 RSpec.configure do |config|
   config.raise_errors_for_deprecations!

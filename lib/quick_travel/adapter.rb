@@ -106,11 +106,12 @@ module QuickTravel
         get_and_validate(request_path, opts.except(:cache, :cache_options), return_response_object: true)
       }
 
-      deserializer = Deserializer.new(response[:parsed_response])
+      # deserializer = Deserializer.new(response[:parsed_response])
+      deserializer = Deserializer.new(response.parsed_response)
       objects = Array.wrap(deserializer.extract_under_root(self))
 
-      if response[:headers]['pagination'].present?
-        pagination_headers = ::JSON.parse(response[:headers]['pagination'])
+      if response.headers['pagination'].present?
+        pagination_headers = ::JSON.parse(response.headers['pagination'])
         WillPaginate::Collection.create(pagination_headers['current_page'], pagination_headers['per_page'], pagination_headers['total_entries']) do |pager|
           pager.replace(objects)
         end
@@ -198,7 +199,7 @@ module QuickTravel
     def self.call_and_validate(http_method, path, query = {}, opts = {})
       response = QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
         response_object = Api.call_and_validate(http_method, path, query, opts.except(:cache, :cache_options))
-        response_object = response_object[:parsed_response] if !opts[:cache] and !opts[:return_response_object]
+        response_object = response_object.parsed_response if !opts[:return_response_object]
         response_object
       }
     end
@@ -257,6 +258,7 @@ module QuickTravel
         headers: response.headers,
         code: response.code
       }
+      response
     end
 
     # Do standard validations on response
