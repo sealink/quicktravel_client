@@ -127,6 +127,17 @@ describe QuickTravel::ProductConfiguration do
       let(:pricing_details) { nil }
       it { is_expected.not_to be_priced }
     end
+
+    context 'when pricing details are omitted' do
+      let(:product) do
+        double(
+          extras: extras,
+          available?: available
+        )
+      end
+
+      it { is_expected.not_to be_priced }
+    end
   end
 
   context '#price' do

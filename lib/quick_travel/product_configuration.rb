@@ -31,7 +31,7 @@ module QuickTravel
     end
 
     def priced?
-      @product.pricing_details.present?
+      @product.try(:pricing_details).present?
     end
 
     def price

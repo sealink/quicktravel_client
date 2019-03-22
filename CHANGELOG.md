@@ -7,6 +7,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ### Added
 - [DC-1418] Port NRMA portal availability cache back to EcomEngine
 - [TT-4850] Added client templates
+- [DC-1692] Fix error that can be thrown when checking if a product configuration can be priced
 
 ### Changed
 - [DC-1767] include long/lat changes to Stop
