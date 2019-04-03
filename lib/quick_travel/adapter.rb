@@ -80,10 +80,6 @@ module QuickTravel
       put_and_validate("#{api_base}/#{id}.json", options)
     end
 
-    def to_hash
-      instance_values
-    end
-
     def to_s
       if defined? @to_s
         @to_s
@@ -199,7 +195,7 @@ module QuickTravel
     def self.call_and_validate(http_method, path, query = {}, opts = {})
       response = QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
         response_object = Api.call_and_validate(http_method, path, query, opts.except(:cache, :cache_options))
-        response_object = response_object.parsed_response if !opts[:return_response_object]
+        response_object = response_object.parsed_response if !opts[:cache] and !opts[:return_response_object]
         response_object
       }
     end
@@ -253,11 +249,6 @@ module QuickTravel
 
       validate!(response)
 
-      {
-        parsed_response: response.parsed_response,
-        headers: response.headers,
-        code: response.code
-      }
       response
     end
 
