@@ -65,7 +65,7 @@ module QuickTravel
     def self.all(opts = {})
       if lookup
         cache_name = ["#{name}.all-attrs", opts.to_param].reject(&:blank?).join('?')
-        find_all!("#{api_base}.json", opts.merge(cache: cache_name))
+        find_all!("#{api_base}.json", opts.merge(cache: cache_name, cache_options: { disable_namespacing: true }))
       else
         find_all!("#{api_base}.json", opts)
       end
