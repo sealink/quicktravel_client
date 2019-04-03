@@ -5,6 +5,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
 ### Added
+- [DC-1794] Update httparty to allow caching the whole response, also add namespace to cache key
 - [DC-1418] Port NRMA portal availability cache back to EcomEngine
 - [TT-4850] Added client templates
 - [DC-1692] Fix error that can be thrown when checking if a product configuration can be priced
