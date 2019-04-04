@@ -102,7 +102,6 @@ module QuickTravel
         get_and_validate(request_path, opts.except(:cache, :cache_options), return_response_object: true)
       }
 
-      # deserializer = Deserializer.new(response[:parsed_response])
       deserializer = Deserializer.new(response.parsed_response)
       objects = Array.wrap(deserializer.extract_under_root(self))
 
