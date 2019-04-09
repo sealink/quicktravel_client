@@ -117,7 +117,7 @@ http_interactions:
   recorded_at: Thu, 18 Dec 2014 08:05:03 GMT
 - request:
     method: get
-    uri: http://0.0.0.0:8080/resources/3.json?
+    uri: http://0.0.0.0:8080/api/resources/3.json?
     body:
       encoding: US-ASCII
       string: access_key=<QT_KEY>
