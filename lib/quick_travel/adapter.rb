@@ -202,7 +202,7 @@ module QuickTravel
         raise ConnectionError.new('Timeout error')
       end
 
-      if expect && expect == :json && !response.parsed_response.is_a?(Hash)
+      if expect && expect == :json && !response.is_a?(Hash)
         fail AdapterException, <<-FAIL
           Request expected to be json but failed. Debug information below:
           http_method: #{http_method.inspect}
