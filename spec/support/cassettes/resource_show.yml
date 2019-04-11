@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://0.0.0.0:8080/resources/6.json?
+    uri: http://0.0.0.0:8080/api/resources/6.json?
     body:
       encoding: US-ASCII
       string: access_key=<QT_KEY>

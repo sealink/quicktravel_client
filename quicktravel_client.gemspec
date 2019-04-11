@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'httparty'
+  spec.add_dependency 'httparty', '0.13.5'
   spec.add_dependency 'geokit', '~> 1.8.3' # used in address model
   spec.add_dependency 'activesupport', '>= 2.0.0'
   spec.add_dependency 'money_extensions'
@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simplecov-rcov'
   spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'stamp' # Used to send appropriate dates to API's
-  spec.add_development_dependency 'vcr'
+  spec.add_development_dependency 'vcr', '2.9.3'
   spec.add_development_dependency 'fakeweb'
   spec.add_development_dependency 'rubocop'
 end
