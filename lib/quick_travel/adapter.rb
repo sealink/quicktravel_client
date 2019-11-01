@@ -65,7 +65,7 @@ module QuickTravel
     def self.all(opts = {})
       if lookup
         cache_name = ["#{name}.all-attrs", opts.to_param].reject(&:blank?).join('?')
-        find_all!("#{api_base}.json", opts.merge(cache: cache_name, cache_options: { disable_namespacing: true }))
+        find_all!("#{api_base}.json", opts.merge(cache_key: cache_name, cache_options: { disable_namespacing: true }))
       else
         find_all!("#{api_base}.json", opts)
       end
@@ -98,8 +98,8 @@ module QuickTravel
     end
 
     def self.find_all!(request_path, opts = {})
-      response = QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
-        get_and_validate(request_path, opts.except(:cache, :cache_options), return_response_object: true)
+      response = QuickTravel::Cache.cache(opts[:cache_key], opts[:cache_options]) {
+        get_and_validate(request_path, opts.except(:cache_key, :cache_options), return_response_object: true)
       }
 
       deserializer = Deserializer.new(response.parsed_response)
@@ -192,9 +192,9 @@ module QuickTravel
     end
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
-      response = QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
-        response_object = Api.call_and_validate(http_method, path, query, opts.except(:cache, :cache_options))
-        response_object = response_object.parsed_response if !opts[:cache] and !opts[:return_response_object]
+      response = QuickTravel::Cache.cache(opts[:cache_key], opts[:cache_options]) {
+        response_object = Api.call_and_validate(http_method, path, query, opts.except(:cache_key, :cache_options))
+        response_object = response_object.parsed_response if !opts[:cache_key] and !opts[:return_response_object]
         response_object
       }
     end
