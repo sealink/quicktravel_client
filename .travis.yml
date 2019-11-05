@@ -6,8 +6,7 @@ rvm:
   - 2.5
 before_install:
   - gem install bundler --version "1.17.3"
-
-script: bundle exec rake spec
+script: bundle & bundle exec rake spec
 gemfile:
   - gemfiles/rails4.gemfile
   - gemfiles/rails5.gemfile
@@ -15,3 +14,4 @@ notifications:
   email:
     - support@travellink.com.au
 sudo: false
+cache: bundler
