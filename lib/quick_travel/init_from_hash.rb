@@ -28,6 +28,10 @@ module QuickTravel
         end
       end
     end
+
+    def to_hash
+      instance_values
+    end
   end
 
   class Parser

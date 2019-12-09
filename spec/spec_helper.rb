@@ -50,12 +50,10 @@ class HashCache
 end
 
 QuickTravel::Cache.cache_store = HashCache.new
+QuickTravel::Cache.namespace = 'namespace'
 
 RSpec.configure do |config|
   config.raise_errors_for_deprecations!
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
-  config.before :each do
-    allow(QuickTravel::Adapter).to receive(:cache) { ActiveSupport::Cache::MemoryStore.new }
-  end
 end

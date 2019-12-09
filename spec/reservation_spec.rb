@@ -48,3 +48,23 @@ describe QuickTravel::Reservation do
     expect(@reservation.gross_including_packaged_item).to be_an_instance_of Money
   end
 end
+
+describe QuickTravel::Reservation do
+  before(:each) do
+    VCR.use_cassette('reservation_with_extra_picks') do
+      @booking = QuickTravel::Booking.find(1)
+      @reservation = @booking.reservations.first
+    end
+  end
+
+  it 'should convert hash to objects' do
+    expect(@reservation.passenger_splits.first).to be_an_instance_of QuickTravel::PassengerSplit
+  end
+
+  let(:test_type) { double(name: 'test') }
+
+  it 'should not raise error in passenger count' do
+    allow(QuickTravel::PassengerType).to receive(:find).and_return(test_type)
+    expect{ @reservation.passengers_count(@booking) }.not_to raise_error
+  end
+end

@@ -42,7 +42,7 @@ module QuickTravel
       passenger_type_count = {}
       if passenger_splits.present?
         passenger_splits.each do |p|
-          passenger = booking.find_passenger_by_id(p['consumer_id'])
+          passenger = booking.find_passenger_by_id(p.consumer_id)
 
           if passenger.present?
             passenger_type_count[passenger.passenger_type_id] ||= 0

@@ -13,7 +13,7 @@ module QuickTravel
 
     def self.all_with_price(opts)
       cache_key = GenerateCacheKey.new(name, opts).call
-      find_all!("/api/resources/index_with_price.json", opts.merge(cache: cache_key))
+      find_all!("/api/resources/index_with_price.json", opts.merge(cache_key: cache_key))
     end
 
     def product_type
