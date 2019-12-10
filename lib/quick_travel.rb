@@ -33,6 +33,7 @@ module QuickTravel
   require 'quick_travel/drop_off_location'
   require 'quick_travel/drop_off_option'
   require 'quick_travel/location'
+  require 'quick_travel/package'
   require 'quick_travel/party'
   require 'quick_travel/passenger'
   require 'quick_travel/passenger_type'
