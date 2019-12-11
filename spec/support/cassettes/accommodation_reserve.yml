@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/reservation_for/accommodations/create_or_update.json
     body:
       encoding: UTF-8
-      string: reservations[resource_id]=6&reservations[bed_configuration_id]=1&reservations[first_travel_date]=01%2F03%2F2016&reservations[last_travel_date]=02%2F03%2F2016&booking_id=4&access_key=<QT_KEY>
+      string: reservations[resource_id]=6&reservations[bed_configuration_id]=1&reservations[first_travel_date]=01%2F03%2F2016&reservations[last_travel_date]=02%2F03%2F2016&booking_id=4
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
@@ -59,10 +61,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/4.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
@@ -124,10 +128,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/4.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
@@ -189,10 +195,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/resources/6.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

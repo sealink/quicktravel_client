@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/1.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
@@ -88,10 +90,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/1/update_with_nested_attributes.json
     body:
       encoding: UTF-8
-      string: booking[customer_contact_name]=New%20Name&booking[consumers][][id]=1&booking[consumers][][title]=Mr&booking[consumers][][first_name]=New&booking[consumers][][last_name]=Name&access_key=<QT_KEY>
+      string: booking[customer_contact_name]=New%20Name&booking[consumers][][id]=1&booking[consumers][][title]=Mr&booking[consumers][][first_name]=New&booking[consumers][][last_name]=Name
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
@@ -144,10 +148,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/1.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

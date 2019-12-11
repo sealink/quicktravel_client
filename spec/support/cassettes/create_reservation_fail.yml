@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/reservations.json
     body:
       encoding: UTF-8
-      string: resource_id=4&first_travel_date=2099-09-10&access_key=<QT_KEY>
+      string: resource_id=4&first_travel_date=2099-09-10
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 404

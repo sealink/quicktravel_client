@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/products/6.json?date_range%5Bend_date%5D=2016-03-02&date_range%5Bstart_date%5D=2016-03-01&first_travel_date=2016-03-01&passenger_type_numbers%5B%5D=1
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

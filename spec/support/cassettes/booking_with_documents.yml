@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/1.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
@@ -88,10 +90,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/1/documents.json?last_group=true&regenerate=false
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
