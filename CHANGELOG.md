@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## Unreleased
+## [3.8.0]
 ### Added
 - [DC-1794] Update httparty to allow caching the whole response, also add namespace to cache key
 - [DC-1418] Port NRMA portal availability cache back to EcomEngine
