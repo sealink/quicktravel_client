@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/checkouts.json
     body:
       encoding: UTF-8
-      string: booking_id=7&payment[gateway_response]=%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardNumber%22%3A%203085227007682330%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardBalance%22%3A%206546%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardSequenceNumber%22%3A%2055%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CILAmount%22%3A%200%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22AuthorizedAmount%22%3A%20890%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22SalesReferenceNumber%22%3A%2053183943%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionDTM%22%3A%20%222018-01-04T09%3A00%3A43.106%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionReferenceNumber%22%3A%201271099697%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardBlockState%22%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22AutoloadAmount%22%3A%200%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D&payment[payment_type_id]=10&payment[amount_in_cents]=10&payment[uid]=opal-uid&payment[comment]=Test%20Opal%20Payment&payment[meta_data][applicationInstanceId]=101166&payment[meta_data][operatorId]=an_operator&access_key=<QT_KEY>
+      string: booking_id=7&payment[gateway_response]=%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardNumber%22%3A%203085227007682330%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardBalance%22%3A%206546%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardSequenceNumber%22%3A%2055%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CILAmount%22%3A%200%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22AuthorizedAmount%22%3A%20890%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22SalesReferenceNumber%22%3A%2053183943%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionDTM%22%3A%20%222018-01-04T09%3A00%3A43.106%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22TransactionReferenceNumber%22%3A%201271099697%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22CardBlockState%22%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22AutoloadAmount%22%3A%200%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D&payment[payment_type_id]=10&payment[amount_in_cents]=10&payment[uid]=opal-uid&payment[comment]=Test%20Opal%20Payment&payment[meta_data][applicationInstanceId]=101166&payment[meta_data][operatorId]=an_operator
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

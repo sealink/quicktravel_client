@@ -11,6 +11,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 - [DC-1692] Fix error that can be thrown when checking if a product configuration can be priced
 
 ### Changed
+- [DC-2997] Remove API key from body, and move it to header
 - [DC-1767] include long/lat changes to Stop
 
 ## [3.7.0]

@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/3.json
     body:
       encoding: UTF-8
-      string: booking[customer_contact_name]=John&access_key=<QT_KEY>
+      string: booking[customer_contact_name]=John
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
@@ -63,10 +65,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/bookings/3.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/checkouts.json
     body:
       encoding: UTF-8
-      string: booking_id=6&payment[payment_type_id]=10&payment[amount_in_cents]=10&payment[uid]=modern-opal-uid&payment[comment]=Test%20Opal%20Payment&access_key=<QT_KEY>
+      string: booking_id=6&payment[payment_type_id]=10&payment[amount_in_cents]=10&payment[uid]=modern-opal-uid&payment[comment]=Test%20Opal%20Payment
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

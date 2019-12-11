@@ -213,6 +213,7 @@ module QuickTravel
       http_params[:query]   ||= FilterQuery.new(query).call
       http_params[:headers] ||= {}
       http_params[:headers]['Content-length'] = '0' if http_params[:body].blank?
+      http_params[:headers]['x-api-key'] = QuickTravel.config.access_key
       expect = http_params.delete(:expect)
 
       # Use :body instead of :query for put/post.
@@ -222,7 +223,6 @@ module QuickTravel
       if [:put, :post].include?(http_method.to_sym)
         http_params[:body].merge!(http_params.delete(:query))
       end
-      http_params[:body][:access_key] = QuickTravel.config.access_key
       http_params[:follow_redirects] = false
 
       begin

@@ -26,8 +26,7 @@ describe QuickTravel::Adapter do
     let(:expected_body) {
       {
         test: true,
-        sub_hash: { id: 42 },
-        access_key: an_instance_of(String)
+        sub_hash: { id: 42 }
       }
     }
 
