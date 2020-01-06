@@ -133,7 +133,7 @@ describe QuickTravel::Checkout do
       }
 
       let(:expected_create_attributes) { { completable: false } }
-      let(:expected_update_attributes) { { successful: true } }
+      let(:expected_update_attributes) { { successful: false } }
       it 'should update correctly' do
         expect(create_payment_response).to have_attributes(expected_create_attributes)
         expect(update_payment_response).to have_attributes(expected_update_attributes)
