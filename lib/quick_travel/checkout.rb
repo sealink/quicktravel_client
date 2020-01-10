@@ -47,7 +47,6 @@ module QuickTravel
     def self.attributes_for
       attrs = yield
       attrs[:completed] = attrs['progress'] == 'completed'
-      attrs[:completed] = attrs['successful'] if attrs['successful'].present?
       attrs[:successful] = attrs[:completed]
       attrs
     rescue AdapterError => e
