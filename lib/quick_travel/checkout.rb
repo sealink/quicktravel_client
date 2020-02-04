@@ -46,7 +46,7 @@ module QuickTravel
     # TODO Move to an external builder?
     def self.attributes_for
       attrs = yield
-      attrs[:completed] = attrs['progress'] == 'completed' || attrs['successful']
+      attrs[:completed] = attrs['progress'] == 'completed'
       attrs[:successful] = attrs[:completed]
       attrs
     rescue AdapterError => e

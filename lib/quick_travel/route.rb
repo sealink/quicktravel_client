@@ -17,7 +17,7 @@ module QuickTravel
     # All routes for a given product type
     def self.all(product_type_id)
       find_all!("/product_types/#{product_type_id}/routes.json",
-                cache: "QuickTravel::Route.all-#{product_type_id}-attrs")
+                cache_key: "QuickTravel::Route.all-#{product_type_id}-attrs")
     end
 
     def self.find(routes_list, route_id)

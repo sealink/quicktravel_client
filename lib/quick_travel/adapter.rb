@@ -65,7 +65,7 @@ module QuickTravel
     def self.all(opts = {})
       if lookup
         cache_name = ["#{name}.all-attrs", opts.to_param].reject(&:blank?).join('?')
-        find_all!("#{api_base}.json", opts.merge(cache: cache_name))
+        find_all!("#{api_base}.json", opts.merge(cache_key: cache_name, cache_options: { disable_namespacing: true }))
       else
         find_all!("#{api_base}.json", opts)
       end
@@ -78,10 +78,6 @@ module QuickTravel
     def self.update(id, options = {})
       check_id!(id)
       put_and_validate("#{api_base}/#{id}.json", options)
-    end
-
-    def to_hash
-      instance_values
     end
 
     def to_s
@@ -102,20 +98,14 @@ module QuickTravel
     end
 
     def self.find_all!(request_path, opts = {})
-      response = if opts.key? :cache
-        QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
-          get_and_validate(request_path, opts.except(:cache, :cache_options))
-        }
-      else
-        get_and_validate(request_path, opts, return_response_object: true)
-      end
-      full_response = response.respond_to? :parsed_response
-      parsed_response = full_response ? response.parsed_response : response
+      response = QuickTravel::Cache.cache(opts[:cache_key], opts[:cache_options]) {
+        get_and_validate(request_path, opts.except(:cache_key, :cache_options), return_response_object: true)
+      }
 
-      deserializer = Deserializer.new(parsed_response)
+      deserializer = Deserializer.new(response.parsed_response)
       objects = Array.wrap(deserializer.extract_under_root(self))
 
-      if full_response && response.headers['pagination'].present?
+      if response.headers['pagination'].present?
         pagination_headers = ::JSON.parse(response.headers['pagination'])
         WillPaginate::Collection.create(pagination_headers['current_page'], pagination_headers['per_page'], pagination_headers['total_entries']) do |pager|
           pager.replace(objects)
@@ -202,13 +192,11 @@ module QuickTravel
     end
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
-      response = if opts.key? :cache
-        QuickTravel::Cache.cache(opts[:cache], opts[:cache_options]) {
-          Api.call_and_validate(http_method, path, query, opts.except(:cache, :cache_options))
-        }
-      else
-        Api.call_and_validate(http_method, path, query, opts)
-      end
+      response = QuickTravel::Cache.cache(opts[:cache_key], opts[:cache_options]) {
+        response_object = Api.call_and_validate(http_method, path, query, opts.except(:cache_key, :cache_options))
+        response_object = response_object.parsed_response if !opts[:cache_key] and !opts[:return_response_object]
+        response_object
+      }
     end
 
     def self.base_uri(uri = nil)
@@ -221,12 +209,11 @@ module QuickTravel
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
       http_params = opts.clone
-      return_response_object = http_params.delete(:return_response_object)
-
       # Set default token
       http_params[:query]   ||= FilterQuery.new(query).call
       http_params[:headers] ||= {}
       http_params[:headers]['Content-length'] = '0' if http_params[:body].blank?
+      http_params[:headers]['x-api-key'] = QuickTravel.config.access_key
       expect = http_params.delete(:expect)
 
       # Use :body instead of :query for put/post.
@@ -236,7 +223,6 @@ module QuickTravel
       if [:put, :post].include?(http_method.to_sym)
         http_params[:body].merge!(http_params.delete(:query))
       end
-      http_params[:body][:access_key] = QuickTravel.config.access_key
       http_params[:follow_redirects] = false
 
       begin
@@ -262,11 +248,7 @@ module QuickTravel
 
       validate!(response)
 
-      if return_response_object
-        response
-      else
-        response.parsed_response
-      end
+      response
     end
 
     # Do standard validations on response

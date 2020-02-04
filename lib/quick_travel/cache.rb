@@ -6,7 +6,10 @@ module QuickTravel
       end
     end
 
-    def self.cache(key, cache_options = {})
+    def self.cache(key, cache_options = nil)
+      return yield unless key.present?
+      cache_options ||= {}
+      key = "#{@@namespace}_#{key}" unless cache_options[:disable_namespacing]
       cached_value = cache_store.read(key)
       return cached_value unless cached_value.nil?
       return nil unless block_given?
@@ -15,7 +18,8 @@ module QuickTravel
       yield.tap { |value| cache_store.write(key, value, cache_options) }
     end
 
-    def self.delete(key)
+    def self.delete(key, namespace = true)
+      key = "#{@@namespace}_#{key}" if namespace
       cache_store.delete(key)
     end
 
@@ -27,8 +31,16 @@ module QuickTravel
       @@cache_store
     end
 
-    def self.cache_store=(store)
-      @@cache_store = store
+    def self.cache_store=(session)
+      @@cache_store = session
+    end
+
+    def self.namespace
+      @@namespace
+    end
+
+    def self.namespace=(namespace)
+      @@namespace = namespace
     end
   end
 end

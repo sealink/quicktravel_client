@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/product_types.json
     body:
       encoding: UTF-8
-      string: access_key=<QT_KEY>
+      string: ''
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

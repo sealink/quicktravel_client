@@ -6,7 +6,6 @@ rvm:
   - 2.5
 before_install:
   - gem install bundler --version "1.17.3"
-  - bundle _1.17.3_ install
 script: bundle && bundle exec rake spec
 gemfile:
   - gemfiles/rails4.gemfile

@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/reservation_for/scheduled_trips/find_services_for.json
     body:
       encoding: UTF-8
-      string: product_type_id=6&route_id=3&forward[first_travel_date]=2016-03-01&forward[from_route_stop_id]=5&forward[to_route_stop_id]=14&forward[passenger_types][1]=2&access_key=<QT_KEY>
+      string: product_type_id=6&route_id=3&forward[first_travel_date]=2016-03-01&forward[from_route_stop_id]=5&forward[to_route_stop_id]=14&forward[passenger_types][1]=2
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

@@ -5,10 +5,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
     body:
       encoding: UTF-8
-      string: reservations[][resource_id]=7&reservations[][quantity]=2&reservations[][first_travel_date]=2016-04-15&access_key=<QT_KEY>
+      string: reservations[][resource_id]=7&reservations[][quantity]=2&reservations[][first_travel_date]=2016-04-15
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200
@@ -61,10 +63,12 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
     body:
       encoding: UTF-8
-      string: reservations[][resource_id]=7&reservations[][quantity]=3&reservations[][first_travel_date]=2016-04-15&access_key=<QT_KEY>
+      string: reservations[][resource_id]=7&reservations[][quantity]=3&reservations[][first_travel_date]=2016-04-15
     headers:
       Content-Length:
       - '0'
+      X-API-KEY:
+      - <QT_KEY>
   response:
     status:
       code: 200

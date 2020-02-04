@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'httparty', '0.15.7' # Bug in >16 relating to nested parameters
+  spec.add_dependency 'httparty', '~> 0.17'
   spec.add_dependency 'json'
   spec.add_dependency 'activesupport', '>= 2.0.0'
   spec.add_dependency 'facets'
