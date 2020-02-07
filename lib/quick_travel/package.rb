@@ -6,7 +6,7 @@ module QuickTravel
 
     self.api_base = '/api/packages'
     def product_type_id
-      '554881941'
+      '11'
     end
 
     def product_type

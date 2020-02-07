@@ -208,6 +208,9 @@ module QuickTravel
     include HTTParty
 
     def self.call_and_validate(http_method, path, query = {}, opts = {})
+      puts "================visiting qt=============================="
+      puts "#{http_method} -> #{path}"
+      puts query
       http_params = opts.clone
       # Set default token
       http_params[:query]   ||= FilterQuery.new(query).call
@@ -245,6 +248,9 @@ module QuickTravel
           parsed_response: #{response.parsed_response.inspect}
         FAIL
       end
+
+      puts '-------------qt response-------------------'
+      puts response
 
       validate!(response)
 
