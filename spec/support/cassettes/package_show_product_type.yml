@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/product_types.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      X-Api-Key:
+      - <QT_KEY>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Feb 2020 01:01:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df7c89a7945a63958553e70497ede639a1582160490; expires=Sat, 21-Mar-20
+        01:01:30 GMT; path=/; domain=.quicktravel.com.au; HttpOnly; SameSite=Lax
+      - _session_id=ohFEAurOFA0k3Dkfurpzg7yWDoevpE1we3n1pGout1j%2BCbEjjT9xDpMiVvY8FKGzDX8YDbEV2KYzlGqKmub84stiPt9YtKFD3o69iDPkSfqNbw9Xsng%3D--DBpWmmvc92dX5tYa--yXGiS4InGDOsWVI5ll1G7Q%3D%3D;
+        path=/; HttpOnly
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"9e86e28ddbc8b9438ee44e55c192b7eb"
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 95f9f85d-fe5d-4d5f-b52b-6a63c2613249
+      X-Runtime:
+      - '0.057441'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 567c8cbae911f2e9-ADL
+    body:
+      encoding: UTF-8
+      string: '[{"id":6,"name":"Ferry","resource_class_name":"Ship","disclaimer_id":1,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":true,"prompt_for_pick_up_drop_off":false,"book_before_level":90,"book_before_units":"minutes","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2017-07-31T13:58:21.000+08:00","updated_at":"2019-10-14T08:37:06.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":9,"name":"Miscellaneous
+        Item","resource_class_name":"Item","disclaimer_id":null,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2017-08-28T13:38:17.000+08:00","updated_at":"2017-08-28T13:38:17.000+08:00","code":"","needs_services":false,"can_have_quantity":true,"can_have_dates":false,"needs_passengers":false},{"id":10,"name":"Gift
+        Vouchers/Donations","resource_class_name":"GenericResource","disclaimer_id":2,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2017-09-27T08:47:40.000+08:00","updated_at":"2017-12-07T12:12:53.000+08:00","code":"GIFT","needs_services":false,"can_have_quantity":false,"can_have_dates":false,"needs_passengers":false},{"id":11,"name":"Rottnest
+        Packages","resource_class_name":"Package","disclaimer_id":2,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":true,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2017-12-11T09:02:10.000+08:00","updated_at":"2018-08-17T08:38:42.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":12,"name":"OLD
+        Rottnest Island Bike Hire","resource_class_name":"GenericResource","disclaimer_id":2,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":true,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2017-12-21T11:02:46.000+08:00","updated_at":"2018-10-29T11:33:29.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":13,"name":"Rottnest
+        Island Tours","resource_class_name":"GenericResource","disclaimer_id":2,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":true,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2018-07-10T06:53:42.000+08:00","updated_at":"2018-07-10T06:53:42.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":15,"name":"Rottnest
+        Island Bike Hire","resource_class_name":"Item","disclaimer_id":2,"durational":true,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["vendor_pnr","notes_for_vendor","vendor_staff"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2018-10-29T11:35:34.000+08:00","updated_at":"2020-02-06T06:29:50.000+08:00","code":"","needs_services":true,"can_have_quantity":true,"can_have_dates":true,"needs_passengers":false},{"id":16,"name":"Accommodation","resource_class_name":"Accommodation","disclaimer_id":2,"durational":true,"can_find_by_location":true,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2018-12-28T05:53:59.000+08:00","updated_at":"2019-03-14T05:08:22.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":17,"name":"Coach
+        Transfers","resource_class_name":"ScheduledTripResource","disclaimer_id":2,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":true,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2019-03-19T10:45:01.000+08:00","updated_at":"2019-03-19T10:45:01.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":18,"name":"Flights","resource_class_name":"ScheduledTripResource","disclaimer_id":2,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["trip_name","departure_time","pick_up_information","drop_off_information","vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2019-09-23T14:17:51.000+08:00","updated_at":"2019-09-24T07:37:17.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":19,"name":"Extra
+        Picks","resource_class_name":"ExtraPick","disclaimer_id":null,"durational":true,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["vendor_pnr","notes_for_vendor","vendor_staff","note_for_inventory_type_change"],"only_bookable_with_accommodation":true,"footer_itinerary_item":false,"created_at":"2019-09-30T08:07:18.000+08:00","updated_at":"2019-09-30T08:07:18.000+08:00","code":"","needs_services":true,"can_have_quantity":true,"can_have_dates":true,"needs_passengers":false},{"id":20,"name":"Captain
+        Cook Cruises - Tour \u0026 Vendor Resources","resource_class_name":"GenericResource","disclaimer_id":1,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":["reservation_group_id","vendor_pnr","notes_for_vendor"],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2019-11-28T09:10:55.000+08:00","updated_at":"2020-02-06T06:07:31.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":21,"name":"Captain
+        Cook Cruises - Ferry","resource_class_name":"Ship","disclaimer_id":1,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":true,"multi_leg":true,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2020-02-03T05:24:36.000+08:00","updated_at":"2020-02-03T05:24:36.000+08:00","code":"","needs_services":true,"can_have_quantity":false,"can_have_dates":true,"needs_passengers":true},{"id":22,"name":"Captain
+        Cook Cruises - Optional Upgrades","resource_class_name":"Item","disclaimer_id":1,"durational":false,"can_find_by_location":false,"measure_units_by_pax_count":false,"multi_leg":false,"prompt_for_pick_up_drop_off":false,"book_before_level":null,"book_before_units":"seconds","maximum_passengers_online":null,"confirmation_request_fields":[],"only_bookable_with_accommodation":false,"footer_itinerary_item":false,"created_at":"2020-02-06T06:08:10.000+08:00","updated_at":"2020-02-06T06:08:10.000+08:00","code":"","needs_services":true,"can_have_quantity":true,"can_have_dates":true,"needs_passengers":false}]'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2020 01:01:30 GMT
+recorded_with: VCR 2.9.3

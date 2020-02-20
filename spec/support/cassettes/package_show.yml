@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/packages/464.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      X-Api-Key:
+      - <QT_KEY>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Feb 2020 01:00:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4476d9cd867237ab1e7ddfe8cab9bb7f1582160456; expires=Sat, 21-Mar-20
+        01:00:56 GMT; path=/; domain=.quicktravel.com.au; HttpOnly; SameSite=Lax
+      - _session_id=HNhfu80YF9UuLdm9%2Fvd4OrAKDAwGgM7yyyxm5Hre5J6SCh1rK7pOCUrasl0eqcCxjItMZCX6GWErtUMjSUS%2BfLOfX8kg%2BEoaKm1O41EPp0aohkzYQ78%3D--ylH6XcOdnh0BcLnE--SKcJAqb%2B%2BAdJmnzJZ0i1%2Bg%3D%3D;
+        path=/; HttpOnly
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"da1758ef2426563776eaed931d5175b9"
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 03c5ebc4-eb1d-4647-9d59-4f33e7417a76
+      X-Runtime:
+      - '0.141355'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 567c8be46bd9f2e9-ADL
+    body:
+      encoding: UTF-8
+      string: '{"name":"Swan Valley Gourmet Wine Cruise (SVGWC-0945)","id":464,"type":"Package","product_type_id":11,"resource_groups":[{"title":"Perth
+        to Sandalford ","id":664,"pick":1,"minimum_required":false,"maximum_restriction":false,"minimum":null,"maximum":null,"product_type_id":21,"package_options":[],"type":"ResourceGroup","package_items":[{"id":2058,"default_selection":false,"type":"PackageItem","resource":{"id":486,"name":"Perth
+        to Mandoon/Sandalford","type":"Ship","package_item_id":2058,"product_type_id":21,"from_route_stop_id":351,"to_route_stop_id":353}}]},{"title":"Tour
+        Description \u0026 Vendor Items","id":665,"pick":1,"minimum_required":false,"maximum_restriction":false,"minimum":null,"maximum":null,"product_type_id":11,"package_options":[],"type":"ResourceGroup","package_items":[{"id":1828,"default_selection":false,"type":"PackageItem","resource":{"name":"Swan
+        Valley Gourmet Wine Cruise - Vendor Items \u0026 Tour Description","id":465,"type":"Package","product_type_id":11,"resource_groups":[{"title":"Tour
+        Description \u0026 Vendor Items","id":667,"pick":1,"minimum_required":false,"maximum_restriction":false,"minimum":null,"maximum":null,"product_type_id":20,"package_options":[],"type":"ResourceGroup","package_items":[{"id":1830,"default_selection":false,"type":"PackageItem","resource":{"id":397,"name":"SVGWC-0945
+        - Swan Valley Gourmet Wine Cruise","type":"GenericResource","package_item_id":1830,"product_type_id":20,"from_route_stop_id":null,"to_route_stop_id":null}},{"id":1831,"default_selection":false,"type":"PackageItem","resource":{"id":329,"name":"BELLS:
+        Morning Tea Package","type":"GenericResource","package_item_id":1831,"product_type_id":20,"from_route_stop_id":null,"to_route_stop_id":null}},{"id":1832,"default_selection":false,"type":"PackageItem","resource":{"id":330,"name":"BELLS:
+        Afternoon Tea Package","type":"GenericResource","package_item_id":1832,"product_type_id":20,"from_route_stop_id":null,"to_route_stop_id":null}},{"id":1833,"default_selection":false,"type":"PackageItem","resource":{"id":335,"name":"SANDALFORD
+        ESTATE: 2 Course Lunch \u0026 Wine Tasting","type":"GenericResource","package_item_id":1833,"product_type_id":20,"from_route_stop_id":null,"to_route_stop_id":null}}]}],"default_options":[]}}]},{"title":"Sandalford
+        to Perth","id":666,"pick":1,"minimum_required":false,"maximum_restriction":false,"minimum":null,"maximum":null,"product_type_id":21,"package_options":[],"type":"ResourceGroup","package_items":[{"id":2059,"default_selection":false,"type":"PackageItem","resource":{"id":487,"name":"Sandalford/Mandoon
+        to Perth","type":"Ship","package_item_id":2059,"product_type_id":21,"from_route_stop_id":354,"to_route_stop_id":356}}]},{"title":"Optional
+        Extra","id":713,"pick":0,"minimum_required":false,"maximum_restriction":false,"minimum":null,"maximum":null,"product_type_id":22,"package_options":[],"type":"ResourceGroup","package_items":[{"id":2087,"default_selection":false,"type":"PackageItem","resource":{"id":502,"name":"Premium
+        Beverage Upgrade (18+)","type":"Item","package_item_id":2087,"product_type_id":22,"from_route_stop_id":null,"to_route_stop_id":null}},{"id":2088,"default_selection":false,"type":"PackageItem","resource":{"id":503,"name":"Last
+        Minute Premium Beverage Upgrade (18+) ","type":"Item","package_item_id":2088,"product_type_id":22,"from_route_stop_id":null,"to_route_stop_id":null}}]}],"default_options":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2020 01:00:56 GMT
+recorded_with: VCR 2.9.3
