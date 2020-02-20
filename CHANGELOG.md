@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [Unreleased]
+### Added
+- [DC-2942] Add package class to support quantity based package
+
 ## [3.8.1]
 ### Changed
 - [DC-3033] Reverse changes in checkout class to fix polipay redirection in EcomEngine
