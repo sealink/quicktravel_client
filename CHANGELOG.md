@@ -5,6 +5,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [Unreleased]
 ### Added
+- [DC-3115] Add customer comments method in booking
 - [DC-2942] Add package class to support quantity based package
 
 ## [3.8.1]
