@@ -207,3 +207,13 @@ describe QuickTravel::Booking, "when booking doesn't exist" do
     end
   end
 end
+
+describe QuickTravel::Booking, "#customer_comments" do
+  let(:booking) { QuickTravel::Booking.find(333536) }
+
+  it 'should return customer comments' do
+    VCR.use_cassette('booking_with_comments') do
+      expect(booking.customer_comments).to eq 'I hate this'
+    end
+  end
+end

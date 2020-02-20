@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.qt.sealink.com.au:8080/api/bookings/333536.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      X-Api-Key:
+      - <QT_KEY>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Feb 2020 04:49:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d479fa6197c2ba76728106cae869037381582174160; expires=Sat, 21-Mar-20
+        04:49:20 GMT; path=/; domain=.quicktravel.com.au; HttpOnly; SameSite=Lax
+      - _session_id=nDi7wN9vz%2BWnYivttZncWLTlh0sID39ME4%2BzY1x85FwnrsEma2kQLQy56t8wG4Trg%2B%2B6pOaO5RsFQ%2FxoU3Q7K46VhP%2BMMADI5HK9csHIagOb5bHEjQM%3D--9uFF2MnY7YnenN12--OcTj7hAxSUXCSEo7gFV7qw%3D%3D;
+        path=/; HttpOnly
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"ec8f8b692ff0cdd0ad92d33a51c41088"
+      P3p:
+      - CP="IDC DSP CAO COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 8a7660a8-8ca5-4b29-bf42-ffc70b2ab78b
+      X-Runtime:
+      - '0.974720'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 567dda783ac2f2ed-ADL
+    body:
+      encoding: UTF-8
+      string: '{"id":333536,"state":"active","reference":"23263F","public_comments":null,"internal_comments":null,"comments":[{"id":12,"booking_id":333536,"comment_type":"customer","text":"I
+        hate this","sentiment":"neutral","language_code":"en","translated_text":null}],"customer_contact_name":"John
+        Smith","customer_contact_phone":"1234","customer_contact_mobile":null,"customer_contact_email":"john.smith@test.com","currency_iso_code":"AUD","country_id":14,"drop_off_option_id":null,"drop_off_location_id":null,"post_code":"5000","referral_code_id":31,"external_identifier":null,"created_at":"2020-02-20T12:11:12.000+08:00","updated_at":"2020-02-20T12:29:45.000+08:00","promo_code":null,"promo_code_id":null,"insurance_offered":true,"total_adjustments_in_cents":136,"pre_adjusted_gross_in_cents":10900,"nett_in_cents":11036,"gross_in_cents":11036,"commission_in_cents":0,"balance_in_cents":0,"paid_in_cents":11036,"surcharge_in_cents":136,"deposit_in_cents":11036,"web_site":{"id":2,"name":"SeaLink
+        Rottnest","created_at":"2017-08-08T09:32:56.000+08:00","updated_at":"2017-08-08T09:32:56.000+08:00","access_key":"46eff490c163bad418569bf990214f798df8533fea29f0efb75ff0da10865109","manager_id":4,"letterhead_id":1},"web_site_name":"SeaLink
+        Rottnest","deposit_relevant":false,"deposit_due_on":{"_type":"Date","_value":"2020-02-20T12:11:12.000+08:00"},"balance_due_on":{"_type":"Date","_value":"2020-02-20T12:11:12.000+08:00"},"due":true,"first_travel_date":{"_type":"Date","_value":"2020-02-21"},"last_travel_date":{"_type":"Date","_value":"2020-02-21"},"complete":true,"reason_not_complete":"","first_reason_not_complete":"","unprintable_luggage_tags":false,"ttlseconds":null,"expires_from":"2020-02-20T12:39:21.289+08:00","discardable_in":-600,"inactivatable_in":-600,"notices":{},"client":null,"passenger_ids":[1101379],"vehicle_ids":[],"reservation_ids":[898357,898358],"adjustment_ids":[],"todo_items":[],"confirmation_requests":[],"passengers_attributes":[{"id":1101379,"title":"Mr","first_name":"John","last_name":"Smith","passenger_type_id":1,"age":null,"gender":"Male","position":1,"driver_uid":null,"booking_id":333536}],"vehicles_attributes":[],"reservations_attributes":[{"id":898357,"booking_id":333536,"description":"The
+        ''Quokka 1'', is a 400 passenger Enviro-Cat vessel that runs less fuel per
+        passenger than a small four cylinder car","comment":null,"active":true,"service_ids":[106911],"resource_id":2,"quantity":null,"adjustments_attributes":[{"id":3062684,"gross_in_cents":1900,"creator":{"id":4,"name":"Web
+        Site Manager","age":null,"first_name":"Web Site","last_name":"Manager","title":"Mr","created_at":"2017-05-01T13:27:47.000+08:00","updated_at":"2017-10-04T09:23:21.000+08:00","notes":"","updator_id":18,"creator_id":null,"active":true,"internal_subdivision":false,"business_number":null,"business_number_type":null,"access_type":2,"gender_id":"Male","auth_id":null,"birthdate":null},"created_at":"2020-02-20T12:11:49.000+08:00","description":"Rottnest
+        Island Admission Fee - Adult - One Way / Return on Same Day 2019/20","adjustable_item_type":"Reservation","adjustable_item_id":898357,"adjustment_definition_id":468,"adjustment_category_id":3,"automatic":true}],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"start_time":"2000-01-01T08:30:00.000Z","end_time":"2000-01-01T10:00:00.000Z","route":"Perth
+        and Fremantle to Rottnest Island","route_path":"Perth to Rottnest Island","route_id":8,"trip_id":97,"inverse_reservation_id":898358,"from_route_stop_attributes":{"id":73,"inventory_controlled":true,"route_id":8,"position":1,"created_at":"2019-10-14T08:43:51.000+08:00","updated_at":"2019-10-14T08:43:51.000+08:00","stop_id":3,"name":"Perth","code":"PERTH","address":"Pier
+        3, Barrack Street Jetty, Perth, WA 6000"},"to_route_stop_attributes":{"id":75,"inventory_controlled":true,"route_id":8,"position":3,"created_at":"2019-10-14T08:43:51.000+08:00","updated_at":"2019-10-14T08:43:51.000+08:00","stop_id":2,"name":"Rottnest
+        Island","code":"ROTTO","address":"Main Jetty, Thomson Bay, Rottnest Island,
+        WA 6161"},"product_type_id":6,"itinerary_footer":false,"fare_basis_set_id":266,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_vendor":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":80,"pick_up_info":"0830:
+        Perth (Pier 3, Barrack Street Jetty, Perth, WA 6000)","drop_off_info":"1000:
+        Rottnest Island (Main Jetty, Thomson Bay, Rottnest Island, WA 6161)","selection_name":"0830
+        - Quokka 2 - From Perth","product_name_underscore":"ferry","resource_class_name_underscore":"ship","resource_class_name":"Ship","has_ticket_template":false,"resource_ignore_last_travel_date_offset":false,"first_travel_date":{"_type":"Date","_value":"2020-02-21"},"last_travel_date":{"_type":"Date","_value":"2020-02-21"},"durational":false,"duration":1,"span":1,"duration_units":"Days","date_start_label":"Start
+        Date:","date_end_label":"End Date:","expires":false,"expiry":"*NA*","has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
+        Priced as: Rottnest Island - from 5 September 2019 - Same Day \u0026 Different
+        Day Return","gross_including_packaged_item_in_cents":6400,"pre_adjusted_gross_including_packaged_item_in_cents":4500,"gross_in_cents":6400,"pre_adjusted_gross_in_cents":4500,"pre_adjusted_commission_in_cents":0,"cost_in_cents":0,"sub_items_gross_in_cents":0,"rules":[{"unique_name":"Rottnest
+        Island Admission Fee - Same Day Return from 1 July 2019 (Not commissionable)","description":"Rottnest
+        Island Admission Fee (only charged when arriving on Rottnest Island, not when
+        departing)","display_name":"Rottnest Island Admission Fee - Same Day Return
+        from 1 July 2019 (Not commissionable)"},{"unique_name":"Rottnest Island Ferry
+        - Same Day Return - travel from 5/9/19","description":"Rottnest Island Ferry
+        - Same Day Return - travel from 5/9/19","display_name":"Rottnest Island Ferry
+        - Same Day Return - travel from 5/9/19"}],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":[],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1101379],"passenger_splits":[{"id":7646275,"consumer_id":1101379,"consumer_splittable_id":898357,"gross_in_cents":4500,"commission_in_cents":0,"consumer_splittable_type":"Reservation","created_at":"2020-02-20T12:11:14.000+08:00","updated_at":"2020-02-20T12:11:15.000+08:00","commission_percentage":"0.0","length_multiplier":"1.0"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1101379":6400}},{"id":898358,"booking_id":333536,"description":"The
+        ''Quokka 1'', is a 400 passenger Enviro-Cat vessel that runs less fuel per
+        passenger than a small four cylinder car","comment":null,"active":true,"service_ids":[106912],"resource_id":2,"quantity":null,"adjustments_attributes":[],"complete":true,"reason_not_complete":"","first_reason_not_complete":"","enough_time_before_travel_to_edit":true,"start_time":"2000-01-01T16:15:00.000Z","end_time":"2000-01-01T17:45:00.000Z","route":"Rottnest
+        Island to Fremantle and Perth","route_path":"Rottnest Island to Perth","route_id":9,"trip_id":98,"inverse_reservation_id":898357,"from_route_stop_attributes":{"id":76,"inventory_controlled":true,"route_id":9,"position":1,"created_at":"2019-10-14T08:44:31.000+08:00","updated_at":"2019-10-14T08:44:31.000+08:00","stop_id":2,"name":"Rottnest
+        Island","code":"ROTTO","address":"Main Jetty, Thomson Bay, Rottnest Island,
+        WA 6161"},"to_route_stop_attributes":{"id":78,"inventory_controlled":true,"route_id":9,"position":3,"created_at":"2019-10-14T08:44:31.000+08:00","updated_at":"2019-10-14T08:44:31.000+08:00","stop_id":3,"name":"Perth","code":"PERTH","address":"Pier
+        3, Barrack Street Jetty, Perth, WA 6000"},"product_type_id":6,"itinerary_footer":false,"fare_basis_set_id":257,"manually_priced":false,"manually_assigned_fare_basis_set":false,"has_vendor":false,"has_fare_basis":true,"fare_basis_season_name":"","fare_basis_pointer_id":81,"pick_up_info":"1615:
+        Rottnest Island (Main Jetty, Thomson Bay, Rottnest Island, WA 6161)","drop_off_info":"1745:
+        Perth (Pier 3, Barrack Street Jetty, Perth, WA 6000)","selection_name":"1615
+        - Quokka 2 - To Perth","product_name_underscore":"ferry","resource_class_name_underscore":"ship","resource_class_name":"Ship","has_ticket_template":false,"resource_ignore_last_travel_date_offset":false,"first_travel_date":{"_type":"Date","_value":"2020-02-21"},"last_travel_date":{"_type":"Date","_value":"2020-02-21"},"durational":false,"duration":1,"span":1,"duration_units":"Days","date_start_label":"Start
+        Date:","date_end_label":"End Date:","expires":false,"expiry":"*NA*","has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
+        Priced as: Rottnest Island - from 5 September 2019 - Same Day \u0026 Different
+        Day Return","gross_including_packaged_item_in_cents":4500,"pre_adjusted_gross_including_packaged_item_in_cents":4500,"gross_in_cents":4500,"pre_adjusted_gross_in_cents":4500,"pre_adjusted_commission_in_cents":0,"cost_in_cents":0,"sub_items_gross_in_cents":0,"rules":[{"unique_name":"Rottnest
+        Island Ferry - Same Day Return - travel from 5/9/19","description":"Rottnest
+        Island Ferry - Same Day Return - travel from 5/9/19","display_name":"Rottnest
+        Island Ferry - Same Day Return - travel from 5/9/19"}],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":[],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[1101379],"passenger_splits":[{"id":7646276,"consumer_id":1101379,"consumer_splittable_id":898358,"gross_in_cents":4500,"commission_in_cents":0,"consumer_splittable_type":"Reservation","created_at":"2020-02-20T12:11:14.000+08:00","updated_at":"2020-02-20T12:11:15.000+08:00","commission_percentage":"0.0","length_multiplier":"1.0"}],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{"1101379":4500}}],"adjustments_attributes":[],"payments_attributes":[{"id":155921,"booking_id":333536,"amount_in_cents":11036,"client_id":null,"creator_id":4,"created_at":"2020-02-20T12:29:42.000+08:00","updated_at":"2020-02-20T12:29:44.000+08:00","till_id":3,"comment":"","payment_type_id":2,"success":true,"payment_method":"credit_card","surcharge_in_cents":136,"creator_name":"Web
+        Site Manager"},{"id":155920,"booking_id":333536,"amount_in_cents":10900,"client_id":null,"creator_id":4,"created_at":"2020-02-20T12:22:33.000+08:00","updated_at":"2020-02-20T12:22:45.000+08:00","till_id":3,"comment":"","payment_type_id":21,"success":false,"payment_method":"poli_pay","surcharge_in_cents":0,"creator_name":"Web
+        Site Manager"}],"payment_types_attributes":[{"id":5,"name":"American Express","description":"Payments
+        made by American Express through the payment gateway.","transaction_fee":"1.25","active":true,"position":3,"comment_required":false,"created_at":"2017-08-03T10:05:26.000+08:00","updated_at":"2017-12-15T07:37:59.000+08:00","credit_card_brand":"American
+        Express","payment_method":"credit_card","gateway":"braintree","restrict_refunds":false,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":true},{"id":14,"name":"MasterCard","description":"Payments
+        made by MasterCard through the payment gateway.","transaction_fee":"1.25","active":true,"position":4,"comment_required":false,"created_at":"2017-08-03T10:23:50.000+08:00","updated_at":"2017-12-01T02:54:42.000+08:00","credit_card_brand":"MasterCard","payment_method":"credit_card","gateway":"braintree","restrict_refunds":false,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":true},{"id":2,"name":"Visa","description":"Payments
+        paid by Visa through the payment gateway","transaction_fee":"1.25","active":true,"position":5,"comment_required":false,"created_at":"2017-05-01T13:27:46.000+08:00","updated_at":"2017-12-01T02:54:45.000+08:00","credit_card_brand":"Visa","payment_method":"credit_card","gateway":"braintree","restrict_refunds":false,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":true},{"id":21,"name":"POLiPay","description":"POLiPay
+        only online","transaction_fee":"0.0","active":true,"position":22,"comment_required":false,"created_at":"2017-09-27T14:39:23.000+08:00","updated_at":"2017-10-11T06:49:44.000+08:00","credit_card_brand":null,"payment_method":"poli_pay","gateway":null,"restrict_refunds":false,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":true,"background":false,"creditlink":false,"surchargeable":false}],"issued_tickets_attributes":[],"creator":{"name":"Web
+        Site Manager","gravatar":"https://secure.gravatar.com/avatar/?secure=true\u0026gravatar=%7B%3Asize%3D%3E50%7D\u0026alt=Web%20Site%20Manager","url":"/parties/4"},"updator":{"name":"Web
+        Site Manager","gravatar":"https://secure.gravatar.com/avatar/?secure=true\u0026gravatar=%7B%3Asize%3D%3E50%7D\u0026alt=Web%20Site%20Manager","url":"/parties/4"},"company_creator":{"name":"Captain
+        Cook Cruises WA - Reservations","gravatar":"https://secure.gravatar.com/avatar/?secure=true\u0026gravatar=%7B%3Asize%3D%3E50%7D\u0026alt=Captain%20Cook%20Cruises%20WA%20-%20Reservations","url":"/parties/3"}}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2020 04:49:22 GMT
+recorded_with: VCR 2.9.3

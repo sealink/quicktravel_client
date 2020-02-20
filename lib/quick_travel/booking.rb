@@ -296,6 +296,11 @@ module QuickTravel
       Encrypt.access_key(@id.to_s)
     end
 
+    def customer_comments
+      comment = comments.select{ |comment| comment['comment_type'] == 'customer' }.first
+      comment.present? ? comment['text'] : ''
+    end
+
     protected
 
     def reserve(url, options)
