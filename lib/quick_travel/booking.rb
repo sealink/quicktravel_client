@@ -297,8 +297,8 @@ module QuickTravel
     end
 
     def customer_comments
-      comment = comments.select{ |comment| comment['comment_type'] == 'customer' }.first
-      comment.present? ? comment['text'] : ''
+      comment = comments.detect{ |comment| comment['comment_type'] == 'customer' }
+      comment.presence.try(:[], 'text') || ''
     end
 
     protected
