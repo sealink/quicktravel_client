@@ -27,6 +27,11 @@ end
 require 'quick_travel/connection_error'
 require 'quick_travel/cache'
 
+Money.default_currency = Money::Currency.new("AUD")
+Money.locale_backend = nil
+Money.default_formatting_rules = { thousands_separator: "," }
+Money.rounding_mode = BigDecimal::ROUND_HALF_UP
+
 class HashCache
   def initialize
     @cache = {}
