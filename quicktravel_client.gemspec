@@ -16,11 +16,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'httparty', '~> 0.17'
-  spec.add_dependency 'json'
-  spec.add_dependency 'activesupport', '>= 2.0.0'
+  spec.add_dependency 'httparty'
+  spec.add_dependency 'activesupport', '>= 5.0.0'
   spec.add_dependency 'facets'
-  spec.add_dependency 'money', '>= 3.0', '< 6.0' # 6.0 starts to deprecate/split
+  spec.add_dependency 'money', '>= 6.0'
+  spec.add_dependency 'money_extensions', '>= 1.0'
   spec.add_dependency 'will_paginate'
 
   spec.add_development_dependency 'bundler', '~> 2'
