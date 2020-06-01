@@ -11,11 +11,18 @@ module QuickTravel
       cache_options ||= {}
       key = "#{@@namespace}_#{key}" unless cache_options[:disable_namespacing]
       cached_value = cache_store.read(key)
-      return cached_value unless cached_value.nil?
+      return cached_value unless cache_empty?(cached_value)
       return nil unless block_given?
       cache_options ||= {}
       cache_options[:expires_in] = 1.day unless cache_options.key?(:expires_in)
       yield.tap { |value| cache_store.write(key, value, cache_options) }
+    end
+
+    def self.cache_empty?(cached_value)
+      if cached_value.respond_to?(:body)
+        return cached_value.body.nil? || cached_value.body.empty?
+      end
+      cached_value.nil?
     end
 
     def self.delete(key, namespace = true)
