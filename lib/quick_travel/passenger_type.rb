@@ -13,7 +13,7 @@ module QuickTravel
     end
 
     def self.pluralize(count, singular, plural = nil)
-      "#{count || 0} " + ((count == 1 || count =~ /^1(\.0+)?$/) ? singular : (plural || singular.pluralize))
+      "#{count || 0} " + ((count == 1) ? singular : (plural || singular.pluralize))
     end
   end
 end

@@ -2,6 +2,7 @@
 #
 module QuickTravel
   require 'active_support' # for .try, etc.
+  require 'money_extensions'
 
   require 'quick_travel/cache'
   require 'quick_travel/config'
