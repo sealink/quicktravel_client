@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## Unreleased
+- [TT-7788] Add API namespace to vehicle_types endpoint
+
 ## [4.0.0]
 - [TT-7385] Update Money dependency, test against Ruby 2.7 / Rails 6
 
