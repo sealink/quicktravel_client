@@ -5,6 +5,8 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
 
+## [4.1.0]
+### Added
 - [TT-7788] Add API namespace to vehicle_types endpoint
 
 ## [4.0.0]
