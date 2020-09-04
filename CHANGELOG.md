@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
+### Changed
+- [TT-7912] Update api status endpoint to the new response format
 
 ## [4.1.0]
 ### Added
