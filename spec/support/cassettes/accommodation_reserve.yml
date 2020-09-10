@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/reservation_for/accommodations/create_or_update.json
     body:
       encoding: UTF-8
-      string: reservations[resource_id]=6&reservations[bed_configuration_id]=1&reservations[first_travel_date]=01%2F03%2F2016&reservations[last_travel_date]=02%2F03%2F2016&booking_id=4
+      string: reservations%5Bresource_id%5D=6&reservations%5Bbed_configuration_id%5D=1&reservations%5Bfirst_travel_date%5D=01%2F03%2F2016&reservations%5Blast_travel_date%5D=02%2F03%2F2016&booking_id=4
     headers:
       Content-Length:
       - '0'
@@ -54,7 +54,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:20 GMT
 - request:
     method: get
@@ -121,7 +121,7 @@ http_interactions:
         Discount Hilton","description":"","display_name":"Test Discount Hilton"}],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":[],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[],"passenger_splits":[],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{}}],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":4,"name":"visa","description":"visa","transaction_fee":"0.0","active":true,"position":3,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":"Visa","payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":5,"name":"master","description":"master","transaction_fee":"0.0","active":true,"position":4,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":7,"name":"PayPal","description":"Payments
         made via PayPal account","transaction_fee":"0.0","active":true,"position":6,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"paypal","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":10,"name":"Opal
         Pay","description":"Opal Payments","transaction_fee":"0.0","active":true,"position":9,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"opal_pay","gateway":null,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":false,"creditlink":false,"surchargeable":false}],"issued_tickets_attributes":[]}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:21 GMT
 - request:
     method: get
@@ -188,7 +188,7 @@ http_interactions:
         Discount Hilton","description":"","display_name":"Test Discount Hilton"}],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":[],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[],"passenger_splits":[],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{}}],"adjustments_attributes":[],"payments_attributes":[],"payment_types_attributes":[{"id":4,"name":"visa","description":"visa","transaction_fee":"0.0","active":true,"position":3,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":"Visa","payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":5,"name":"master","description":"master","transaction_fee":"0.0","active":true,"position":4,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"credit_card","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":7,"name":"PayPal","description":"Payments
         made via PayPal account","transaction_fee":"0.0","active":true,"position":6,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"paypal","gateway":"braintree","on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":true,"creditlink":false,"surchargeable":false},{"id":10,"name":"Opal
         Pay","description":"Opal Payments","transaction_fee":"0.0","active":true,"position":9,"for_frequent_traveller_redemption":false,"comment_required":false,"created_at":null,"updated_at":null,"credit_card_brand":null,"payment_method":"opal_pay","gateway":null,"on_account":false,"ticket_holding":false,"requires_staff":false,"internal":false,"redirect":false,"background":false,"creditlink":false,"surchargeable":false}],"issued_tickets_attributes":[]}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:21 GMT
 - request:
     method: get
@@ -249,6 +249,6 @@ http_interactions:
         Hotel - Executive Room","client_type_ids":[],"category":null,"location_ids":[5],"current_description":"\u003cp\u003eA
         basic studio room\u003c/p\u003e","graphics":[],"graphic_names":[],"property_name":"Hilton
         Hotel","ticket_template":null,"expiry_days":null}]'
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:22 GMT
 recorded_with: VCR 4.0.0
