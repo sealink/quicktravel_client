@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/reservation_for/scheduled_trips/find_services_for.json
     body:
       encoding: UTF-8
-      string: product_type_id=1&route_id=1&forward[first_travel_date]=2016-03-01&forward[passenger_types][1]=2
+      string: product_type_id=1&route_id=1&forward%5Bfirst_travel_date%5D=2016-03-01&forward%5Bpassenger_types%5D%5B1%5D=2
     headers:
       Content-Length:
       - '0'
@@ -64,6 +64,6 @@ http_interactions:
         class=\"money positive\"\u003e$40.00\u003c/span\u003e\u0026nbsp;\u003c/span\u003e","price_breakdown_passengers_in_cents":4000,"price_breakdown_vehicles_in_cents":0,"trip_id":5,"stop_departure_time":"2000-01-01T18:00:00.000Z","stop_arrival_time":"2000-01-01T18:45:00.000Z","from_route_stop_attributes":null,"to_route_stop_attributes":null,"departure_time":"2000-01-01T18:00:00.000Z","arrival_time":"2000-01-01T18:45:00.000Z"},{"product_id":"6","product_id_field":"trip_id","resource_id":1,"resource_class_name_underscore":"ship","product_name_underscore":"ferry","tariff_level_id":1,"service_ids":[14],"first_travel_date":"01-03-2016","last_travel_date":"01-03-2016","time_class":"","exception_type":null,"bookable":true,"reason_unbookable":null,"service_notes":null,"booking_notes":null,"inventory_type_code":"A","price_in_cents":4000,"pre_adjusted_price_in_cents":4000,"total_price_adjustment_in_cents":0,"adjustments":[],"selection_name":"09:00pm
         - KI Ferry","price_breakdown":"\u003cspan\u003e\u003cstrong\u003ePassengers:\u003c/strong\u003e\u0026nbsp;\u003cspan
         class=\"money positive\"\u003e$40.00\u003c/span\u003e\u0026nbsp;\u003c/span\u003e","price_breakdown_passengers_in_cents":4000,"price_breakdown_vehicles_in_cents":0,"trip_id":6,"stop_departure_time":"2000-01-01T21:00:00.000Z","stop_arrival_time":"2000-01-01T21:45:00.000Z","from_route_stop_attributes":null,"to_route_stop_attributes":null,"departure_time":"2000-01-01T21:00:00.000Z","arrival_time":"2000-01-01T21:45:00.000Z"}]'
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:37 GMT
 recorded_with: VCR 4.0.0
