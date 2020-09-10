@@ -5,7 +5,7 @@ rvm:
   - 2.7
 before_install:
   - gem install bundler
-script: bundle && bundle exec rake spec
+script: bundle && bundle exec rspec spec
 gemfile:
   - gemfiles/rails5.gemfile
   - gemfiles/rails6.gemfile
