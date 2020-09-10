@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
+### Changed
+- [TT-7969] Update cassetes to work with HttpParty > 0.18.1
 
 ## [4.1.0]
 ### Added
