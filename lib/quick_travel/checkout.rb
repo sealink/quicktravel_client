@@ -29,10 +29,11 @@ module QuickTravel
     # When complete:
     #   progress: 'completed'
     #
-    # When failed, status :unprocessable_entity
+    # When failed, status :ok
+    #   successful: false
     #   error: 'Reason for failure'
     def self.status(id)
-      build_checkout_for { get_and_validate("/api/checkouts/#{id}.json") }
+      build_checkout_for { get_and_validate("/api/checkouts/#{id}.json?v=1") }
     end
 
     def self.update(id, data)
