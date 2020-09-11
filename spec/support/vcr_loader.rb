@@ -9,5 +9,4 @@ VCR.configure do |c|
   c.filter_sensitive_data('<QT_KEY>')   { qt_keys[0] }
   c.filter_sensitive_data('<QT_KEY_2>') { qt_keys[1] }
   c.hook_into :webmock
-  c.debug_logger = $stderr
 end
