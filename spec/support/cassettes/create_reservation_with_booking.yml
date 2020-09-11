@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/reservations.json
     body:
       encoding: UTF-8
-      string: resource_id=4&first_travel_date=2016-03-01&passenger_types_numbers[1]=2&passenger_types_numbers[2]=1
+      string: resource_id=4&first_travel_date=2016-03-01&passenger_types_numbers%5B1%5D=2&passenger_types_numbers%5B2%5D=1
     headers:
       Content-Length:
       - '0'
@@ -62,6 +62,6 @@ http_interactions:
         Date:","date_end_label":"End Date:","expires":false,"expiry":"*NA*","has_skipped_reservation_groups":false,"editable_reservation_groups":[],"tariff_level_name":"Auto
         Priced as: Rack Rate","gross_including_packaged_item_in_cents":0,"pre_adjusted_gross_including_packaged_item_in_cents":0,"gross_in_cents":0,"pre_adjusted_gross_in_cents":0,"pre_adjusted_commission_in_cents":0,"cost_in_cents":0,"rules":[],"package":false,"sub_reservation_depth":0,"extra_pick":null,"child_resource":null,"pending_confirmation":false,"confirmation_request_fields":["pick_up_information","drop_off_information","vendor_pnr
         notes_for_vendor","vendor_staff note_for_inventory_type_change"],"report_reservation_changes":false,"vendor_pnr":null,"pick_up_information":null,"drop_off_information":null,"vendor_staff":null,"notes_for_vendor":null,"passenger_ids":[],"passenger_splits":[],"vehicle_ids":[],"vehicle_splits":[],"consumer_grosses":{}}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:41 GMT
 recorded_with: VCR 4.0.0

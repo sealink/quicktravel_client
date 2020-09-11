@@ -5,6 +5,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
 ### Changed
+- [TT-7969] Update cassettes to work with HttpParty >= 0.18.1
 - [TT-7912] Update api status endpoint to the new response format
 
 ## [4.1.0]

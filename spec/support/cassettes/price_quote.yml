@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
     body:
       encoding: UTF-8
-      string: reservations[][resource_id]=7&reservations[][quantity]=2&reservations[][first_travel_date]=2016-04-15
+      string: reservations%5B%5D%5Bresource_id%5D=7&reservations%5B%5D%5Bquantity%5D=2&reservations%5B%5D%5Bfirst_travel_date%5D=2016-04-15
     headers:
       Content-Length:
       - '0'
@@ -56,14 +56,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"quoted_booking_gross_in_cents":6400,"original_booking_gross_in_cents":0,"applied_rules":[],"quoted_booking_breakdown":[{"quoted_gross_in_cents":6400,"original_gross_in_cents":0,"applied_rules":[],"reservation":{"id":null,"resource_id":7,"first_travel_date":"2016-04-15","passengers":{},"vehicles":[]},"new":true,"deleted":false}]}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:31 GMT
 - request:
     method: post
     uri: http://test.qt.sealink.com.au:8080/api/price_quotes/calculate
     body:
       encoding: UTF-8
-      string: reservations[][resource_id]=7&reservations[][quantity]=3&reservations[][first_travel_date]=2016-04-15
+      string: reservations%5B%5D%5Bresource_id%5D=7&reservations%5B%5D%5Bquantity%5D=3&reservations%5B%5D%5Bfirst_travel_date%5D=2016-04-15
     headers:
       Content-Length:
       - '0'
@@ -116,6 +116,6 @@ http_interactions:
       string: '{"quoted_booking_gross_in_cents":4800,"original_booking_gross_in_cents":0,"applied_rules":["Special
         Offer"],"quoted_booking_breakdown":[{"quoted_gross_in_cents":4800,"original_gross_in_cents":0,"applied_rules":["Special
         Offer"],"reservation":{"id":null,"resource_id":7,"first_travel_date":"2016-04-15","passengers":{},"vehicles":[]},"new":true,"deleted":false}]}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:31 GMT
 recorded_with: VCR 4.0.0
