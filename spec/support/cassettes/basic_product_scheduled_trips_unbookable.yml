@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.qt.sealink.com.au:8080/reservation_for/scheduled_trips/find_services_for.json
     body:
       encoding: UTF-8
-      string: product_type_id=1&route_id=1&forward[first_travel_date]=2016-03-03&forward[passenger_types][1]=2
+      string: product_type_id=1&route_id=1&forward%5Bfirst_travel_date%5D=2016-03-03&forward%5Bpassenger_types%5D%5B1%5D=2
     headers:
       Content-Length:
       - '0'
@@ -56,6 +56,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Mar 2018 04:40:37 GMT
 recorded_with: VCR 4.0.0
