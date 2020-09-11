@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## Unreleased
+## [4.2.0]
 ### Changed
 - [TT-7969] Update cassettes to work with HttpParty >= 0.18.1
 - [TT-7912] Update api status endpoint to the new response format
