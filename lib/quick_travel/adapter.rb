@@ -214,6 +214,8 @@ module QuickTravel
       http_params[:headers] ||= {}
       http_params[:headers]['Content-length'] = '0' if http_params[:body].blank?
       http_params[:headers]['x-api-key'] = QuickTravel.config.access_key
+      http_params[:headers]['user-agent'] = 'quicktravel_client/' + QuickTravel::VERSION;
+
       expect = http_params.delete(:expect)
 
       # Use :body instead of :query for put/post.
