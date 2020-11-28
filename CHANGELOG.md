@@ -6,6 +6,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 ## Unreleased
 ### Changed
 - [TT-8142] Add suitable user-agent header
+- [TT-8379] Switch to using api/parties endpoint
 
 ## [4.2.0]
 ### Changed
