@@ -12,7 +12,7 @@ module QuickTravel
       end
     end
 
-    self.api_base = '/parties'
+    self.api_base = '/api/parties'
 
     def self.find_by_login(options)
       get_and_validate('/parties/find_by_login.json', options)
