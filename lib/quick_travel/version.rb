@@ -1,3 +1,3 @@
 module QuickTravel
-  VERSION = '4.3.0'
+  VERSION = '4.3.1'
 end
