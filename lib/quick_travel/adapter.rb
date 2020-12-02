@@ -9,6 +9,7 @@ require 'facets/hash/delete_values'
 require 'quick_travel/config'
 require 'quick_travel/adapter_error'
 require 'quick_travel/init_from_hash'
+require 'quick_travel/version'
 
 module QuickTravel
   class Adapter
