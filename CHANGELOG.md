@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## [4.3.1]
+## [4.3.1 Unreleased]
 ### Fixed
 - [TT-8471] Fix missing QuickTravel:VERSION const error
 
