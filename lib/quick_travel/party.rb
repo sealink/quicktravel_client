@@ -12,10 +12,14 @@ module QuickTravel
       end
     end
 
-    self.api_base = '/api/parties'
+    self.api_base = '/parties'
 
     def self.find_by_login(options)
       get_and_validate('/parties/find_by_login.json', options)
+    end
+
+    def self.create(options = {})
+      post_and_validate("/api/parties.json", options)
     end
 
     # Asks QuickTravel to check the credentials
