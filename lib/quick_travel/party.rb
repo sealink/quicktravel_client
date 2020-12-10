@@ -7,15 +7,20 @@ module QuickTravel
 
     def initialize(hash = {})
       super
-      if type.blank?
-        @type = 'Person'
-      end
+      # TODO Fix the QT endpoint to actual return the type, first step
+      # is to revert it so we can fix the pacts, than we can update the
+      # expectations to include a return value
+      @type = 'Person'
     end
 
-    self.api_base = '/api/parties'
+    self.api_base = '/parties'
 
     def self.find_by_login(options)
       get_and_validate('/parties/find_by_login.json', options)
+    end
+
+    def self.create(options = {})
+      post_and_validate("/api/parties.json", options)
     end
 
     # Asks QuickTravel to check the credentials

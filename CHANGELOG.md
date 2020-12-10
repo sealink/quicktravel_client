@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [Unreleased]
+### Fixed
+- [TT-8511] Revert party lookup via the API endpoint
+
 ## [4.3.1]
 ### Fixed
 - [TT-8471] Fix missing QuickTravel:VERSION const error
