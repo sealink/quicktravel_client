@@ -11,6 +11,11 @@ module QuickTravel
       Resource.find_all!('/api/resources.json', parent_resource_id: @id)
     end
 
+    def self.find(id, opts = {})
+      opts = { cache_key: "resource:#{id}", cache_options: { expires_in: 1.hour } }.merge(opts)
+      super(id, opts)
+    end
+
     def self.all_with_price(opts)
       cache_key = GenerateCacheKey.new(name, opts).call
       find_all!("/api/resources/index_with_price.json", opts.merge(cache_key: cache_key))
