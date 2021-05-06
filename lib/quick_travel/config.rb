@@ -2,7 +2,7 @@ require 'quick_travel/adapter'
 
 module QuickTravel
   class Configuration
-    attr_accessor :url, :access_key, :version
+    attr_accessor :url, :access_key, :version, :extra_headers
 
     def url=(url)
       @url = url

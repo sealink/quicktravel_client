@@ -22,6 +22,7 @@ qt_keys = ENV['QT_KEYS'].split(',')
 QuickTravel.configure do |c|
   c.url = 'http://test.qt.sealink.com.au:8080'
   c.access_key = qt_keys[0]
+  c.extra_headers = { 'user-agent' => 'rspec' }
 end
 
 require 'quick_travel/connection_error'

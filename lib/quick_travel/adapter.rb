@@ -216,6 +216,7 @@ module QuickTravel
       http_params[:headers]['Content-length'] = '0' if http_params[:body].blank?
       http_params[:headers]['x-api-key'] = QuickTravel.config.access_key
       http_params[:headers]['user-agent'] = 'quicktravel_client/' + QuickTravel::VERSION;
+      http_params[:headers].merge!(extra_headers) if extra_headers
 
       expect = http_params.delete(:expect)
 
@@ -252,6 +253,10 @@ module QuickTravel
       validate!(response)
 
       response
+    end
+
+    def self.extra_headers
+      QuickTravel.config.extra_headers
     end
 
     # Do standard validations on response
