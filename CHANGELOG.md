@@ -5,6 +5,7 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
 
+- [TT-9346] Support injection of additional headers in requests to quicktravel
 - [TT-9331] Cache resources to reduce unnecessary API requests
 
 ## 4.4.0

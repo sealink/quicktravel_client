@@ -83,4 +83,28 @@ describe QuickTravel::Adapter do
       specify { expect(api).to have_received(:call_and_validate).twice }
     end
   end
+
+  context 'extra headers defined' do
+    let(:url) { 'http://test.quicktravel.com.au' }
+    let(:query) { {} }
+    let(:change_config) { }
+    let(:useragent) { 'rspec' }
+
+    before do
+      change_config
+      QuickTravel::Adapter.post_and_validate(url, query)
+    end
+
+    let(:expected_params) { a_hash_including(headers: a_hash_including('user-agent' => useragent)) }
+
+    specify { expect(QuickTravel::Api).to have_received(:post).with(url, expected_params) }
+
+    context 'and the config is changed' do
+      let(:useragent) { 'newspec' }
+      let(:change_config) {
+        QuickTravel.config.extra_headers = { 'user-agent' => 'newspec' }
+      }
+      specify { expect(QuickTravel::Api).to have_received(:post).with(url, expected_params) }
+    end
+  end
 end
