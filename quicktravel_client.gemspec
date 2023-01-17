@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
-  spec.required_ruby_version = '>= 2.6'
+  spec.required_ruby_version = '>= 3.0'
 
   spec.add_dependency 'httparty', '>= 0.18.1'
   spec.add_dependency 'activesupport', '>= 5.0.0'
@@ -30,7 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec-its'
   spec.add_development_dependency 'coverage-kit'
   spec.add_development_dependency 'simplecov-rcov'
-  spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'stamp' # Used to send appropriate dates to API's
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'webmock'
