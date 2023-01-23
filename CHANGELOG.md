@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## Unreleased
+
+- [PLAT-1275] Drop resource locations method
+
 ## 4.6.0
 
 - [PLAT-1175] Update to Ruby 3.2
